@@ -1,0 +1,2936 @@
+{
+  "allImages": [
+    {
+      "index": 0,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+      "alt": "여우솔탈-하반기",
+      "width": 330,
+      "height": 331,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 1,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+      "alt": "썸사주궁합",
+      "width": 1160,
+      "height": 1160,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 2,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+      "alt": "하반기종합",
+      "width": 330,
+      "height": 330,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 3,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+      "alt": "재회",
+      "width": 330,
+      "height": 330,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 4,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643687787x916609698872341600/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+      "alt": "인터뷰",
+      "width": 1560,
+      "height": 1560,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 5,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+      "alt": "솔탈",
+      "width": 331,
+      "height": 330,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 6,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643351628x712752188335735300/%E1%84%80%E1%85%A7%E1%86%AF%E1%84%92%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+      "alt": "결혼궁합",
+      "width": 344,
+      "height": 352,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 7,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+      "alt": "여우솔탈-하반기",
+      "width": 330,
+      "height": 331,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 8,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+      "alt": "썸사주궁합",
+      "width": 1160,
+      "height": 1160,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 9,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+      "alt": "하반기종합",
+      "width": 330,
+      "height": 330,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 10,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+      "alt": "재회",
+      "width": 330,
+      "height": 330,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 11,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643687787x916609698872341600/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+      "alt": "인터뷰",
+      "width": 1560,
+      "height": 1560,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 12,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+      "alt": "솔탈",
+      "width": 331,
+      "height": 330,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 13,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643351628x712752188335735300/%E1%84%80%E1%85%A7%E1%86%AF%E1%84%92%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+      "alt": "결혼궁합",
+      "width": 344,
+      "height": 352,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 14,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+      "alt": "여우솔탈-하반기",
+      "width": 330,
+      "height": 331,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 15,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+      "alt": "썸사주궁합",
+      "width": 1160,
+      "height": 1160,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 16,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+      "alt": "하반기종합",
+      "width": 330,
+      "height": 330,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 17,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+      "alt": "재회",
+      "width": 330,
+      "height": 330,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 18,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643687787x916609698872341600/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+      "alt": "인터뷰",
+      "width": 1560,
+      "height": 1560,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 19,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+      "alt": "솔탈",
+      "width": 331,
+      "height": 330,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 20,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643351628x712752188335735300/%E1%84%80%E1%85%A7%E1%86%AF%E1%84%92%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+      "alt": "결혼궁합",
+      "width": 344,
+      "height": 352,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 21,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+      "alt": "2026신년",
+      "width": 280,
+      "height": 287,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 22,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+      "alt": "재물운",
+      "width": 280,
+      "height": 287,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 23,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+      "alt": "썸사주궁합",
+      "width": 280,
+      "height": 280,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 24,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+      "alt": "솔탈",
+      "width": 280,
+      "height": 279,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 25,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+      "alt": "2026신년",
+      "width": 280,
+      "height": 287,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 26,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+      "alt": "재물운",
+      "width": 280,
+      "height": 287,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 27,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+      "alt": "썸사주궁합",
+      "width": 280,
+      "height": 280,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 28,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+      "alt": "솔탈",
+      "width": 280,
+      "height": 279,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 29,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+      "alt": "2026신년",
+      "width": 280,
+      "height": 287,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 30,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+      "alt": "재물운",
+      "width": 280,
+      "height": 287,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 31,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+      "alt": "썸사주궁합",
+      "width": 280,
+      "height": 280,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 32,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+      "alt": "솔탈",
+      "width": 280,
+      "height": 279,
+      "className": "",
+      "parent": "A"
+    },
+    {
+      "index": 33,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466836768x524134236669195000/Growing%20Heart%201.png",
+      "alt": "",
+      "width": 32,
+      "height": 32,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 34,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466848857x605807981488329700/Growing%20Heart%201%20%281%29.png",
+      "alt": "",
+      "width": 32,
+      "height": 32,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 35,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466876271x994951387212219100/Growing%20Heart%201%20%282%29.png",
+      "alt": "",
+      "width": 32,
+      "height": 32,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 36,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466906216x439430285867575200/Growing%20Heart%201%20%283%29.png",
+      "alt": "",
+      "width": 32,
+      "height": 32,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 37,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466848857x605807981488329700/Growing%20Heart%201%20%281%29.png",
+      "alt": "",
+      "width": 32,
+      "height": 32,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 38,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466983083x645874785753331100/Growing%20Heart%201%20%284%29.png",
+      "alt": "",
+      "width": 32,
+      "height": 32,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 39,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467020645x962765043525175300/Growing%20Heart%201%20%285%29.png",
+      "alt": "",
+      "width": 32,
+      "height": 32,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 40,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467039405x383033247291431040/Growing%20Heart%201%20%286%29.png",
+      "alt": "",
+      "width": 32,
+      "height": 32,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 41,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467068512x562626469233695760/Growing%20Heart%201%20%287%29.png",
+      "alt": "",
+      "width": 32,
+      "height": 32,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 42,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467083499x653321571429130100/Growing%20Heart%201%20%288%29.png",
+      "alt": "",
+      "width": 32,
+      "height": 32,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 43,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758627216749x929285169986016800/%E1%84%8E%E1%85%B5%E1%86%AB%E1%84%80%E1%85%AE%E1%84%8E%E1%85%A9%E1%84%83%E1%85%A2.svg",
+      "alt": "",
+      "width": 44,
+      "height": 45,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 44,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754466621316x990961257053425200/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC.png",
+      "alt": "",
+      "width": 90,
+      "height": 90,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 45,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1756104327591x195418940527699800/%E1%84%8C%E1%85%A2%E1%84%92%E1%85%AC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%89%E1%85%B3%E1%86%BC%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE.svg",
+      "alt": "",
+      "width": 90,
+      "height": 90,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 46,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467329857x835823088653500300/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9.png",
+      "alt": "",
+      "width": 90,
+      "height": 90,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 47,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467365568x557988189999608800/%EA%B6%81%ED%95%A9%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+      "alt": "",
+      "width": 90,
+      "height": 90,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 48,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467391031x376946978522862700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+      "alt": "",
+      "width": 90,
+      "height": 90,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 49,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=130,f=auto,dpr=1,fit=contain/f1754467415536x796541878799546000/%EC%BB%A4%EB%A6%AC%EC%96%B4%EC%82%AC%EC%A3%BC_%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+      "alt": "",
+      "width": 90,
+      "height": 92,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 50,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1755096595963x896724663128204200/%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE.png",
+      "alt": "",
+      "width": 90,
+      "height": 90,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 51,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1756104085369x794228958999374300/%E1%84%91%E1%85%A2%E1%86%A8%E1%84%91%E1%85%A9%E1%86%A8-1-1.svg",
+      "alt": "",
+      "width": 90,
+      "height": 90,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 52,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+      "alt": "",
+      "width": 90,
+      "height": 92,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 53,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+      "alt": "",
+      "width": 90,
+      "height": 90,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 54,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=129,f=auto,dpr=1,fit=contain/f1754467456694x186235291558504830/8%EC%9B%94%EC%9A%B4%EC%84%B8.png",
+      "alt": "",
+      "width": 90,
+      "height": 91,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 55,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+      "alt": "",
+      "width": 90,
+      "height": 90,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 56,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754552083089x489455495710442900/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+      "alt": "",
+      "width": 468,
+      "height": 468,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 57,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754554733050x426783502598683460/%EC%97%AC%EC%9A%B01.png",
+      "alt": "",
+      "width": 40,
+      "height": 40,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 58,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754554757697x803630096845563600/%EC%97%AC%EC%9A%B02.png",
+      "alt": "",
+      "width": 40,
+      "height": 40,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 59,
+      "src": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Horse%20Face.png",
+      "alt": "",
+      "width": 256,
+      "height": 256,
+      "className": "animal",
+      "parent": "DIV"
+    },
+    {
+      "index": 60,
+      "src": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Heart%20with%20Arrow.png",
+      "alt": "",
+      "width": 256,
+      "height": 256,
+      "className": "heart",
+      "parent": "DIV"
+    },
+    {
+      "index": 61,
+      "src": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Dragon%20Face.png",
+      "alt": "",
+      "width": 256,
+      "height": 256,
+      "className": "animal",
+      "parent": "DIV"
+    },
+    {
+      "index": 62,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754561201198x110694109953810580/%EC%97%AC%EC%9A%B01.png",
+      "alt": "",
+      "width": 40,
+      "height": 40,
+      "className": "",
+      "parent": "DIV"
+    },
+    {
+      "index": 63,
+      "src": "https://t.co/1/i/adsct?bci=4&dv=Asia%2FSeoul%26ko-KR%26Google%20Inc.%26Win32%26255%261280%26720%2616%2624%261280%26720%260%26na&eci=3&event=%7B%7D&event_id=0b23c769-6db2-4c66-97be-732b8a09521d&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=f9205eb8-c3f3-4c78-8615-d0683ae58546&pt=%ED%83%80%EC%9D%B4%ED%8A%B8%20%EC%82%AC%EC%A3%BC%20%7C%20%EC%AB%80%EB%93%9D%ED%95%98%EA%B2%8C%20%EB%93%A4%EC%96%B4%EB%A7%9E%EB%8A%94%20%EC%82%AC%EC%A3%BC%20%EA%B6%81%ED%95%A9%20%EB%A7%8C%EC%84%B8%EB%A0%A5&tw_document_href=https%3A%2F%2Fsajutight.me%2F&tw_iframe_status=0&txn_id=oupkr&type=javascript&version=2.3.34",
+      "alt": "",
+      "width": 1,
+      "height": 1,
+      "className": "",
+      "parent": "BODY"
+    },
+    {
+      "index": 64,
+      "src": "https://analytics.twitter.com/1/i/adsct?bci=4&dv=Asia%2FSeoul%26ko-KR%26Google%20Inc.%26Win32%26255%261280%26720%2616%2624%261280%26720%260%26na&eci=3&event=%7B%7D&event_id=0b23c769-6db2-4c66-97be-732b8a09521d&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=f9205eb8-c3f3-4c78-8615-d0683ae58546&pt=%ED%83%80%EC%9D%B4%ED%8A%B8%20%EC%82%AC%EC%A3%BC%20%7C%20%EC%AB%80%EB%93%9D%ED%95%98%EA%B2%8C%20%EB%93%A4%EC%96%B4%EB%A7%9E%EB%8A%94%20%EC%82%AC%EC%A3%BC%20%EA%B6%81%ED%95%A9%20%EB%A7%8C%EC%84%B8%EB%A0%A5&tw_document_href=https%3A%2F%2Fsajutight.me%2F&tw_iframe_status=0&txn_id=oupkr&type=javascript&version=2.3.34",
+      "alt": "",
+      "width": 1,
+      "height": 1,
+      "className": "",
+      "parent": "BODY"
+    }
+  ],
+  "allLinks": [
+    {
+      "index": 0,
+      "href": "https://sajutight.me/fox-solo",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 1,
+      "href": "https://sajutight.me/tight?p=match",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 2,
+      "href": "https://sajutight.me/year-saju",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 3,
+      "href": "https://sajutight.me/again",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 4,
+      "href": "https://tally.so/r/3lE7lp",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 5,
+      "href": "https://sajutight.me/solo",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 6,
+      "href": "https://sajutight.me/fox-solo",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 7,
+      "href": "https://sajutight.me/fox-solo",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 8,
+      "href": "https://sajutight.me/tight?p=match",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 9,
+      "href": "https://sajutight.me/year-saju",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 10,
+      "href": "https://sajutight.me/again",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 11,
+      "href": "https://tally.so/r/3lE7lp",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 12,
+      "href": "https://sajutight.me/solo",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 13,
+      "href": "https://sajutight.me/fox-solo",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 14,
+      "href": "https://sajutight.me/fox-solo",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 15,
+      "href": "https://sajutight.me/tight?p=match",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 16,
+      "href": "https://sajutight.me/year-saju",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 17,
+      "href": "https://sajutight.me/again",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 18,
+      "href": "https://tally.so/r/3lE7lp",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 19,
+      "href": "https://sajutight.me/solo",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 20,
+      "href": "https://sajutight.me/fox-solo",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 21,
+      "href": "https://sajutight.me/saehae",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 22,
+      "href": "https://sajutight.me/money",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 23,
+      "href": "https://sajutight.me/tight?p=match",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 24,
+      "href": "https://sajutight.me/solo",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 25,
+      "href": "https://sajutight.me/saehae",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 26,
+      "href": "https://sajutight.me/money",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 27,
+      "href": "https://sajutight.me/tight?p=match",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 28,
+      "href": "https://sajutight.me/solo",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 29,
+      "href": "https://sajutight.me/saehae",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 30,
+      "href": "https://sajutight.me/money",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 31,
+      "href": "https://sajutight.me/tight?p=match",
+      "text": "",
+      "className": ""
+    },
+    {
+      "index": 32,
+      "href": "https://sajutight.me/solo",
+      "text": "",
+      "className": ""
+    }
+  ],
+  "allDivs": [],
+  "textContent": [
+    {
+      "text": "친구 초대하고 3,000원 받기!",
+      "parent": "DIV",
+      "className": ""
+    },
+    {
+      "text": "5만 달성 기념 고객 감사 이벤트",
+      "parent": "DIV",
+      "className": ""
+    },
+    {
+      "text": "🍷 월간 랭킹 BEST",
+      "parent": "DIV",
+      "className": ""
+    },
+    {
+      "text": "내 숨겨진 연애운은?\n솔로탈출 사주 🌸",
+      "parent": "DIV",
+      "className": ""
+    },
+    {
+      "text": "재회 vs 환승? 이제 지쳤다면\n[재회 환승사주]",
+      "parent": "DIV",
+      "className": ""
+    },
+    {
+      "text": "화 기운 3년을 읽어주는\n[프리미엄 하반기 종합사주✨]",
+      "parent": "DIV",
+      "className": ""
+    },
+    {
+      "text": "그 사람과 나는 얼마나 잘 맞을까?\n[커플 궁합사주 🥵]",
+      "parent": "DIV",
+      "className": ""
+    },
+    {
+      "text": "그 사람과 재회할 수 있을까..? \n[이별 재회 사주]",
+      "parent": "DIV",
+      "className": ""
+    },
+    {
+      "text": "이직해서 연봉 2배 올리고 싶다면\n봐야할 [커리어사주]",
+      "parent": "DIV",
+      "className": ""
+    },
+    {
+      "text": "명쾌한 10년 풀이까지 해주는\n[2025년 타이트 종합사주]",
+      "parent": "DIV",
+      "className": ""
+    },
+    {
+      "text": "뻔한 조언 대신 진짜 매운맛 사주!\n[팩폭 사주]",
+      "parent": "DIV",
+      "className": ""
+    },
+    {
+      "text": "🐣 NEW! 쌔삥 신규사주",
+      "parent": "DIV",
+      "className": ""
+    },
+    {
+      "text": "소름돋게 잘 맞는 2026 신년운세\n[신년운세 총운]",
+      "parent": "DIV",
+      "className": ""
+    },
+    {
+      "text": "소름돋는 2026년 재물운세 💵\n[10년 재물운 사주]",
+      "parent": "DIV",
+      "className": ""
+    },
+    {
+      "text": "2025년 8월 월간운세",
+      "parent": "DIV",
+      "className": ""
+    },
+    {
+      "text": "그 사람도 나를 좋아할까?\n[썸 궁합사주]",
+      "parent": "DIV",
+      "className": ""
+    },
+    {
+      "text": "🥹 타이트 사주 실시간 리뷰",
+      "parent": "DIV",
+      "className": ""
+    },
+    {
+      "text": "많은 도움이 됬어요\n어느 방향으로 생각하고 살아가야하는지 알게 도움받았네요",
+      "parent": "DIV",
+      "className": ""
+    },
+    {
+      "text": "저에대해 어떻게 잘 아세요??.. 너무 소름이 돋아요",
+      "parent": "DIV",
+      "className": ""
+    },
+    {
+      "text": "쫀득하게 들어맞는 사주 궁합",
+      "parent": "DIV",
+      "className": "bubble-element Text baTkaOn5"
+    },
+    {
+      "text": "대표이사: 송홍기 | 사업자등록번호 414-05-23847\n통신판매업 신고번호 2025-서울광진-0894",
+      "parent": "DIV",
+      "className": "bubble-element Text baTkaOt5 clickable-element"
+    },
+    {
+      "text": "주소: 서울시 광진구 능동로 건국대학교 기술혁신관",
+      "parent": "DIV",
+      "className": "bubble-element Text baTkaOt5 clickable-element"
+    },
+    {
+      "text": "상호명 : 사이버네틱스",
+      "parent": "DIV",
+      "className": "bubble-element Text baTkaOt5 clickable-element"
+    },
+    {
+      "text": "TEL : 010-2293-0574",
+      "parent": "DIV",
+      "className": "bubble-element Text baTkaOt5 clickable-element"
+    },
+    {
+      "text": "Copyright @ 2024 CYBERNETICS - All rights reserved",
+      "parent": "DIV",
+      "className": "bubble-element Text baTkaPaL5"
+    },
+    {
+      "text": "#rg1::-webkit-scrollbar { display: none; }\n#rg1{\n-ms-overflow-style: none;\nscrollbar-width: none;\n}",
+      "parent": "STYLE",
+      "className": ""
+    },
+    {
+      "text": "#pre::-webkit-scrollbar { display: none; }\n#pre{\n-ms-overflow-style: none;\nscrollbar-width: none;\n}",
+      "parent": "STYLE",
+      "className": ""
+    },
+    {
+      "text": "내 썸남의 속마음이 궁금해?",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "짝사랑으로 앓고있다면?",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "내 썸남의 속마음이 궁금해?",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "짝사랑으로 앓고있다면?",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "내 썸남의 속마음이 궁금해?",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "짝사랑으로 앓고있다면?",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "내 썸남의 속마음이 궁금해?",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "짝사랑으로 앓고있다면?",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "내 썸남의 속마음이 궁금해?",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "짝사랑으로 앓고있다면?",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "내 썸남의 속마음이 궁금해?",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "짝사랑으로 앓고있다면?",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "내 썸남의 속마음이 궁금해?",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "짝사랑으로 앓고있다면?",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "내 썸남의 속마음이 궁금해?",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "짝사랑으로 앓고있다면?",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "내 썸남의 속마음이 궁금해?",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "짝사랑으로 앓고있다면?",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "내 썸남의 속마음이 궁금해?",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "짝사랑으로 앓고있다면?",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "바람기와 은밀한 욕구",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "궁합 사주 분석 리포트",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "바람기와 은밀한 욕구",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "궁합 사주 분석 리포트",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "바람기와 은밀한 욕구",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "궁합 사주 분석 리포트",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "바람기와 은밀한 욕구",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "궁합 사주 분석 리포트",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "바람기와 은밀한 욕구",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "궁합 사주 분석 리포트",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "바람기와 은밀한 욕구",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "궁합 사주 분석 리포트",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "바람기와 은밀한 욕구",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "궁합 사주 분석 리포트",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "바람기와 은밀한 욕구",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "궁합 사주 분석 리포트",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "바람기와 은밀한 욕구",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "궁합 사주 분석 리포트",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "바람기와 은밀한 욕구",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "궁합 사주 분석 리포트",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "3만명 이상의 고객들이 만족한 궁합",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "3만명 이상의 고객들이 만족한 궁합",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "3만명 이상의 고객들이 만족한 궁합",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "3만명 이상의 고객들이 만족한 궁합",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "3만명 이상의 고객들이 만족한 궁합",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "3만명 이상의 고객들이 만족한 궁합",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "3만명 이상의 고객들이 만족한 궁합",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "3만명 이상의 고객들이 만족한 궁합",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "3만명 이상의 고객들이 만족한 궁합",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "3만명 이상의 고객들이 만족한 궁합",
+      "parent": "DIV",
+      "className": "emoji-button"
+    },
+    {
+      "text": "#dateInputElement::placeholder {\n    color: #585969B3; /* placeholder 색상 */\n}",
+      "parent": "STYLE",
+      "className": ""
+    },
+    {
+      "text": "#dateInputElementOpponent::placeholder {\n    color: #585969B3; /* placeholder 색상 */\n}",
+      "parent": "STYLE",
+      "className": ""
+    },
+    {
+      "text": "Your browser does not support the video tag.",
+      "parent": "VIDEO",
+      "className": ""
+    },
+    {
+      "text": "미묘한 감정의 파장을 분석 중입니다....",
+      "parent": "P",
+      "className": ""
+    },
+    {
+      "text": "function scrollToTop() {\n    document.getElementById(\"top\").scrollIntoView({ \n      behavior: \"smooth\", \n      block: \"start\" \n    });\n  }",
+      "parent": "SCRIPT",
+      "className": ""
+    },
+    {
+      "text": "function scrollToTopB() {\n    document.getElementById(\"topB\").scrollIntoView({ \n      behavior: \"smooth\", \n      block: \"start\" \n    });\n  }",
+      "parent": "SCRIPT",
+      "className": ""
+    },
+    {
+      "text": "Loading Animation",
+      "parent": "TITLE",
+      "className": ""
+    },
+    {
+      "text": "Video Auto Play",
+      "parent": "TITLE",
+      "className": ""
+    },
+    {
+      "text": "Your browser does not support the video tag.",
+      "parent": "VIDEO",
+      "className": ""
+    },
+    {
+      "text": "Loading Animation",
+      "parent": "TITLE",
+      "className": ""
+    },
+    {
+      "text": "Loading Animation",
+      "parent": "TITLE",
+      "className": ""
+    },
+    {
+      "text": "// HTML에 직접 추가\ndocument.body.insertAdjacentHTML('beforeend', `",
+      "parent": "DIV",
+      "className": "bubble-element HTML baaCaPv1"
+    },
+    {
+      "text": "var message = \"test\";",
+      "parent": "SCRIPT",
+      "className": ""
+    },
+    {
+      "text": "`);\n\n// 바로 개수 확인\nconsole.log('message 개수:', (document.body.innerHTML.match(/\\bmessage\\b/g) || []).length);",
+      "parent": "DIV",
+      "className": "bubble-element HTML baaCaPv1"
+    },
+    {
+      "text": "Countdown Timer",
+      "parent": "TITLE",
+      "className": ""
+    },
+    {
+      "text": "Loading Animation",
+      "parent": "TITLE",
+      "className": ""
+    }
+  ],
+  "productLikeElements": [
+    {
+      "index": 2,
+      "className": "bubble-element Page baTpaGb1 main-page bubble-r-container flex column",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643687787x916609698872341600/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643351628x712752188335735300/%E1%84%80%E1%85%A7%E1%86%AF%E1%84%92%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643687787x916609698872341600/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643351628x712752188335735300/%E1%84%80%E1%85%A7%E1%86%AF%E1%84%92%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643687787x916609698872341600/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643351628x712752188335735300/%E1%84%80%E1%85%A7%E1%86%AF%E1%84%92%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466836768x524134236669195000/Growing%20Heart%201.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466848857x605807981488329700/Growing%20Heart%201%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466876271x994951387212219100/Growing%20Heart%201%20%282%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466906216x439430285867575200/Growing%20Heart%201%20%283%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466848857x605807981488329700/Growing%20Heart%201%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466983083x645874785753331100/Growing%20Heart%201%20%284%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467020645x962765043525175300/Growing%20Heart%201%20%285%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467039405x383033247291431040/Growing%20Heart%201%20%286%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467068512x562626469233695760/Growing%20Heart%201%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467083499x653321571429130100/Growing%20Heart%201%20%288%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758627216749x929285169986016800/%E1%84%8E%E1%85%B5%E1%86%AB%E1%84%80%E1%85%AE%E1%84%8E%E1%85%A9%E1%84%83%E1%85%A2.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754466621316x990961257053425200/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1756104327591x195418940527699800/%E1%84%8C%E1%85%A2%E1%84%92%E1%85%AC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%89%E1%85%B3%E1%86%BC%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467329857x835823088653500300/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467365568x557988189999608800/%EA%B6%81%ED%95%A9%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467391031x376946978522862700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=130,f=auto,dpr=1,fit=contain/f1754467415536x796541878799546000/%EC%BB%A4%EB%A6%AC%EC%96%B4%EC%82%AC%EC%A3%BC_%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1755096595963x896724663128204200/%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1756104085369x794228958999374300/%E1%84%91%E1%85%A2%E1%86%A8%E1%84%91%E1%85%A9%E1%86%A8-1-1.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=129,f=auto,dpr=1,fit=contain/f1754467456694x186235291558504830/8%EC%9B%94%EC%9A%B4%EC%84%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754552083089x489455495710442900/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754554733050x426783502598683460/%EC%97%AC%EC%9A%B01.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754554757697x803630096845563600/%EC%97%AC%EC%9A%B02.png",
+        "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Horse%20Face.png",
+        "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Heart%20with%20Arrow.png",
+        "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Dragon%20Face.png"
+      ],
+      "texts": [
+        "🍪 카테고리",
+        "이벤트!",
+        "궁합",
+        "솔로/연애운",
+        "이별/재회",
+        "결혼운",
+        "임신/자녀운",
+        "신년운세",
+        "월별운세",
+        "취업/직업운"
+      ],
+      "html": "<div class=\"bubble-element Page baTpaGb1 main-page bubble-r-container flex column\" style=\"background-color: rgb(255, 255, 255); min-width: 0px; min-height: max(780px, 100%); width: 100%; margin-right: auto; margin-left: auto; position: relative; z-index: 2; height: max-content; flex-shrink: 0; justi"
+    },
+    {
+      "index": 4,
+      "className": "bubble-element Group baaToaZ bubble-r-container flex column",
+      "id": "pre",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643687787x916609698872341600/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643351628x712752188335735300/%E1%84%80%E1%85%A7%E1%86%AF%E1%84%92%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643687787x916609698872341600/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643351628x712752188335735300/%E1%84%80%E1%85%A7%E1%86%AF%E1%84%92%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643687787x916609698872341600/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643351628x712752188335735300/%E1%84%80%E1%85%A7%E1%86%AF%E1%84%92%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466836768x524134236669195000/Growing%20Heart%201.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466848857x605807981488329700/Growing%20Heart%201%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466876271x994951387212219100/Growing%20Heart%201%20%282%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466906216x439430285867575200/Growing%20Heart%201%20%283%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466848857x605807981488329700/Growing%20Heart%201%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466983083x645874785753331100/Growing%20Heart%201%20%284%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467020645x962765043525175300/Growing%20Heart%201%20%285%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467039405x383033247291431040/Growing%20Heart%201%20%286%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467068512x562626469233695760/Growing%20Heart%201%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467083499x653321571429130100/Growing%20Heart%201%20%288%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758627216749x929285169986016800/%E1%84%8E%E1%85%B5%E1%86%AB%E1%84%80%E1%85%AE%E1%84%8E%E1%85%A9%E1%84%83%E1%85%A2.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754466621316x990961257053425200/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1756104327591x195418940527699800/%E1%84%8C%E1%85%A2%E1%84%92%E1%85%AC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%89%E1%85%B3%E1%86%BC%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467329857x835823088653500300/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467365568x557988189999608800/%EA%B6%81%ED%95%A9%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467391031x376946978522862700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=130,f=auto,dpr=1,fit=contain/f1754467415536x796541878799546000/%EC%BB%A4%EB%A6%AC%EC%96%B4%EC%82%AC%EC%A3%BC_%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1755096595963x896724663128204200/%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1756104085369x794228958999374300/%E1%84%91%E1%85%A2%E1%86%A8%E1%84%91%E1%85%A9%E1%86%A8-1-1.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=129,f=auto,dpr=1,fit=contain/f1754467456694x186235291558504830/8%EC%9B%94%EC%9A%B4%EC%84%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754552083089x489455495710442900/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754554733050x426783502598683460/%EC%97%AC%EC%9A%B01.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754554757697x803630096845563600/%EC%97%AC%EC%9A%B02.png",
+        "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Horse%20Face.png",
+        "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Heart%20with%20Arrow.png",
+        "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Dragon%20Face.png"
+      ],
+      "texts": [
+        "🍪 카테고리",
+        "이벤트!",
+        "궁합",
+        "솔로/연애운",
+        "이별/재회",
+        "결혼운",
+        "임신/자녀운",
+        "신년운세",
+        "월별운세",
+        "취업/직업운"
+      ],
+      "html": "<div class=\"bubble-element Group baaToaZ bubble-r-container flex column\" id=\"pre\" style=\"background-color: var(--color_primary_contrast_default); overflow: hidden auto; justify-content: flex-start; border-radius: 0px; padding: 0px 0px 80px; opacity: 1; align-self: center; min-width: 360px; max-width"
+    },
+    {
+      "index": 5,
+      "className": "bubble-element Group baaTya bubble-r-container flex column",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643687787x916609698872341600/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643351628x712752188335735300/%E1%84%80%E1%85%A7%E1%86%AF%E1%84%92%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643687787x916609698872341600/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643351628x712752188335735300/%E1%84%80%E1%85%A7%E1%86%AF%E1%84%92%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643687787x916609698872341600/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643351628x712752188335735300/%E1%84%80%E1%85%A7%E1%86%AF%E1%84%92%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466836768x524134236669195000/Growing%20Heart%201.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466848857x605807981488329700/Growing%20Heart%201%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466876271x994951387212219100/Growing%20Heart%201%20%282%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466906216x439430285867575200/Growing%20Heart%201%20%283%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466848857x605807981488329700/Growing%20Heart%201%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466983083x645874785753331100/Growing%20Heart%201%20%284%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467020645x962765043525175300/Growing%20Heart%201%20%285%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467039405x383033247291431040/Growing%20Heart%201%20%286%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467068512x562626469233695760/Growing%20Heart%201%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467083499x653321571429130100/Growing%20Heart%201%20%288%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758627216749x929285169986016800/%E1%84%8E%E1%85%B5%E1%86%AB%E1%84%80%E1%85%AE%E1%84%8E%E1%85%A9%E1%84%83%E1%85%A2.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754466621316x990961257053425200/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1756104327591x195418940527699800/%E1%84%8C%E1%85%A2%E1%84%92%E1%85%AC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%89%E1%85%B3%E1%86%BC%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467329857x835823088653500300/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467365568x557988189999608800/%EA%B6%81%ED%95%A9%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467391031x376946978522862700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=130,f=auto,dpr=1,fit=contain/f1754467415536x796541878799546000/%EC%BB%A4%EB%A6%AC%EC%96%B4%EC%82%AC%EC%A3%BC_%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1755096595963x896724663128204200/%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1756104085369x794228958999374300/%E1%84%91%E1%85%A2%E1%86%A8%E1%84%91%E1%85%A9%E1%86%A8-1-1.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=129,f=auto,dpr=1,fit=contain/f1754467456694x186235291558504830/8%EC%9B%94%EC%9A%B4%EC%84%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754552083089x489455495710442900/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754554733050x426783502598683460/%EC%97%AC%EC%9A%B01.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754554757697x803630096845563600/%EC%97%AC%EC%9A%B02.png",
+        "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Horse%20Face.png",
+        "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Heart%20with%20Arrow.png",
+        "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Dragon%20Face.png"
+      ],
+      "texts": [
+        "🍪 카테고리",
+        "이벤트!",
+        "궁합",
+        "솔로/연애운",
+        "이별/재회",
+        "결혼운",
+        "임신/자녀운",
+        "신년운세",
+        "월별운세",
+        "취업/직업운"
+      ],
+      "html": "<div class=\"bubble-element Group baaTya bubble-r-container flex column\" style=\"overflow: hidden auto; justify-content: flex-start; row-gap: 10px; border-radius: 0px; padding: 100px 0px 0px; opacity: 1; align-self: center; min-width: 40px; order: 2; min-height: 40px; height: max-content; flex-grow: 0"
+    },
+    {
+      "index": 6,
+      "className": "bubble-element Group baaTyaN bubble-r-container flex column",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643687787x916609698872341600/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643351628x712752188335735300/%E1%84%80%E1%85%A7%E1%86%AF%E1%84%92%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643687787x916609698872341600/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643351628x712752188335735300/%E1%84%80%E1%85%A7%E1%86%AF%E1%84%92%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643687787x916609698872341600/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643351628x712752188335735300/%E1%84%80%E1%85%A7%E1%86%AF%E1%84%92%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png"
+      ],
+      "texts": [],
+      "html": "<div class=\"bubble-element Group baaTyaN bubble-r-container flex column\" style=\"overflow: visible; justify-content: flex-start; border-radius: 0px; opacity: 1; align-self: center; min-width: 40px; order: 10; min-height: 40px; height: max-content; flex-grow: 0; flex-shrink: 0; width: calc(100% + 0px)"
+    },
+    {
+      "index": 7,
+      "className": "bubble-element HTML baaTyaJ",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643687787x916609698872341600/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643351628x712752188335735300/%E1%84%80%E1%85%A7%E1%86%AF%E1%84%92%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643687787x916609698872341600/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643351628x712752188335735300/%E1%84%80%E1%85%A7%E1%86%AF%E1%84%92%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643687787x916609698872341600/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643351628x712752188335735300/%E1%84%80%E1%85%A7%E1%86%AF%E1%84%92%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png"
+      ],
+      "texts": [],
+      "html": "<div class=\"bubble-element HTML baaTyaJ\" id=\"\" style=\"visibility: hidden; align-self: center; min-width: 200px; order: 2; min-height: 320px; height: 320px; flex-grow: 1; width: calc(100% + 0px); margin: 120px 0px 0px; z-index: 35; display: none;\"><!-- Bubble에 그대로 붙여넣기 가능한 전체 HTML 래퍼 -->\n<div id=\"aut"
+    },
+    {
+      "index": 8,
+      "className": "",
+      "id": "auto-slider-wrapper",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643687787x916609698872341600/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643351628x712752188335735300/%E1%84%80%E1%85%A7%E1%86%AF%E1%84%92%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643687787x916609698872341600/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643351628x712752188335735300/%E1%84%80%E1%85%A7%E1%86%AF%E1%84%92%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643687787x916609698872341600/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643351628x712752188335735300/%E1%84%80%E1%85%A7%E1%86%AF%E1%84%92%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png"
+      ],
+      "texts": [],
+      "html": "<div id=\"auto-slider-wrapper\">\n  <style>\n    /* 컨테이너 설정 */\n    #auto-slider-wrapper {\n      position: relative;\n      width: 100%;\n      overflow: hidden;\n      padding: 20px 0;\n    }\n    \n    #auto-slider-wrapper .slider-container {\n      position: relative;\n      width: 100%;\n      height: auto;\n "
+    },
+    {
+      "index": 40,
+      "className": "bubble-element HTML baefaW1",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png"
+      ],
+      "texts": [],
+      "html": "<div class=\"bubble-element HTML baefaW1\" id=\"\" style=\"border-radius: 0px; opacity: 1; align-self: center; min-width: 200px; order: 3; min-height: 320px; height: 320px; flex-grow: 1; width: calc(100% + 0px); margin: 120px 0px 0px; z-index: 35;\"><!-- Bubble에 그대로 붙여넣기 가능한 전체 HTML 래퍼 -->\n<div id=\"auto-s"
+    },
+    {
+      "index": 41,
+      "className": "",
+      "id": "auto-slider-wrapper",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png"
+      ],
+      "texts": [],
+      "html": "<div id=\"auto-slider-wrapper\">\n  <style>\n    /* 컨테이너 설정 */\n    #auto-slider-wrapper {\n      position: relative;\n      width: 100%;\n      overflow: hidden;\n      padding: 20px 0;\n    }\n    \n    #auto-slider-wrapper .slider-container {\n      position: relative;\n      width: 100%;\n      height: auto;\n "
+    },
+    {
+      "index": 61,
+      "className": "bubble-element Group baaTyaI bubble-r-container flex column",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466836768x524134236669195000/Growing%20Heart%201.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466848857x605807981488329700/Growing%20Heart%201%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466876271x994951387212219100/Growing%20Heart%201%20%282%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466906216x439430285867575200/Growing%20Heart%201%20%283%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466848857x605807981488329700/Growing%20Heart%201%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466983083x645874785753331100/Growing%20Heart%201%20%284%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467020645x962765043525175300/Growing%20Heart%201%20%285%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467039405x383033247291431040/Growing%20Heart%201%20%286%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467068512x562626469233695760/Growing%20Heart%201%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467083499x653321571429130100/Growing%20Heart%201%20%288%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758627216749x929285169986016800/%E1%84%8E%E1%85%B5%E1%86%AB%E1%84%80%E1%85%AE%E1%84%8E%E1%85%A9%E1%84%83%E1%85%A2.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754466621316x990961257053425200/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1756104327591x195418940527699800/%E1%84%8C%E1%85%A2%E1%84%92%E1%85%AC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%89%E1%85%B3%E1%86%BC%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467329857x835823088653500300/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467365568x557988189999608800/%EA%B6%81%ED%95%A9%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467391031x376946978522862700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=130,f=auto,dpr=1,fit=contain/f1754467415536x796541878799546000/%EC%BB%A4%EB%A6%AC%EC%96%B4%EC%82%AC%EC%A3%BC_%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1755096595963x896724663128204200/%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1756104085369x794228958999374300/%E1%84%91%E1%85%A2%E1%86%A8%E1%84%91%E1%85%A9%E1%86%A8-1-1.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=129,f=auto,dpr=1,fit=contain/f1754467456694x186235291558504830/8%EC%9B%94%EC%9A%B4%EC%84%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754552083089x489455495710442900/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754554733050x426783502598683460/%EC%97%AC%EC%9A%B01.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754554757697x803630096845563600/%EC%97%AC%EC%9A%B02.png"
+      ],
+      "texts": [
+        "🍪 카테고리",
+        "이벤트!",
+        "궁합",
+        "솔로/연애운",
+        "이별/재회",
+        "결혼운",
+        "임신/자녀운",
+        "신년운세",
+        "월별운세",
+        "취업/직업운"
+      ],
+      "html": "<div class=\"bubble-element Group baaTyaI bubble-r-container flex column\" style=\"overflow: hidden auto; justify-content: flex-start; border-radius: 0px; opacity: 1; align-self: center; min-width: 40px; max-width: 500px; order: 12; min-height: 40px; height: max-content; flex-grow: 0; flex-shrink: 0; w"
+    },
+    {
+      "index": 62,
+      "className": "bubble-element Group baaTsn bubble-r-container relative",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466836768x524134236669195000/Growing%20Heart%201.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466848857x605807981488329700/Growing%20Heart%201%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466876271x994951387212219100/Growing%20Heart%201%20%282%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466906216x439430285867575200/Growing%20Heart%201%20%283%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466848857x605807981488329700/Growing%20Heart%201%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466983083x645874785753331100/Growing%20Heart%201%20%284%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467020645x962765043525175300/Growing%20Heart%201%20%285%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467039405x383033247291431040/Growing%20Heart%201%20%286%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467068512x562626469233695760/Growing%20Heart%201%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467083499x653321571429130100/Growing%20Heart%201%20%288%29.png"
+      ],
+      "texts": [
+        "🍪 카테고리",
+        "이벤트!",
+        "궁합",
+        "솔로/연애운",
+        "이별/재회",
+        "결혼운",
+        "임신/자녀운",
+        "신년운세",
+        "월별운세",
+        "취업/직업운"
+      ],
+      "html": "<div class=\"bubble-element Group baaTsn bubble-r-container relative\" style=\"background-color: var(--color_primary_contrast_default); overflow: visible; border-radius: 0px; padding: 0px 0px 4px; opacity: 1; align-self: center; min-width: 40px; order: 4; min-height: 40px; height: max-content; flex-gro"
+    },
+    {
+      "index": 63,
+      "className": "bubble-element Group baaTsr bubble-r-container flex column",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466836768x524134236669195000/Growing%20Heart%201.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466848857x605807981488329700/Growing%20Heart%201%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466876271x994951387212219100/Growing%20Heart%201%20%282%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466906216x439430285867575200/Growing%20Heart%201%20%283%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466848857x605807981488329700/Growing%20Heart%201%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466983083x645874785753331100/Growing%20Heart%201%20%284%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467020645x962765043525175300/Growing%20Heart%201%20%285%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467039405x383033247291431040/Growing%20Heart%201%20%286%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467068512x562626469233695760/Growing%20Heart%201%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467083499x653321571429130100/Growing%20Heart%201%20%288%29.png"
+      ],
+      "texts": [
+        "🍪 카테고리",
+        "이벤트!",
+        "궁합",
+        "솔로/연애운",
+        "이별/재회",
+        "결혼운",
+        "임신/자녀운",
+        "신년운세",
+        "월별운세",
+        "취업/직업운"
+      ],
+      "html": "<div class=\"bubble-element Group baaTsr bubble-r-container flex column\" style=\"background-color: rgb(255, 255, 255); overflow: visible; justify-content: flex-start; row-gap: 10px; border-radius: 0px 0px 20px 20px; padding: 10px 16px 20px; opacity: 1; place-self: center; min-width: 40px; min-height: "
+    },
+    {
+      "index": 65,
+      "className": "bubble-element Group baaTst bubble-r-container flex row",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466836768x524134236669195000/Growing%20Heart%201.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466848857x605807981488329700/Growing%20Heart%201%20%281%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466876271x994951387212219100/Growing%20Heart%201%20%282%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466906216x439430285867575200/Growing%20Heart%201%20%283%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466848857x605807981488329700/Growing%20Heart%201%20%281%29.png"
+      ],
+      "texts": [
+        "이벤트!",
+        "궁합",
+        "솔로/연애운",
+        "이별/재회",
+        "결혼운"
+      ],
+      "html": "<div class=\"bubble-element Group baaTst bubble-r-container flex row\" style=\"overflow: visible; justify-content: space-around; border-radius: 0px; opacity: 1; align-self: center; min-width: 40px; order: 3; min-height: 40px; height: max-content; flex-grow: 0; flex-shrink: 0; width: calc(100% + 0px); m"
+    },
+    {
+      "index": 96,
+      "className": "bubble-element Group baaTtj bubble-r-container flex row",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466983083x645874785753331100/Growing%20Heart%201%20%284%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467020645x962765043525175300/Growing%20Heart%201%20%285%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467039405x383033247291431040/Growing%20Heart%201%20%286%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467068512x562626469233695760/Growing%20Heart%201%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467083499x653321571429130100/Growing%20Heart%201%20%288%29.png"
+      ],
+      "texts": [
+        "임신/자녀운",
+        "신년운세",
+        "월별운세",
+        "취업/직업운",
+        "관상/타로"
+      ],
+      "html": "<div class=\"bubble-element Group baaTtj bubble-r-container flex row\" style=\"overflow: visible; justify-content: space-around; border-radius: 0px; opacity: 1; align-self: center; min-width: 40px; order: 4; min-height: 40px; height: max-content; flex-grow: 0; flex-shrink: 0; width: calc(100% + 0px); m"
+    },
+    {
+      "index": 97,
+      "className": "bubble-element Group baaTtn bubble-r-container flex row",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466983083x645874785753331100/Growing%20Heart%201%20%284%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467020645x962765043525175300/Growing%20Heart%201%20%285%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467039405x383033247291431040/Growing%20Heart%201%20%286%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467068512x562626469233695760/Growing%20Heart%201%20%287%29.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467083499x653321571429130100/Growing%20Heart%201%20%288%29.png"
+      ],
+      "texts": [
+        "임신/자녀운",
+        "신년운세",
+        "월별운세",
+        "취업/직업운",
+        "관상/타로"
+      ],
+      "html": "<div class=\"bubble-element Group baaTtn bubble-r-container flex row\" style=\"overflow: visible; justify-content: space-around; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 40px; order: 7; min-height: 40px; width: 40px; flex-grow: 1; height: max-content; margin: 0px; z-index: 29;"
+    },
+    {
+      "index": 128,
+      "className": "bubble-element Group bataWaJ3 bubble-r-container flex column",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758627216749x929285169986016800/%E1%84%8E%E1%85%B5%E1%86%AB%E1%84%80%E1%85%AE%E1%84%8E%E1%85%A9%E1%84%83%E1%85%A2.svg"
+      ],
+      "texts": [
+        "타이트 사주 이벤트",
+        "친구 초대하고 3,000원 받기!",
+        "5만 달성 기념 고객 감사 이벤트"
+      ],
+      "html": "<div class=\"bubble-element Group bataWaJ3 bubble-r-container flex column\" style=\"overflow: visible; justify-content: flex-start; row-gap: 4px; border-radius: 0px; padding: 0px 20px; opacity: 1; align-self: flex-start; min-width: 40px; order: 5; min-height: 40px; height: max-content; flex-grow: 0; fl"
+    },
+    {
+      "index": 130,
+      "className": "clickable-element bubble-element Group bapmt1 bubble-r-container flex row",
+      "id": "",
+      "isClickable": true,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758627216749x929285169986016800/%E1%84%8E%E1%85%B5%E1%86%AB%E1%84%80%E1%85%AE%E1%84%8E%E1%85%A9%E1%84%83%E1%85%A2.svg"
+      ],
+      "texts": [
+        "친구 초대하고 3,000원 받기!",
+        "5만 달성 기념 고객 감사 이벤트"
+      ],
+      "html": "<div class=\"clickable-element bubble-element Group bapmt1 bubble-r-container flex row\" data-outline=\"true\" style=\"background-color: rgb(255, 255, 255); box-shadow: rgba(101, 32, 62, 0.15) 0px 2px 16px 0px; overflow: visible; justify-content: space-around; border-style: solid; border-width: 1px; bord"
+    },
+    {
+      "index": 133,
+      "className": "bubble-element Group bapnaA1 bubble-r-container flex column",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "친구 초대하고 3,000원 받기!",
+        "5만 달성 기념 고객 감사 이벤트"
+      ],
+      "html": "<div class=\"bubble-element Group bapnaA1 bubble-r-container flex column\" style=\"overflow: visible; justify-content: flex-start; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 40px; order: 2; min-height: 40px; width: 40px; flex-grow: 1; height: max-content; margin: 0px 0px 0px 12p"
+    },
+    {
+      "index": 134,
+      "className": "bubble-element Text bapnaF1 bubble-r-vertical-center",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "친구 초대하고 3,000원 받기!"
+      ],
+      "html": "<div class=\"bubble-element Text bapnaF1 bubble-r-vertical-center\" style=\"white-space: pre-wrap; overflow: visible; font-family: var(--font_default); font-size: 16px; font-weight: 600; color: rgb(15, 23, 42); letter-spacing: -0.5px; line-height: 1.6; border-radius: 0px; opacity: 1; align-self: flex-s"
+    },
+    {
+      "index": 135,
+      "className": "",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [],
+      "html": "<div>친구 초대하고 3,000원 받기!</div>"
+    },
+    {
+      "index": 136,
+      "className": "bubble-element Text bapnaB1 bubble-r-vertical-center",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "5만 달성 기념 고객 감사 이벤트"
+      ],
+      "html": "<div class=\"bubble-element Text bapnaB1 bubble-r-vertical-center\" style=\"white-space: pre-wrap; overflow: visible; font-family: var(--font_default); font-size: 12px; font-weight: 400; color: rgb(71, 85, 105); letter-spacing: -0.5px; line-height: 1.6; border-radius: 0px; opacity: 1; align-self: flex-"
+    },
+    {
+      "index": 137,
+      "className": "",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [],
+      "html": "<div>5만 달성 기념 고객 감사 이벤트</div>"
+    },
+    {
+      "index": 138,
+      "className": "bubble-element Group baaTud bubble-r-container relative",
+      "id": "targetGroup",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754466621316x990961257053425200/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1756104327591x195418940527699800/%E1%84%8C%E1%85%A2%E1%84%92%E1%85%AC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%89%E1%85%B3%E1%86%BC%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467329857x835823088653500300/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467365568x557988189999608800/%EA%B6%81%ED%95%A9%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467391031x376946978522862700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=130,f=auto,dpr=1,fit=contain/f1754467415536x796541878799546000/%EC%BB%A4%EB%A6%AC%EC%96%B4%EC%82%AC%EC%A3%BC_%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1755096595963x896724663128204200/%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1756104085369x794228958999374300/%E1%84%91%E1%85%A2%E1%86%A8%E1%84%91%E1%85%A9%E1%86%A8-1-1.svg"
+      ],
+      "texts": [
+        "🍷 월간 랭킹 BEST",
+        "내 숨겨진 연애운은?\n솔로탈출 사주 🌸",
+        "⭐️ 4.9",
+        "👀 조회수 5만+",
+        "54% 할인중",
+        "재회 vs 환승? 이제 지쳤다면\n[재회 환승사주]",
+        "60% 할인중",
+        "화 기운 3년을 읽어주는\n[프리미엄 하반기 종합사주✨]",
+        "⭐️ 4.9",
+        "👀 조회수 1만+"
+      ],
+      "html": "<div class=\"bubble-element Group baaTud bubble-r-container relative\" id=\"targetGroup\" style=\"background-color: var(--color_primary_contrast_default); overflow: visible; border-radius: 0px; padding: 0px 0px 10px; opacity: 1; align-self: center; min-width: 40px; order: 6; min-height: 40px; height: max"
+    },
+    {
+      "index": 139,
+      "className": "bubble-element Group baaTue bubble-r-container flex column",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754466621316x990961257053425200/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1756104327591x195418940527699800/%E1%84%8C%E1%85%A2%E1%84%92%E1%85%AC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%89%E1%85%B3%E1%86%BC%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467329857x835823088653500300/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467365568x557988189999608800/%EA%B6%81%ED%95%A9%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467391031x376946978522862700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=130,f=auto,dpr=1,fit=contain/f1754467415536x796541878799546000/%EC%BB%A4%EB%A6%AC%EC%96%B4%EC%82%AC%EC%A3%BC_%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1755096595963x896724663128204200/%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1756104085369x794228958999374300/%E1%84%91%E1%85%A2%E1%86%A8%E1%84%91%E1%85%A9%E1%86%A8-1-1.svg"
+      ],
+      "texts": [
+        "🍷 월간 랭킹 BEST",
+        "내 숨겨진 연애운은?\n솔로탈출 사주 🌸",
+        "⭐️ 4.9",
+        "👀 조회수 5만+",
+        "54% 할인중",
+        "재회 vs 환승? 이제 지쳤다면\n[재회 환승사주]",
+        "60% 할인중",
+        "화 기운 3년을 읽어주는\n[프리미엄 하반기 종합사주✨]",
+        "⭐️ 4.9",
+        "👀 조회수 1만+"
+      ],
+      "html": "<div class=\"bubble-element Group baaTue bubble-r-container flex column\" id=\"\" style=\"background-color: rgb(255, 255, 255); overflow: visible; justify-content: flex-start; row-gap: 10px; border-radius: 20px; padding: 20px 16px; opacity: 1; place-self: center; min-width: 40px; min-height: 40px; width:"
+    },
+    {
+      "index": 141,
+      "className": "bubble-element Group baaTuj bubble-r-container flex column",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754466621316x990961257053425200/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1756104327591x195418940527699800/%E1%84%8C%E1%85%A2%E1%84%92%E1%85%AC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%89%E1%85%B3%E1%86%BC%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467329857x835823088653500300/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467365568x557988189999608800/%EA%B6%81%ED%95%A9%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467391031x376946978522862700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=130,f=auto,dpr=1,fit=contain/f1754467415536x796541878799546000/%EC%BB%A4%EB%A6%AC%EC%96%B4%EC%82%AC%EC%A3%BC_%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1755096595963x896724663128204200/%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1756104085369x794228958999374300/%E1%84%91%E1%85%A2%E1%86%A8%E1%84%91%E1%85%A9%E1%86%A8-1-1.svg"
+      ],
+      "texts": [
+        "내 숨겨진 연애운은?\n솔로탈출 사주 🌸",
+        "⭐️ 4.9",
+        "👀 조회수 5만+",
+        "54% 할인중",
+        "재회 vs 환승? 이제 지쳤다면\n[재회 환승사주]",
+        "60% 할인중",
+        "화 기운 3년을 읽어주는\n[프리미엄 하반기 종합사주✨]",
+        "⭐️ 4.9",
+        "👀 조회수 1만+",
+        "46% 할인중"
+      ],
+      "html": "<div class=\"bubble-element Group baaTuj bubble-r-container flex column\" style=\"overflow: visible; justify-content: flex-start; row-gap: 12px; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 40px; order: 6; min-height: 40px; height: max-content; flex-grow: 0; flex-shrink: 0; width:"
+    },
+    {
+      "index": 142,
+      "className": "clickable-element bubble-element Group baaTuk bubble-r-container flex row",
+      "id": "",
+      "isClickable": true,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754466621316x990961257053425200/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC.png"
+      ],
+      "texts": [
+        "내 숨겨진 연애운은?\n솔로탈출 사주 🌸",
+        "⭐️ 4.9",
+        "👀 조회수 5만+",
+        "54% 할인중"
+      ],
+      "html": "<div class=\"clickable-element bubble-element Group baaTuk bubble-r-container flex row\" style=\"overflow: visible; justify-content: flex-start; gap: 0px 8px; border-radius: 0px; opacity: 1; cursor: pointer; align-self: flex-start; min-width: 40px; order: 2; min-height: 40px; height: max-content; flex-"
+    },
+    {
+      "index": 145,
+      "className": "bubble-element Group baaTup bubble-r-container flex column",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "내 숨겨진 연애운은?\n솔로탈출 사주 🌸",
+        "⭐️ 4.9",
+        "👀 조회수 5만+",
+        "54% 할인중"
+      ],
+      "html": "<div class=\"bubble-element Group baaTup bubble-r-container flex column\" style=\"overflow: visible; justify-content: flex-start; row-gap: 4px; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 40px; order: 2; min-height: 40px; width: 40px; flex-grow: 1; height: max-content; margin: 0p"
+    },
+    {
+      "index": 146,
+      "className": "bubble-element Text baaTuq bubble-r-vertical-center",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "내 숨겨진 연애운은?\n솔로탈출 사주 🌸"
+      ],
+      "html": "<div class=\"bubble-element Text baaTuq bubble-r-vertical-center\" style=\"white-space: pre-wrap; overflow: visible; font-family: var(--font_baEjP2_default); font-size: 17px; font-weight: 400; color: var(--color_text_default); letter-spacing: -0.5px; line-height: 1.3; border-radius: 0px; opacity: 1; al"
+    },
+    {
+      "index": 147,
+      "className": "",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [],
+      "html": "<div>내 숨겨진 연애운은?\n솔로탈출 사주 🌸</div>"
+    },
+    {
+      "index": 148,
+      "className": "bubble-element Group baaTur bubble-r-container flex row",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "⭐️ 4.9",
+        "👀 조회수 5만+"
+      ],
+      "html": "<div class=\"bubble-element Group baaTur bubble-r-container flex row\" style=\"overflow: visible; justify-content: flex-start; gap: 0px 8px; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 0px; order: 2; min-height: 0px; height: max-content; flex-grow: 0; flex-shrink: 0; width: auto;"
+    },
+    {
+      "index": 155,
+      "className": "clickable-element bubble-element Group baseaN1 bubble-r-container flex row",
+      "id": "",
+      "isClickable": true,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1756104327591x195418940527699800/%E1%84%8C%E1%85%A2%E1%84%92%E1%85%AC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%89%E1%85%B3%E1%86%BC%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE.svg"
+      ],
+      "texts": [
+        "재회 vs 환승? 이제 지쳤다면\n[재회 환승사주]",
+        "60% 할인중"
+      ],
+      "html": "<div class=\"clickable-element bubble-element Group baseaN1 bubble-r-container flex row\" style=\"overflow: visible; justify-content: flex-start; gap: 0px 8px; border-radius: 0px; opacity: 1; cursor: pointer; align-self: flex-start; min-width: 40px; order: 3; min-height: 40px; height: max-content; flex"
+    },
+    {
+      "index": 158,
+      "className": "bubble-element Group bashaN1 bubble-r-container flex column",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "재회 vs 환승? 이제 지쳤다면\n[재회 환승사주]",
+        "60% 할인중"
+      ],
+      "html": "<div class=\"bubble-element Group bashaN1 bubble-r-container flex column\" style=\"overflow: visible; justify-content: flex-start; row-gap: 4px; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 40px; order: 2; min-height: 40px; width: 40px; flex-grow: 1; height: max-content; margin: 0"
+    },
+    {
+      "index": 159,
+      "className": "bubble-element Text bashaR1 bubble-r-vertical-center",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "재회 vs 환승? 이제 지쳤다면\n[재회 환승사주]"
+      ],
+      "html": "<div class=\"bubble-element Text bashaR1 bubble-r-vertical-center\" style=\"white-space: pre-wrap; overflow: visible; font-family: var(--font_baEjP2_default); font-size: 17px; font-weight: 400; color: var(--color_text_default); letter-spacing: -0.5px; line-height: 1.3; border-radius: 0px; opacity: 1; a"
+    },
+    {
+      "index": 160,
+      "className": "",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [],
+      "html": "<div>재회 vs 환승? 이제 지쳤다면\n[재회 환승사주]</div>"
+    },
+    {
+      "index": 164,
+      "className": "clickable-element bubble-element Group baaTvaB bubble-r-container flex row",
+      "id": "",
+      "isClickable": true,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467329857x835823088653500300/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9.png"
+      ],
+      "texts": [
+        "화 기운 3년을 읽어주는\n[프리미엄 하반기 종합사주✨]",
+        "⭐️ 4.9",
+        "👀 조회수 1만+",
+        "46% 할인중"
+      ],
+      "html": "<div class=\"clickable-element bubble-element Group baaTvaB bubble-r-container flex row\" style=\"overflow: visible; justify-content: flex-start; gap: 0px 8px; border-radius: 0px; opacity: 1; cursor: pointer; align-self: flex-start; min-width: 40px; order: 4; min-height: 40px; height: max-content; flex"
+    },
+    {
+      "index": 167,
+      "className": "bubble-element Group baaTvaD bubble-r-container flex column",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "화 기운 3년을 읽어주는\n[프리미엄 하반기 종합사주✨]",
+        "⭐️ 4.9",
+        "👀 조회수 1만+",
+        "46% 할인중"
+      ],
+      "html": "<div class=\"bubble-element Group baaTvaD bubble-r-container flex column\" style=\"overflow: visible; justify-content: flex-start; row-gap: 4px; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 40px; order: 2; min-height: 40px; width: 40px; flex-grow: 1; height: max-content; margin: 0"
+    },
+    {
+      "index": 168,
+      "className": "bubble-element Text baaTvaH bubble-r-vertical-center",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "화 기운 3년을 읽어주는\n[프리미엄 하반기 종합사주✨]"
+      ],
+      "html": "<div class=\"bubble-element Text baaTvaH bubble-r-vertical-center\" style=\"white-space: pre-wrap; overflow: visible; font-family: var(--font_baEjP2_default); font-size: 17px; font-weight: 400; color: var(--color_text_default); letter-spacing: -0.5px; line-height: 1.3; border-radius: 0px; opacity: 1; a"
+    },
+    {
+      "index": 169,
+      "className": "",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [],
+      "html": "<div>화 기운 3년을 읽어주는\n[프리미엄 하반기 종합사주✨]</div>"
+    },
+    {
+      "index": 170,
+      "className": "bubble-element Group baaTvaI bubble-r-container flex row",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "⭐️ 4.9",
+        "👀 조회수 1만+"
+      ],
+      "html": "<div class=\"bubble-element Group baaTvaI bubble-r-container flex row\" style=\"overflow: visible; justify-content: flex-start; gap: 0px 8px; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 0px; order: 2; min-height: 0px; height: max-content; flex-grow: 0; flex-shrink: 0; width: auto"
+    },
+    {
+      "index": 177,
+      "className": "clickable-element bubble-element Group baaTvaP bubble-r-container flex row",
+      "id": "",
+      "isClickable": true,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467365568x557988189999608800/%EA%B6%81%ED%95%A9%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png"
+      ],
+      "texts": [
+        "그 사람과 나는 얼마나 잘 맞을까?\n[커플 궁합사주 🥵]",
+        "⭐️ 4.7",
+        "👀 조회수 2만+",
+        "46% 할인중"
+      ],
+      "html": "<div class=\"clickable-element bubble-element Group baaTvaP bubble-r-container flex row\" style=\"overflow: visible; justify-content: flex-start; gap: 0px 8px; border-radius: 0px; opacity: 1; cursor: pointer; align-self: flex-start; min-width: 40px; order: 5; min-height: 40px; height: max-content; flex"
+    },
+    {
+      "index": 180,
+      "className": "bubble-element Group baaTvaU bubble-r-container flex column",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "그 사람과 나는 얼마나 잘 맞을까?\n[커플 궁합사주 🥵]",
+        "⭐️ 4.7",
+        "👀 조회수 2만+",
+        "46% 할인중"
+      ],
+      "html": "<div class=\"bubble-element Group baaTvaU bubble-r-container flex column\" style=\"overflow: visible; justify-content: flex-start; row-gap: 4px; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 40px; order: 2; min-height: 40px; width: 40px; flex-grow: 1; height: max-content; margin: 0"
+    },
+    {
+      "index": 181,
+      "className": "bubble-element Text baaTvaV bubble-r-vertical-center",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "그 사람과 나는 얼마나 잘 맞을까?\n[커플 궁합사주 🥵]"
+      ],
+      "html": "<div class=\"bubble-element Text baaTvaV bubble-r-vertical-center\" style=\"white-space: pre-wrap; overflow: visible; font-family: var(--font_baEjP2_default); font-size: 17px; font-weight: 400; color: var(--color_text_default); letter-spacing: -0.5px; line-height: 1.3; border-radius: 0px; opacity: 1; a"
+    },
+    {
+      "index": 182,
+      "className": "",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [],
+      "html": "<div>그 사람과 나는 얼마나 잘 맞을까?\n[커플 궁합사주 🥵]</div>"
+    },
+    {
+      "index": 183,
+      "className": "bubble-element Group baaTvaZ bubble-r-container flex row",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "⭐️ 4.7",
+        "👀 조회수 2만+"
+      ],
+      "html": "<div class=\"bubble-element Group baaTvaZ bubble-r-container flex row\" style=\"overflow: visible; justify-content: flex-start; gap: 0px 8px; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 0px; order: 2; min-height: 0px; height: max-content; flex-grow: 0; flex-shrink: 0; width: auto"
+    },
+    {
+      "index": 190,
+      "className": "clickable-element bubble-element Group baaTvg bubble-r-container flex row",
+      "id": "",
+      "isClickable": true,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467391031x376946978522862700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png"
+      ],
+      "texts": [
+        "그 사람과 재회할 수 있을까..? \n[이별 재회 사주]",
+        "⭐️ 4.9",
+        "👀 조회수 6만+",
+        "41% 할인중"
+      ],
+      "html": "<div class=\"clickable-element bubble-element Group baaTvg bubble-r-container flex row\" style=\"overflow: visible; justify-content: flex-start; gap: 0px 8px; border-radius: 0px; opacity: 1; cursor: pointer; align-self: flex-start; min-width: 40px; order: 6; min-height: 40px; height: max-content; flex-"
+    },
+    {
+      "index": 193,
+      "className": "bubble-element Group baaTvl bubble-r-container flex column",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "그 사람과 재회할 수 있을까..? \n[이별 재회 사주]",
+        "⭐️ 4.9",
+        "👀 조회수 6만+",
+        "41% 할인중"
+      ],
+      "html": "<div class=\"bubble-element Group baaTvl bubble-r-container flex column\" style=\"overflow: visible; justify-content: flex-start; row-gap: 4px; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 40px; order: 2; min-height: 40px; width: 40px; flex-grow: 1; height: max-content; margin: 0p"
+    },
+    {
+      "index": 194,
+      "className": "bubble-element Text baaTvm bubble-r-vertical-center",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "그 사람과 재회할 수 있을까..? \n[이별 재회 사주]"
+      ],
+      "html": "<div class=\"bubble-element Text baaTvm bubble-r-vertical-center\" style=\"white-space: pre-wrap; overflow: visible; font-family: var(--font_baEjP2_default); font-size: 17px; font-weight: 400; color: var(--color_text_default); letter-spacing: -0.5px; line-height: 1.3; border-radius: 0px; opacity: 1; al"
+    },
+    {
+      "index": 195,
+      "className": "",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [],
+      "html": "<div>그 사람과 재회할 수 있을까..? \n[이별 재회 사주]</div>"
+    },
+    {
+      "index": 196,
+      "className": "bubble-element Group baaTvn bubble-r-container flex row",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "⭐️ 4.9",
+        "👀 조회수 6만+"
+      ],
+      "html": "<div class=\"bubble-element Group baaTvn bubble-r-container flex row\" style=\"overflow: visible; justify-content: flex-start; gap: 0px 8px; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 0px; order: 2; min-height: 0px; height: max-content; flex-grow: 0; flex-shrink: 0; width: auto;"
+    },
+    {
+      "index": 203,
+      "className": "clickable-element bubble-element Group baaTvx bubble-r-container flex row",
+      "id": "",
+      "isClickable": true,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=130,f=auto,dpr=1,fit=contain/f1754467415536x796541878799546000/%EC%BB%A4%EB%A6%AC%EC%96%B4%EC%82%AC%EC%A3%BC_%EC%8D%B8%EB%84%A4%EC%9D%BC.png"
+      ],
+      "texts": [
+        "이직해서 연봉 2배 올리고 싶다면\n봐야할 [커리어사주]",
+        "⭐️ 4.6",
+        "👀 조회수 1만+",
+        "46% 할인중"
+      ],
+      "html": "<div class=\"clickable-element bubble-element Group baaTvx bubble-r-container flex row\" style=\"overflow: visible; justify-content: flex-start; gap: 0px 8px; border-radius: 0px; opacity: 1; cursor: pointer; align-self: flex-start; min-width: 40px; order: 7; min-height: 40px; height: max-content; flex-"
+    },
+    {
+      "index": 206,
+      "className": "bubble-element Group baaTvz bubble-r-container flex column",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "이직해서 연봉 2배 올리고 싶다면\n봐야할 [커리어사주]",
+        "⭐️ 4.6",
+        "👀 조회수 1만+",
+        "46% 할인중"
+      ],
+      "html": "<div class=\"bubble-element Group baaTvz bubble-r-container flex column\" style=\"overflow: visible; justify-content: flex-start; row-gap: 4px; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 40px; order: 2; min-height: 40px; width: 40px; flex-grow: 1; height: max-content; margin: 0p"
+    },
+    {
+      "index": 207,
+      "className": "bubble-element Text baaTwaD bubble-r-vertical-center",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "이직해서 연봉 2배 올리고 싶다면\n봐야할 [커리어사주]"
+      ],
+      "html": "<div class=\"bubble-element Text baaTwaD bubble-r-vertical-center\" style=\"white-space: pre-wrap; overflow: visible; font-family: var(--font_baEjP2_default); font-size: 17px; font-weight: 400; color: var(--color_text_default); letter-spacing: -0.5px; line-height: 1.3; border-radius: 0px; opacity: 1; a"
+    },
+    {
+      "index": 208,
+      "className": "",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [],
+      "html": "<div>이직해서 연봉 2배 올리고 싶다면\n봐야할 [커리어사주]</div>"
+    },
+    {
+      "index": 209,
+      "className": "bubble-element Group baaTwaE bubble-r-container flex row",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "⭐️ 4.6",
+        "👀 조회수 1만+"
+      ],
+      "html": "<div class=\"bubble-element Group baaTwaE bubble-r-container flex row\" style=\"overflow: visible; justify-content: flex-start; gap: 0px 8px; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 0px; order: 2; min-height: 0px; height: max-content; flex-grow: 0; flex-shrink: 0; width: auto"
+    },
+    {
+      "index": 216,
+      "className": "clickable-element bubble-element Group baeef1 bubble-r-container flex row",
+      "id": "",
+      "isClickable": true,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1755096595963x896724663128204200/%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE.png"
+      ],
+      "texts": [
+        "명쾌한 10년 풀이까지 해주는\n[2025년 타이트 종합사주]",
+        "⭐️ 4.7",
+        "👀 조회수 1만+",
+        "29% 할인중"
+      ],
+      "html": "<div class=\"clickable-element bubble-element Group baeef1 bubble-r-container flex row\" style=\"overflow: visible; justify-content: flex-start; gap: 0px 8px; border-radius: 0px; opacity: 1; cursor: pointer; align-self: flex-start; min-width: 40px; order: 8; min-height: 40px; height: max-content; flex-"
+    },
+    {
+      "index": 219,
+      "className": "bubble-element Group baeel1 bubble-r-container flex column",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "명쾌한 10년 풀이까지 해주는\n[2025년 타이트 종합사주]",
+        "⭐️ 4.7",
+        "👀 조회수 1만+",
+        "29% 할인중"
+      ],
+      "html": "<div class=\"bubble-element Group baeel1 bubble-r-container flex column\" style=\"overflow: visible; justify-content: flex-start; row-gap: 4px; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 40px; order: 2; min-height: 40px; width: 40px; flex-grow: 1; height: max-content; margin: 0p"
+    },
+    {
+      "index": 220,
+      "className": "bubble-element Text baeem1 bubble-r-vertical-center",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "명쾌한 10년 풀이까지 해주는\n[2025년 타이트 종합사주]"
+      ],
+      "html": "<div class=\"bubble-element Text baeem1 bubble-r-vertical-center\" style=\"white-space: pre-wrap; overflow: visible; font-family: var(--font_baEjP2_default); font-size: 17px; font-weight: 400; color: var(--color_text_default); letter-spacing: -0.5px; line-height: 1.3; border-radius: 0px; opacity: 1; al"
+    },
+    {
+      "index": 221,
+      "className": "",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [],
+      "html": "<div>명쾌한 10년 풀이까지 해주는\n[2025년 타이트 종합사주]</div>"
+    },
+    {
+      "index": 222,
+      "className": "bubble-element Group baeen1 bubble-r-container flex row",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "⭐️ 4.7",
+        "👀 조회수 1만+"
+      ],
+      "html": "<div class=\"bubble-element Group baeen1 bubble-r-container flex row\" style=\"overflow: visible; justify-content: flex-start; gap: 0px 8px; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 0px; order: 2; min-height: 0px; height: max-content; flex-grow: 0; flex-shrink: 0; width: auto;"
+    },
+    {
+      "index": 229,
+      "className": "clickable-element bubble-element Group balqh0 bubble-r-container flex row",
+      "id": "",
+      "isClickable": true,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1756104085369x794228958999374300/%E1%84%91%E1%85%A2%E1%86%A8%E1%84%91%E1%85%A9%E1%86%A8-1-1.svg"
+      ],
+      "texts": [
+        "뻔한 조언 대신 진짜 매운맛 사주!\n[팩폭 사주]",
+        "⭐️ 4.6",
+        "👀 조회수 1만+",
+        "29% 할인중"
+      ],
+      "html": "<div class=\"clickable-element bubble-element Group balqh0 bubble-r-container flex row\" style=\"overflow: visible; justify-content: flex-start; gap: 0px 8px; border-radius: 0px; opacity: 1; cursor: pointer; align-self: flex-start; min-width: 40px; order: 9; min-height: 40px; height: max-content; flex-"
+    },
+    {
+      "index": 232,
+      "className": "bubble-element Group balqn0 bubble-r-container flex column",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "뻔한 조언 대신 진짜 매운맛 사주!\n[팩폭 사주]",
+        "⭐️ 4.6",
+        "👀 조회수 1만+",
+        "29% 할인중"
+      ],
+      "html": "<div class=\"bubble-element Group balqn0 bubble-r-container flex column\" style=\"overflow: visible; justify-content: flex-start; row-gap: 4px; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 40px; order: 2; min-height: 40px; width: 40px; flex-grow: 1; height: max-content; margin: 0p"
+    },
+    {
+      "index": 233,
+      "className": "bubble-element Text balqo0 bubble-r-vertical-center",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "뻔한 조언 대신 진짜 매운맛 사주!\n[팩폭 사주]"
+      ],
+      "html": "<div class=\"bubble-element Text balqo0 bubble-r-vertical-center\" style=\"white-space: pre-wrap; overflow: visible; font-family: var(--font_baEjP2_default); font-size: 17px; font-weight: 400; color: var(--color_text_default); letter-spacing: -0.5px; line-height: 1.3; border-radius: 0px; opacity: 1; al"
+    },
+    {
+      "index": 234,
+      "className": "",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [],
+      "html": "<div>뻔한 조언 대신 진짜 매운맛 사주!\n[팩폭 사주]</div>"
+    },
+    {
+      "index": 235,
+      "className": "bubble-element Group balqp0 bubble-r-container flex row",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "⭐️ 4.6",
+        "👀 조회수 1만+"
+      ],
+      "html": "<div class=\"bubble-element Group balqp0 bubble-r-container flex row\" style=\"overflow: visible; justify-content: flex-start; gap: 0px 8px; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 0px; order: 2; min-height: 0px; height: max-content; flex-grow: 0; flex-shrink: 0; width: auto;"
+    },
+    {
+      "index": 242,
+      "className": "bubble-element Group baaTwaQ bubble-r-container relative",
+      "id": "targetGroup",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=129,f=auto,dpr=1,fit=contain/f1754467456694x186235291558504830/8%EC%9B%94%EC%9A%B4%EC%84%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg"
+      ],
+      "texts": [
+        "🐣 NEW! 쌔삥 신규사주",
+        "소름돋게 잘 맞는 2026 신년운세\n[신년운세 총운]",
+        "54% 할인중",
+        "소름돋는 2026년 재물운세 💵\n[10년 재물운 사주]",
+        "60% 할인중",
+        "2025년 8월 월간운세",
+        "50% 할인중",
+        "그 사람도 나를 좋아할까?\n[썸 궁합사주]",
+        "46% 할인중"
+      ],
+      "html": "<div class=\"bubble-element Group baaTwaQ bubble-r-container relative\" id=\"targetGroup\" style=\"background-color: var(--color_primary_contrast_default); overflow: visible; border-radius: 0px; padding: 0px 0px 10px; opacity: 1; align-self: center; min-width: 40px; order: 7; min-height: 40px; height: ma"
+    },
+    {
+      "index": 243,
+      "className": "bubble-element Group baaTwaR bubble-r-container flex column",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=129,f=auto,dpr=1,fit=contain/f1754467456694x186235291558504830/8%EC%9B%94%EC%9A%B4%EC%84%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg"
+      ],
+      "texts": [
+        "🐣 NEW! 쌔삥 신규사주",
+        "소름돋게 잘 맞는 2026 신년운세\n[신년운세 총운]",
+        "54% 할인중",
+        "소름돋는 2026년 재물운세 💵\n[10년 재물운 사주]",
+        "60% 할인중",
+        "2025년 8월 월간운세",
+        "50% 할인중",
+        "그 사람도 나를 좋아할까?\n[썸 궁합사주]",
+        "46% 할인중"
+      ],
+      "html": "<div class=\"bubble-element Group baaTwaR bubble-r-container flex column\" style=\"background-color: rgb(255, 255, 255); overflow: visible; justify-content: flex-start; row-gap: 10px; border-radius: 20px; padding: 20px 16px; opacity: 1; place-self: center; min-width: 40px; min-height: 40px; width: calc"
+    },
+    {
+      "index": 245,
+      "className": "bubble-element Group baaTwaW bubble-r-container flex column",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=129,f=auto,dpr=1,fit=contain/f1754467456694x186235291558504830/8%EC%9B%94%EC%9A%B4%EC%84%B8.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg"
+      ],
+      "texts": [
+        "소름돋게 잘 맞는 2026 신년운세\n[신년운세 총운]",
+        "54% 할인중",
+        "소름돋는 2026년 재물운세 💵\n[10년 재물운 사주]",
+        "60% 할인중",
+        "2025년 8월 월간운세",
+        "50% 할인중",
+        "그 사람도 나를 좋아할까?\n[썸 궁합사주]",
+        "46% 할인중"
+      ],
+      "html": "<div class=\"bubble-element Group baaTwaW bubble-r-container flex column\" style=\"overflow: visible; justify-content: flex-start; row-gap: 12px; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 40px; order: 5; min-height: 40px; height: max-content; flex-grow: 0; flex-shrink: 0; width"
+    },
+    {
+      "index": 246,
+      "className": "clickable-element bubble-element Group bbbhi0 bubble-r-container flex row",
+      "id": "",
+      "isClickable": true,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg"
+      ],
+      "texts": [
+        "소름돋게 잘 맞는 2026 신년운세\n[신년운세 총운]",
+        "54% 할인중"
+      ],
+      "html": "<div class=\"clickable-element bubble-element Group bbbhi0 bubble-r-container flex row\" style=\"overflow: visible; justify-content: flex-start; gap: 0px 8px; border-radius: 0px; opacity: 1; cursor: pointer; align-self: flex-start; min-width: 40px; order: 1; min-height: 40px; height: max-content; flex-"
+    },
+    {
+      "index": 249,
+      "className": "bubble-element Group bbbiaS0 bubble-r-container flex column",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "소름돋게 잘 맞는 2026 신년운세\n[신년운세 총운]",
+        "54% 할인중"
+      ],
+      "html": "<div class=\"bubble-element Group bbbiaS0 bubble-r-container flex column\" style=\"overflow: visible; justify-content: flex-start; row-gap: 4px; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 40px; order: 2; min-height: 40px; width: 40px; flex-grow: 1; height: max-content; margin: 0"
+    },
+    {
+      "index": 250,
+      "className": "bubble-element Text bbbiaT0 bubble-r-vertical-center",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "소름돋게 잘 맞는 2026 신년운세\n[신년운세 총운]"
+      ],
+      "html": "<div class=\"bubble-element Text bbbiaT0 bubble-r-vertical-center\" style=\"white-space: pre-wrap; overflow: visible; font-family: var(--font_baEjP2_default); font-size: 17px; font-weight: 400; color: var(--color_text_default); letter-spacing: -0.5px; line-height: 1.3; border-radius: 0px; opacity: 1; a"
+    },
+    {
+      "index": 251,
+      "className": "",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [],
+      "html": "<div>소름돋게 잘 맞는 2026 신년운세\n[신년운세 총운]</div>"
+    },
+    {
+      "index": 254,
+      "className": "clickable-element bubble-element Group balraX0 bubble-r-container flex row",
+      "id": "",
+      "isClickable": true,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA.."
+      ],
+      "texts": [
+        "소름돋는 2026년 재물운세 💵\n[10년 재물운 사주]",
+        "60% 할인중"
+      ],
+      "html": "<div class=\"clickable-element bubble-element Group balraX0 bubble-r-container flex row\" style=\"overflow: visible; justify-content: flex-start; gap: 0px 8px; border-radius: 0px; opacity: 1; cursor: pointer; align-self: flex-start; min-width: 40px; order: 2; min-height: 40px; height: max-content; flex"
+    },
+    {
+      "index": 257,
+      "className": "bubble-element Group balrd0 bubble-r-container flex column",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "소름돋는 2026년 재물운세 💵\n[10년 재물운 사주]",
+        "60% 할인중"
+      ],
+      "html": "<div class=\"bubble-element Group balrd0 bubble-r-container flex column\" style=\"overflow: visible; justify-content: flex-start; row-gap: 4px; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 40px; order: 2; min-height: 40px; width: 40px; flex-grow: 1; height: max-content; margin: 0p"
+    },
+    {
+      "index": 258,
+      "className": "bubble-element Text balre0 bubble-r-vertical-center",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "소름돋는 2026년 재물운세 💵\n[10년 재물운 사주]"
+      ],
+      "html": "<div class=\"bubble-element Text balre0 bubble-r-vertical-center\" style=\"white-space: pre-wrap; overflow: visible; font-family: var(--font_baEjP2_default); font-size: 17px; font-weight: 400; color: var(--color_text_default); letter-spacing: -0.5px; line-height: 1.3; border-radius: 0px; opacity: 1; al"
+    },
+    {
+      "index": 259,
+      "className": "",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [],
+      "html": "<div>소름돋는 2026년 재물운세 💵\n[10년 재물운 사주]</div>"
+    },
+    {
+      "index": 263,
+      "className": "clickable-element bubble-element Group baaTwn bubble-r-container flex row",
+      "id": "",
+      "isClickable": true,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=129,f=auto,dpr=1,fit=contain/f1754467456694x186235291558504830/8%EC%9B%94%EC%9A%B4%EC%84%B8.png"
+      ],
+      "texts": [
+        "2025년 8월 월간운세",
+        "50% 할인중"
+      ],
+      "html": "<div class=\"clickable-element bubble-element Group baaTwn bubble-r-container flex row\" style=\"overflow: visible; justify-content: flex-start; gap: 0px 8px; border-radius: 0px; opacity: 1; cursor: pointer; align-self: flex-start; min-width: 40px; order: 5; min-height: 40px; height: max-content; flex-"
+    },
+    {
+      "index": 266,
+      "className": "bubble-element Group baaTwp bubble-r-container flex column",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "2025년 8월 월간운세",
+        "50% 할인중"
+      ],
+      "html": "<div class=\"bubble-element Group baaTwp bubble-r-container flex column\" style=\"overflow: visible; justify-content: flex-start; row-gap: 4px; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 40px; order: 2; min-height: 40px; width: 40px; flex-grow: 1; height: max-content; margin: 0p"
+    },
+    {
+      "index": 267,
+      "className": "bubble-element Text baaTwt bubble-r-vertical-center",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "2025년 8월 월간운세"
+      ],
+      "html": "<div class=\"bubble-element Text baaTwt bubble-r-vertical-center\" style=\"white-space: pre-wrap; overflow: visible; font-family: var(--font_baEjP2_default); font-size: 17px; font-weight: 400; color: var(--color_text_default); letter-spacing: -0.5px; line-height: 1.3; border-radius: 0px; opacity: 1; al"
+    },
+    {
+      "index": 268,
+      "className": "",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [],
+      "html": "<div>2025년 8월 월간운세</div>"
+    },
+    {
+      "index": 272,
+      "className": "clickable-element bubble-element Group baaTxaA bubble-r-container flex row",
+      "id": "",
+      "isClickable": true,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg"
+      ],
+      "texts": [
+        "그 사람도 나를 좋아할까?\n[썸 궁합사주]",
+        "46% 할인중"
+      ],
+      "html": "<div class=\"clickable-element bubble-element Group baaTxaA bubble-r-container flex row\" style=\"overflow: visible; justify-content: flex-start; gap: 0px 8px; border-radius: 0px; opacity: 1; cursor: pointer; align-self: flex-start; min-width: 40px; order: 6; min-height: 40px; height: max-content; flex"
+    },
+    {
+      "index": 275,
+      "className": "bubble-element Group baaTxaF bubble-r-container flex column",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "그 사람도 나를 좋아할까?\n[썸 궁합사주]",
+        "46% 할인중"
+      ],
+      "html": "<div class=\"bubble-element Group baaTxaF bubble-r-container flex column\" style=\"overflow: visible; justify-content: flex-start; row-gap: 4px; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 40px; order: 2; min-height: 40px; width: 40px; flex-grow: 1; height: max-content; margin: 0"
+    },
+    {
+      "index": 276,
+      "className": "bubble-element Text baaTxaG bubble-r-vertical-center",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [
+        "그 사람도 나를 좋아할까?\n[썸 궁합사주]"
+      ],
+      "html": "<div class=\"bubble-element Text baaTxaG bubble-r-vertical-center\" style=\"white-space: pre-wrap; overflow: visible; font-family: var(--font_baEjP2_default); font-size: 17px; font-weight: 400; color: var(--color_text_default); letter-spacing: -0.5px; line-height: 1.3; border-radius: 0px; opacity: 1; a"
+    },
+    {
+      "index": 277,
+      "className": "",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [],
+      "html": "<div>그 사람도 나를 좋아할까?\n[썸 궁합사주]</div>"
+    },
+    {
+      "index": 284,
+      "className": "bubble-element Group baaTxd bubble-r-container relative",
+      "id": "targetGroup",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754554733050x426783502598683460/%EC%97%AC%EC%9A%B01.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754554757697x803630096845563600/%EC%97%AC%EC%9A%B02.png"
+      ],
+      "texts": [
+        "🥹 타이트 사주 실시간 리뷰",
+        "전체 보기",
+        "타이트 사주",
+        "많은 도움이 됬어요\n어느 방향으로 생각하고 살아가야하는지 알게 도움받았네요",
+        "타이트 사주",
+        "저에대해 어떻게 잘 아세요??.. 너무 소름이 돋아요"
+      ],
+      "html": "<div class=\"bubble-element Group baaTxd bubble-r-container relative\" id=\"targetGroup\" style=\"background-color: var(--color_primary_contrast_default); overflow: visible; border-radius: 0px; padding: 0px 0px 10px; opacity: 1; align-self: center; min-width: 40px; order: 16; min-height: 40px; height: ma"
+    },
+    {
+      "index": 285,
+      "className": "bubble-element Group baaTxe bubble-r-container-wrapper",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754554733050x426783502598683460/%EC%97%AC%EC%9A%B01.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754554757697x803630096845563600/%EC%97%AC%EC%9A%B02.png"
+      ],
+      "texts": [
+        "🥹 타이트 사주 실시간 리뷰",
+        "전체 보기",
+        "타이트 사주",
+        "많은 도움이 됬어요\n어느 방향으로 생각하고 살아가야하는지 알게 도움받았네요",
+        "타이트 사주",
+        "저에대해 어떻게 잘 아세요??.. 너무 소름이 돋아요"
+      ],
+      "html": "<div class=\"bubble-element Group baaTxe bubble-r-container-wrapper\" style=\"background-color: rgb(255, 255, 255); overflow: visible; border-radius: 20px; padding: 20px 16px; opacity: 1; place-self: center; min-width: 40px; min-height: 40px; width: calc(100% + 0px); height: max-content; margin: 0px; z"
+    },
+    {
+      "index": 286,
+      "className": "bubble-r-container flex column",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754554733050x426783502598683460/%EC%97%AC%EC%9A%B01.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754554757697x803630096845563600/%EC%97%AC%EC%9A%B02.png"
+      ],
+      "texts": [
+        "🥹 타이트 사주 실시간 리뷰",
+        "전체 보기",
+        "타이트 사주",
+        "많은 도움이 됬어요\n어느 방향으로 생각하고 살아가야하는지 알게 도움받았네요",
+        "타이트 사주",
+        "저에대해 어떻게 잘 아세요??.. 너무 소름이 돋아요"
+      ],
+      "html": "<div class=\"bubble-r-container flex column\" style=\"justify-content: flex-start; row-gap: 20px;\"><div class=\"bubble-element Group baaTxf bubble-r-container flex row\" style=\"overflow: visible; justify-content: space-between; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 40px; orde"
+    },
+    {
+      "index": 291,
+      "className": "bubble-element RepeatingGroup baaTxl bubble-rg",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754554733050x426783502598683460/%EC%97%AC%EC%9A%B01.png",
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754554757697x803630096845563600/%EC%97%AC%EC%9A%B02.png"
+      ],
+      "texts": [
+        "타이트 사주",
+        "많은 도움이 됬어요\n어느 방향으로 생각하고 살아가야하는지 알게 도움받았네요",
+        "타이트 사주",
+        "저에대해 어떻게 잘 아세요??.. 너무 소름이 돋아요"
+      ],
+      "html": "<div class=\"bubble-element RepeatingGroup baaTxl bubble-rg\" style=\"overflow: auto; border-radius: 0px; opacity: 1; align-self: flex-start; min-width: 140px; order: 5; min-height: 40px; height: max-content; flex-grow: 0; flex-shrink: 0; width: calc(100% + 0px); margin: 0px; z-index: 2; gap: 0px; grid"
+    },
+    {
+      "index": 292,
+      "className": "bubble-element group-item bubble-r-container flex column entry-1",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754554733050x426783502598683460/%EC%97%AC%EC%9A%B01.png"
+      ],
+      "texts": [
+        "타이트 사주",
+        "많은 도움이 됬어요\n어느 방향으로 생각하고 살아가야하는지 알게 도움받았네요"
+      ],
+      "html": "<div class=\"bubble-element group-item bubble-r-container flex column entry-1\" style=\"box-sizing: content-box; justify-content: flex-start;\"><div class=\"bubble-element Group baaTxp bubble-r-container flex column\" style=\"overflow: visible; justify-content: flex-start; row-gap: 12px; border-style: soli"
+    },
+    {
+      "index": 293,
+      "className": "bubble-element Group baaTxp bubble-r-container flex column",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754554733050x426783502598683460/%EC%97%AC%EC%9A%B01.png"
+      ],
+      "texts": [
+        "타이트 사주",
+        "많은 도움이 됬어요\n어느 방향으로 생각하고 살아가야하는지 알게 도움받았네요"
+      ],
+      "html": "<div class=\"bubble-element Group baaTxp bubble-r-container flex column\" style=\"overflow: visible; justify-content: flex-start; row-gap: 12px; border-style: solid; border-width: 1px; border-color: var(--color_bTHBE_default); border-radius: 10px; padding: 8px; opacity: 1; align-self: flex-start; min-w"
+    },
+    {
+      "index": 302,
+      "className": "bubble-element group-item bubble-r-container flex column entry-2",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754554757697x803630096845563600/%EC%97%AC%EC%9A%B02.png"
+      ],
+      "texts": [
+        "타이트 사주",
+        "저에대해 어떻게 잘 아세요??.. 너무 소름이 돋아요"
+      ],
+      "html": "<div class=\"bubble-element group-item bubble-r-container flex column entry-2\" style=\"box-sizing: content-box; border-top-width: 0px; border-top-color: rgba(var(--color_text_default_rgb), 0.15); border-top-style: none; margin-top: 0px; justify-content: flex-start;\"><div class=\"bubble-element Group ba"
+    },
+    {
+      "index": 303,
+      "className": "bubble-element Group baaTxp bubble-r-container flex column",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754554757697x803630096845563600/%EC%97%AC%EC%9A%B02.png"
+      ],
+      "texts": [
+        "타이트 사주",
+        "저에대해 어떻게 잘 아세요??.. 너무 소름이 돋아요"
+      ],
+      "html": "<div class=\"bubble-element Group baaTxp bubble-r-container flex column\" style=\"overflow: visible; justify-content: flex-start; row-gap: 12px; border-style: solid; border-width: 1px; border-color: var(--color_bTHBE_default); border-radius: 10px; padding: 8px; opacity: 1; align-self: flex-start; min-w"
+    },
+    {
+      "index": 317,
+      "className": "bubble-element Text baTkaOt5 clickable-element",
+      "id": "",
+      "isClickable": true,
+      "images": [],
+      "texts": [],
+      "html": "<div class=\"bubble-element Text baTkaOt5 clickable-element\" style=\"white-space: pre-wrap; overflow: visible; font-family: var(--font_default); font-size: 12px; font-weight: 400; color: var(--color_bTHBJ_default); line-height: 1.6; border-radius: 0px; opacity: 1; cursor: pointer; align-self: flex-sta"
+    },
+    {
+      "index": 324,
+      "className": "bubble-element Group baaTsm bubble-r-container flex column",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Horse%20Face.png",
+        "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Heart%20with%20Arrow.png",
+        "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Dragon%20Face.png"
+      ],
+      "texts": [],
+      "html": "<div class=\"bubble-element Group baaTsm bubble-r-container flex column\" style=\"visibility: hidden; align-self: flex-start; min-width: 40px; order: 34; min-height: 40px; height: max-content; flex-grow: 0; flex-shrink: 0; width: calc(100% + 0px); margin: 0px; z-index: 20; display: none;\"><div class=\"b"
+    },
+    {
+      "index": 325,
+      "className": "bubble-element Group baaTsl bubble-r-container flex column",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Horse%20Face.png",
+        "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Heart%20with%20Arrow.png",
+        "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Dragon%20Face.png"
+      ],
+      "texts": [],
+      "html": "<div class=\"bubble-element Group baaTsl bubble-r-container flex column\" style=\"align-self: flex-start; min-width: 40px; order: 3; min-height: 40px; height: max-content; flex-grow: 0; flex-shrink: 0; width: calc(100% + 0px); margin: 0px; z-index: 19;\"><div class=\"bubble-element Group baaToj bubble-r-"
+    },
+    {
+      "index": 326,
+      "className": "bubble-element Group baaToj bubble-r-container flex row",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Horse%20Face.png",
+        "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Heart%20with%20Arrow.png",
+        "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Dragon%20Face.png"
+      ],
+      "texts": [],
+      "html": "<div class=\"bubble-element Group baaToj bubble-r-container flex row\" style=\"background-color: rgb(255, 255, 255); align-self: flex-start; min-width: 40px; order: 4; min-height: 40px; height: max-content; flex-grow: 0; flex-shrink: 0; width: calc(100% + 0px); margin: 0px; z-index: 17;\"><div class=\"bu"
+    },
+    {
+      "index": 327,
+      "className": "bubble-element Group baaTpaH bubble-r-container relative",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Horse%20Face.png",
+        "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Heart%20with%20Arrow.png",
+        "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Dragon%20Face.png"
+      ],
+      "texts": [],
+      "html": "<div class=\"bubble-element Group baaTpaH bubble-r-container relative\" style=\"align-self: center; min-width: 10px; order: 1; min-height: 48px; width: max-content; flex-grow: 0; height: max-content; margin: 0px; z-index: 7;\"><div class=\"bubble-element HTML baaTpaI\" style=\"place-self: end center; min-w"
+    },
+    {
+      "index": 328,
+      "className": "bubble-element HTML baaTpaI",
+      "id": "",
+      "isClickable": null,
+      "images": [
+        "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Horse%20Face.png",
+        "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Heart%20with%20Arrow.png",
+        "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Dragon%20Face.png"
+      ],
+      "texts": [],
+      "html": "<div class=\"bubble-element HTML baaTpaI\" style=\"place-self: end center; min-width: 120px; max-width: 120px; min-height: 60px; max-height: 60px; width: 120px; height: 60px; margin: 0px 0px 10px; z-index: 8;\">\n\n\n    <style>\n        body {\n            margin: 0;\n            display: flex;\n            j"
+    }
+  ]
+}

@@ -1,0 +1,1057 @@
+{
+  "timestamp": "2025-11-05T13:15:43.744Z",
+  "totalImages": 65,
+  "bySection": {
+    "hero": 0,
+    "categories": 0,
+    "event": 0,
+    "ranking": 0,
+    "unknown": 65
+  },
+  "images": [
+    {
+      "index": 0,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+      "alt": "여우솔탈-하반기",
+      "width": 330,
+      "height": 331,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 1,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+      "alt": "썸사주궁합",
+      "width": 1160,
+      "height": 1160,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 2,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+      "alt": "하반기종합",
+      "width": 330,
+      "height": 330,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 3,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+      "alt": "재회",
+      "width": 330,
+      "height": 330,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 4,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643687787x916609698872341600/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+      "alt": "인터뷰",
+      "width": 1560,
+      "height": 1560,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 5,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+      "alt": "솔탈",
+      "width": 331,
+      "height": 330,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 6,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643351628x712752188335735300/%E1%84%80%E1%85%A7%E1%86%AF%E1%84%92%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+      "alt": "결혼궁합",
+      "width": 344,
+      "height": 352,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 7,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+      "alt": "여우솔탈-하반기",
+      "width": 330,
+      "height": 331,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 8,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+      "alt": "썸사주궁합",
+      "width": 1160,
+      "height": 1160,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 9,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+      "alt": "하반기종합",
+      "width": 330,
+      "height": 330,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 10,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+      "alt": "재회",
+      "width": 330,
+      "height": 330,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 11,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643687787x916609698872341600/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+      "alt": "인터뷰",
+      "width": 1560,
+      "height": 1560,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 12,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+      "alt": "솔탈",
+      "width": 331,
+      "height": 330,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 13,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643351628x712752188335735300/%E1%84%80%E1%85%A7%E1%86%AF%E1%84%92%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+      "alt": "결혼궁합",
+      "width": 344,
+      "height": 352,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 14,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+      "alt": "여우솔탈-하반기",
+      "width": 330,
+      "height": 331,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 15,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+      "alt": "썸사주궁합",
+      "width": 1160,
+      "height": 1160,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 16,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+      "alt": "하반기종합",
+      "width": 330,
+      "height": 330,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 17,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+      "alt": "재회",
+      "width": 330,
+      "height": 330,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 18,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643687787x916609698872341600/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+      "alt": "인터뷰",
+      "width": 1560,
+      "height": 1560,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 19,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+      "alt": "솔탈",
+      "width": 331,
+      "height": 330,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 20,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754643351628x712752188335735300/%E1%84%80%E1%85%A7%E1%86%AF%E1%84%92%E1%85%A9%E1%86%AB%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png",
+      "alt": "결혼궁합",
+      "width": 344,
+      "height": 352,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 21,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+      "alt": "2026신년",
+      "width": 344,
+      "height": 352,
+      "displayWidth": 232.050048828125,
+      "displayHeight": 237.44219970703125,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 195.02890014648438,
+        "left": -1094.6700439453125
+      }
+    },
+    {
+      "index": 22,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+      "alt": "재물운",
+      "width": 853,
+      "height": 873,
+      "displayWidth": 232.050048828125,
+      "displayHeight": 237.48202514648438,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 195.00234985351562,
+        "left": -798.2950439453125
+      }
+    },
+    {
+      "index": 23,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+      "alt": "썸사주궁합",
+      "width": 1160,
+      "height": 1160,
+      "displayWidth": 232.04998779296875,
+      "displayHeight": 232.05001831054688,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 197.72500610351562,
+        "left": -501.9200439453125
+      }
+    },
+    {
+      "index": 24,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+      "alt": "솔탈",
+      "width": 331,
+      "height": 330,
+      "displayWidth": 232.050048828125,
+      "displayHeight": 231.34609985351562,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 198.0703125,
+        "left": -205.5450439453125
+      }
+    },
+    {
+      "index": 25,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+      "alt": "2026신년",
+      "width": 344,
+      "height": 352,
+      "displayWidth": 273,
+      "displayHeight": 279.34375,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 174.078125,
+        "left": 70.35498046875
+      }
+    },
+    {
+      "index": 26,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+      "alt": "재물운",
+      "width": 853,
+      "height": 873,
+      "displayWidth": 232.050048828125,
+      "displayHeight": 237.48202514648438,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 195.00234985351562,
+        "left": 387.2049560546875
+      }
+    },
+    {
+      "index": 27,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+      "alt": "썸사주궁합",
+      "width": 1160,
+      "height": 1160,
+      "displayWidth": 232.050048828125,
+      "displayHeight": 232.05001831054688,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 197.72500610351562,
+        "left": 683.5799560546875
+      }
+    },
+    {
+      "index": 28,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+      "alt": "솔탈",
+      "width": 331,
+      "height": 330,
+      "displayWidth": 232.050048828125,
+      "displayHeight": 231.34609985351562,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 198.0703125,
+        "left": 979.955078125
+      }
+    },
+    {
+      "index": 29,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+      "alt": "2026신년",
+      "width": 344,
+      "height": 352,
+      "displayWidth": 232.050048828125,
+      "displayHeight": 237.44219970703125,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 195.02890014648438,
+        "left": 1276.330078125
+      }
+    },
+    {
+      "index": 30,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+      "alt": "재물운",
+      "width": 853,
+      "height": 873,
+      "displayWidth": 232.050048828125,
+      "displayHeight": 237.48202514648438,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 195.00234985351562,
+        "left": 1572.705078125
+      }
+    },
+    {
+      "index": 31,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+      "alt": "썸사주궁합",
+      "width": 1160,
+      "height": 1160,
+      "displayWidth": 232.050048828125,
+      "displayHeight": 232.05001831054688,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 197.72500610351562,
+        "left": 1869.080078125
+      }
+    },
+    {
+      "index": 32,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png",
+      "alt": "솔탈",
+      "width": 331,
+      "height": 330,
+      "displayWidth": 232.050048828125,
+      "displayHeight": 231.34609985351562,
+      "section": "unknown",
+      "borderRadius": "12px",
+      "objectFit": "cover",
+      "position": {
+        "top": 198.0703125,
+        "left": 2165.455078125
+      }
+    },
+    {
+      "index": 33,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466836768x524134236669195000/Growing%20Heart%201.png",
+      "alt": "",
+      "width": 48,
+      "height": 48,
+      "displayWidth": 32,
+      "displayHeight": 32,
+      "section": "unknown",
+      "borderRadius": "0px",
+      "objectFit": "fill",
+      "position": {
+        "top": 544.5,
+        "left": 35.296875
+      }
+    },
+    {
+      "index": 34,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466848857x605807981488329700/Growing%20Heart%201%20%281%29.png",
+      "alt": "",
+      "width": 48,
+      "height": 48,
+      "displayWidth": 32,
+      "displayHeight": 32,
+      "section": "unknown",
+      "borderRadius": "0px",
+      "objectFit": "fill",
+      "position": {
+        "top": 544.5,
+        "left": 105.90625
+      }
+    },
+    {
+      "index": 35,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466876271x994951387212219100/Growing%20Heart%201%20%282%29.png",
+      "alt": "",
+      "width": 48,
+      "height": 48,
+      "displayWidth": 32,
+      "displayHeight": 32,
+      "section": "unknown",
+      "borderRadius": "0px",
+      "objectFit": "fill",
+      "position": {
+        "top": 544.5,
+        "left": 178.96875
+      }
+    },
+    {
+      "index": 36,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466906216x439430285867575200/Growing%20Heart%201%20%283%29.png",
+      "alt": "",
+      "width": 48,
+      "height": 48,
+      "displayWidth": 32,
+      "displayHeight": 32,
+      "section": "unknown",
+      "borderRadius": "0px",
+      "objectFit": "fill",
+      "position": {
+        "top": 544.5,
+        "left": 252.046875
+      }
+    },
+    {
+      "index": 37,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466848857x605807981488329700/Growing%20Heart%201%20%281%29.png",
+      "alt": "",
+      "width": 48,
+      "height": 48,
+      "displayWidth": 32,
+      "displayHeight": 32,
+      "section": "unknown",
+      "borderRadius": "0px",
+      "objectFit": "fill",
+      "position": {
+        "top": 544.5,
+        "left": 322.65625
+      }
+    },
+    {
+      "index": 38,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754466983083x645874785753331100/Growing%20Heart%201%20%284%29.png",
+      "alt": "",
+      "width": 48,
+      "height": 48,
+      "displayWidth": 32,
+      "displayHeight": 32,
+      "section": "unknown",
+      "borderRadius": "0px",
+      "objectFit": "fill",
+      "position": {
+        "top": 626.890625,
+        "left": 36.578125
+      }
+    },
+    {
+      "index": 39,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467020645x962765043525175300/Growing%20Heart%201%20%285%29.png",
+      "alt": "",
+      "width": 48,
+      "height": 48,
+      "displayWidth": 32,
+      "displayHeight": 32,
+      "section": "unknown",
+      "borderRadius": "0px",
+      "objectFit": "fill",
+      "position": {
+        "top": 626.890625,
+        "left": 108.46875
+      }
+    },
+    {
+      "index": 40,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467039405x383033247291431040/Growing%20Heart%201%20%286%29.png",
+      "alt": "",
+      "width": 48,
+      "height": 48,
+      "displayWidth": 32,
+      "displayHeight": 32,
+      "section": "unknown",
+      "borderRadius": "0px",
+      "objectFit": "fill",
+      "position": {
+        "top": 626.890625,
+        "left": 179.0625
+      }
+    },
+    {
+      "index": 41,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467068512x562626469233695760/Growing%20Heart%201%20%287%29.png",
+      "alt": "",
+      "width": 48,
+      "height": 48,
+      "displayWidth": 32,
+      "displayHeight": 32,
+      "section": "unknown",
+      "borderRadius": "0px",
+      "objectFit": "fill",
+      "position": {
+        "top": 626.890625,
+        "left": 250.859375
+      }
+    },
+    {
+      "index": 42,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754467083499x653321571429130100/Growing%20Heart%201%20%288%29.png",
+      "alt": "",
+      "width": 48,
+      "height": 48,
+      "displayWidth": 32,
+      "displayHeight": 32,
+      "section": "unknown",
+      "borderRadius": "0px",
+      "objectFit": "fill",
+      "position": {
+        "top": 626.890625,
+        "left": 322.65625
+      }
+    },
+    {
+      "index": 43,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758627216749x929285169986016800/%E1%84%8E%E1%85%B5%E1%86%AB%E1%84%80%E1%85%AE%E1%84%8E%E1%85%A9%E1%84%83%E1%85%A2.svg",
+      "alt": "",
+      "width": 344,
+      "height": 352,
+      "displayWidth": 44,
+      "displayHeight": 45.015625,
+      "section": "unknown",
+      "borderRadius": "1000px",
+      "objectFit": "fill",
+      "position": {
+        "top": 761.28125,
+        "left": 37
+      }
+    },
+    {
+      "index": 44,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754466621316x990961257053425200/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC.png",
+      "alt": "",
+      "width": 128,
+      "height": 128,
+      "displayWidth": 90,
+      "displayHeight": 90,
+      "section": "unknown",
+      "borderRadius": "5px",
+      "objectFit": "fill",
+      "position": {
+        "top": 909.296875,
+        "left": 16
+      }
+    },
+    {
+      "index": 45,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1756104327591x195418940527699800/%E1%84%8C%E1%85%A2%E1%84%92%E1%85%AC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%89%E1%85%B3%E1%86%BC%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE.svg",
+      "alt": "",
+      "width": 620,
+      "height": 620,
+      "displayWidth": 90,
+      "displayHeight": 90,
+      "section": "unknown",
+      "borderRadius": "5px",
+      "objectFit": "fill",
+      "position": {
+        "top": 1011.859375,
+        "left": 16
+      }
+    },
+    {
+      "index": 46,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467329857x835823088653500300/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9.png",
+      "alt": "",
+      "width": 128,
+      "height": 128,
+      "displayWidth": 90,
+      "displayHeight": 90,
+      "section": "unknown",
+      "borderRadius": "5px",
+      "objectFit": "fill",
+      "position": {
+        "top": 1113.859375,
+        "left": 16
+      }
+    },
+    {
+      "index": 47,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467365568x557988189999608800/%EA%B6%81%ED%95%A9%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+      "alt": "",
+      "width": 128,
+      "height": 128,
+      "displayWidth": 90,
+      "displayHeight": 90,
+      "section": "unknown",
+      "borderRadius": "5px",
+      "objectFit": "fill",
+      "position": {
+        "top": 1216.421875,
+        "left": 16
+      }
+    },
+    {
+      "index": 48,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467391031x376946978522862700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+      "alt": "",
+      "width": 128,
+      "height": 128,
+      "displayWidth": 90,
+      "displayHeight": 90,
+      "section": "unknown",
+      "borderRadius": "5px",
+      "objectFit": "fill",
+      "position": {
+        "top": 1318.984375,
+        "left": 16
+      }
+    },
+    {
+      "index": 49,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=130,f=auto,dpr=1,fit=contain/f1754467415536x796541878799546000/%EC%BB%A4%EB%A6%AC%EC%96%B4%EC%82%AC%EC%A3%BC_%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+      "alt": "",
+      "width": 128,
+      "height": 130,
+      "displayWidth": 90,
+      "displayHeight": 91.5,
+      "section": "unknown",
+      "borderRadius": "5px",
+      "objectFit": "fill",
+      "position": {
+        "top": 1421.546875,
+        "left": 16
+      }
+    },
+    {
+      "index": 50,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1755096595963x896724663128204200/%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE.png",
+      "alt": "",
+      "width": 128,
+      "height": 128,
+      "displayWidth": 90,
+      "displayHeight": 90,
+      "section": "unknown",
+      "borderRadius": "5px",
+      "objectFit": "fill",
+      "position": {
+        "top": 1525.046875,
+        "left": 16
+      }
+    },
+    {
+      "index": 51,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1756104085369x794228958999374300/%E1%84%91%E1%85%A2%E1%86%A8%E1%84%91%E1%85%A9%E1%86%A8-1-1.svg",
+      "alt": "",
+      "width": 530,
+      "height": 530,
+      "displayWidth": 90,
+      "displayHeight": 90,
+      "section": "unknown",
+      "borderRadius": "5px",
+      "objectFit": "fill",
+      "position": {
+        "top": 1627.609375,
+        "left": 16
+      }
+    },
+    {
+      "index": 52,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+      "alt": "",
+      "width": 344,
+      "height": 352,
+      "displayWidth": 90,
+      "displayHeight": 92.09375,
+      "section": "unknown",
+      "borderRadius": "5px",
+      "objectFit": "fill",
+      "position": {
+        "top": 1816.171875,
+        "left": 16
+      }
+    },
+    {
+      "index": 53,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg?_gl=1*1mlo20r*_gcl_au*NzU2Njc2MTA5LjE3NTcwNDU5NTc.*_ga*MzE0MDE0MjMuMTc0MzkzOTQyNA..*_ga_BFPVR2DEE2*czE3NTgyNTU2ODEkbzE5JGcxJHQxNzU4MjYzNzk4JGo0NyRsMCRoMA..",
+      "alt": "",
+      "width": 853,
+      "height": 873,
+      "displayWidth": 90,
+      "displayHeight": 90,
+      "section": "unknown",
+      "borderRadius": "5px",
+      "objectFit": "fill",
+      "position": {
+        "top": 1920.265625,
+        "left": 16
+      }
+    },
+    {
+      "index": 54,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=129,f=auto,dpr=1,fit=contain/f1754467456694x186235291558504830/8%EC%9B%94%EC%9A%B4%EC%84%B8.png",
+      "alt": "",
+      "width": 128,
+      "height": 128,
+      "displayWidth": 90,
+      "displayHeight": 90.5,
+      "section": "unknown",
+      "borderRadius": "5px",
+      "objectFit": "fill",
+      "position": {
+        "top": 2022.265625,
+        "left": 16
+      }
+    },
+    {
+      "index": 55,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758621082743x267619264441241630/%E1%84%8A%E1%85%A5%E1%86%B7%20%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8-%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC.svg",
+      "alt": "",
+      "width": 1160,
+      "height": 1160,
+      "displayWidth": 90,
+      "displayHeight": 90,
+      "section": "unknown",
+      "borderRadius": "5px",
+      "objectFit": "fill",
+      "position": {
+        "top": 2124.765625,
+        "left": 16
+      }
+    },
+    {
+      "index": 56,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754552083089x489455495710442900/%E1%84%80%E1%85%A9%E1%84%80%E1%85%A2%E1%86%A8%20%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%A5%E1%84%87%E1%85%B2%20%E1%84%87%E1%85%A2%E1%84%82%E1%85%A5.svg",
+      "alt": "",
+      "width": 1560,
+      "height": 1560,
+      "displayWidth": 358,
+      "displayHeight": 358,
+      "section": "unknown",
+      "borderRadius": "0px",
+      "objectFit": "fill",
+      "position": {
+        "top": 2264.765625,
+        "left": 16
+      }
+    },
+    {
+      "index": 57,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754554733050x426783502598683460/%EC%97%AC%EC%9A%B01.png",
+      "alt": "",
+      "width": 48,
+      "height": 48,
+      "displayWidth": 40,
+      "displayHeight": 40,
+      "section": "unknown",
+      "borderRadius": "5px",
+      "objectFit": "fill",
+      "position": {
+        "top": 2719.765625,
+        "left": 25
+      }
+    },
+    {
+      "index": 58,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754554757697x803630096845563600/%EC%97%AC%EC%9A%B02.png",
+      "alt": "",
+      "width": 48,
+      "height": 48,
+      "displayWidth": 40,
+      "displayHeight": 40,
+      "section": "unknown",
+      "borderRadius": "5px",
+      "objectFit": "fill",
+      "position": {
+        "top": 2955.328125,
+        "left": 25
+      }
+    },
+    {
+      "index": 59,
+      "src": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Tiger%20Face.png",
+      "alt": "",
+      "width": 0,
+      "height": 0,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "0px",
+      "objectFit": "fill",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 60,
+      "src": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Heart%20with%20Arrow.png",
+      "alt": "",
+      "width": 256,
+      "height": 256,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "0px",
+      "objectFit": "fill",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 61,
+      "src": "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Snake.png",
+      "alt": "",
+      "width": 256,
+      "height": 256,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "0px",
+      "objectFit": "fill",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 62,
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=48,h=48,f=auto,dpr=1,fit=contain/f1754561201198x110694109953810580/%EC%97%AC%EC%9A%B01.png",
+      "alt": "",
+      "width": 48,
+      "height": 48,
+      "displayWidth": 40,
+      "displayHeight": 40,
+      "section": "unknown",
+      "borderRadius": "10000px",
+      "objectFit": "fill",
+      "position": {
+        "top": 30,
+        "left": 24
+      }
+    },
+    {
+      "index": 63,
+      "src": "https://t.co/1/i/adsct?bci=4&dv=Asia%2FSeoul%26ko-KR%26Google%20Inc.%26Win32%26255%26390%26844%2616%2624%26390%26844%2610%26na&eci=3&event=%7B%7D&event_id=55ab6b40-c4eb-404e-8618-5852881f553e&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=56fe3f55-7b00-4fa1-b057-0a0326ed00fb&pt=%ED%83%80%EC%9D%B4%ED%8A%B8%20%EC%82%AC%EC%A3%BC%20%7C%20%EC%AB%80%EB%93%9D%ED%95%98%EA%B2%8C%20%EB%93%A4%EC%96%B4%EB%A7%9E%EB%8A%94%20%EC%82%AC%EC%A3%BC%20%EA%B6%81%ED%95%A9%20%EB%A7%8C%EC%84%B8%EB%A0%A5&tw_document_href=https%3A%2F%2Fsajutight.me%2F&tw_iframe_status=0&txn_id=oupkr&type=javascript&version=2.3.34",
+      "alt": "",
+      "width": 1,
+      "height": 1,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "0px",
+      "objectFit": "fill",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    },
+    {
+      "index": 64,
+      "src": "https://analytics.twitter.com/1/i/adsct?bci=4&dv=Asia%2FSeoul%26ko-KR%26Google%20Inc.%26Win32%26255%26390%26844%2616%2624%26390%26844%2610%26na&eci=3&event=%7B%7D&event_id=55ab6b40-c4eb-404e-8618-5852881f553e&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=56fe3f55-7b00-4fa1-b057-0a0326ed00fb&pt=%ED%83%80%EC%9D%B4%ED%8A%B8%20%EC%82%AC%EC%A3%BC%20%7C%20%EC%AB%80%EB%93%9D%ED%95%98%EA%B2%8C%20%EB%93%A4%EC%96%B4%EB%A7%9E%EB%8A%94%20%EC%82%AC%EC%A3%BC%20%EA%B6%81%ED%95%A9%20%EB%A7%8C%EC%84%B8%EB%A0%A5&tw_document_href=https%3A%2F%2Fsajutight.me%2F&tw_iframe_status=0&txn_id=oupkr&type=javascript&version=2.3.34",
+      "alt": "",
+      "width": 1,
+      "height": 1,
+      "displayWidth": 0,
+      "displayHeight": 0,
+      "section": "unknown",
+      "borderRadius": "0px",
+      "objectFit": "fill",
+      "position": {
+        "top": 0,
+        "left": 0
+      }
+    }
+  ],
+  "recommendations": {
+    "eventSection": "MISSING",
+    "rankingSection": "MISSING"
+  }
+}

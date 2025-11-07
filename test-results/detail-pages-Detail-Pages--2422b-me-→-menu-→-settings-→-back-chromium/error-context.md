@@ -1,0 +1,69 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e7] [cursor=pointer]:
+    - img [ref=e8]
+  - alert [ref=e11]
+  - generic [ref=e12]:
+    - banner [ref=e13]:
+      - generic [ref=e14]:
+        - link "뒤로 가기" [ref=e15] [cursor=pointer]:
+          - /url: /menu
+          - button "뒤로 가기" [ref=e16]:
+            - img [ref=e17]
+        - heading "계정설정" [level=1] [ref=e19]
+    - main [ref=e20]:
+      - generic [ref=e21]:
+        - heading "계정 정보" [level=2] [ref=e22]
+        - generic [ref=e23]:
+          - generic [ref=e24]:
+            - generic [ref=e25]:
+              - img [ref=e26]
+              - generic [ref=e29]:
+                - generic [ref=e30]: 이메일
+                - generic [ref=e31]: user@example.com
+            - img [ref=e32]
+          - generic [ref=e34]:
+            - generic [ref=e35]:
+              - img [ref=e36]
+              - generic [ref=e38]:
+                - generic [ref=e39]: 전화번호
+                - generic [ref=e40]: 010-1234-5678
+            - img [ref=e41]
+          - generic [ref=e43]:
+            - generic [ref=e44]:
+              - img [ref=e45]
+              - generic [ref=e48]:
+                - generic [ref=e49]: 이름
+                - generic [ref=e50]: 사용자
+            - img [ref=e51]
+      - generic [ref=e53]:
+        - heading "알림 설정" [level=2] [ref=e54]
+        - generic [ref=e55]:
+          - generic [ref=e56]:
+            - generic [ref=e57]:
+              - img [ref=e58]
+              - generic [ref=e61]: 푸시 알림
+            - button [ref=e62] [cursor=pointer]
+          - generic [ref=e64]:
+            - generic [ref=e65]:
+              - img [ref=e66]
+              - generic [ref=e69]: 이메일 알림
+            - button [ref=e70] [cursor=pointer]
+          - generic [ref=e72]:
+            - generic [ref=e73]:
+              - img [ref=e74]
+              - generic [ref=e76]: SMS 알림
+            - button [ref=e77] [cursor=pointer]
+      - generic [ref=e79]:
+        - heading "보안" [level=2] [ref=e80]
+        - button "비밀번호 변경" [ref=e82] [cursor=pointer]:
+          - generic [ref=e83]:
+            - img [ref=e84]
+            - generic [ref=e87]: 비밀번호 변경
+          - img [ref=e88]
+      - generic [ref=e90]:
+        - heading "계정 관리" [level=2] [ref=e91]
+        - button "회원 탈퇴" [ref=e92] [cursor=pointer]
+```

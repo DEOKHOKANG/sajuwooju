@@ -1,0 +1,30 @@
+{
+  "fonts": [
+    {
+      "type": "missing",
+      "font": "\"Times New Roman\"",
+      "priority": "HIGH"
+    },
+    {
+      "type": "missing",
+      "font": "Arial, sans-serif",
+      "priority": "HIGH"
+    },
+    {
+      "type": "missing",
+      "font": "Arial",
+      "priority": "HIGH"
+    }
+  ],
+  "colors": [],
+  "spacing": [],
+  "sizing": [],
+  "effects": [],
+  "critical": [
+    {
+      "type": "missing-images",
+      "count": 55,
+      "priority": "CRITICAL"
+    }
+  ]
+}

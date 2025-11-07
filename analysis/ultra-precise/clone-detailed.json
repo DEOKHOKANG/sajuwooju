@@ -1,0 +1,4186 @@
+{
+  "elements": [
+    {
+      "index": 0,
+      "tag": "html",
+      "className": "",
+      "id": "",
+      "text": "타이트 사주 | 쫀득하게 들어맞는 사주 궁합 만세력@font-face{font-family",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 38,
+      "tag": "body",
+      "className": "antialiased",
+      "id": "",
+      "text": "😗타이트 사주🥞카테고리이벤트궁합솔로/연애운이별/재회달콤운업신/사대운신년운세월별운세취업/",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 40,
+      "tag": "div",
+      "className": "min-h-screen bg-white",
+      "id": "",
+      "text": "😗타이트 사주🥞카테고리이벤트궁합솔로/연애운이별/재회달콤운업신/사대운신년운세월별운세취업/",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 41,
+      "tag": "header",
+      "className": "sticky top-0 z-50 w-full bg-white",
+      "id": "",
+      "text": "😗타이트 사주",
+      "position": "sticky",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "50",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 42,
+      "tag": "div",
+      "className": "flex h-[60px] items-center justify-between px-4",
+      "id": "",
+      "text": "😗타이트 사주",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 16,
+        "bottom": 0,
+        "left": 16
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 43,
+      "tag": "a",
+      "className": "flex items-center gap-2",
+      "id": "",
+      "text": "😗타이트 사주",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "center",
+        "gap": "8px"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 44,
+      "tag": "div",
+      "className": "relative w-10 h-10",
+      "id": "",
+      "text": "😗",
+      "position": "relative",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 45,
+      "tag": "span",
+      "className": "text-3xl",
+      "id": "",
+      "text": "😗",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "30px",
+        "weight": "400",
+        "lineHeight": "36px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "inline",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "inline",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 46,
+      "tag": "span",
+      "className": "font-display text-base font-medium text-primary",
+      "id": "",
+      "text": "타이트 사주",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"OnGlyph Saehayan Font\", \"Pretendard Variable\", sans-serif",
+        "size": "16px",
+        "weight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(65, 66, 84)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 47,
+      "tag": "button",
+      "className": "p-2",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 8,
+        "right": 8,
+        "bottom": 8,
+        "left": 8
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "center"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 48,
+      "tag": "svg",
+      "className": {},
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "center"
+      },
+      "colors": {
+        "color": "rgb(65, 66, 84)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 52,
+      "tag": "main",
+      "className": "mx-auto max-w-[600px] px-4 pb-20",
+      "id": "",
+      "text": "🥞카테고리이벤트궁합솔로/연애운이별/재회달콤운업신/사대운신년운세월별운세취업/직장운관성/타운",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 16,
+        "bottom": 80,
+        "left": 16
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 53,
+      "tag": "section",
+      "className": "py-8",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 32,
+        "right": 0,
+        "bottom": 32,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 54,
+      "tag": "div",
+      "className": "flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "16px"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 55,
+      "tag": "div",
+      "className": "flex-shrink-0 snap-center rounded-2xl overflow-hidden",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "16px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 56,
+      "tag": "img",
+      "className": "w-full h-full object-cover",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 57,
+      "tag": "div",
+      "className": "flex-shrink-0 snap-center rounded-2xl overflow-hidden",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "16px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 58,
+      "tag": "img",
+      "className": "w-full h-full object-cover",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 59,
+      "tag": "section",
+      "className": "py-8",
+      "id": "",
+      "text": "🥞카테고리이벤트궁합솔로/연애운이별/재회달콤운업신/사대운신년운세월별운세취업/직장운관성/타운",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 32,
+        "right": 0,
+        "bottom": 32,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 60,
+      "tag": "div",
+      "className": "flex items-center gap-2 mb-6",
+      "id": "",
+      "text": "🥞카테고리",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 24,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "center",
+        "gap": "8px"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 61,
+      "tag": "span",
+      "className": "text-2xl",
+      "id": "",
+      "text": "🥞",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "24px",
+        "weight": "400",
+        "lineHeight": "32px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 62,
+      "tag": "h2",
+      "className": "font-display text-xl font-semibold text-primary",
+      "id": "",
+      "text": "카테고리",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"OnGlyph Saehayan Font\", \"Pretendard Variable\", sans-serif",
+        "size": "20px",
+        "weight": "600",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(65, 66, 84)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 63,
+      "tag": "div",
+      "className": "grid grid-cols-5 gap-4",
+      "id": "",
+      "text": "이벤트궁합솔로/연애운이별/재회달콤운업신/사대운신년운세월별운세취업/직장운관성/타운",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "grid",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "grid",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "16px"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 64,
+      "tag": "div",
+      "className": "flex flex-col items-center gap-2",
+      "id": "",
+      "text": "이벤트",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "normal",
+        "alignItems": "center",
+        "gap": "8px"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 65,
+      "tag": "div",
+      "className": "w-14 h-14 rounded-full bg-muted flex items-center justify-center overflow-hidden",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgb(248, 250, 252)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "9999px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 66,
+      "tag": "img",
+      "className": "w-full h-full object-cover",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 67,
+      "tag": "span",
+      "className": "text-xs text-center text-primary",
+      "id": "",
+      "text": "이벤트",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "lineHeight": "16px",
+        "letterSpacing": "normal",
+        "textAlign": "center"
+      },
+      "colors": {
+        "color": "rgb(65, 66, 84)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 68,
+      "tag": "div",
+      "className": "flex flex-col items-center gap-2",
+      "id": "",
+      "text": "궁합",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "normal",
+        "alignItems": "center",
+        "gap": "8px"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 69,
+      "tag": "div",
+      "className": "w-14 h-14 rounded-full bg-muted flex items-center justify-center overflow-hidden",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgb(248, 250, 252)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "9999px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 70,
+      "tag": "img",
+      "className": "w-full h-full object-cover",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 71,
+      "tag": "span",
+      "className": "text-xs text-center text-primary",
+      "id": "",
+      "text": "궁합",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "lineHeight": "16px",
+        "letterSpacing": "normal",
+        "textAlign": "center"
+      },
+      "colors": {
+        "color": "rgb(65, 66, 84)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 72,
+      "tag": "div",
+      "className": "flex flex-col items-center gap-2",
+      "id": "",
+      "text": "솔로/연애운",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "normal",
+        "alignItems": "center",
+        "gap": "8px"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 73,
+      "tag": "div",
+      "className": "w-14 h-14 rounded-full bg-muted flex items-center justify-center overflow-hidden",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgb(248, 250, 252)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "9999px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 74,
+      "tag": "img",
+      "className": "w-full h-full object-cover",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 75,
+      "tag": "span",
+      "className": "text-xs text-center text-primary",
+      "id": "",
+      "text": "솔로/연애운",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "lineHeight": "16px",
+        "letterSpacing": "normal",
+        "textAlign": "center"
+      },
+      "colors": {
+        "color": "rgb(65, 66, 84)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 76,
+      "tag": "div",
+      "className": "flex flex-col items-center gap-2",
+      "id": "",
+      "text": "이별/재회",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "normal",
+        "alignItems": "center",
+        "gap": "8px"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 77,
+      "tag": "div",
+      "className": "w-14 h-14 rounded-full bg-muted flex items-center justify-center overflow-hidden",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgb(248, 250, 252)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "9999px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 78,
+      "tag": "img",
+      "className": "w-full h-full object-cover",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 79,
+      "tag": "span",
+      "className": "text-xs text-center text-primary",
+      "id": "",
+      "text": "이별/재회",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "lineHeight": "16px",
+        "letterSpacing": "normal",
+        "textAlign": "center"
+      },
+      "colors": {
+        "color": "rgb(65, 66, 84)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 80,
+      "tag": "div",
+      "className": "flex flex-col items-center gap-2",
+      "id": "",
+      "text": "달콤운",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "normal",
+        "alignItems": "center",
+        "gap": "8px"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 81,
+      "tag": "div",
+      "className": "w-14 h-14 rounded-full bg-muted flex items-center justify-center overflow-hidden",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgb(248, 250, 252)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "9999px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 82,
+      "tag": "img",
+      "className": "w-full h-full object-cover",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 83,
+      "tag": "span",
+      "className": "text-xs text-center text-primary",
+      "id": "",
+      "text": "달콤운",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "lineHeight": "16px",
+        "letterSpacing": "normal",
+        "textAlign": "center"
+      },
+      "colors": {
+        "color": "rgb(65, 66, 84)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 84,
+      "tag": "div",
+      "className": "flex flex-col items-center gap-2",
+      "id": "",
+      "text": "업신/사대운",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "normal",
+        "alignItems": "center",
+        "gap": "8px"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 85,
+      "tag": "div",
+      "className": "w-14 h-14 rounded-full bg-muted flex items-center justify-center overflow-hidden",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgb(248, 250, 252)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "9999px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 86,
+      "tag": "img",
+      "className": "w-full h-full object-cover",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 87,
+      "tag": "span",
+      "className": "text-xs text-center text-primary",
+      "id": "",
+      "text": "업신/사대운",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "lineHeight": "16px",
+        "letterSpacing": "normal",
+        "textAlign": "center"
+      },
+      "colors": {
+        "color": "rgb(65, 66, 84)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 88,
+      "tag": "div",
+      "className": "flex flex-col items-center gap-2",
+      "id": "",
+      "text": "신년운세",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "normal",
+        "alignItems": "center",
+        "gap": "8px"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 89,
+      "tag": "div",
+      "className": "w-14 h-14 rounded-full bg-muted flex items-center justify-center overflow-hidden",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgb(248, 250, 252)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "9999px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 90,
+      "tag": "img",
+      "className": "w-full h-full object-cover",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 91,
+      "tag": "span",
+      "className": "text-xs text-center text-primary",
+      "id": "",
+      "text": "신년운세",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "lineHeight": "16px",
+        "letterSpacing": "normal",
+        "textAlign": "center"
+      },
+      "colors": {
+        "color": "rgb(65, 66, 84)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 92,
+      "tag": "div",
+      "className": "flex flex-col items-center gap-2",
+      "id": "",
+      "text": "월별운세",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "normal",
+        "alignItems": "center",
+        "gap": "8px"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 93,
+      "tag": "div",
+      "className": "w-14 h-14 rounded-full bg-muted flex items-center justify-center overflow-hidden",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgb(248, 250, 252)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "9999px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 94,
+      "tag": "img",
+      "className": "w-full h-full object-cover",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 95,
+      "tag": "span",
+      "className": "text-xs text-center text-primary",
+      "id": "",
+      "text": "월별운세",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "lineHeight": "16px",
+        "letterSpacing": "normal",
+        "textAlign": "center"
+      },
+      "colors": {
+        "color": "rgb(65, 66, 84)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 96,
+      "tag": "div",
+      "className": "flex flex-col items-center gap-2",
+      "id": "",
+      "text": "취업/직장운",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "normal",
+        "alignItems": "center",
+        "gap": "8px"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 97,
+      "tag": "div",
+      "className": "w-14 h-14 rounded-full bg-muted flex items-center justify-center overflow-hidden",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgb(248, 250, 252)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "9999px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 98,
+      "tag": "img",
+      "className": "w-full h-full object-cover",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 99,
+      "tag": "span",
+      "className": "text-xs text-center text-primary",
+      "id": "",
+      "text": "취업/직장운",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "lineHeight": "16px",
+        "letterSpacing": "normal",
+        "textAlign": "center"
+      },
+      "colors": {
+        "color": "rgb(65, 66, 84)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 100,
+      "tag": "div",
+      "className": "flex flex-col items-center gap-2",
+      "id": "",
+      "text": "관성/타운",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "normal",
+        "alignItems": "center",
+        "gap": "8px"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 101,
+      "tag": "div",
+      "className": "w-14 h-14 rounded-full bg-muted flex items-center justify-center overflow-hidden",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgb(248, 250, 252)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "9999px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 102,
+      "tag": "img",
+      "className": "w-full h-full object-cover",
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 103,
+      "tag": "span",
+      "className": "text-xs text-center text-primary",
+      "id": "",
+      "text": "관성/타운",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "12px",
+        "weight": "400",
+        "lineHeight": "16px",
+        "letterSpacing": "normal",
+        "textAlign": "center"
+      },
+      "colors": {
+        "color": "rgb(65, 66, 84)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 104,
+      "tag": "section",
+      "className": "py-4",
+      "id": "",
+      "text": "타이트 사주 이벤트😗친구 초대하고 3,000원 받기!5만 명에게 기쁨 전달 이벤트",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 16,
+        "right": 0,
+        "bottom": 16,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 105,
+      "tag": "h2",
+      "className": "font-display text-xl font-semibold text-primary mb-4",
+      "id": "",
+      "text": "타이트 사주 이벤트",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 16,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"OnGlyph Saehayan Font\", \"Pretendard Variable\", sans-serif",
+        "size": "20px",
+        "weight": "600",
+        "lineHeight": "28px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(65, 66, 84)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 106,
+      "tag": "div",
+      "className": "rounded-2xl bg-muted-100 p-4",
+      "id": "",
+      "text": "😗친구 초대하고 3,000원 받기!5만 명에게 기쁨 전달 이벤트",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 16,
+        "right": 16,
+        "bottom": 16,
+        "left": 16
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgb(243, 244, 246)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "16px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 107,
+      "tag": "div",
+      "className": "flex items-center gap-4",
+      "id": "",
+      "text": "😗친구 초대하고 3,000원 받기!5만 명에게 기쁨 전달 이벤트",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "center",
+        "gap": "16px"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 108,
+      "tag": "div",
+      "className": "w-12 h-12 rounded-full bg-white flex items-center justify-center text-2xl",
+      "id": "",
+      "text": "😗",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "24px",
+        "weight": "400",
+        "lineHeight": "32px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "9999px"
+      },
+      "display": "flex",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 109,
+      "tag": "div",
+      "className": "flex-1",
+      "id": "",
+      "text": "친구 초대하고 3,000원 받기!5만 명에게 기쁨 전달 이벤트",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(9, 9, 11)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 110,
+      "tag": "div",
+      "className": "font-bold text-primary",
+      "id": "",
+      "text": "친구 초대하고 3,000원 받기!",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "700",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(65, 66, 84)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 111,
+      "tag": "div",
+      "className": "text-sm text-slate-400",
+      "id": "",
+      "text": "5만 명에게 기쁨 전달 이벤트",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "14px",
+        "weight": "400",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(88, 89, 105)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 112,
+      "tag": "svg",
+      "className": {},
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(88, 89, 105)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 113,
+      "tag": "path",
+      "className": {},
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "start"
+      },
+      "colors": {
+        "color": "rgb(88, 89, 105)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "inline",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "inline",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 128,
+      "tag": "button",
+      "className": "fixed bottom-6 right-6 w-14 h-14 rounded-full bg-secondary shadow-lg flex items-center justify-center text-white hover:scale-110 transition-transform z-50",
+      "id": "",
+      "text": "",
+      "position": "fixed",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "center"
+      },
+      "colors": {
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(244, 63, 94)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "9999px"
+      },
+      "display": "flex",
+      "zIndex": "50",
+      "flexbox": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "transform 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 129,
+      "tag": "svg",
+      "className": {},
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "center"
+      },
+      "colors": {
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "block",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "block",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    },
+    {
+      "index": 130,
+      "tag": "path",
+      "className": {},
+      "id": "",
+      "text": "",
+      "position": "static",
+      "margin": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "padding": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "font": {
+        "family": "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+        "size": "16px",
+        "weight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textAlign": "center"
+      },
+      "colors": {
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "borderColor": "rgb(221, 221, 221)"
+      },
+      "border": {
+        "width": "0px",
+        "style": "solid",
+        "radius": "0px"
+      },
+      "display": "inline",
+      "zIndex": "auto",
+      "flexbox": {
+        "display": "inline",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal",
+        "gap": "normal"
+      },
+      "effects": {
+        "boxShadow": "none",
+        "opacity": "1",
+        "transform": "none",
+        "transition": "all",
+        "animation": "none 0s ease 0s 1 normal none running"
+      }
+    }
+  ],
+  "images": [
+    {
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png",
+      "alt": "여우솔탈-하반기",
+      "width": 330,
+      "height": 331
+    },
+    {
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png",
+      "alt": "하반기종합",
+      "width": 330,
+      "height": 330
+    },
+    {
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1758627216749x929285169986016800/%E1%84%8E%E1%85%B5%E1%86%AB%E1%84%80%E1%85%AE%E1%84%8E%E1%85%A9%E1%84%83%E1%85%A2.svg",
+      "alt": "이벤트",
+      "width": 56,
+      "height": 56
+    },
+    {
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754466621316x990961257053425200/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC.png",
+      "alt": "궁합",
+      "width": 56,
+      "height": 56
+    },
+    {
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1756104327591x195418940527699800/%E1%84%8C%E1%85%A2%E1%84%92%E1%85%AC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%89%E1%85%B3%E1%86%BC%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE.svg",
+      "alt": "솔로/연애운",
+      "width": 56,
+      "height": 56
+    },
+    {
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467329857x835823088653500300/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9.png",
+      "alt": "이별/재회",
+      "width": 56,
+      "height": 56
+    },
+    {
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467365568x557988189999608800/%EA%B6%81%ED%95%A9%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+      "alt": "달콤운",
+      "width": 56,
+      "height": 56
+    },
+    {
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1754467391031x376946978522862700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+      "alt": "업신/사대운",
+      "width": 56,
+      "height": 56
+    },
+    {
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=130,f=auto,dpr=1,fit=contain/f1754467415536x796541878799546000/%EC%BB%A4%EB%A6%AC%EC%96%B4%EC%82%AC%EC%A3%BC_%EC%8D%B8%EB%84%A4%EC%9D%BC.png",
+      "alt": "신년운세",
+      "width": 56,
+      "height": 56
+    },
+    {
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/cdn-cgi/image/w=128,h=128,f=auto,dpr=1,fit=contain/f1755096595963x896724663128204200/%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE.png",
+      "alt": "월별운세",
+      "width": 56,
+      "height": 56
+    },
+    {
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1756104085369x794228958999374300/%E1%84%91%E1%85%A2%E1%86%A8%E1%84%91%E1%85%A9%E1%86%A8-1-1.svg",
+      "alt": "취업/직장운",
+      "width": 56,
+      "height": 56
+    },
+    {
+      "src": "https://8543cf4fc76fddb1ac0de823835a53a1.cdn.bubble.io/f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg",
+      "alt": "관성/타운",
+      "width": 56,
+      "height": 56
+    }
+  ],
+  "fonts": [
+    "\"Pretendard Variable\", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif",
+    "\"OnGlyph Saehayan Font\", \"Pretendard Variable\", sans-serif"
+  ]
+}

@@ -1,0 +1,233 @@
+📐 PRECISION MEASUREMENT REPORT
+
+============================================================
+
+🎯 HEADER MEASUREMENTS
+------------------------------------------------------------
+Logo:
+  Text: "타이트 사주 이벤트"
+  Position: x=730px, y=787.78125px
+  Size: 128.828125px × 28px
+  Font: "OnGlyph Saehayan Font"
+  Font Size: 20px
+  Font Weight: 600
+  Color: rgb(65, 66, 84)
+
+📝 HEADING MEASUREMENTS
+------------------------------------------------------------
+
+H2 #1: "🍪 카테고리"
+  Font Family: "OnGlyph Saehayan Font"
+  Font Size: 20px
+  Font Weight: 600
+  Color: rgb(65, 66, 84)
+
+H2 #2: "타이트 사주 이벤트"
+  Font Family: "OnGlyph Saehayan Font"
+  Font Size: 20px
+  Font Weight: 600
+  Color: rgb(65, 66, 84)
+
+H2 #3: "🍷 월간 랭킹 BEST"
+  Font Family: "OnGlyph Saehayan Font"
+  Font Size: 20px
+  Font Weight: 600
+  Color: rgb(65, 66, 84)
+
+H2 #4: "🐣 NEW! 쌔삥 신규사주"
+  Font Family: "OnGlyph Saehayan Font"
+  Font Size: 20px
+  Font Weight: 600
+  Color: rgb(65, 66, 84)
+
+H2 #5: "🥹 타이트 사주 실시간 리뷰"
+  Font Family: "OnGlyph Saehayan Font"
+  Font Size: 20px
+  Font Weight: 600
+  Color: rgb(65, 66, 84)
+
+H3 #6: "Tight"
+  Font Family: "Pretendard Variable"
+  Font Size: 16px
+  Font Weight: 500
+  Color: rgb(65, 66, 84)
+
+🔘 BUTTON MEASUREMENTS
+------------------------------------------------------------
+
+Button #1:
+  Text: "(empty)"
+  Background: rgba(0, 0, 0, 0)
+  Color: rgb(71, 85, 105)
+  Padding: 5px
+  Border: 0px none rgb(71, 85, 105)
+  Border Radius: 4px
+  Font Size: 13.3333px
+  Font Weight: 400
+  Cursor: pointer
+
+Button #2:
+  Text: "(empty)"
+  Background: rgb(255, 255, 255)
+  Color: rgb(255, 255, 255)
+  Padding: 4px
+  Border: 0px none rgb(255, 255, 255)
+  Border Radius: 12px
+  Font Size: 16px
+  Font Weight: 600
+  Cursor: pointer
+
+Button #3:
+  Text: "(empty)"
+  Background: rgb(255, 255, 255)
+  Color: rgb(255, 255, 255)
+  Padding: 4px
+  Border: 0px none rgb(255, 255, 255)
+  Border Radius: 12px
+  Font Size: 16px
+  Font Weight: 600
+  Cursor: pointer
+
+Button #4:
+  Text: "(empty)"
+  Background: rgba(0, 0, 0, 0)
+  Color: rgb(0, 0, 0)
+  Padding: 5px
+  Border: 0px none rgb(0, 0, 0)
+  Border Radius: 4px
+  Font Size: 13.3333px
+  Font Weight: 400
+  Cursor: pointer
+
+📝 INPUT FIELD MEASUREMENTS
+------------------------------------------------------------
+
+Input #1:
+  Type: text
+  Placeholder: "2000/01/01"
+  Background: rgb(255, 255, 255)
+  Color: rgb(65, 66, 84)
+  Border: 0px none rgb(65, 66, 84)
+  Border Radius: 10px
+  Padding: 8px 12px
+  Font Size: 16px
+  Height: 32px
+
+Input #2:
+  Type: text
+  Placeholder: "2000/01/01"
+  Background: rgb(255, 255, 255)
+  Color: rgb(65, 66, 84)
+  Border: 0px none rgb(65, 66, 84)
+  Border Radius: 10px
+  Padding: 8px 12px
+  Font Size: 16px
+  Height: 32px
+
+Input #3:
+  Type: select-multiple
+  Placeholder: "N/A"
+  Background: rgb(255, 255, 255)
+  Color: rgb(0, 0, 0)
+  Border: 0px none rgb(0, 0, 0)
+  Border Radius: 2px
+  Padding: 0px
+  Font Size: 13.3333px
+  Height: 1px
+
+🖼️  IMAGE SIZE ANALYSIS
+------------------------------------------------------------
+
+Image Size Distribution:
+  32x32: 10개
+  90x90: 9개
+  330x330: 6개
+  280x287: 6개
+  330x331: 3개
+  1160x1160: 3개
+  1560x1560: 3개
+  331x330: 3개
+  344x352: 3개
+  280x280: 3개
+  280x279: 3개
+  40x40: 3개
+  256x256: 3개
+  90x92: 2개
+  1x1: 2개
+  44x45: 1개
+  90x91: 1개
+  468x468: 1개
+
+🎨 COLOR PALETTE (RGB VALUES)
+------------------------------------------------------------
+
+Solid Colors:
+  rgb(0, 0, 0)              = #000000
+  rgb(88, 89, 105)          = #585969
+  rgb(255, 255, 255)        = #ffffff
+  rgb(221, 221, 221)        = #dddddd
+  rgb(51, 51, 51)           = #333333
+  rgb(65, 66, 84)           = #414254
+  rgb(248, 250, 252)        = #f8fafc
+  rgb(241, 245, 249)        = #f1f5f9
+  rgb(15, 23, 42)           = #0f172a
+  rgb(71, 85, 105)          = #475569
+  rgb(244, 63, 94)          = #f43f5e
+  rgb(230, 230, 235)        = #e6e6eb
+  rgb(175, 177, 189)        = #afb1bd
+  rgb(243, 244, 246)        = #f3f4f6
+  rgb(242, 243, 247)        = #f2f3f7
+  rgb(59, 60, 77)           = #3b3c4d
+  rgb(29, 29, 29)           = #1d1d1d
+  rgb(254, 229, 0)          = #fee500
+  rgb(51, 51, 51) rgb(224, 224, 224) rgb(224, 224, 224) = #333333
+  rgb(255, 89, 0)           = #ff5900
+
+📏 SPACING PATTERNS
+------------------------------------------------------------
+
+Common Spacing Values:
+  0px 0px 80px
+  100px 0px 0px
+  10px normal
+  120px 0px 0px
+  20px 0px
+  0px 2%
+  20px 0px 0px
+  8px
+  0px 12px
+  0px 0px 4px
+  10px 16px 20px
+  0px 0px 10px
+  0px 20px
+  4px normal
+  14px 16px
+
+⭕ BORDER RADIUS PATTERNS
+------------------------------------------------------------
+
+Common Border Radius Values:
+  50%
+  4px
+  0px 0px 20px 20px
+  8px
+  20px
+  1000px
+  5px
+  10px
+  10px 10px 0px 0px
+  12px
+
+📐 LAYOUT STRUCTURE
+------------------------------------------------------------
+Body Width: 600px
+Body Height: 1080px
+Display: flex
+Flex Direction: column
+Justify Content: center
+Align Items: center
+
+============================================================
+✅ Precision measurement complete!
+
+📌 Use these exact values for pixel-perfect replication.

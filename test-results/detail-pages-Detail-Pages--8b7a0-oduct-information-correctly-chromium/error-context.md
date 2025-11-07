@@ -1,0 +1,98 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "뒤로 가기" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - button "뒤로 가기" [ref=e6]:
+            - img [ref=e7]
+        - heading "내 속마음 얼마나 알까?" [level=1] [ref=e9]
+    - main [ref=e10]:
+      - img "내 속마음 얼마나 알까?" [ref=e13]
+      - generic [ref=e14]:
+        - generic [ref=e16]:
+          - heading "내 속마음 얼마나 알까?" [level=2] [ref=e17]
+          - paragraph [ref=e18]: 솔로탈출 사주 😊
+        - generic [ref=e19]:
+          - generic [ref=e20]:
+            - img [ref=e21]
+            - generic [ref=e23]: "4.9"
+          - generic [ref=e24]:
+            - img [ref=e25]
+            - generic [ref=e28]: 5만+
+          - generic [ref=e29]: 54% 할인중
+        - generic [ref=e30]:
+          - generic [ref=e31]: 4,600원
+          - generic [ref=e32]: 10,000원
+      - generic [ref=e33]:
+        - heading "상품 설명" [level=3] [ref=e34]
+        - generic [ref=e35]:
+          - paragraph [ref=e36]: 솔로탈출 사주 😊에 대한 상세한 사주 상담을 받아보세요.
+          - paragraph [ref=e37]: 전문 사주 상담사가 정확한 사주 분석을 통해 고객님의 운세와 미래를 알려드립니다.
+          - generic [ref=e38]:
+            - heading "포함 내용" [level=4] [ref=e39]
+            - list [ref=e40]:
+              - listitem [ref=e41]:
+                - generic [ref=e42]: ✓
+                - generic [ref=e43]: 개인 맞춤 사주 분석
+              - listitem [ref=e44]:
+                - generic [ref=e45]: ✓
+                - generic [ref=e46]: 상세한 운세 해설
+              - listitem [ref=e47]:
+                - generic [ref=e48]: ✓
+                - generic [ref=e49]: PDF 결과 제공
+              - listitem [ref=e50]:
+                - generic [ref=e51]: ✓
+                - generic [ref=e52]: 1:1 채팅 상담 (30분)
+      - generic [ref=e53]:
+        - heading "고객 후기 (490 개)" [level=3] [ref=e54]:
+          - generic [ref=e55]: 고객 후기
+          - generic [ref=e56]: (490 개)
+        - generic [ref=e57]:
+          - generic [ref=e58]:
+            - generic [ref=e59]:
+              - generic [ref=e60]:
+                - generic [ref=e61]: 👤
+                - generic [ref=e62]: 김**
+              - generic [ref=e63]:
+                - img [ref=e64]
+                - img [ref=e66]
+                - img [ref=e68]
+                - img [ref=e70]
+                - img [ref=e72]
+            - paragraph [ref=e74]: 정말 정확한 분석이었어요! 내 속마음 얼마나 알까?를 받아보니 제 상황을 딱 집어주셔서 놀랐습니다. 추천합니다!
+            - generic [ref=e75]: 2024년 10월
+          - generic [ref=e76]:
+            - generic [ref=e77]:
+              - generic [ref=e78]:
+                - generic [ref=e79]: 👤
+                - generic [ref=e80]: 이**
+              - generic [ref=e81]:
+                - img [ref=e82]
+                - img [ref=e84]
+                - img [ref=e86]
+                - img [ref=e88]
+                - img [ref=e90]
+            - paragraph [ref=e92]: 상세한 설명 감사합니다. 채팅 상담도 친절하게 답변해주셔서 많은 도움이 되었어요.
+            - generic [ref=e93]: 2024년 10월
+          - generic [ref=e94]:
+            - generic [ref=e95]:
+              - generic [ref=e96]:
+                - generic [ref=e97]: 👤
+                - generic [ref=e98]: 박**
+              - generic [ref=e99]:
+                - img [ref=e100]
+                - img [ref=e102]
+                - img [ref=e104]
+                - img [ref=e106]
+                - img [ref=e108]
+            - paragraph [ref=e110]: 기대 이상이었습니다. PDF 자료도 깔끔하게 잘 정리되어 있어요. 가격 대비 만족스러워요!
+            - generic [ref=e111]: 2024년 9월
+    - button "상담 신청하기" [ref=e114] [cursor=pointer]
+  - button "Open Next.js Dev Tools" [ref=e120] [cursor=pointer]:
+    - img [ref=e121]
+  - alert [ref=e124]
+```
