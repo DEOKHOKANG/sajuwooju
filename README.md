@@ -195,6 +195,12 @@ lg: 18px   | xl: 20px  | 2xl: 24px | 3xl: 30px
 - 간단한 로딩 (8.5초)
 - 프로그레스 바 테스트
 
+### 우주 테마 홈페이지 (`/page-wooju`)
+- Cosmic Hero Section
+- 행성 기반 카테고리 아이콘
+- Glassmorphism UI
+- 음양오행 Product Cards
+
 ---
 
 ## 🛠 기술 스택
@@ -240,9 +246,11 @@ lg: 18px   | xl: 20px  | 2xl: 24px | 3xl: 30px
 
 - [DESIGN_SYSTEM.md](./DESIGN_SYSTEM.md) - 디자인 시스템 가이드
 - [FONT_SETUP.md](./FONT_SETUP.md) - 폰트 설정 가이드
-- [PHASE_R1_COMPLETE.md](./PHASE_R1_COMPLETE.md) - Phase R1 완료 보고서
-- [PHASE_R2_COMPLETE.md](./PHASE_R2_COMPLETE.md) - Phase R2 완료 보고서
-- [PHASE_R3_COMPLETE.md](./PHASE_R3_COMPLETE.md) - Phase R3 완료 보고서
+- [PHASE_R1_COMPLETE.md](./PHASE_R1_COMPLETE.md) - Phase R1 완료 보고서 (Design System)
+- [PHASE_R2_COMPLETE.md](./PHASE_R2_COMPLETE.md) - Phase R2 완료 보고서 (3D Engine)
+- [PHASE_R3_COMPLETE.md](./PHASE_R3_COMPLETE.md) - Phase R3 완료 보고서 (Loading Animations)
+- [PHASE_R4_COMPLETE.md](./PHASE_R4_COMPLETE.md) - Phase R4 완료 보고서 (Text Rebranding)
+- [PHASE_R5_COMPLETE.md](./PHASE_R5_COMPLETE.md) - Phase R5 완료 보고서 (UI Components)
 
 ---
 
