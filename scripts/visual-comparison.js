@@ -28,7 +28,7 @@ const path = require('path');
   // Original site
   const originalPage = await context.newPage();
   try {
-    await originalPage.goto('https://sajutight.me', {
+    await originalPage.goto('https://sajuwooju.me', {
       waitUntil: 'domcontentloaded',
       timeout: 60000
     });
@@ -91,7 +91,7 @@ const path = require('path');
     try {
       // Original section
       const origPage = await context.newPage();
-      await origPage.goto('https://sajutight.me', {
+      await origPage.goto('https://sajuwooju.me', {
         waitUntil: 'domcontentloaded',
         timeout: 60000
       });
@@ -267,7 +267,7 @@ const path = require('path');
       <h2 class="section-title">Full Page Comparison</h2>
       <div class="comparison-grid">
         <div class="image-container">
-          <div class="image-label original">Original (sajutight.me)</div>
+          <div class="image-label original">Original (sajuwooju.me)</div>
           <img src="original-full.png" alt="Original">
         </div>
         <div class="image-container">

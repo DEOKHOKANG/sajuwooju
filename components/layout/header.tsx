@@ -10,7 +10,7 @@ export function Header() {
         <div className="flex items-center gap-6">
           <Link href="/" className="flex items-center space-x-2">
             <span className="font-display text-2xl font-bold text-primary">
-              타이트사주
+              사주우주
             </span>
           </Link>
           <nav className="hidden md:flex gap-6">

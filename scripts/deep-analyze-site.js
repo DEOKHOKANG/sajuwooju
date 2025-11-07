@@ -10,9 +10,9 @@ async function deepAnalyze() {
   const context = await browser.newContext();
   const page = await context.newPage();
 
-  console.log('Loading homepage: https://sajutight.me\n');
+  console.log('Loading homepage: https://sajuwooju.me\n');
 
-  await page.goto('https://sajutight.me', {
+  await page.goto('https://sajuwooju.me', {
     waitUntil: 'networkidle',
     timeout: 90000
   });
@@ -23,14 +23,14 @@ async function deepAnalyze() {
 
   // Take screenshot
   await page.screenshot({
-    path: 'd:/saju/sajutight-v2/analysis/initial-load.png',
+    path: 'd:/saju/sajuwooju-v2/analysis/initial-load.png',
     fullPage: true
   });
   console.log('Initial screenshot saved\n');
 
   // Get page HTML to analyze structure
   const html = await page.content();
-  fs.writeFileSync('d:/saju/sajutight-v2/analysis/page-html.html', html);
+  fs.writeFileSync('d:/saju/sajuwooju-v2/analysis/page-html.html', html);
   console.log('HTML saved\n');
 
   // Scroll and wait for content to load
@@ -47,7 +47,7 @@ async function deepAnalyze() {
 
   // Take another screenshot after scrolling
   await page.screenshot({
-    path: 'd:/saju/sajutight-v2/analysis/after-scroll.png',
+    path: 'd:/saju/sajuwooju-v2/analysis/after-scroll.png',
     fullPage: true
   });
   console.log('After-scroll screenshot saved\n');
@@ -183,7 +183,7 @@ async function deepAnalyze() {
 
   // Save full analysis
   fs.writeFileSync(
-    'd:/saju/sajutight-v2/analysis/deep-analysis.json',
+    'd:/saju/sajuwooju-v2/analysis/deep-analysis.json',
     JSON.stringify(analysis, null, 2)
   );
   console.log('Full analysis saved to deep-analysis.json');
@@ -201,7 +201,7 @@ async function deepAnalyze() {
     }
 
     await page.screenshot({
-      path: 'd:/saju/sajutight-v2/analysis/category-page.png',
+      path: 'd:/saju/sajuwooju-v2/analysis/category-page.png',
       fullPage: true
     });
     console.log('Category page screenshot saved');

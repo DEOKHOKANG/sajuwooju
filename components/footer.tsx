@@ -7,7 +7,7 @@ export function Footer() {
         {/* Company Name */}
         <div className="mb-4 sm:mb-6">
           <h3 className="font-display text-lg sm:text-xl font-bold text-primary mb-2">
-            타이트 사주
+            사주우주
           </h3>
           <p className="text-xs sm:text-sm text-slate-400">
             정확한 사주로 더 나은 미래를 설계하세요
@@ -77,7 +77,7 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="text-xs sm:text-sm text-slate-400 pt-6 sm:pt-8 border-t border-border">
-          <p>© 2025 타이트 사주. All rights reserved.</p>
+          <p>© 2025 사주우주. All rights reserved.</p>
           <p className="mt-1 sm:mt-2">사업자등록번호: 123-45-67890</p>
         </div>
       </div>

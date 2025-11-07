@@ -1,5 +1,5 @@
 # Production-Grade Clone Master Plan
-## sajutight.me → 100% Perfect Clone
+## sajuwooju.me → 100% Perfect Clone
 
 생성일시: 2025-11-05
 현재 정확도: **102%** (측정 기준)
@@ -584,7 +584,7 @@ import Image from 'next/image';
 
 2. **Run visual comparison**
    ```bash
-   cd sajutight-v2
+   cd sajuwooju-v2
    node scripts/visual-comparison.js
    # Open: analysis/visual-comparison/comparison-report.html
    ```

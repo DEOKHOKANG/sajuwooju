@@ -5,7 +5,7 @@ async function comprehensiveAnalysis() {
   const page = await browser.newPage();
   
   try {
-    await page.goto('https://sajutight.me', { waitUntil: 'networkidle' });
+    await page.goto('https://sajuwooju.me', { waitUntil: 'networkidle' });
     await page.waitForTimeout(2000);
     
     const analysis = await page.evaluate(() => {
@@ -83,7 +83,7 @@ async function comprehensiveAnalysis() {
     
     // Save to file
     const fs = require('fs');
-    fs.writeFileSync('d:/saju/sajutight-v2/page-structure.json', JSON.stringify(analysis, null, 2));
+    fs.writeFileSync('d:/saju/sajuwooju-v2/page-structure.json', JSON.stringify(analysis, null, 2));
     console.log('Analysis saved to page-structure.json');
     console.log('Total lines of text:', analysis.totalVisibleLines);
     console.log('First 50 lines:');

@@ -8,7 +8,7 @@ export function Footer() {
           {/* 브랜드 */}
           <div className="space-y-3">
             <h3 className="font-display text-xl font-bold text-primary">
-              타이트사주
+              사주우주
             </h3>
             <p className="text-sm text-muted-foreground">
               AI 기반의 정확한 사주 궁합 분석 서비스
@@ -102,7 +102,7 @@ export function Footer() {
         </div>
 
         <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} 타이트사주. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} 사주우주. All rights reserved.</p>
         </div>
       </div>
     </footer>

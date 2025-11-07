@@ -1,7 +1,7 @@
-# SAJUTIGHT.ME Homepage Complete Structure Analysis
+# SAJUWOOJU.ME Homepage Complete Structure Analysis
 
 ## Overview
-- **Site Title**: 타이트 사주 | 쫀득하게 들어맞는 사주 궁합 만세력
+- **Site Title**: 사주우주 | 우주의 법칙으로 읽는 나의 운명
 - **Translation**: Tight Saju | Well-fitted Saju Compatibility Fortune Reading
 - **Platform**: Built on Bubble.io (no-code platform)
 - **Viewport**: 1280x720 (responsive design)
@@ -131,7 +131,7 @@
 ## 4. CUSTOMER REVIEWS SECTION
 
 ### Header
-- Label: 🥹 타이트 사주 실시간 리뷰 (Real-time Reviews)
+- Label: 🥹 사주우주 실시간 리뷰 (Real-time Reviews)
 - CTA: 전체 보기 (View All)
 
 ### Review Examples
@@ -149,7 +149,7 @@
 - Purpose: Create FOMO/urgency for conversions
 
 ### Floating Logo
-- Text: 타이트 사주
+- Text: 사주우주
 - Position: Fixed
 
 ---
@@ -215,7 +215,7 @@
 
 ## SUMMARY
 
-Sajutight.me is a **conversion-focused, single-page website** for Saju fortune-telling services.
+Sajuwooju.me is a **conversion-focused, single-page website** for Saju fortune-telling services.
 
 **Key Characteristics:**
 - 12 featured service products with discounts

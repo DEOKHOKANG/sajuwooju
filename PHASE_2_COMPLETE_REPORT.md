@@ -63,7 +63,7 @@ h2 { /* color inherited from parent */ }
 
 **영향받는 요소**:
 - ✅ "카테고리" heading
-- ✅ "타이트 사주 이벤트" heading
+- ✅ "사주우주 이벤트" heading
 - ✅ "월간 랭킹 BEST" heading
 - ✅ All future H2 elements
 

@@ -1,503 +1,581 @@
-# 타이트사주 디자인 시스템
+# 사주우주 (SajuWooju) 디자인 시스템
 
-## 개요
-
-타이트사주의 디자인 시스템은 일관성 있고 확장 가능한 UI를 만들기 위한 규칙과 원칙을 정의합니다.
-
-## 디자인 철학
-
-### 핵심 원칙
-1. **일관성** - 모든 인터페이스에서 동일한 패턴 사용
-2. **접근성** - 모든 사용자가 쉽게 사용할 수 있는 디자인
-3. **명확성** - 직관적이고 이해하기 쉬운 UI
-4. **한국적 감성** - 사주라는 전통적 주제를 현대적으로 해석
+**버전**: 1.0.0
+**최종 업데이트**: 2025-11-08
+**상태**: Phase R1 Complete
 
 ---
 
-## 1. 컬러 시스템
+## 목차
 
-### 브랜드 컬러
-
-#### Primary (주 색상)
-사주의 오행 중 "목(木)"을 상징하는 그린 계열
-
-```css
---primary: #14B856
-```
-
-**사용처:**
-- 주요 CTA 버튼
-- 브랜드 로고
-- 강조 텍스트
-- 활성 상태 표시
-
-**팔레트:**
-- 50: #E8F9EF (매우 밝음)
-- 100: #D1F3DF
-- 200: #A3E7BF
-- 300: #75DB9F
-- 400: #47CF7F
-- 500: #14B856 (기본)
-- 600: #109345
-- 700: #0C6E34
-- 800: #084923
-- 900: #042412 (매우 어두움)
-
-#### Secondary (보조 색상)
-사주의 오행 중 "화(火)"를 상징하는 레드 계열
-
-```css
---secondary: #FF5D5D
-```
-
-**사용처:**
-- 경고 메시지
-- 중요한 정보 강조
-- 보조 CTA 버튼
-- 특별 이벤트 배지
-
-**팔레트:**
-- 50: #FFE5E5
-- 100: #FFCCCC
-- 200: #FF9999
-- 300: #FF6666
-- 400: #FF5D5D (기본)
-- 500: #FF3333
-- 600: #CC0000
-- 700: #990000
-- 800: #660000
-- 900: #330000
-
-### 시스템 컬러
-
-#### Success (성공)
-```css
---success: rgba(23, 219, 78, 1)
-```
-- 성공 메시지
-- 완료 상태
-- 긍정적 피드백
-
-#### Destructive (파괴적/위험)
-```css
---destructive: rgba(255, 0, 0, 1)
-```
-- 에러 메시지
-- 삭제 확인
-- 위험한 액션
-
-### 중립 컬러 (Neutral/Gray)
-
-```css
-50:  #FAFAFA
-100: #F5F5F5
-200: #E5E5E5
-300: #D4D4D4
-400: #A3A3A3
-500: #737373
-600: #525252
-700: #404040
-800: #262626
-900: #171717
-```
-
-**사용처:**
-- 텍스트 (700-900)
-- 배경 (50-200)
-- 보더 (200-400)
-- 비활성 상태 (400-500)
-
-### 시맨틱 컬러
-
-#### 라이트 모드
-```css
---background: hsl(0 0% 100%)
---foreground: hsl(240 10% 3.9%)
---card: hsl(0 0% 100%)
---card-foreground: hsl(240 10% 3.9%)
---muted: hsl(240 4.8% 95.9%)
---muted-foreground: hsl(240 3.8% 46.1%)
---border: hsl(240 5.9% 90%)
-```
-
-#### 다크 모드
-```css
---background: hsl(240 10% 3.9%)
---foreground: hsl(0 0% 98%)
---card: hsl(240 10% 3.9%)
---card-foreground: hsl(0 0% 98%)
---muted: hsl(240 3.7% 15.9%)
---muted-foreground: hsl(240 5% 64.9%)
---border: hsl(240 3.7% 15.9%)
-```
+1. [브랜드 아이덴티티](#브랜드-아이덴티티)
+2. [컬러 시스템](#컬러-시스템)
+3. [타이포그래피](#타이포그래피)
+4. [스페이싱 & 레이아웃](#스페이싱--레이아웃)
+5. [애니메이션](#애니메이션)
+6. [컴포넌트 가이드](#컴포넌트-가이드)
+7. [접근성](#접근성)
 
 ---
 
-## 2. 타이포그래피
+## 브랜드 아이덴티티
+
+### 브랜드 네임
+- **한글**: 사주우주
+- **영문**: SajuWooju
+- **도메인**: sajuwooju.com
+
+### 브랜드 슬로건
+> "우주의 법칙으로 읽는 나의 운명"
+
+### 브랜드 비전
+우주의 9개 행성(수금지화목토천해명)과 음양오행(木火土金水)을 결합하여, 고대 동양철학과 현대 천문학이 만나는 새로운 사주 해석 경험을 제공합니다.
+
+### 브랜드 보이스
+- **톤**: 신비롭지만 친근한, 우주적이지만 이해하기 쉬운
+- **스타일**: 전문적이면서도 따뜻한, 과학적이면서도 영적인
+- **특징**: 우주와 별에 대한 은유 사용, 감성적이고 시적인 표현
+
+---
+
+## 컬러 시스템
+
+### 기본 팔레트
+
+#### 우주 배경 (Deep Space)
+```css
+--space-black: #0A0E27      /* 깊은 우주 검정 */
+--space-dark: #1A1F3A       /* 어두운 우주 */
+--space-navy: #2D3561       /* 우주 네이비 */
+--space-midnight: #151937   /* 미드나잇 우주 */
+--space-deep: #0D1226       /* 심해 우주 */
+```
+
+**사용처**:
+- 페이지 배경 (`bg-space-black`)
+- 카드/섹션 배경 (`bg-space-dark`)
+- 모달/오버레이 (`bg-space-midnight`)
+
+#### 별빛 & 강조색 (Stars & Accents)
+```css
+--star-gold: #FFD700        /* 별빛 골드 */
+--star-silver: #E8E8E8      /* 은빛 별 */
+--cosmic-purple: #7B68EE    /* 우주 보라 */
+--nebula-pink: #FF6EC7      /* 성운 핑크 */
+--nebula-blue: #4ECBFF      /* 성운 블루 */
+--aurora-green: #00FFB3     /* 오로라 그린 */
+--comet-cyan: #00D9FF       /* 혜성 시안 */
+```
+
+**사용처**:
+- CTA 버튼 (`bg-star-gold`, `bg-cosmic-purple`)
+- 링크/하이라이트 (`text-star-gold`)
+- 아이콘/장식 (`text-nebula-pink`, `text-aurora-green`)
+
+### 행성 색상 (음양오행 매핑)
+
+#### 水 (Water) - 흐름, 지혜, 유연성
+```css
+--planet-mercury: #B8C5D6   /* 수성 - 은회색 */
+--planet-uranus: #4FD0E7    /* 천왕성 - 청록색 */
+--planet-neptune: #4169E1   /* 해왕성 - 진한 파랑 */
+```
+
+#### 金 (Metal) - 단단함, 정의, 결단
+```css
+--planet-venus: #FFD700     /* 금성 - 황금색 */
+```
+
+#### 土 (Earth) - 안정, 중심, 포용
+```css
+--planet-earth: #4169E1     /* 지구 - 파랑 */
+--planet-saturn: #DAA520    /* 토성 - 황갈색 */
+--planet-pluto: #8B7355     /* 명왕성 - 갈색 */
+```
+
+#### 火 (Fire) - 열정, 에너지, 변화
+```css
+--planet-mars: #DC143C      /* 화성 - 붉은색 */
+```
+
+#### 木 (Wood) - 성장, 확장, 생명력
+```css
+--planet-jupiter: #FF8C00   /* 목성 - 주황색 */
+```
+
+### 그라디언트 프리셋
+
+#### 우주 배경 그라디언트
+```css
+.bg-gradient-space {
+  background: linear-gradient(180deg,
+    #0A0E27 0%,      /* space-black */
+    #151937 50%,     /* space-midnight */
+    #2D3561 100%     /* space-navy */
+  );
+}
+```
+
+#### 성운 그라디언트
+```css
+.bg-gradient-nebula {
+  background: linear-gradient(135deg,
+    #FF6EC7 0%,      /* nebula-pink */
+    #7B68EE 50%,     /* cosmic-purple */
+    #4ECBFF 100%     /* nebula-blue */
+  );
+}
+```
+
+#### 오로라 그라디언트
+```css
+.bg-gradient-aurora {
+  background: linear-gradient(90deg,
+    #00FFB3 0%,      /* aurora-green */
+    #00D9FF 50%,     /* comet-cyan */
+    #4ECBFF 100%     /* nebula-blue */
+  );
+}
+```
+
+#### 태양 그라디언트
+```css
+.bg-gradient-sun {
+  background: radial-gradient(circle,
+    #FFE66D 0%,      /* sun-core */
+    #FDB813 40%,     /* sun-yellow */
+    #FF6B35 100%     /* sun-orange */
+  );
+}
+```
+
+### 텍스트 색상
+```css
+--text-primary: #FFFFFF      /* 기본 텍스트 - 흰색 */
+--text-secondary: #B8C5D6    /* 보조 텍스트 - 은회색 */
+--text-tertiary: #7A8499     /* 3차 텍스트 - 회색 */
+--text-disabled: #4A5568     /* 비활성 - 진한 회색 */
+```
+
+### 컬러 사용 규칙
+
+1. **대비율**: 텍스트는 WCAG AA 기준 (4.5:1) 준수
+2. **계층**: primary > secondary > tertiary 순서로 중요도 표현
+3. **강조**: 골드/퍼플은 중요한 CTA에만 사용
+4. **행성 색**: 각 행성 관련 콘텐츠에만 해당 색상 사용
+
+---
+
+## 타이포그래피
 
 ### 폰트 패밀리
 
-#### 기본 폰트: Pretendard
-- **목적**: 본문, UI 요소
-- **특징**: 한글 최적화, 높은 가독성
-- **웨이트**: 400 (Regular), 500 (Medium), 600 (SemiBold), 700 (Bold)
-
+#### 1. Space Grotesk (Display Font)
 ```css
-font-family: var(--font-pretendard), Pretendard, -apple-system, sans-serif;
+font-family: 'Space Grotesk', 'Pretendard Variable', sans-serif;
 ```
+**용도**: 제목, 큰 텍스트, 브랜드 로고
+**Weight**: 300 (Light), 400 (Regular), 500 (Medium), 600 (Semi-Bold), 700 (Bold)
+**클래스**: `font-display`
 
-#### 디스플레이 폰트: Ownglyph Saehayan
-- **목적**: 제목, 브랜드 요소
-- **특징**: 한국적 서예 느낌, 고유한 개성
-- **사용**: 주요 헤딩, 로고
-
+#### 2. Pretendard Variable (Body Font)
 ```css
-font-family: var(--font-ownglyph), serif;
+font-family: 'Pretendard Variable', sans-serif;
 ```
+**용도**: 본문, UI 텍스트, 일반 콘텐츠
+**Weight**: 100-900 (Variable)
+**클래스**: `font-body`
 
-### 폰트 크기 스케일
+#### 3. Ownglyph Saehayan (Decorative)
+```css
+font-family: 'Ownglyph Saehayan', 'Pretendard Variable', sans-serif;
+```
+**용도**: 특별한 장식, 브랜드 포인트
+**클래스**: `font-ownglyph`
 
-| Name | Size | Line Height | Usage |
-|------|------|-------------|-------|
-| xs | 12px | 16px | 캡션, 작은 라벨 |
-| sm | 14px | 20px | 보조 텍스트 |
-| base | 16px | 24px | 본문 (기본) |
-| lg | 18px | 28px | 중요 본문 |
-| xl | 20px | 28px | 소제목 |
-| 2xl | 24px | 32px | 섹션 제목 |
-| 3xl | 30px | 36px | 페이지 제목 |
-| 4xl | 36px | 40px | 히어로 제목 |
-| 5xl | 48px | 1 | 대형 디스플레이 |
-| 6xl | 60px | 1 | 특대형 디스플레이 |
+### 타이포그래피 스케일 (8px 기반)
 
-### 폰트 웨이트
-
-| Name | Weight | Usage |
-|------|--------|-------|
-| Regular | 400 | 본문 텍스트 |
-| Medium | 500 | 강조 텍스트 |
-| SemiBold | 600 | 소제목 |
-| Bold | 700 | 제목, 버튼 |
+| 클래스 | 크기 | Line Height | 용도 | 폰트 |
+|--------|------|-------------|------|------|
+| `text-9xl` | 128px | 1 | Hero 메인 타이틀 | Display |
+| `text-8xl` | 96px | 1 | Hero 타이틀 | Display |
+| `text-7xl` | 72px | 1 | 페이지 타이틀 | Display |
+| `text-6xl` | 60px | 1 | 섹션 타이틀 | Display |
+| `text-5xl` | 48px | 1 | 큰 섹션 제목 | Display |
+| `text-4xl` | 36px | 2.5rem | 카드 타이틀 | Display |
+| `text-3xl` | 30px | 2.25rem | 서브 타이틀 | Display/Body |
+| `text-2xl` | 24px | 2rem | 섹션 제목 | Body |
+| `text-xl` | 20px | 1.875rem | 큰 본문 | Body |
+| `text-lg` | 18px | 1.75rem | 강조 본문 | Body |
+| `text-base` | 16px | 1.5rem | 기본 본문 | Body |
+| `text-sm` | 14px | 1.25rem | 작은 텍스트 | Body |
+| `text-xs` | 12px | 1rem | 캡션, 라벨 | Body |
+| `text-2xs` | 10px | 0.875rem | 메타 정보 | Body |
 
 ### 타이포그래피 사용 예시
 
 ```tsx
-// 페이지 제목
-<h1 className="font-display text-4xl font-bold text-primary">
-  타이트사주
+// Hero 타이틀
+<h1 className="font-display text-8xl font-bold text-gradient-gold">
+  사주우주
 </h1>
 
 // 섹션 제목
-<h2 className="text-2xl font-semibold">
-  사주 궁합 보기
+<h2 className="font-display text-5xl font-semibold text-text-primary">
+  나의 운명을 알아보세요
 </h2>
 
 // 본문
-<p className="text-base text-muted-foreground">
-  AI 기반의 정확한 사주 분석
+<p className="font-body text-base text-text-secondary">
+  우주의 9개 행성이 당신의 사주를 분석합니다.
 </p>
 
-// 작은 라벨
-<span className="text-xs text-neutral-500">
-  2024년 1월 1일
+// 강조 텍스트
+<span className="font-body text-lg font-medium text-star-gold">
+  지금 시작하기
 </span>
 ```
 
----
+### 타이포그래피 규칙
 
-## 3. 스페이싱 시스템
-
-### 기본 스케일
-
-| Name | Size | Usage |
-|------|------|-------|
-| xs | 4px | 아이콘과 텍스트 간격 |
-| sm | 8px | 밀접한 요소 간격 |
-| md | 16px | 기본 여백 |
-| lg | 24px | 컴포넌트 간격 |
-| xl | 32px | 섹션 내부 여백 |
-| 2xl | 48px | 섹션 간격 |
-| 3xl | 64px | 큰 섹션 간격 |
-| 4xl | 96px | 페이지 레벨 간격 |
-
-### 사용 예시
-
-```tsx
-// 카드 내부 패딩
-<div className="p-6"> {/* 24px */}
-
-// 요소 간 마진
-<div className="space-y-4"> {/* 16px 수직 간격 */}
-
-// 큰 섹션 구분
-<section className="py-16"> {/* 64px 상하 패딩 */}
-```
+1. **제목**: Display font 사용, font-weight 600-700
+2. **본문**: Body font 사용, font-weight 400
+3. **강조**: font-weight 500-600, 색상 변경 (gold/purple)
+4. **계층**: h1 > h2 > h3 순서로 크기 감소 (2-3 단계 차이)
 
 ---
 
-## 4. Border Radius
+## 스페이싱 & 레이아웃
 
-| Name | Size | Usage |
-|------|------|-------|
-| none | 0 | 각진 요소 |
-| sm | 4px | 작은 요소 |
-| md | 8px | 기본 (버튼, 인풋) |
-| lg | 12px | 카드 |
-| xl | 16px | 큰 카드 |
-| 2xl | 24px | 모달, 다이얼로그 |
-| full | 9999px | 원형 (아바타, 배지) |
+### 스페이싱 시스템 (8px 기반)
 
-```tsx
-<Button className="rounded-md"> {/* 8px */}
-<Card className="rounded-lg"> {/* 12px */}
-<Avatar className="rounded-full"> {/* 원형 */}
-```
+| 클래스 | 값 | rem | 용도 |
+|--------|-----|-----|------|
+| `space-0.5` | 4px | 0.25rem | 아주 작은 간격 |
+| `space-1` | 8px | 0.5rem | 작은 간격 |
+| `space-2` | 16px | 1rem | 기본 간격 |
+| `space-3` | 24px | 1.5rem | 중간 간격 |
+| `space-4` | 32px | 2rem | 큰 간격 |
+| `space-5` | 40px | 2.5rem | 섹션 간격 |
+| `space-6` | 48px | 3rem | 큰 섹션 간격 |
+| `space-8` | 64px | 4rem | 페이지 간격 |
+| `space-10` | 80px | 5rem | 큰 페이지 간격 |
+| `space-12` | 96px | 6rem | Hero 간격 |
 
----
+### 레이아웃 그리드
 
-## 5. 그림자 (Shadows)
-
-| Name | Value | Usage |
-|------|-------|-------|
-| sm | 0 1px 2px rgba(0,0,0,0.05) | 미세한 그림자 |
-| md | 0 4px 6px rgba(0,0,0,0.1) | 기본 그림자 |
-| lg | 0 10px 15px rgba(0,0,0,0.1) | 부각된 요소 |
-| xl | 0 20px 25px rgba(0,0,0,0.1) | 떠있는 요소 |
-| 2xl | 0 25px 50px rgba(0,0,0,0.25) | 모달, 팝오버 |
-| inner | inset 0 2px 4px rgba(0,0,0,0.05) | 내부 그림자 |
-
-```tsx
-<Card className="shadow-md"> {/* 기본 카드 */}
-<Modal className="shadow-2xl"> {/* 모달 */}
-```
-
----
-
-## 6. 애니메이션
-
-### 타이핑 효과
-
-타이트사주의 시그니처 애니메이션
-
-```tsx
-import { TypingText } from "@/components/ui/typing-text";
-
-<TypingText
-  text="당신의 운명을 확인하세요"
-  delay={500}
-/>
-```
-
-**설정:**
-- Duration: 4s
-- Timing: steps(60, end)
-- Delay: 0.5s
-
-### 트랜지션
-
+#### Container
 ```css
-/* 색상 변화 */
-transition: colors 0.3s ease-in;
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem; /* 32px */
+}
+```
 
-/* 변형 */
-transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+#### Grid System
+```css
+/* 1 column (mobile) */
+.grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
+
+/* 2 columns (tablet) */
+@media (min-width: 768px) {
+  .md:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* 3-4 columns (desktop) */
+@media (min-width: 1024px) {
+  .lg:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .lg:grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+}
+```
+
+#### Gap System
+```css
+gap-2  /* 16px */
+gap-3  /* 24px */
+gap-4  /* 32px */
+gap-6  /* 48px */
+gap-8  /* 64px */
+```
+
+### Border Radius
+```css
+rounded-sm    /* 4px */
+rounded-md    /* 8px */
+rounded-lg    /* 12px */
+rounded-xl    /* 16px */
+rounded-2xl   /* 24px */
+rounded-3xl   /* 32px */
+rounded-full  /* 9999px */
 ```
 
 ---
 
-## 7. 컴포넌트
+## 애니메이션
+
+### 키프레임 애니메이션
+
+#### 1. 별 반짝임 (Twinkle)
+```css
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* 사용 */
+.animate-twinkle {
+  animation: twinkle 2s ease-in-out infinite;
+}
+```
+
+#### 2. 행성 공전 (Orbit)
+```css
+@keyframes orbit {
+  from { transform: rotate(0deg) translateX(200px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(200px) rotate(-360deg); }
+}
+
+/* 사용 */
+.animate-orbit {
+  animation: orbit 20s linear infinite;
+}
+```
+
+#### 3. 성운 펄스 (Nebula Pulse)
+```css
+@keyframes nebula-pulse {
+  0%, 100% { filter: brightness(1) blur(0px); opacity: 0.6; }
+  50% { filter: brightness(1.3) blur(4px); opacity: 0.9; }
+}
+
+/* 사용 */
+.animate-nebula-pulse {
+  animation: nebula-pulse 4s ease-in-out infinite;
+}
+```
+
+#### 4. 별똥별 (Shooting Star)
+```css
+@keyframes shooting-star {
+  0% { transform: translateX(0) translateY(0); opacity: 1; }
+  100% { transform: translateX(300px) translateY(300px); opacity: 0; }
+}
+
+/* 사용 */
+.animate-shooting-star {
+  animation: shooting-star 2s ease-out forwards;
+}
+```
+
+#### 5. 우주 먼지 떠다님 (Float Dust)
+```css
+@keyframes float-dust {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(10px, -10px); }
+  50% { transform: translate(-5px, -20px); }
+  75% { transform: translate(-10px, -10px); }
+}
+
+/* 사용 */
+.animate-float-dust {
+  animation: float-dust 8s ease-in-out infinite;
+}
+```
+
+#### 6. 글로우 펄스 (Glow Pulse)
+```css
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(123, 104, 238, 0.5); }
+  50% { box-shadow: 0 0 40px rgba(123, 104, 238, 0.8); }
+}
+
+/* 사용 */
+.animate-glow-pulse {
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+```
+
+### 인터랙션 애니메이션
+
+#### Hover Effects
+```css
+/* 카드 호버 */
+.card-hover {
+  transition: transform 200ms ease-out, box-shadow 200ms ease-out;
+}
+.card-hover:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* 버튼 호버 */
+.button-hover {
+  transition: all 150ms ease;
+}
+.button-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(255, 215, 0, 0.4);
+}
+```
+
+#### Fade In
+```css
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out;
+}
+```
+
+#### Slide Up
+```css
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.6s ease-out;
+}
+```
+
+### 애니메이션 사용 규칙
+
+1. **성능**: `transform`과 `opacity`만 애니메이션 (GPU 가속)
+2. **Duration**: 150-600ms (너무 느리지 않게)
+3. **Easing**: `ease-out` (자연스러운 느낌)
+4. **will-change**: 필요시에만 사용 (메모리 소비)
+
+---
+
+## 컴포넌트 가이드
 
 ### Button
 
-**Variants:**
-- `default` - 주요 액션 (primary 배경)
-- `secondary` - 보조 액션 (secondary 배경)
-- `destructive` - 위험한 액션 (빨간색)
-- `outline` - 외곽선만
-- `ghost` - 배경 없음
-- `link` - 링크 스타일
-
-**Sizes:**
-- `sm` - 36px 높이
-- `default` - 40px 높이
-- `lg` - 44px 높이
-- `icon` - 40x40px 정사각형
-
+#### Primary Button
 ```tsx
-<Button variant="default" size="lg">
-  궁합 보기
-</Button>
+<button className="
+  px-6 py-3
+  bg-star-gold text-space-black
+  font-display font-semibold text-lg
+  rounded-xl
+  hover:scale-105 hover:shadow-glow-gold
+  transition-all duration-150
+  active:scale-98
+">
+  지금 시작하기
+</button>
+```
 
-<Button variant="outline">
-  취소
-</Button>
+#### Secondary Button
+```tsx
+<button className="
+  px-6 py-3
+  bg-transparent border-2 border-star-gold text-star-gold
+  font-display font-semibold text-lg
+  rounded-xl
+  hover:bg-star-gold/10 hover:shadow-glow-gold
+  transition-all duration-150
+">
+  더 알아보기
+</button>
 ```
 
 ### Card
 
-카드 컴포넌트는 정보를 그룹화하는 컨테이너
-
+#### Glass Card
 ```tsx
-<Card>
-  <CardHeader>
-    <CardTitle>궁합 결과</CardTitle>
-    <CardDescription>두 사람의 사주 분석</CardDescription>
-  </CardHeader>
-  <CardContent>
-    {/* 내용 */}
-  </CardContent>
-  <CardFooter>
-    {/* 액션 버튼 */}
-  </CardFooter>
-</Card>
+<div className="
+  p-6
+  glass
+  rounded-2xl
+  hover:glass-hover
+  transition-all duration-200
+">
+  {/* 내용 */}
+</div>
+```
+
+#### Planet Card
+```tsx
+<div className="
+  p-8
+  bg-space-dark
+  border border-ui-border
+  rounded-3xl
+  hover:border-planet-jupiter
+  hover:shadow-glow
+  transition-all duration-300
+">
+  <div className="text-planet-jupiter text-5xl mb-4">🪐</div>
+  <h3 className="font-display text-2xl font-semibold mb-2">목성</h3>
+  <p className="text-text-secondary">木 - 성장과 확장</p>
+</div>
 ```
 
 ### Input
 
 ```tsx
-<div className="space-y-2">
-  <Label htmlFor="birth">생년월일</Label>
-  <Input
-    id="birth"
-    type="date"
-    placeholder="1990-01-01"
-  />
-</div>
+<input
+  type="text"
+  className="
+    w-full px-4 py-3
+    bg-space-dark
+    border border-ui-border
+    rounded-xl
+    text-text-primary
+    placeholder:text-text-tertiary
+    focus:border-star-gold focus:ring-2 focus:ring-star-gold/20
+    transition-all duration-150
+  "
+  placeholder="이름을 입력하세요"
+/>
 ```
 
 ---
 
-## 8. 레이아웃
+## 접근성
 
-### 브레이크포인트
+### 색상 대비
+- **WCAG AA 기준**: 텍스트 4.5:1, 큰 텍스트 3:1
+- **배경 vs 텍스트**: `space-black` + `text-primary` = 21:1 ✅
+- **버튼**: `star-gold` + `space-black` = 13.5:1 ✅
 
-| Name | Size | Device |
-|------|------|--------|
-| sm | 640px | Mobile (가로) |
-| md | 768px | Tablet |
-| lg | 1024px | Desktop (작음) |
-| xl | 1280px | Desktop |
-| 2xl | 1536px | Large Desktop |
+### Keyboard Navigation
+- 모든 interactive 요소 focus-visible 스타일
+- Tab 순서 논리적
+- Escape key로 모달 닫기
 
-### Container
-
-중앙 정렬 컨테이너 (최대 너비 제한)
-
-```tsx
-<Container className="py-16">
-  {/* 내용 */}
-</Container>
-```
-
-### Grid System
-
-```tsx
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-  <Card>...</Card>
-  <Card>...</Card>
-  <Card>...</Card>
-</div>
-```
+### Screen Reader
+- `alt` 속성 모든 이미지에 추가
+- ARIA labels 모든 버튼/링크
+- Semantic HTML (`<nav>`, `<main>`, `<article>`)
 
 ---
 
-## 9. Z-Index 시스템
+## 다음 단계
 
-| Name | Value | Usage |
-|------|-------|-------|
-| base | 0 | 기본 레이어 |
-| dropdown | 1000 | 드롭다운 메뉴 |
-| sticky | 1100 | 고정 요소 |
-| fixed | 1200 | 고정 헤더/푸터 |
-| modalBackdrop | 1300 | 모달 배경 |
-| modal | 1400 | 모달 |
-| popover | 1500 | 팝오버 |
-| tooltip | 1600 | 툴팁 |
+### Phase R2: 3D 우주 엔진
+- [ ] Three.js 환경 설정
+- [ ] 9개 행성 3D 모델
+- [ ] 태양계 orbital system
+- [ ] 인터랙션 (클릭, 호버)
 
----
+### Phase R3: 로딩 애니메이션
+- [ ] 3D 행성 로딩 씬
+- [ ] Progress bar
+- [ ] AI 분석 메시지
 
-## 10. 접근성 (Accessibility)
-
-### 컬러 대비
-
-- WCAG 2.1 AA 기준 준수
-- 본문 텍스트: 최소 4.5:1 대비
-- 큰 텍스트 (18px+): 최소 3:1 대비
-
-### 포커스 상태
-
-모든 인터랙티브 요소는 명확한 포커스 표시
-
-```css
-focus-visible:outline-none
-focus-visible:ring-2
-focus-visible:ring-ring
-focus-visible:ring-offset-2
-```
-
-### 키보드 네비게이션
-
-- Tab 키로 모든 요소 접근 가능
-- Enter/Space로 버튼 활성화
-- Esc로 모달/다이얼로그 닫기
+### Phase R4: 텍스트 리브랜딩
+- [ ] 모든 "sajuwooju" → "sajuwooju" 교체
+- [ ] UI 카피 업데이트
 
 ---
 
-## 11. 반응형 디자인
-
-### Mobile First
-
-모바일을 우선으로 디자인하고 점진적으로 확장
-
-```tsx
-// 모바일: 전체 너비
-// 태블릿 이상: 2열
-// 데스크톱: 3열
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-```
-
-### 텍스트 크기
-
-```tsx
-<h1 className="text-2xl md:text-3xl lg:text-4xl">
-  반응형 제목
-</h1>
-```
-
----
-
-## 12. 다크 모드
-
-### 구현
-
-Tailwind의 `dark:` 프리픽스 사용
-
-```tsx
-<div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-  다크 모드 지원
-</div>
-```
-
-### 컬러 전환
-
-CSS 변수를 사용하여 자동 전환
-
-```css
-.dark {
-  --background: 240 10% 3.9%;
-  --foreground: 0 0% 98%;
-}
-```
-
----
-
-## 참고 자료
-
-- [Tailwind CSS 문서](https://tailwindcss.com)
-- [Next.js 문서](https://nextjs.org)
-- [WCAG 2.1 가이드라인](https://www.w3.org/WAI/WCAG21/quickref/)
-- [Material Design](https://material.io/design)
-
----
-
-마지막 업데이트: 2024년 1월
+**생성일**: 2025-11-08
+**버전**: 1.0.0
+**상태**: ✅ Phase R1 Complete

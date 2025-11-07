@@ -1,7 +1,7 @@
 import { test, expect, Page } from '@playwright/test';
 
 const BASE_URL = 'http://localhost:3001';
-const ORIGINAL_URL = 'https://sajutight.me';
+const ORIGINAL_URL = 'https://sajuwooju.me';
 
 /**
  * E2E Test Suite for Detail Pages
@@ -249,7 +249,7 @@ test.describe('Detail Pages E2E Tests', () => {
     test('complete user flow: home → category → product → back', async ({ page }) => {
       // 1. Start at home
       await page.goto(BASE_URL);
-      await expect(page.locator('text=타이트 사주')).toBeVisible();
+      await expect(page.locator('text=사주우주')).toBeVisible();
 
       // 2. Click category
       await page.click('a[href="/category/2"]');

@@ -67,7 +67,7 @@ export default function Home() {
 
         {/* 이벤트 배너 */}
         <section ref={eventSection.ref as any} className={`py-3 sm:py-4 fade-in ${eventSection.isVisible ? 'visible' : ''}`}>
-          <h2 className="font-display text-lg sm:text-xl font-semibold text-primary mb-3 sm:mb-4">타이트 사주 이벤트</h2>
+          <h2 className="font-display text-lg sm:text-xl font-semibold text-primary mb-3 sm:mb-4">사주우주 이벤트</h2>
           <div style={{ borderRadius: '16px' }} className="sm:rounded-[20px] bg-muted-100 p-3 sm:p-4">
             <div className="flex items-center gap-3 sm:gap-4">
               <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white flex items-center justify-center text-xl sm:text-2xl flex-shrink-0" style={{ borderRadius: '50%' }}>😗</div>

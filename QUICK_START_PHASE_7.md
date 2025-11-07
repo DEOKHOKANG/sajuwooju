@@ -5,7 +5,7 @@
 
 ### 시작 전 준비
 ```bash
-cd d:/saju/sajutight-v2
+cd d:/saju/sajuwooju-v2
 npm install
 npm run dev
 # 서버: http://localhost:3000 (또는 다른 포트)

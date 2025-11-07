@@ -6,9 +6,9 @@ async function analyzeHomepage() {
   const context = await browser.newContext();
   const page = await context.newPage();
 
-  console.log('Loading homepage: https://sajutight.me');
+  console.log('Loading homepage: https://sajuwooju.me');
 
-  await page.goto('https://sajutight.me', { waitUntil: 'networkidle', timeout: 60000 });
+  await page.goto('https://sajuwooju.me', { waitUntil: 'networkidle', timeout: 60000 });
 
   // Wait for page to fully load
   await page.waitForTimeout(8000);
@@ -20,7 +20,7 @@ async function analyzeHomepage() {
   }
 
   // Take a screenshot to see what we're working with
-  await page.screenshot({ path: 'd:/saju/sajutight-v2/analysis/homepage.png', fullPage: true });
+  await page.screenshot({ path: 'd:/saju/sajuwooju-v2/analysis/homepage.png', fullPage: true });
   console.log('Screenshot saved');
 
   // Extract all product information
@@ -143,7 +143,7 @@ async function analyzeHomepage() {
   };
 
   fs.writeFileSync(
-    'd:/saju/sajutight-v2/analysis/homepage-products.json',
+    'd:/saju/sajuwooju-v2/analysis/homepage-products.json',
     JSON.stringify(results, null, 2)
   );
 

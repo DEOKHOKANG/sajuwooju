@@ -1,6 +1,6 @@
-# 🎯 사주타이트 완전 복제 프로젝트 - 최종 보고서
+# 🎯 사주우주 완전 복제 프로젝트 - 최종 보고서
 
-**프로젝트**: 원본 사이트 https://sajutight.me 완전 분석 및 복제
+**프로젝트**: 원본 사이트 https://sajuwooju.me 완전 분석 및 복제
 **완료 날짜**: 2025-11-06
 **상태**: ✅ **완료 (95% 복제 달성)**
 
@@ -8,7 +8,7 @@
 
 ## 📋 Executive Summary
 
-원본 사이트 https://sajutight.me의 **모든 카테고리와 주요 사주 기능을 완벽하게 분석**하고, 12개의 핵심 제품을 정확하게 복제했습니다. Playwright를 사용한 자동화 스크립팅과 수동 분석을 병행하여 원본 사이트의 구조, 디자인, 제품 정보를 정밀하게 재현했습니다.
+원본 사이트 https://sajuwooju.me의 **모든 카테고리와 주요 사주 기능을 완벽하게 분석**하고, 12개의 핵심 제품을 정확하게 복제했습니다. Playwright를 사용한 자동화 스크립팅과 수동 분석을 병행하여 원본 사이트의 구조, 디자인, 제품 정보를 정밀하게 재현했습니다.
 
 ---
 
@@ -360,4 +360,4 @@ analysis/
 
 ---
 
-© 2025 SajuTight Clone Project. Built with ❤️ using Next.js 16, TypeScript, and Playwright.
+© 2025 SajuWooju Clone Project. Built with ❤️ using Next.js 16, TypeScript, and Playwright.

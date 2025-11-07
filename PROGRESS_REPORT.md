@@ -77,7 +77,7 @@ Total Deduction: -160/1000점
 
 ## 📸 시각적 비교
 
-### 원본 (sajutight.me)
+### 원본 (sajuwooju.me)
 ![Original](../analysis/screenshot-mobile.png)
 
 ### 복제본 (localhost:3001) - 개선 후
@@ -302,7 +302,7 @@ node scripts/compare-clone.js
 ## 📁 파일 구조
 
 ```
-sajutight-v2/
+sajuwooju-v2/
 ├── app/
 │   ├── page.tsx               ← ✅ 실제 이미지 적용 완료
 │   ├── layout.tsx             ← ✅ Pretendard 폰트 적용

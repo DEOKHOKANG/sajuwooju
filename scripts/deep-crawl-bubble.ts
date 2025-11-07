@@ -28,7 +28,7 @@ async function deepCrawlBubbleSite() {
   });
 
   const page = await context.newPage();
-  const originalSite = 'https://sajutight.me';
+  const originalSite = 'https://sajuwooju.me';
 
   const allProducts: ProductData[] = [];
   const visitedUrls = new Set<string>();
@@ -339,7 +339,7 @@ async function extractProductData(page: any, url: string): Promise<ProductData> 
       const elements = document.querySelectorAll(selector);
       for (const el of Array.from(elements)) {
         const text = el.textContent?.trim() || '';
-        if (text.length > 3 && text.length < 100 && !text.includes('타이트사주')) {
+        if (text.length > 3 && text.length < 100 && !text.includes('사주우주')) {
           product.title = text;
           break;
         }

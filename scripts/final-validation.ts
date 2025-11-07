@@ -29,7 +29,7 @@ async function validateClone() {
 
   console.log('🔍 Starting Final Validation...\n');
 
-  const originalUrl = 'https://sajutight.me';
+  const originalUrl = 'https://sajuwooju.me';
   const cloneUrl = 'http://localhost:3004';
 
   const results = {

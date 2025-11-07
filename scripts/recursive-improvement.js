@@ -8,7 +8,7 @@ const path = require('path');
  */
 
 const CLONE_URL = 'http://localhost:3001';
-const ORIGINAL_URL = 'https://sajutight.me';
+const ORIGINAL_URL = 'https://sajuwooju.me';
 
 const improvements = [];
 

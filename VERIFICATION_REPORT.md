@@ -1,7 +1,7 @@
-# sajutight.me 100% 복제 프로젝트 - 최종 검증 보고서
+# sajuwooju.me 100% 복제 프로젝트 - 최종 검증 보고서
 
 생성일: 2025-11-08
-프로젝트: sajutight-v2
+프로젝트: sajuwooju-v2
 
 ---
 
@@ -339,7 +339,7 @@ const EARTHLY_BRANCHES = ['자', '축', '인', '묘', '진', '사', '오', '미'
 
 ## 🎉 결론
 
-**sajutight-v2 프로젝트는 Phase 7-8-9-10을 100% 완료했습니다.**
+**sajuwooju-v2 프로젝트는 Phase 7-8-9-10을 100% 완료했습니다.**
 
 ### ✅ 완료된 항목
 - ✅ **Production-ready build** (2.6초, 36 routes)

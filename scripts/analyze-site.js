@@ -21,8 +21,8 @@ async function analyzeSite() {
   // Set viewport
   await page.setViewport({ width: 1920, height: 1080 });
 
-  console.log('📡 Navigating to https://sajutight.me...');
-  await page.goto('https://sajutight.me', {
+  console.log('📡 Navigating to https://sajuwooju.me...');
+  await page.goto('https://sajuwooju.me', {
     waitUntil: 'networkidle2',
     timeout: 60000
   });
@@ -212,7 +212,7 @@ async function analyzeSite() {
   console.log('💾 Saving analysis results...');
   const analysis = {
     timestamp: new Date().toISOString(),
-    url: 'https://sajutight.me',
+    url: 'https://sajuwooju.me',
     domStructure,
     styles: allStyles.slice(0, 100), // First 100 rules
     interactiveElements,

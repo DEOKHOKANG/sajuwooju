@@ -8,12 +8,12 @@
 
 ### 1. 여우솔탈-하반기
 - 이미지: f1754535134851x293098760825501600/IMG%29%20%EB%A9%94%EC%9D%B8%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%287%29.png
-- URL: https://sajutight.me/fox-solo
+- URL: https://sajuwooju.me/fox-solo
 - 카테고리: 솔로/연애운, 월별운세
 
 ### 2. 썸사주궁합
 - 이미지: f1754643430987x714312416549847200/%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A1%E1%84%8C%E1%85%AE%E1%84%80%E1%85%AE%E1%86%BC%E1%84%92%E1%85%A1%E1%86%B8.png
-- URL: https://sajutight.me/tight?p=match
+- URL: https://sajuwooju.me/tight?p=match
 - 제목: "그 사람도 날 좋아할까? 썸 궁합사주❣️"
 - 평점: 4.7
 - 조회수: 5만+
@@ -23,20 +23,20 @@
 
 ### 3. 하반기종합
 - 이미지: f1754535178880x436655212809772000/%ED%95%98%EB%B0%98%EA%B8%B0%EC%A2%85%ED%95%A9%20%281%29.png
-- URL: https://sajutight.me/year-saju
+- URL: https://sajuwooju.me/year-saju
 - 제목: "하반기, 기다리던 변화의 불씨"
 - 카테고리: 월별운세
 
 ### 4. 재회
 - 이미지: f1754534173818x331139229945973700/%EC%9E%AC%ED%9A%8C%EC%82%AC%EC%A3%BC-%EC%8D%B8%EB%84%A4%EC%9D%BC.png
-- URL: https://sajutight.me/again
+- URL: https://sajuwooju.me/again
 - 제목: "내 사주 속 재회 확률 미리보기"
 - 조회수: 28만+
 - 카테고리: 이별/재회
 
 ### 5. 솔탈 (솔로탈출)
 - 이미지: f1754534243317x762570355749248900/%EC%86%94%EB%A1%9C%ED%83%88%EC%B6%9C%EC%82%AC%EC%A3%BC%20%281%29.png
-- URL: https://sajutight.me/solo
+- URL: https://sajuwooju.me/solo
 - 제목: "솔로탈출 연애운 사주"
 - 카테고리: 솔로/연애운
 
@@ -46,12 +46,12 @@
 
 ### 7. 2026신년
 - 이미지: f1759473519135x221915343896830200/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5-%E1%84%89%E1%85%B5%E1%86%AB%E1%84%82%E1%85%A7%E1%86%AB.svg
-- URL: https://sajutight.me/saehae
+- URL: https://sajuwooju.me/saehae
 - 카테고리: 신년운세
 
 ### 8. 재물운
 - 이미지: f1758263804266x430512656845871500/IMG%29%20%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%86%E1%85%B5%E1%84%8C%E1%85%B5.svg
-- URL: https://sajutight.me/money
+- URL: https://sajuwooju.me/money
 - 조회수: 28,220명 참여
 - 카테고리: 재물운
 

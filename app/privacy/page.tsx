@@ -28,7 +28,7 @@ export default function PrivacyPage() {
         <div className="prose prose-sm max-w-none">
           <section className="mb-8">
             <p className="text-sm text-slate-600 leading-relaxed mb-4">
-              타이트 사주(이하 "회사")는 정보주체의 자유와 권리 보호를 위해 「개인정보 보호법」 및 관계 법령이 정한 바를 준수하여, 적법하게 개인정보를 처리하고 안전하게 관리하고 있습니다.
+              사주우주(이하 "회사")는 정보주체의 자유와 권리 보호를 위해 「개인정보 보호법」 및 관계 법령이 정한 바를 준수하여, 적법하게 개인정보를 처리하고 안전하게 관리하고 있습니다.
             </p>
           </section>
 
@@ -158,7 +158,7 @@ export default function PrivacyPage() {
                 <p className="font-bold mb-2">개인정보 보호책임자</p>
                 <ul className="space-y-1 text-xs">
                   <li>담당부서: 운영팀</li>
-                  <li>이메일: privacy@sajutight.me</li>
+                  <li>이메일: privacy@sajuwooju.me</li>
                   <li>전화번호: 02-1234-5678</li>
                 </ul>
               </div>

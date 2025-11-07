@@ -66,7 +66,7 @@ export function generateOrganizationSchema(baseUrl: string): Organization {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: '타이트사주',
+    name: '사주우주',
     url: baseUrl,
     logo: `${baseUrl}/logo.png`,
     description: 'AI 기반 사주 궁합 및 운세 서비스',
@@ -83,7 +83,7 @@ export function generateWebSiteSchema(baseUrl: string): WebSite {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: '타이트사주',
+    name: '사주우주',
     url: baseUrl,
     description: 'AI 기반 사주 궁합 및 운세 서비스 - 연애운, 재물운, 건강운 등 12가지 운세 분석',
     potentialAction: {

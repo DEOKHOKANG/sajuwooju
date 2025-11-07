@@ -4,7 +4,7 @@ import { MobileHeader } from "@/components/layout/mobile-header";
 import { Menu, MessageCircle } from "lucide-react";
 
 /**
- * 타이트사주 메인 페이지 - 원본 사이트 Pixel-Perfect 복제
+ * 사주우주 메인 페이지 - 원본 사이트 Pixel-Perfect 복제
  *
  * 측정 기준:
  * - Body Width: 600px (모바일 중심)
@@ -113,7 +113,7 @@ export default function PageClone() {
         <section className="py-4">
           <div className="flex items-center gap-2 mb-4">
             <h2 className="font-display text-xl font-semibold text-primary">
-              타이트 사주 이벤트
+              사주우주 이벤트
             </h2>
           </div>
 

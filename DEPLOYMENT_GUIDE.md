@@ -1,6 +1,6 @@
-# Deployment Guide - Sajutight Clone
+# Deployment Guide - Sajuwooju Clone
 
-**Project**: sajutight-v2
+**Project**: sajuwooju-v2
 **Framework**: Next.js 16.0.1
 **Status**: Production Ready
 
@@ -135,10 +135,10 @@ const nextConfig: NextConfig = {
 **Step 3: Build and run**
 ```bash
 # Build image
-docker build -t sajutight-v2 .
+docker build -t sajuwooju-v2 .
 
 # Run container
-docker run -p 3000:3000 sajutight-v2
+docker run -p 3000:3000 sajuwooju-v2
 ```
 
 ---
@@ -167,7 +167,7 @@ npm start
 npm install -g pm2
 
 # Start with PM2
-pm2 start npm --name "sajutight" -- start
+pm2 start npm --name "sajuwooju" -- start
 
 # Save PM2 configuration
 pm2 save
@@ -556,14 +556,14 @@ git push -f origin main
 ### PM2 (VPS)
 ```bash
 # Stop current process
-pm2 stop sajutight
+pm2 stop sajuwooju
 
 # Pull previous version
 git checkout [previous-commit]
 npm run build
 
 # Restart
-pm2 restart sajutight
+pm2 restart sajuwooju
 ```
 
 ---

@@ -5,7 +5,7 @@ async function detailedAnalysis() {
   const page = await browser.newPage();
   
   try {
-    await page.goto('https://sajutight.me', { waitUntil: 'networkidle' });
+    await page.goto('https://sajuwooju.me', { waitUntil: 'networkidle' });
     
     const analysis = await page.evaluate(() => {
       // Get full HTML structure

@@ -147,7 +147,7 @@ export default function LoginPage() {
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <h1 className="font-display text-3xl font-bold text-primary mb-2">
-            타이트 사주
+            사주우주
           </h1>
           <p className="text-slate-400">
             카카오로 간편하게 시작하세요

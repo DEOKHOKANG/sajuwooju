@@ -1,7 +1,7 @@
 # 원본 사이트 완전 분석 및 복제 리포트
 
 생성 시간: 2025-11-06
-분석 대상: https://sajutight.me
+분석 대상: https://sajuwooju.me
 
 ---
 
@@ -66,7 +66,7 @@
   categoryIds: [1, 2, 3] // 이벤트, 궁합, 솔로/연애운
 }
 ```
-- **원본 URL**: https://sajutight.me/tight?p=match
+- **원본 URL**: https://sajuwooju.me/tight?p=match
 - **원가**: 45,900원
 - **할인가**: 24,900원
 - **특징**: 썸/짝사랑/재회 중인 사람들을 위한 궁합 사주
@@ -84,7 +84,7 @@
   categoryIds: [1, 3] // 이벤트, 솔로/연애운
 }
 ```
-- **원본 URL**: https://sajutight.me/solo
+- **원본 URL**: https://sajuwooju.me/solo
 - **특징**: 2025-2028년 연애운, 미래 남자친구의 외모와 성격 예측
 
 ### 3. 내 사주 속 재회 확률 미리보기 (ID: 3)
@@ -100,7 +100,7 @@
   categoryIds: [1, 4] // 이벤트, 이별/재회
 }
 ```
-- **원본 URL**: https://sajutight.me/again
+- **원본 URL**: https://sajuwooju.me/again
 - **조회수**: 28만+ (가장 인기 있는 제품)
 - **특징**: 재회 확률, 연락 타이밍, 그 사람을 다시 내 것으로 만드는 법
 
@@ -117,7 +117,7 @@
   categoryIds: [1, 8] // 이벤트, 월별운세
 }
 ```
-- **원본 URL**: https://sajutight.me/year-saju
+- **원본 URL**: https://sajuwooju.me/year-saju
 - **특징**: 오행 분포 분석, 사주 강약 분석, 보충해야 할 기운 제시
 
 ### 5. 결혼 궁합 사주 (ID: 5)
@@ -148,7 +148,7 @@
   categoryIds: [1, 7] // 이벤트, 신년운세
 }
 ```
-- **원본 URL**: https://sajutight.me/saehae
+- **원본 URL**: https://sajuwooju.me/saehae
 - **참여자**: 14,596명 (2025-11-06 기준)
 - **특징**: 절정의 해 2026년 종합 운세 분석
 
@@ -165,7 +165,7 @@
   categoryIds: [1, 7, 14] // 이벤트, 신년운세, 재물운
 }
 ```
-- **원본 URL**: https://sajutight.me/money
+- **원본 URL**: https://sajuwooju.me/money
 - **참여자**: 28,220명 (높은 인기)
 - **특징**: 10년간의 재물운 상세 분석
 

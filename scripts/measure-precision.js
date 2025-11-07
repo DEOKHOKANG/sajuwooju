@@ -21,8 +21,8 @@ const findElementByText = (tree, text) => {
   return null;
 };
 
-// "타이트 사주" 로고 찾기
-const logo = findElementByText(data.domTree, '타이트 사주');
+// "사주우주" 로고 찾기
+const logo = findElementByText(data.domTree, '사주우주');
 if (logo) {
   console.log('Logo:');
   console.log(`  Text: "${logo.text}"`);

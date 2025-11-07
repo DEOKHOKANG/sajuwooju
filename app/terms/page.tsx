@@ -29,7 +29,7 @@ export default function TermsPage() {
           <section className="mb-8">
             <h2 className="text-lg font-bold text-primary mb-4">제1조 (목적)</h2>
             <p className="text-sm text-slate-600 leading-relaxed mb-4">
-              본 약관은 타이트 사주(이하 "회사")가 제공하는 사주 상담 서비스(이하 "서비스")의 이용과 관련하여 회사와 이용자 간의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.
+              본 약관은 사주우주(이하 "회사")가 제공하는 사주 상담 서비스(이하 "서비스")의 이용과 관련하여 회사와 이용자 간의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.
             </p>
           </section>
 

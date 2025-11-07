@@ -7,7 +7,7 @@ import { IMAGE_MAP } from '@/lib/image-map';
  * https://nextjs.org/docs/app/api-reference/file-conventions/metadata/sitemap
  */
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://sajutight.me';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://sajuwooju.me';
 
   // Static pages
   const staticPages = [

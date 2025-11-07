@@ -23,7 +23,7 @@ function validateEnv(): Env {
   const siteUrl =
     process.env.NEXT_PUBLIC_SITE_URL ||
     (nodeEnv === 'production'
-      ? 'https://sajutight.me'
+      ? 'https://sajuwooju.me'
       : 'http://localhost:3005');
 
   return {

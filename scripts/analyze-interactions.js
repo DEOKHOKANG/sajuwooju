@@ -25,7 +25,7 @@ const path = require('path');
   const page = await context.newPage();
 
   try {
-    await page.goto('https://sajutight.me', {
+    await page.goto('https://sajuwooju.me', {
       waitUntil: 'domcontentloaded',
       timeout: 60000
     });

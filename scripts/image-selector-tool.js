@@ -13,7 +13,7 @@ const path = require('path');
   });
 
   console.log('📥 Loading original site...');
-  await page.goto('https://sajutight.me', {
+  await page.goto('https://sajuwooju.me', {
     waitUntil: 'domcontentloaded',
     timeout: 60000
   });

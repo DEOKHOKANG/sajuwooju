@@ -9,7 +9,7 @@ const { chromium } = require('playwright');
     viewport: { width: 390, height: 844 }
   });
 
-  await page.goto('https://sajutight.me', {
+  await page.goto('https://sajuwooju.me', {
     waitUntil: 'domcontentloaded',
     timeout: 60000
   });

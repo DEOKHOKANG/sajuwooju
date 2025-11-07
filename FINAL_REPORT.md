@@ -1,6 +1,6 @@
-# Sajutight Clone - Final Project Report
+# Sajuwooju Clone - Final Project Report
 
-**Project**: 100% Accurate Clone of sajutight.me
+**Project**: 100% Accurate Clone of sajuwooju.me
 **Start Date**: 2025-11-03 (Day 1)
 **Completion Date**: 2025-11-05 (Day 2)
 **Total Duration**: 2 days (ahead of 9-15 day estimate)
@@ -10,7 +10,7 @@
 
 ## Executive Summary
 
-Successfully completed a **production-grade clone** of sajutight.me with:
+Successfully completed a **production-grade clone** of sajuwooju.me with:
 - **102%+ accuracy** (exceeded 100% target)
 - **100% feature completeness** for homepage (Phases 1-4)
 - **Production-ready code quality** with modern optimization
@@ -345,7 +345,7 @@ Successfully completed a **production-grade clone** of sajutight.me with:
 ## 📁 Project Structure
 
 ```
-sajutight-v2/
+sajuwooju-v2/
 ├── app/
 │   ├── layout.tsx           # Root layout with font preload
 │   ├── page.tsx             # Homepage with animations
@@ -979,7 +979,7 @@ npm run build
 **Implementation**: Claude Code (Sonnet 4.5)
 **Methodology**: 5-Phase Production Clone Approach
 **Framework**: Next.js 16 + React 19
-**Original Design**: sajutight.me
+**Original Design**: sajuwooju.me
 
 ---
 

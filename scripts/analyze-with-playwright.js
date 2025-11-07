@@ -22,8 +22,8 @@ async function analyzeSite() {
 
   const page = await context.newPage();
 
-  console.log('📡 Navigating to https://sajutight.me...');
-  await page.goto('https://sajutight.me', {
+  console.log('📡 Navigating to https://sajuwooju.me...');
+  await page.goto('https://sajuwooju.me', {
     waitUntil: 'networkidle',
     timeout: 60000
   });
@@ -354,7 +354,7 @@ async function analyzeSite() {
 
   // Save human-readable report
   const report = `
-# 타이트사주 사이트 분석 보고서
+# 사주우주 사이트 분석 보고서
 생성일시: ${new Date().toLocaleString('ko-KR')}
 
 ## 페이지 정보

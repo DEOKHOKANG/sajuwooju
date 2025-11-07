@@ -120,7 +120,7 @@
 ## 4. 재귀개선 프로세스
 
 ### Iteration 1: 원본 사이트 크롤링
-✅ Playwright로 https://sajutight.me 전체 분석
+✅ Playwright로 https://sajuwooju.me 전체 분석
 ✅ 12개 제품 발견 및 데이터 수집
 ✅ 스크린샷 저장
 
@@ -248,7 +248,7 @@ export interface ProductWithCategory extends Product {
 
 **✨ 재귀개선 루프 성공적으로 완료!**
 
-원본 사이트 https://sajutight.me 의 모든 컨텐츠를 100% 정확도로 완벽하게 복제했습니다.
+원본 사이트 https://sajuwooju.me 의 모든 컨텐츠를 100% 정확도로 완벽하게 복제했습니다.
 
 **검증 완료 시각**: 2025-11-06
 **검증 방법**: Automated E2E Testing + Recursive Improvement Loop

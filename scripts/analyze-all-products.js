@@ -2,17 +2,17 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 
 const CATEGORIES = [
-  { id: 1, name: '이벤트!', url: 'https://sajutight.me/?category=%EC%9D%B4%EB%B2%A4%ED%8A%B8!' },
-  { id: 2, name: '궁합', url: 'https://sajutight.me/?category=%EA%B6%81%ED%95%A9' },
-  { id: 3, name: '솔로/연애운', url: 'https://sajutight.me/?category=%EC%86%94%EB%A1%9C%2F%EC%97%B0%EC%95%A0%EC%9A%B4' },
-  { id: 4, name: '이별/재회', url: 'https://sajutight.me/?category=%EC%9D%B4%EB%B3%84%2F%EC%9E%AC%ED%9A%8C' },
-  { id: 5, name: '결혼운', url: 'https://sajutight.me/?category=%EA%B2%B0%ED%98%BC%EC%9A%B4' },
-  { id: 6, name: '임신/자녀운', url: 'https://sajutight.me/?category=%EC%9E%84%EC%8B%A0%2F%EC%9E%90%EB%85%80%EC%9A%B4' },
-  { id: 7, name: '신년운세', url: 'https://sajutight.me/?category=%EC%8B%A0%EB%85%84%EC%9A%B4%EC%84%B8' },
-  { id: 8, name: '월별운세', url: 'https://sajutight.me/?category=%EC%9B%94%EB%B3%84%EC%9A%B4%EC%84%B8' },
-  { id: 9, name: '취업/직업운', url: 'https://sajutight.me/?category=%EC%B7%A8%EC%97%85%2F%EC%A7%81%EC%97%85%EC%9A%B4' },
-  { id: 10, name: '관상/타로', url: 'https://sajutight.me/?category=%EA%B4%80%EC%83%81%2F%ED%83%80%EB%A1%9C' },
-  { id: 14, name: '재물운', url: 'https://sajutight.me/?category=%EC%9E%AC%EB%AC%BC%EC%9A%B4' }
+  { id: 1, name: '이벤트!', url: 'https://sajuwooju.me/?category=%EC%9D%B4%EB%B2%A4%ED%8A%B8!' },
+  { id: 2, name: '궁합', url: 'https://sajuwooju.me/?category=%EA%B6%81%ED%95%A9' },
+  { id: 3, name: '솔로/연애운', url: 'https://sajuwooju.me/?category=%EC%86%94%EB%A1%9C%2F%EC%97%B0%EC%95%A0%EC%9A%B4' },
+  { id: 4, name: '이별/재회', url: 'https://sajuwooju.me/?category=%EC%9D%B4%EB%B3%84%2F%EC%9E%AC%ED%9A%8C' },
+  { id: 5, name: '결혼운', url: 'https://sajuwooju.me/?category=%EA%B2%B0%ED%98%BC%EC%9A%B4' },
+  { id: 6, name: '임신/자녀운', url: 'https://sajuwooju.me/?category=%EC%9E%84%EC%8B%A0%2F%EC%9E%90%EB%85%80%EC%9A%B4' },
+  { id: 7, name: '신년운세', url: 'https://sajuwooju.me/?category=%EC%8B%A0%EB%85%84%EC%9A%B4%EC%84%B8' },
+  { id: 8, name: '월별운세', url: 'https://sajuwooju.me/?category=%EC%9B%94%EB%B3%84%EC%9A%B4%EC%84%B8' },
+  { id: 9, name: '취업/직업운', url: 'https://sajuwooju.me/?category=%EC%B7%A8%EC%97%85%2F%EC%A7%81%EC%97%85%EC%9A%B4' },
+  { id: 10, name: '관상/타로', url: 'https://sajuwooju.me/?category=%EA%B4%80%EC%83%81%2F%ED%83%80%EB%A1%9C' },
+  { id: 14, name: '재물운', url: 'https://sajuwooju.me/?category=%EC%9E%AC%EB%AC%BC%EC%9A%B4' }
 ];
 
 async function analyzeAllProducts() {
@@ -226,7 +226,7 @@ async function analyzeAllProducts() {
     }
   };
 
-  const outputPath = 'd:/saju/sajutight-v2/analysis/all-products-analysis.json';
+  const outputPath = 'd:/saju/sajuwooju-v2/analysis/all-products-analysis.json';
   fs.writeFileSync(outputPath, JSON.stringify(results, null, 2));
   console.log(`\nResults saved to: ${outputPath}`);
 
@@ -281,7 +281,7 @@ function generateReport(results) {
     report.push('');
   });
 
-  const reportPath = 'd:/saju/sajutight-v2/analysis/COMPLETE_PRODUCT_ANALYSIS.md';
+  const reportPath = 'd:/saju/sajuwooju-v2/analysis/COMPLETE_PRODUCT_ANALYSIS.md';
   fs.writeFileSync(reportPath, report.join('\n'));
   console.log(`Report saved to: ${reportPath}`);
 }

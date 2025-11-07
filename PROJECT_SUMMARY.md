@@ -1,4 +1,4 @@
-# 타이트사주 v2.0 - 프로젝트 요약
+# 사주우주 v2.0 - 프로젝트 요약
 
 ## 완료된 작업
 
@@ -82,7 +82,7 @@ Destructive: rgba(255, 0, 0, 1)
 ### ✅ 5. 프로젝트 구조
 
 ```
-sajutight-v2/
+sajuwooju-v2/
 ├── app/
 │   ├── globals.css          # 글로벌 스타일 (Tailwind + 커스텀)
 │   ├── layout.tsx           # 루트 레이아웃 (폰트 설정)
@@ -201,7 +201,7 @@ public/fonts/
 
 ### 개발 서버 시작
 ```bash
-cd sajutight-v2
+cd sajuwooju-v2
 npm run dev
 ```
 

@@ -32,7 +32,7 @@ async function downloadImage(url, filepath) {
 async function extractImages() {
   console.log('🖼️  Image Extraction Tool');
   console.log('=' .repeat(80));
-  console.log('Extracting all images from sajutight.me\n');
+  console.log('Extracting all images from sajuwooju.me\n');
 
   const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext({
@@ -41,8 +41,8 @@ async function extractImages() {
 
   const page = await context.newPage();
 
-  console.log('📊 Loading sajutight.me...\n');
-  await page.goto('https://sajutight.me', {
+  console.log('📊 Loading sajuwooju.me...\n');
+  await page.goto('https://sajuwooju.me', {
     waitUntil: 'networkidle',
     timeout: 60000
   });

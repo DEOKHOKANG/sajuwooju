@@ -1,4 +1,4 @@
-# Phase 7-11 Master Plan: 완벽한 sajutight.me 복제
+# Phase 7-11 Master Plan: 완벽한 sajuwooju.me 복제
 **생성일**: 2025-11-06  
 **현재 상태**: Phase 1-6 완료 (공개 페이지 100% 복제)  
 **목표**: 원본 사이트 100% 완벽 복제 (인터랙션, 성능, 기능)

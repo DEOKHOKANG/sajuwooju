@@ -1,5 +1,5 @@
 # Phase 7-11 Master Plan
-원본 사이트 https://sajutight.me 100% 완벽 복제
+원본 사이트 https://sajuwooju.me 100% 완벽 복제
 
 생성일: 2025-11-06
 

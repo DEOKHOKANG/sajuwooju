@@ -5,7 +5,7 @@ import { MetadataRoute } from 'next';
  * https://nextjs.org/docs/app/api-reference/file-conventions/metadata/robots
  */
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://sajutight.me';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://sajuwooju.me';
 
   return {
     rules: [

@@ -5,10 +5,10 @@
   - generic [ref=e2]:
     - banner [ref=e3]:
       - generic [ref=e4]:
-        - link "😗 타이트 사주" [ref=e5] [cursor=pointer]:
+        - link "😗 사주우주" [ref=e5] [cursor=pointer]:
           - /url: /
           - generic [ref=e6]: 😗
-          - generic [ref=e7]: 타이트 사주
+          - generic [ref=e7]: 사주우주
         - link "메뉴 열기" [ref=e8] [cursor=pointer]:
           - /url: /menu
           - button "메뉴 열기" [ref=e9]:
@@ -77,7 +77,7 @@
               - img "관성/타운" [ref=e79]
               - generic [ref=e80]: 관성/타운
       - generic [ref=e81]:
-        - heading "타이트 사주 이벤트" [level=2] [ref=e82]
+        - heading "사주우주 이벤트" [level=2] [ref=e82]
         - generic [ref=e84]:
           - generic [ref=e85]: 😗
           - generic [ref=e86]:
@@ -299,14 +299,14 @@
         - generic [ref=e332]: 😊
         - heading "30일 인터뷰 모집" [level=2] [ref=e333]
         - paragraph [ref=e334]:
-          - text: 타이트 사주와 함께하는 특별한 인터뷰 이벤트
+          - text: 사주우주와 함께하는 특별한 인터뷰 이벤트
           - text: 지금 바로 신청하고 혜택을 받아보세요!
         - button "지금 신청하기 →" [ref=e335] [cursor=pointer]
         - generic [ref=e336]: 5만 명에게 기쁨을 전달하는 특별 이벤트
     - contentinfo [ref=e337]:
       - generic [ref=e338]:
         - generic [ref=e339]:
-          - heading "타이트 사주" [level=3] [ref=e340]
+          - heading "사주우주" [level=3] [ref=e340]
           - paragraph [ref=e341]: 정확한 사주로 더 나은 미래를 설계하세요
         - generic [ref=e342]:
           - generic [ref=e343]:
@@ -341,7 +341,7 @@
             - /url: "#"
             - generic [ref=e369]: 💬
         - generic [ref=e370]:
-          - paragraph [ref=e371]: © 2025 타이트 사주. All rights reserved.
+          - paragraph [ref=e371]: © 2025 사주우주. All rights reserved.
           - paragraph [ref=e372]: "사업자등록번호: 123-45-67890"
     - button "채팅" [ref=e373] [cursor=pointer]:
       - img [ref=e374]

@@ -23,7 +23,7 @@ export function MobileHeader() {
             <span className="text-3xl">😗</span>
           </div>
           <span className="font-display text-base font-medium text-primary">
-            타이트 사주
+            사주우주
           </span>
         </Link>
 

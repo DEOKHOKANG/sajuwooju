@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "타이트 사주 | 쫀득하게 들어맞는 사주 궁합 만세력",
-  description: "타이트 사주는 AI 기반의 정확한 사주 궁합 분석 서비스를 제공합니다.",
-  keywords: ["사주", "궁합", "사주 궁합", "만세력", "연애 운세", "타로"],
+  title: "사주우주 | 우주의 법칙으로 읽는 나의 운명",
+  description: "사주우주는 우주의 9개 행성과 음양오행을 기반으로 당신의 사주를 분석합니다. AI 기반의 정확한 운세와 궁합 서비스를 제공합니다.",
+  keywords: ["사주", "사주우주", "운세", "궁합", "만세력", "음양오행", "행성", "우주", "천문학", "사주 분석"],
 };
 
 export default function RootLayout({

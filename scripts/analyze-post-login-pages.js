@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 /**
- * Analyze post-login pages structure of sajutight.me
+ * Analyze post-login pages structure of sajuwooju.me
  * This script explores the site structure to identify:
  * - Product detail page structure
  * - User profile pages
@@ -34,7 +34,7 @@ async function analyzePostLoginPages() {
   try {
     // Step 1: Analyze homepage for clickable elements
     console.log('📱 Step 1: Loading homepage...');
-    await page.goto('https://sajutight.me', { waitUntil: 'networkidle' });
+    await page.goto('https://sajuwooju.me', { waitUntil: 'networkidle' });
     await page.waitForTimeout(2000);
 
     // Find all product cards/links
@@ -50,7 +50,7 @@ async function analyzePostLoginPages() {
         if (href) {
           links.push({
             title,
-            href: href.includes('http') ? href : `https://sajutight.me${href}`,
+            href: href.includes('http') ? href : `https://sajuwooju.me${href}`,
             selector: card.tagName + (card.id ? `#${card.id}` : '') + (card.className ? `.${card.className.split(' ')[0]}` : '')
           });
         }
@@ -153,7 +153,7 @@ async function analyzePostLoginPages() {
 
     // Step 5: Check category pages
     console.log('\n📂 Step 5: Checking category structure...');
-    await page.goto('https://sajutight.me', { waitUntil: 'networkidle' });
+    await page.goto('https://sajuwooju.me', { waitUntil: 'networkidle' });
     await page.waitForTimeout(2000);
 
     const categories = await page.evaluate(() => {

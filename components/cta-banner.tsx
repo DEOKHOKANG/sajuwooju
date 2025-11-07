@@ -26,7 +26,7 @@ export function CtaBanner() {
 
           {/* Subtitle */}
           <p className="text-sm sm:text-base md:text-lg mb-6 sm:mb-8 opacity-90 max-w-lg mx-auto px-4">
-            타이트 사주와 함께하는 특별한 인터뷰 이벤트
+            사주우주와 함께하는 특별한 인터뷰 이벤트
             <br className="hidden sm:block" />
             지금 바로 신청하고 혜택을 받아보세요!
           </p>

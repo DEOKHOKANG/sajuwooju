@@ -7,7 +7,7 @@ async function extractAllProducts() {
   const page = await context.newPage();
 
   console.log('Loading homepage...\n');
-  await page.goto('https://sajutight.me', { waitUntil: 'networkidle', timeout: 90000 });
+  await page.goto('https://sajuwooju.me', { waitUntil: 'networkidle', timeout: 90000 });
   await page.waitForTimeout(10000);
 
   // Scroll to load all content
@@ -30,7 +30,7 @@ async function extractAllProducts() {
       const href = link.href;
       const img = link.querySelector('img');
 
-      if (img && href && href.includes('sajutight.me') && !seen.has(href)) {
+      if (img && href && href.includes('sajuwooju.me') && !seen.has(href)) {
         const alt = img.alt || '';
         const src = img.src || '';
 
@@ -196,7 +196,7 @@ async function extractAllProducts() {
   };
 
   fs.writeFileSync(
-    'd:/saju/sajutight-v2/analysis/extracted-products.json',
+    'd:/saju/sajuwooju-v2/analysis/extracted-products.json',
     JSON.stringify(results, null, 2)
   );
   console.log('Results saved to analysis/extracted-products.json');
@@ -240,7 +240,7 @@ function generateProductsData(products) {
   lines.push('];');
 
   fs.writeFileSync(
-    'd:/saju/sajutight-v2/analysis/extracted-products-data.ts',
+    'd:/saju/sajuwooju-v2/analysis/extracted-products-data.ts',
     lines.join('\n')
   );
   console.log('TypeScript data saved to analysis/extracted-products-data.ts');

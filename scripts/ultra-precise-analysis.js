@@ -15,8 +15,8 @@ async function ultraPreciseAnalysis() {
   const page = await context.newPage();
 
   // 원본 사이트 분석
-  console.log('📊 Analyzing original site (sajutight.me)...\n');
-  await page.goto('https://sajutight.me', {
+  console.log('📊 Analyzing original site (sajuwooju.me)...\n');
+  await page.goto('https://sajuwooju.me', {
     waitUntil: 'networkidle',
     timeout: 60000
   });

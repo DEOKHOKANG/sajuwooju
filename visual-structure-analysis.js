@@ -5,7 +5,7 @@ async function visualStructureAnalysis() {
   const page = await browser.newPage();
   
   try {
-    await page.goto('https://sajutight.me', { waitUntil: 'networkidle' });
+    await page.goto('https://sajuwooju.me', { waitUntil: 'networkidle' });
     await page.waitForTimeout(2000);
     
     const analysis = await page.evaluate(() => {
@@ -119,7 +119,7 @@ async function visualStructureAnalysis() {
     });
     
     const fs = require('fs');
-    fs.writeFileSync('d:/saju/sajutight-v2/visual-structure.json', JSON.stringify(analysis, null, 2));
+    fs.writeFileSync('d:/saju/sajuwooju-v2/visual-structure.json', JSON.stringify(analysis, null, 2));
     console.log('Visual structure analysis saved');
     console.log('Total blocks:', analysis.totalBlocks);
     console.log('Viewport:', analysis.viewport);

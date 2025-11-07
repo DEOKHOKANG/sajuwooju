@@ -1,10 +1,10 @@
-# 타이트사주 클론 프로젝트 최종 상태 보고서
+# 사주우주 클론 프로젝트 최종 상태 보고서
 
 생성일시: 2025년 11월 5일
 
 ## 프로젝트 개요
 
-원본 사이트: https://sajutight.me
+원본 사이트: https://sajuwooju.me
 복제본 URL: http://localhost:3001
 목표: 복제등급(Clone-Grade) - 95%+ 정확도
 
@@ -96,7 +96,7 @@ slate-700: rgb(51, 51, 51)    // #333333 ✅
 
 ## 스크린샷 비교
 
-### 원본 (sajutight.me)
+### 원본 (sajuwooju.me)
 ![Original](../analysis/screenshot-mobile.png)
 
 ### 복제본 (localhost:3001)
@@ -325,7 +325,7 @@ slate-700: rgb(51, 51, 51)    // #333333 ✅
 ## 파일 구조
 
 ```
-sajutight-v2/
+sajuwooju-v2/
 ├── app/
 │   ├── layout.tsx              # Root layout (폰트 설정)
 │   ├── page.tsx                # Homepage (모든 섹션)
@@ -351,7 +351,7 @@ sajutight-v2/
 ## 프로젝트 링크
 
 - 개발 서버: http://localhost:3001
-- 원본 사이트: https://sajutight.me
+- 원본 사이트: https://sajuwooju.me
 - 분석 결과: [analysis/ANALYSIS_REPORT.md](analysis/ANALYSIS_REPORT.md)
 - 평가 기준: [CLONE_CRITERIA.md](CLONE_CRITERIA.md)
 
