@@ -1,8 +1,11 @@
-# Deployment Guide - Sajuwooju Clone
+# 사주우주 (SajuWooju) 배포 가이드
 
-**Project**: sajuwooju-v2
+**Project**: sajuwooju-v2 (사주우주)
 **Framework**: Next.js 16.0.1
-**Status**: Production Ready
+**Status**: Phase R1-R4 Complete, Ready for Deployment
+
+**최종 업데이트**: 2025-11-08
+**Git Commit**: ab3abc7 "feat: 사주우주 (SajuWooju) 리브랜딩 Phase R1-R4 완료"
 
 ---
 
@@ -201,15 +204,24 @@ server {
 
 No environment variables required for current implementation.
 
-### Future Phases (User Features)
+### Current Phase (R1-R4)
 
-When implementing Phase 6-7 (Kakao login, user features):
+**Phase R1-R4 완료 환경 변수**:
+```env
+# .env.local
+NEXT_PUBLIC_SITE_URL=https://sajuwooju-v2.vercel.app
+```
+
+### Future Phases (R5-R9, 사용자 기능)
+
+Phase 11 (카카오 로그인) 구현 시 추가 필요:
 
 ```env
 # .env.local
+NEXT_PUBLIC_SITE_URL=https://sajuwooju.com
 NEXT_PUBLIC_KAKAO_APP_KEY=your_kakao_javascript_key
 KAKAO_REST_API_KEY=your_kakao_rest_api_key
-NEXT_PUBLIC_API_URL=https://api.your-domain.com
+NEXT_PUBLIC_API_URL=https://api.sajuwooju.com
 DATABASE_URL=your_database_connection_string
 ```
 
