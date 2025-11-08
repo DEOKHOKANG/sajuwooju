@@ -381,6 +381,164 @@
     transform: translateZ(0);
     backface-visibility: hidden;
   }
+
+  /* ============================================
+     Stats Section - Stars Background
+     ============================================ */
+
+  /* 별 배경 (5개 레이어) */
+  .stars-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    background-image:
+      radial-gradient(circle, white 1px, transparent 1px),
+      radial-gradient(circle, white 1px, transparent 1px),
+      radial-gradient(circle, rgba(255, 255, 255, 0.8) 1px, transparent 1px),
+      radial-gradient(circle, white 2px, transparent 2px),
+      radial-gradient(circle, rgba(255, 255, 255, 0.6) 1px, transparent 1px);
+    background-size:
+      200px 200px,
+      300px 300px,
+      250px 250px,
+      400px 400px,
+      150px 150px;
+    background-position:
+      0 0,
+      40px 60px,
+      130px 270px,
+      70px 100px,
+      250px 50px;
+    z-index: 0;
+  }
+
+  /* 별 반짝임 애니메이션 레이어 */
+  .stars-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+      radial-gradient(circle, white 1px, transparent 1px),
+      radial-gradient(circle, rgba(255, 255, 255, 0.7) 1px, transparent 1px),
+      radial-gradient(circle, white 1px, transparent 1px);
+    background-size:
+      180px 180px,
+      220px 220px,
+      280px 280px;
+    background-position:
+      100px 30px,
+      180px 150px,
+      50px 200px;
+    animation: twinkle 3s ease-in-out infinite;
+  }
+
+  /* 통계 섹션 그라디언트 오버레이 */
+  .stats-gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(10, 10, 26, 0.6) 20%,
+      rgba(15, 5, 32, 0.4) 40%,
+      rgba(26, 10, 46, 0.4) 60%,
+      rgba(15, 5, 32, 0.6) 80%,
+      rgba(0, 0, 0, 0.8) 100%);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  /* 떠다니는 오브 (배경 장식) */
+  .orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.15;
+    animation: float 20s infinite ease-in-out;
+    pointer-events: none;
+  }
+
+  .orb-1 {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, var(--nebula-pink), transparent);
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+  }
+
+  .orb-2 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, var(--cosmic-purple), transparent);
+    top: 50%;
+    right: 15%;
+    animation-delay: -7s;
+  }
+
+  .orb-3 {
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, var(--nebula-blue), transparent);
+    bottom: 15%;
+    left: 20%;
+    animation-delay: -14s;
+  }
+
+  /* 오브 떠다님 애니메이션 */
+  @keyframes float {
+    0%, 100% {
+      transform: translate(0, 0) scale(1);
+    }
+    25% {
+      transform: translate(30px, -30px) scale(1.05);
+    }
+    50% {
+      transform: translate(-20px, -50px) scale(0.95);
+    }
+    75% {
+      transform: translate(-30px, -20px) scale(1.02);
+    }
+  }
+
+  /* 통계 카드 호버 효과 */
+  .stat-card {
+    transition: transform 300ms ease, box-shadow 300ms ease;
+  }
+
+  .stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  /* 통계 카드 글로우 효과 */
+  .stat-card::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: 18px;
+    padding: 2px;
+    background: linear-gradient(135deg,
+      var(--gradient-from, var(--star-gold)),
+      var(--gradient-to, var(--sun-orange)));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 300ms ease;
+  }
+
+  .stat-card:hover::before {
+    opacity: 0.3;
+  }
 }
 
 @layer utilities {

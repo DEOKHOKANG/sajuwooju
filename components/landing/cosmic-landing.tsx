@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
+import { StatsSection } from './stats-section';
 
 // 3D Components (SSR disabled) - Import everything dynamically
 const SpaceCanvas = dynamic(
@@ -58,7 +59,9 @@ export function CosmicLanding() {
   };
 
   return (
-    <div className="relative w-full h-screen bg-black overflow-hidden">
+    <div className="relative w-full bg-black">
+      {/* Hero Section - Full screen with solar system */}
+      <div className="relative w-full h-screen overflow-hidden">
       {/* Cosmic Black Background with subtle gradient */}
       <div
         className="absolute inset-0 z-0"
@@ -249,6 +252,11 @@ export function CosmicLanding() {
           }
         }
       `}</style>
+      </div>
+      {/* End of Hero Section */}
+
+      {/* Stats Section - Scrollable below hero */}
+      <StatsSection />
     </div>
   );
 }

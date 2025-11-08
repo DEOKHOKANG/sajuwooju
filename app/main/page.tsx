@@ -1,128 +1,124 @@
-"use client";
+'use client';
 
-import { MobileHeader } from "@/components/layout/mobile-header";
-import { HeroSlider } from "@/components/hero-slider";
-import { ProductCardWooju } from "@/components/product-card-wooju";
-import { Footer } from "@/components/footer";
-import { MessageCircle, Sparkles, Star, Moon, Zap } from "lucide-react";
-import { IMAGE_MAP } from "@/lib/image-map";
-import { FEATURED_PRODUCTS_WOOJU } from "@/lib/products-data-wooju";
-import { PLANETS_DATA } from "@/lib/planets-data";
-import Link from "next/link";
-import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import { useState } from 'react';
+import Link from 'next/link';
+import { MobileAppLayout } from '@/components/layout/MobileAppLayout';
+import {
+  Sparkles,
+  Heart,
+  TrendingUp,
+  Users,
+  Calendar,
+  Star,
+  Zap,
+  ArrowRight,
+  Check
+} from 'lucide-react';
 
-// Rebranded Category to Planet mapping with enhanced data
-const CATEGORY_PLANETS = [
+/**
+ * Pre-Login Main Page
+ * 비로그인 메인 페이지 - 사주우주 서비스 소개 및 CTA
+ *
+ * Features:
+ * - World-class design with gradient system
+ * - Mobile-first responsive layout
+ * - Premium glassmorphism effects
+ * - Clear value propositions
+ * - Strong CTAs for user signup
+ */
+
+// 사주 서비스 카테고리 (음양오행 기반)
+const SAJU_SERVICES = [
   {
-    id: 1,
-    name: "이벤트",
-    planet: "태양",
-    icon: "🌟",
-    description: "특별한 혜택",
-    gradient: "from-yellow-400 to-orange-500"
+    id: 'love',
+    title: '연애운',
+    description: 'AI가 분석하는 당신의 사랑 운명',
+    icon: Heart,
+    gradient: 'from-pink-500 to-rose-600',
+    element: '火',
   },
   {
-    id: 2,
-    name: "궁합",
-    planet: "금성",
-    icon: "💫",
-    element: "金",
-    description: "운명의 인연",
-    gradient: "from-pink-400 to-rose-500"
+    id: 'wealth',
+    title: '재물운',
+    description: '금전운과 재물의 흐름을 파악하세요',
+    icon: TrendingUp,
+    gradient: 'from-amber-500 to-orange-600',
+    element: '金',
   },
   {
-    id: 3,
-    name: "솔로/연애",
-    planet: "화성",
-    icon: "🔥",
-    element: "火",
-    description: "사랑의 시작",
-    gradient: "from-red-400 to-pink-500"
+    id: 'career',
+    title: '직업운',
+    description: '당신에게 맞는 진로와 적성 분석',
+    icon: Zap,
+    gradient: 'from-violet-500 to-purple-600',
+    element: '木',
   },
   {
-    id: 4,
-    name: "이별/재회",
-    planet: "명왕성",
-    icon: "💔",
-    element: "土",
-    description: "관계의 회복",
-    gradient: "from-purple-500 to-indigo-600"
+    id: 'compatibility',
+    title: '궁합',
+    description: '두 사람의 사주 궁합을 확인하세요',
+    icon: Users,
+    gradient: 'from-blue-500 to-cyan-600',
+    element: '水',
   },
   {
-    id: 5,
-    name: "직장/취업",
-    planet: "토성",
-    icon: "💼",
-    element: "土",
-    description: "성공의 길",
-    gradient: "from-amber-500 to-yellow-600"
+    id: 'yearly',
+    title: '연운',
+    description: '올해의 운세와 흐름 파악',
+    icon: Calendar,
+    gradient: 'from-emerald-500 to-teal-600',
+    element: '土',
   },
   {
-    id: 6,
-    name: "재물/사업",
-    planet: "목성",
-    icon: "💰",
-    element: "木",
-    description: "부의 흐름",
-    gradient: "from-green-400 to-emerald-500"
-  },
-  {
-    id: 7,
-    name: "건강",
-    planet: "수성",
-    icon: "⚕️",
-    element: "水",
-    description: "생명의 에너지",
-    gradient: "from-blue-400 to-cyan-500"
-  },
-  {
-    id: 8,
-    name: "월별운세",
-    planet: "해왕성",
-    icon: "🌊",
-    element: "水",
-    description: "시간의 흐름",
-    gradient: "from-cyan-400 to-blue-500"
-  },
-  {
-    id: 9,
-    name: "종합운",
-    planet: "천왕성",
-    icon: "🌀",
-    element: "水",
-    description: "전체 운세",
-    gradient: "from-violet-400 to-purple-500"
-  },
-  {
-    id: 10,
-    name: "타로",
-    planet: "지구",
-    icon: "🔮",
-    element: "土",
-    description: "신비의 계시",
-    gradient: "from-indigo-400 to-purple-500"
-  },
-  {
-    id: 11,
-    name: "작명",
-    planet: "달",
-    icon: "🌙",
-    description: "이름의 의미",
-    gradient: "from-slate-400 to-gray-500"
+    id: 'premium',
+    title: '종합 분석',
+    description: '모든 영역의 심층 사주 분석',
+    icon: Star,
+    gradient: 'from-indigo-500 to-purple-600',
+    element: '五行',
   },
 ];
 
-/**
- * Main Saju Content Page - REBRANDED VERSION
- * Premium cosmic-themed fortune-telling experience
- * 프리미엄 우주 테마 사주 서비스
- */
+// 주요 기능 소개
+const FEATURES = [
+  {
+    title: 'AI 기반 사주 분석',
+    description: '최신 AI 기술로 정확하고 깊이 있는 사주 해석을 제공합니다',
+    icon: Sparkles,
+  },
+  {
+    title: '실시간 운세',
+    description: '매일 업데이트되는 오늘의 운세를 확인하세요',
+    icon: Zap,
+  },
+  {
+    title: '무제한 분석',
+    description: '원하는 만큼 사주를 분석하고 저장할 수 있습니다',
+    icon: Star,
+  },
+];
+
+// 사용자 후기 (Mock)
+const TESTIMONIALS = [
+  {
+    name: '김지은',
+    rating: 5,
+    comment: '정말 정확한 분석에 놀랐어요! AI가 이렇게 깊이 있게 봐줄 줄 몰랐습니다.',
+  },
+  {
+    name: '박민수',
+    rating: 5,
+    comment: '다른 사주 앱들과는 차원이 다릅니다. 디자인도 너무 예쁘고 사용하기 편해요.',
+  },
+  {
+    name: '이서연',
+    rating: 5,
+    comment: '궁합 분석이 정말 도움됐어요. 연애할 때 참고하면 좋을 것 같아요!',
+  },
+];
+
 export default function MainPage() {
-  const heroSection = useScrollAnimation({ threshold: 0.1 });
-  const categorySection = useScrollAnimation({ threshold: 0.2 });
-  const eventSection = useScrollAnimation({ threshold: 0.2 });
-  const productsSection = useScrollAnimation({ threshold: 0.2 });
-  const ctaSection = useScrollAnimation({ threshold: 0.2 });
+  const [selectedService, setSelectedService] = useState<string | null>(null);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-purple-50/30 to-white">
