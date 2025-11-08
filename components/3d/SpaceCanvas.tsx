@@ -43,11 +43,11 @@ export function SpaceCanvas({
         }}
         dpr={[1, 2]} // Device pixel ratio for retina displays
       >
-        {/* Camera */}
+        {/* Camera - Iteration 4: Closer position + wider FOV for better Saturn ring visibility */}
         <PerspectiveCamera
           makeDefault
-          position={[0, 50, 300]}
-          fov={50}
+          position={[0, 50, 240]}  // Moved from 300 to 240 (20% closer)
+          fov={55}                 // Increased from 50 to 55 (10% wider)
           near={0.1}
           far={10000}
         />
@@ -96,7 +96,7 @@ export function SpaceCanvas({
             enablePan={false}
             enableZoom={true}
             enableRotate={true}
-            minDistance={150}
+            minDistance={120}  // Adjusted from 150 to allow closer zoom
             maxDistance={500}
             minPolarAngle={Math.PI / 4}
             maxPolarAngle={(3 * Math.PI) / 4}
