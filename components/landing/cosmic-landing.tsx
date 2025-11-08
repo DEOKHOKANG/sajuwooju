@@ -141,9 +141,10 @@ export function CosmicLanding() {
 
           <div className="pt-8">
             <button
+              onClick={handleClick}
               className={`glass-button px-8 py-4 rounded-full border border-star-gold/30 ${
                 isHovering && !isRotating ? 'scale-110' : 'scale-100'
-              } transition-all duration-300`}
+              } transition-all duration-300 cursor-pointer`}
             >
               <p className="text-white text-sm sm:text-base font-medium">
                 사주우주 시작하기
