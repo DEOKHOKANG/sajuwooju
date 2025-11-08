@@ -7,34 +7,34 @@ export function Footer() {
         {/* Company Name */}
         <div className="mb-4 sm:mb-6">
           <h3 className="font-display text-lg sm:text-xl font-bold text-primary mb-2">
-            사주우주
+            사주우주 (SajuWooju)
           </h3>
           <p className="text-xs sm:text-sm text-slate-400">
-            정확한 사주로 더 나은 미래를 설계하세요
+            우주의 법칙으로 읽는 나의 운명
           </p>
         </div>
 
         {/* Company Info */}
         <div className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-slate-400 mb-6 sm:mb-8">
           <div className="flex flex-wrap gap-x-2">
-            <span className="font-medium text-primary">회사명:</span>
-            <span>사이버네틱스 (Cybernetics)</span>
+            <span className="font-medium text-primary">상호명:</span>
+            <span>사주우주 (SajuWooju)</span>
           </div>
           <div className="flex flex-wrap gap-x-2">
             <span className="font-medium text-primary">대표:</span>
-            <span>송홍기</span>
+            <span>강덕호</span>
           </div>
           <div className="flex flex-wrap gap-x-2">
             <span className="font-medium text-primary">주소:</span>
-            <span>건국대학교 기술혁신관, 서울특별시</span>
+            <span>서울특별시 광진구 능동로 120</span>
           </div>
           <div className="flex flex-wrap gap-x-2">
-            <span className="font-medium text-primary">연락처:</span>
-            <span>010-2293-0574</span>
+            <span className="font-medium text-primary">이메일:</span>
+            <span>contact@sajuwooju.com</span>
           </div>
           <div className="flex flex-wrap gap-x-2">
             <span className="font-medium text-primary">고객지원:</span>
-            <span>채널톡 (Channel Talk)</span>
+            <span>카카오톡 채널 (사주우주)</span>
           </div>
         </div>
 
