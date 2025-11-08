@@ -1,9 +1,12 @@
 'use client';
 
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, PerspectiveCamera, Stars } from '@react-three/drei';
+import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import { EffectComposer, Bloom } from '@react-three/postprocessing';
 import { Suspense } from 'react';
+import { CosmicStarfield } from './CosmicStarfield';
+import { MilkyWayGradient } from './MilkyWayGradient';
+import { NebulaParticles } from './NebulaParticles';
 
 /**
  * SpaceCanvas Component
@@ -15,6 +18,8 @@ interface SpaceCanvasProps {
   children?: React.ReactNode;
   enableControls?: boolean;
   showStars?: boolean;
+  showMilkyWay?: boolean;
+  showNebula?: boolean;
   enableBloom?: boolean;
   className?: string;
 }
@@ -23,6 +28,8 @@ export function SpaceCanvas({
   children,
   enableControls = true,
   showStars = true,
+  showMilkyWay = true,
+  showNebula = true,
   enableBloom = true,
   className = '',
 }: SpaceCanvasProps) {
@@ -55,18 +62,24 @@ export function SpaceCanvas({
           castShadow
         />
 
-        {/* Starfield Background */}
+        {/* Milky Way Gradient Background - Mystical galactic gradient */}
+        {showMilkyWay && (
+          <Suspense fallback={null}>
+            <MilkyWayGradient radius={600} opacity={0.15} rotationSpeed={0.0002} />
+          </Suspense>
+        )}
+
+        {/* Starfield Background - Custom 3-layer cosmic starfield */}
         {showStars && (
           <Suspense fallback={null}>
-            <Stars
-              radius={100}
-              depth={50}
-              count={5000}
-              factor={4}
-              saturation={0}
-              fade
-              speed={1}
-            />
+            <CosmicStarfield count={8000} />
+          </Suspense>
+        )}
+
+        {/* Nebula Particles - Mystical colored dust clouds */}
+        {showNebula && (
+          <Suspense fallback={null}>
+            <NebulaParticles count={200} radius={400} driftSpeed={0.0003} />
           </Suspense>
         )}
 

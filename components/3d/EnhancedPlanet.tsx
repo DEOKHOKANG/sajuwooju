@@ -24,6 +24,8 @@ export interface PlanetData {
   description?: string;
   hasAtmosphere?: boolean; // 대기권 효과 여부
   hasRings?: boolean; // 고리 효과 (토성)
+  zodiacPalace?: string; // 12궁 매핑 (예: 'spouse', 'wealth')
+  isPremium?: boolean; // 유료 컨텐츠 여부
 }
 
 interface EnhancedPlanetProps {
