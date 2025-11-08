@@ -83,13 +83,13 @@ export function RotatingSystemComponent({ isRotating, onAnimationComplete }: Rot
           if (planetData.englishName === 'earth') {
             return (
               <group key={planetData.name} rotation={[0, 0, 0]}>
-                {/* Orbit Path */}
+                {/* Orbit Path - Nearly invisible */}
                 <mesh rotation={[-Math.PI / 2, 0, 0]}>
-                  <ringGeometry args={[planetData.orbitRadius, planetData.orbitRadius + 0.5, 128]} />
+                  <ringGeometry args={[planetData.orbitRadius, planetData.orbitRadius + 0.1, 256]} />
                   <meshBasicMaterial
                     color={planetData.color}
                     transparent
-                    opacity={0.15}
+                    opacity={0.02}
                     side={2}
                   />
                 </mesh>
@@ -109,13 +109,13 @@ export function RotatingSystemComponent({ isRotating, onAnimationComplete }: Rot
           if (planetData.englishName === 'saturn') {
             return (
               <group key={planetData.name} rotation={[0, 0, 0]}>
-                {/* Orbit Path */}
+                {/* Orbit Path - Nearly invisible */}
                 <mesh rotation={[-Math.PI / 2, 0, 0]}>
-                  <ringGeometry args={[planetData.orbitRadius, planetData.orbitRadius + 0.5, 128]} />
+                  <ringGeometry args={[planetData.orbitRadius, planetData.orbitRadius + 0.1, 256]} />
                   <meshBasicMaterial
                     color={planetData.color}
                     transparent
-                    opacity={0.15}
+                    opacity={0.02}
                     side={2}
                   />
                 </mesh>

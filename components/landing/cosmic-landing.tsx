@@ -19,7 +19,7 @@ const SpaceCanvas = dynamic(
 
 // Dynamically import the RotatingSystem to avoid SSR issues
 const RotatingSystemComponent = dynamic(
-  () => import('./RotatingSystemComponent').then((mod) => mod.RotatingSystemComponent),
+  () => import('@/components/landing/RotatingSystemComponent').then((mod) => mod.RotatingSystemComponent),
   { ssr: false }
 );
 

@@ -126,14 +126,14 @@ export function EnhancedPlanet({
 
   return (
     <group ref={groupRef}>
-      {/* Orbit Path */}
+      {/* Orbit Path - Nearly invisible */}
       {showOrbit && (
         <mesh rotation={[-Math.PI / 2, 0, 0]}>
-          <ringGeometry args={[data.orbitRadius, data.orbitRadius + 0.5, 128]} />
+          <ringGeometry args={[data.orbitRadius, data.orbitRadius + 0.1, 256]} />
           <meshBasicMaterial
             color={data.color}
             transparent
-            opacity={0.15}
+            opacity={0.02}
             side={THREE.DoubleSide}
           />
         </mesh>
