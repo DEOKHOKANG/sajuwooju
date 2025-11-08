@@ -121,8 +121,8 @@ export function CosmicLanding() {
         </SpaceCanvas>
       </div>
 
-      {/* Welcome Text Overlay */}
-      <div className="absolute inset-0 z-20 flex flex-col items-center justify-center pointer-events-none">
+      {/* Welcome Text Overlay - Positioned at top, not overlapping solar system */}
+      <div className="absolute top-0 left-0 right-0 z-20 flex flex-col items-center pt-24 pointer-events-none">
         {/* Initial welcome text - hidden when rotating */}
         <div
           className={`text-center space-y-6 transition-opacity duration-1000 ${
@@ -135,38 +135,21 @@ export function CosmicLanding() {
             </span>
           </h1>
 
-          <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto px-4">
+          <p className="text-lg sm:text-xl text-white max-w-2xl mx-auto px-4">
             우주의 법칙으로 읽는 나의 운명
           </p>
 
-          <div className="pt-8">
+          <div className="pt-8 pointer-events-auto">
             <button
               onClick={handleClick}
               className={`glass-button px-8 py-4 rounded-full border border-star-gold/30 ${
                 isHovering && !isRotating ? 'scale-110' : 'scale-100'
-              } transition-all duration-300 cursor-pointer`}
+              } transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-star-gold/20`}
             >
-              <p className="text-white text-sm sm:text-base font-medium">
+              <span className="text-white text-sm sm:text-base font-medium">
                 사주우주 시작하기
-              </p>
+              </span>
             </button>
-          </div>
-
-          {/* Animated scroll indicator */}
-          <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
-            <svg
-              className="w-8 h-8 text-star-gold opacity-60"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 14l-7 7m0 0l-7-7m7 7V3"
-              />
-            </svg>
           </div>
         </div>
 
