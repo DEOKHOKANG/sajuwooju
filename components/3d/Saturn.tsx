@@ -86,12 +86,12 @@ export function Saturn({
           map={ringTexture}
           alphaMap={ringTexture}
           transparent
-          opacity={0.85}           // Slightly transparent for natural look
+          opacity={0.95}           // More opaque for better visibility
           side={THREE.DoubleSide}
           roughness={0.7}          // Natural matte surface
           metalness={0.15}         // Minimal metallic reflection
           emissive="#B89968"       // Sandy brown-beige (NASA observed colors)
-          emissiveIntensity={0.12} // Subtle natural glow
+          emissiveIntensity={0.15} // Slightly brighter glow
           depthWrite={false}
         />
       </mesh>
