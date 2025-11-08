@@ -40,7 +40,7 @@ export function CosmicLanding() {
   const [isRotating, setIsRotating] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
   const [showBigBang, setShowBigBang] = useState(false);
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(true); // Enable clicking immediately
 
   const handleClick = () => {
     if (isRotating || !isLoaded) return; // Prevent multiple clicks
