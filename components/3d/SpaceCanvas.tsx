@@ -6,7 +6,6 @@ import { EffectComposer, Bloom } from '@react-three/postprocessing';
 import { Suspense } from 'react';
 import { CosmicStarfield } from './CosmicStarfield';
 import { MilkyWayGradient } from './MilkyWayGradient';
-import { NebulaParticles } from './NebulaParticles';
 
 /**
  * SpaceCanvas Component
@@ -62,24 +61,17 @@ export function SpaceCanvas({
           castShadow
         />
 
-        {/* Milky Way Gradient Background */}
+        {/* Milky Way Gradient Background - Subtle cosmic atmosphere */}
         {showMilkyWay && (
           <Suspense fallback={null}>
-            <MilkyWayGradient radius={600} opacity={0.15} rotationSpeed={0.0002} />
+            <MilkyWayGradient radius={600} opacity={0.08} rotationSpeed={0.0002} />
           </Suspense>
         )}
 
-        {/* Starfield Background */}
+        {/* Starfield Background - Photorealistic stars only */}
         {showStars && (
           <Suspense fallback={null}>
-            <CosmicStarfield count={8000} />
-          </Suspense>
-        )}
-
-        {/* Nebula Particles */}
-        {showNebula && (
-          <Suspense fallback={null}>
-            <NebulaParticles count={200} radius={400} driftSpeed={0.0003} />
+            <CosmicStarfield count={12000} />
           </Suspense>
         )}
 
