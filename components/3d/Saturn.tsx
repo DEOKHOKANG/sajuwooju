@@ -86,10 +86,12 @@ export function Saturn({
           map={ringTexture}
           alphaMap={ringTexture}
           transparent
-          opacity={0.9}
+          opacity={1.0}           // Iteration 5: 0.9 → 1.0 (fully opaque where texture exists)
           side={THREE.DoubleSide}
-          roughness={0.8}
-          metalness={0.1}
+          roughness={0.6}          // Iteration 5: 0.8 → 0.6 (less rough = more reflective)
+          metalness={0.3}          // Iteration 5: 0.1 → 0.3 (more metallic = brighter)
+          emissive="#C9A961"       // Iteration 5: Add warm golden emissive glow
+          emissiveIntensity={0.3}  // Iteration 5: Subtle glow for visibility
           depthWrite={false}
         />
       </mesh>
