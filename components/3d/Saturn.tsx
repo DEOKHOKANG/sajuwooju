@@ -2,9 +2,8 @@
 
 import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { Sphere } from '@react-three/drei';
+import { Sphere, useTexture } from '@react-three/drei';
 import * as THREE from 'three';
-import { usePlanetTextures, useSaturnRingTexture } from '@/hooks/use-planet-textures';
 
 /**
  * Saturn Component with Rings
@@ -35,11 +34,12 @@ export function Saturn({
   const planetRef = useRef<THREE.Mesh>(null);
   const ringRef = useRef<THREE.Mesh>(null);
 
-  // Load Saturn textures (planet and ring)
-  // React Three Fiber's useLoader throws Promises for Suspense to handle
-  // The parent component must wrap this in <Suspense> for proper async loading
-  const { map: saturnTexture } = usePlanetTextures('saturn');
-  const ringTexture = useSaturnRingTexture();
+  // Load Saturn textures using useTexture from drei
+  // useTexture automatically handles Suspense without try-catch
+  const [saturnTexture, ringTexture] = useTexture([
+    '/textures/saturn.jpg',
+    '/textures/saturnRing.png'
+  ]);
 
   // Animate Saturn and ring rotation
   useFrame(() => {

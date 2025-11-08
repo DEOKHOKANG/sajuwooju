@@ -2,9 +2,8 @@
 
 import { useRef, useMemo } from 'react';
 import { useFrame } from '@react-three/fiber';
-import { Sphere, shaderMaterial } from '@react-three/drei';
+import { Sphere, shaderMaterial, useTexture } from '@react-three/drei';
 import * as THREE from 'three';
-import { useEarthTextures } from '@/hooks/use-planet-textures';
 import { extend } from '@react-three/fiber';
 import { CloudLayer } from './CloudLayer';
 
@@ -99,8 +98,12 @@ export function Earth({
 }: EarthProps) {
   const meshRef = useRef<THREE.Mesh>(null);
 
-  // Load Earth textures (day, night, clouds)
-  const { dayMap, nightMap, cloudsMap } = useEarthTextures();
+  // Load Earth textures using useTexture from drei
+  const [dayMap, nightMap, cloudsMap] = useTexture([
+    '/textures/earth.jpg',
+    '/textures/earthNight.jpg',
+    '/textures/earthClouds.jpg'
+  ]);
 
   // Sun direction (pointing to the sun at origin)
   const sunDirection = useMemo(() => {
