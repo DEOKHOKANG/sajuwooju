@@ -81,7 +81,7 @@ export function CosmicLanding() {
           enableControls={false}
           showStars={true}
           showMilkyWay={true}
-          showNebula={true}
+          showNebula={false}
           enableBloom={true}
         >
           <RotatingSystemComponent

@@ -139,14 +139,14 @@ export function Earth({
         opacity={0.4}
       />
 
-      {/* Atmospheric Glow */}
+      {/* Atmospheric Glow - Brighter Earth atmosphere */}
       {showAtmosphere && (
         <Sphere args={[radius * 1.05, 32, 32]}>
           <shaderMaterial
             transparent
             side={THREE.BackSide}
             uniforms={{
-              glowColor: { value: new THREE.Color('#4169E1') },
+              glowColor: { value: new THREE.Color('#87CEEB') }, // Sky Blue - 밝은 하늘색
             }}
             vertexShader={`
               varying vec3 vNormal;
@@ -161,10 +161,10 @@ export function Earth({
               varying vec3 vNormal;
 
               void main() {
-                // Fresnel effect for atmosphere
+                // Fresnel effect for atmosphere - brighter
                 float intensity = pow(0.6 - dot(vNormal, vec3(0.0, 0.0, 1.0)), 2.0);
-                vec3 glow = glowColor * intensity;
-                gl_FragColor = vec4(glow, intensity * 0.4);
+                vec3 glow = glowColor * intensity * 1.5; // 1.5x brighter
+                gl_FragColor = vec4(glow, intensity * 0.6); // More opaque
               }
             `}
           />
