@@ -18,13 +18,13 @@ test.describe('Deployment Site Check', () => {
 
     // Go to deployment site
     console.log('Navigating to deployment site...');
-    await page.goto('https://sajuwooju-aiag97fnb-kevinggangs-projects.vercel.app/', {
-      waitUntil: 'networkidle',
-      timeout: 30000
+    await page.goto('https://sajuwooju-pyljco9gu-kevinglecs-projects.vercel.app/', {
+      waitUntil: 'domcontentloaded',
+      timeout: 60000
     });
 
     // Wait for initial render
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(3000);
 
     // Take initial screenshot
     await page.screenshot({
@@ -33,26 +33,25 @@ test.describe('Deployment Site Check', () => {
     });
     console.log('Initial screenshot taken');
 
-    // Check for error page
+    // Check for error page text
     const errorText = await page.locator('text=오류').count();
+    const notFoundText = await page.locator('text=NOT_FOUND').count();
     console.log('Error text count:', errorText);
+    console.log('NOT_FOUND text count:', notFoundText);
 
-    // Check for empty box issue
-    const heroSection = page.locator('div').filter({ hasText: '사주우주' }).first();
-    await heroSection.screenshot({
-      path: 'tests/screenshots/deployment-hero-section.png'
-    });
-    console.log('Hero section screenshot taken');
+    // Try to find hero text
+    const sajuText = await page.locator('text=사주우주').count();
+    console.log('사주우주 text count:', sajuText);
 
-    // Wait a bit more to see if error appears
-    await page.waitForTimeout(5000);
+    // Wait longer to see if error appears
+    await page.waitForTimeout(7000);
 
     // Take screenshot after waiting
     await page.screenshot({
-      path: 'tests/screenshots/deployment-after-5s.png',
+      path: 'tests/screenshots/deployment-after-10s.png',
       fullPage: true
     });
-    console.log('After 5s screenshot taken');
+    console.log('After 10s screenshot taken');
 
     // Log all errors
     console.log('Console errors:', consoleErrors);
@@ -60,14 +59,14 @@ test.describe('Deployment Site Check', () => {
 
     // Check if error page appeared
     const hasError = await page.locator('text=오류 발생').count() > 0;
+    const has404 = await page.locator('text=404').count() > 0;
     console.log('Has error page:', hasError);
+    console.log('Has 404 page:', has404);
 
-    if (hasError) {
-      await page.screenshot({
-        path: 'tests/screenshots/deployment-error-page.png',
-        fullPage: true
-      });
-      console.log('Error page screenshot taken');
-    }
+    // Get page title and URL
+    const title = await page.title();
+    const url = page.url();
+    console.log('Page title:', title);
+    console.log('Page URL:', url);
   });
 });

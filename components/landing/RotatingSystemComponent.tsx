@@ -1,7 +1,6 @@
 'use client';
 
 import { useRef } from 'react';
-import { useRouter } from 'next/navigation';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import { PLANETS_DATA } from '@/lib/planets-data';
@@ -16,7 +15,6 @@ interface RotatingSystemProps {
 }
 
 export function RotatingSystemComponent({ isRotating, onAnimationComplete }: RotatingSystemProps) {
-  const router = useRouter();
   const systemGroupRef = useRef<THREE.Group>(null);
   const sunGroupRef = useRef<THREE.Group>(null);
   const planetsGroupRef = useRef<THREE.Group>(null);
@@ -26,9 +24,10 @@ export function RotatingSystemComponent({ isRotating, onAnimationComplete }: Rot
   const animationTime = useRef(0);
   const ANIMATION_DURATION = 3; // 3 seconds fast rotation
 
-  // Handle planet click navigation
+  // Handle planet click navigation - no-op for now since we're on landing page
   const handlePlanetClick = (planetName: string) => {
-    router.push(`/planet/${planetName}`);
+    // Planet clicks disabled on landing page
+    console.log('Planet clicked:', planetName);
   };
 
   useFrame((state, delta) => {
