@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import { PLANETS_DATA } from '@/lib/planets-data';
-import { EnhancedSun } from '@/components/3d/EnhancedSun';
+import { PhotorealisticSun } from '@/components/3d/PhotorealisticSun';
 import { EnhancedPlanet } from '@/components/3d/EnhancedPlanet';
 import { Earth } from '@/components/3d/Earth';
 import { Saturn } from '@/components/3d/Saturn';
@@ -72,9 +72,9 @@ export function RotatingSystemComponent({ isRotating, onAnimationComplete }: Rot
 
   return (
     <group ref={systemGroupRef}>
-      {/* Sun with its own rotation */}
+      {/* Photorealistic Sun with its own rotation */}
       <group ref={sunGroupRef} position={[0, 0, 0]}>
-        <EnhancedSun radius={20} position={[0, 0, 0]} />
+        <PhotorealisticSun radius={20} position={[0, 0, 0]} />
       </group>
 
       {/* Planets orbiting around the sun */}

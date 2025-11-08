@@ -62,21 +62,21 @@ export function SpaceCanvas({
           castShadow
         />
 
-        {/* Milky Way Gradient Background - Mystical galactic gradient */}
+        {/* Milky Way Gradient Background */}
         {showMilkyWay && (
           <Suspense fallback={null}>
             <MilkyWayGradient radius={600} opacity={0.15} rotationSpeed={0.0002} />
           </Suspense>
         )}
 
-        {/* Starfield Background - Custom 3-layer cosmic starfield */}
+        {/* Starfield Background */}
         {showStars && (
           <Suspense fallback={null}>
             <CosmicStarfield count={8000} />
           </Suspense>
         )}
 
-        {/* Nebula Particles - Mystical colored dust clouds */}
+        {/* Nebula Particles */}
         {showNebula && (
           <Suspense fallback={null}>
             <NebulaParticles count={200} radius={400} driftSpeed={0.0003} />
@@ -90,8 +90,8 @@ export function SpaceCanvas({
         {enableBloom && (
           <EffectComposer>
             <Bloom
-              intensity={1.5} // Glow intensity
-              luminanceThreshold={0.9} // Only bright objects glow (sun, emissive materials)
+              intensity={2.0} // Stronger glow for photorealistic sun
+              luminanceThreshold={0.7} // Only bright objects glow
               luminanceSmoothing={0.9} // Smooth transition
               mipmapBlur={true} // Better performance and quality
             />
