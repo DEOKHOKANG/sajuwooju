@@ -1,0 +1,78 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e6]:
+        - button "메뉴" [ref=e7] [cursor=pointer]:
+          - img [ref=e8]
+        - heading "사주우주" [level=1] [ref=e10]
+        - generic [ref=e11]:
+          - button "검색" [ref=e12] [cursor=pointer]:
+            - img [ref=e13]
+          - button "프로필" [ref=e16] [cursor=pointer]:
+            - img [ref=e17]
+    - generic:
+      - generic:
+        - generic:
+          - heading "메뉴" [level=2]
+          - navigation:
+            - link "사주 보기":
+              - /url: "#"
+            - link "운세":
+              - /url: "#"
+            - link "궁합":
+              - /url: "#"
+            - link "내 정보":
+              - /url: "#"
+    - generic [ref=e20]:
+      - generic:
+        - generic:
+          - heading "사주우주" [level=1]
+          - paragraph: 우주의 법칙으로 읽는 나의 운명
+          - generic:
+            - button "사주우주 시작하기":
+              - paragraph: 사주우주 시작하기
+          - generic:
+            - img
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - heading "많은 분들이 경험하셨습니다" [level=2] [ref=e31]
+        - paragraph [ref=e32]: AI가 분석한 정확한 사주 운세
+      - generic [ref=e33]:
+        - generic [ref=e37]:
+          - generic [ref=e38]: "0"
+          - generic [ref=e39]: 재물운
+        - generic [ref=e45]:
+          - generic [ref=e46]: "0"
+          - generic [ref=e47]: 궁합
+        - generic [ref=e53]:
+          - generic [ref=e54]: "0"
+          - generic [ref=e55]: 재회운
+    - navigation [ref=e58]:
+      - generic [ref=e61]:
+        - link "홈" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e67]: 홈
+        - link "탐색" [ref=e68] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e70]
+          - generic [ref=e73]: 탐색
+        - link "운세" [ref=e74] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e76]
+          - generic [ref=e78]: 운세
+        - link "내역" [ref=e79] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e81]
+          - generic [ref=e85]: 내역
+        - link "내정보" [ref=e86] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e88]
+          - generic [ref=e91]: 내정보
+  - button "Open Next.js Dev Tools" [ref=e97] [cursor=pointer]:
+    - img [ref=e98]
+  - alert [ref=e101]
+```

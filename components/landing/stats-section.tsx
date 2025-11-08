@@ -139,23 +139,9 @@ function StatCard({ stat }: StatCardProps) {
     <div
       ref={cardRef}
       className="stat-card group"
-      style={
-        {
-          '--gradient-from': stat.gradient.split(' ')[0].replace('from-', ''),
-          '--gradient-to': stat.gradient.split(' ')[2],
-          '--glow-rgb': stat.glowRgb,
-        } as React.CSSProperties
-      }
     >
       {/* Card Background with Glassmorphism */}
       <div className="relative p-8 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 transition-all duration-300 group-hover:bg-white/10 group-hover:border-white/20">
-        {/* Gradient Glow */}
-        <div
-          className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-          style={{
-            background: `radial-gradient(circle at center, rgba(var(--glow-rgb), 0.15) 0%, transparent 70%)`,
-          }}
-        />
 
         {/* Content */}
         <div className="relative z-10 text-center">
