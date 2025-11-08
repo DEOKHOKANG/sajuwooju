@@ -78,7 +78,7 @@ export function Saturn({
         <ringGeometry
           args={[
             radius * 1.2,  // Inner radius (closer to planet)
-            radius * 3.5,  // Outer radius (increased from 2.8 to 3.5 for better visibility)
+            radius * 4.5,  // Outer radius (iteration 2: 3.5 -> 4.5 for much better visibility)
             128,           // Theta segments
           ]}
         />
@@ -101,7 +101,7 @@ export function Saturn({
         <ringGeometry
           args={[
             radius * 1.2,
-            radius * 3.5,  // Match main ring size
+            radius * 4.5,  // Match main ring size (iteration 2)
             128,
           ]}
         />
