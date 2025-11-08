@@ -7,6 +7,7 @@ import { useLoader } from '@react-three/fiber';
 import { TextureLoader } from 'three';
 import * as THREE from 'three';
 import { useMemo } from 'react';
+import { compressTexture } from '@/lib/texture-optimizer';
 
 const TEXTURE_BASE_PATH = '/textures';
 
@@ -30,21 +31,19 @@ interface EarthTextures {
 
 /**
  * Configure texture for optimal quality and performance
+ * Now uses texture-optimizer for consistent optimization
  */
 function configureTexture(texture: THREE.Texture): THREE.Texture {
-  // Wrapping
-  texture.wrapS = THREE.RepeatWrapping;
-  texture.wrapT = THREE.RepeatWrapping;
-
-  // Filtering (anisotropic for better quality at angles)
-  texture.anisotropy = 16;
-
-  // Mipmaps (for performance)
-  texture.generateMipmaps = true;
-  texture.minFilter = THREE.LinearMipmapLinearFilter;
-  texture.magFilter = THREE.LinearFilter;
-
-  return texture;
+  return compressTexture(texture, {
+    maxSize: 2048,
+    anisotropy: 16,
+    generateMipmaps: true,
+    minFilter: THREE.LinearMipmapLinearFilter,
+    magFilter: THREE.LinearFilter,
+    wrapS: THREE.RepeatWrapping,
+    wrapT: THREE.RepeatWrapping,
+    encoding: THREE.SRGBColorSpace,
+  });
 }
 
 /**
