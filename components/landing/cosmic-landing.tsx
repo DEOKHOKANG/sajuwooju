@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import { StatsSection } from './stats-section';
@@ -38,10 +38,16 @@ const RotatingSystemComponent = dynamic(
 
 export function CosmicLanding() {
   const router = useRouter();
+  const [isMounted, setIsMounted] = useState(false);
   const [isRotating, setIsRotating] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
   const [showBigBang, setShowBigBang] = useState(false);
   const [isLoaded, setIsLoaded] = useState(true); // Enable clicking immediately
+
+  // Ensure client-side only rendering for 3D components
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const handleClick = () => {
     if (isRotating || !isLoaded) return; // Prevent multiple clicks
@@ -57,6 +63,22 @@ export function CosmicLanding() {
       router.push('/main');
     }, 800);
   };
+
+  // Show loading screen on server-side or before mount
+  if (!isMounted) {
+    return (
+      <div className="relative w-full h-screen bg-black flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-glow-pulse mb-4">
+            <span className="text-6xl">🌌</span>
+          </div>
+          <p className="font-display text-xl text-white animate-pulse">
+            우주를 불러오는 중...
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="relative w-full bg-black">
