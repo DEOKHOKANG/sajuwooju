@@ -1,4 +1,4 @@
-import { PlanetData } from '@/components/3d/Planet';
+import { PlanetData } from '@/components/3d/EnhancedPlanet';
 
 /**
  * 행성 데이터 - 음양오행 매핑
@@ -12,6 +12,7 @@ export const PLANETS_DATA: PlanetData[] = [
   // 水 (Water) - 흐름, 지혜, 유연성
   {
     name: '수성',
+    englishName: 'mercury',
     element: '水',
     color: '#B8C5D6',
     radius: 3,
@@ -19,9 +20,11 @@ export const PLANETS_DATA: PlanetData[] = [
     orbitSpeed: 4.74, // Mercury's orbital speed (km/s)
     rotationSpeed: 0.02,
     description: '수성은 水(물)의 기운을 가진 행성입니다. 빠르고 유연한 지혜를 상징합니다.',
+    hasAtmosphere: false,
   },
   {
     name: '천왕성',
+    englishName: 'uranus',
     element: '水',
     color: '#4FD0E7',
     radius: 8,
@@ -29,9 +32,11 @@ export const PLANETS_DATA: PlanetData[] = [
     orbitSpeed: 0.68,
     rotationSpeed: 0.015,
     description: '천왕성은 水의 혁신적 에너지를 담고 있습니다.',
+    hasAtmosphere: true,
   },
   {
     name: '해왕성',
+    englishName: 'neptune',
     element: '水',
     color: '#4169E1',
     radius: 8,
@@ -39,11 +44,13 @@ export const PLANETS_DATA: PlanetData[] = [
     orbitSpeed: 0.54,
     rotationSpeed: 0.014,
     description: '해왕성은 水의 깊은 영성과 직관을 나타냅니다.',
+    hasAtmosphere: true,
   },
 
   // 金 (Metal) - 단단함, 정의, 결단
   {
     name: '금성',
+    englishName: 'venus',
     element: '金',
     color: '#FFD700',
     radius: 6,
@@ -51,11 +58,13 @@ export const PLANETS_DATA: PlanetData[] = [
     orbitSpeed: 3.5, // Venus's orbital speed
     rotationSpeed: 0.005,
     description: '금성은 金(금속)의 기운으로 사랑과 아름다움을 상징합니다.',
+    hasAtmosphere: true,
   },
 
   // 土 (Earth) - 안정, 중심, 포용
   {
     name: '지구',
+    englishName: 'earth',
     element: '土',
     color: '#4169E1',
     radius: 6,
@@ -63,9 +72,11 @@ export const PLANETS_DATA: PlanetData[] = [
     orbitSpeed: 2.98, // Earth's orbital speed
     rotationSpeed: 0.02,
     description: '지구는 土(흙)의 중심 에너지를 가진 우리의 고향입니다.',
+    hasAtmosphere: true,
   },
   {
     name: '토성',
+    englishName: 'saturn',
     element: '土',
     color: '#DAA520',
     radius: 9,
@@ -73,9 +84,12 @@ export const PLANETS_DATA: PlanetData[] = [
     orbitSpeed: 0.97,
     rotationSpeed: 0.025,
     description: '토성은 土의 안정과 책임을 상징하는 큰 행성입니다.',
+    hasAtmosphere: true,
+    hasRings: true,
   },
   {
     name: '명왕성',
+    englishName: 'pluto',
     element: '土',
     color: '#8B7355',
     radius: 2,
@@ -83,11 +97,13 @@ export const PLANETS_DATA: PlanetData[] = [
     orbitSpeed: 0.47,
     rotationSpeed: 0.008,
     description: '명왕성은 土의 변화와 재생을 나타냅니다.',
+    hasAtmosphere: false,
   },
 
   // 火 (Fire) - 열정, 에너지, 변화
   {
     name: '화성',
+    englishName: 'mars',
     element: '火',
     color: '#DC143C',
     radius: 4,
@@ -95,11 +111,13 @@ export const PLANETS_DATA: PlanetData[] = [
     orbitSpeed: 2.41, // Mars's orbital speed
     rotationSpeed: 0.02,
     description: '화성은 火(불)의 열정과 용기를 상징합니다.',
+    hasAtmosphere: true,
   },
 
   // 木 (Wood) - 성장, 확장, 생명력
   {
     name: '목성',
+    englishName: 'jupiter',
     element: '木',
     color: '#FF8C00',
     radius: 11,
@@ -107,6 +125,7 @@ export const PLANETS_DATA: PlanetData[] = [
     orbitSpeed: 1.31, // Jupiter's orbital speed
     rotationSpeed: 0.04,
     description: '목성은 木(나무)의 성장과 확장을 상징하는 가장 큰 행성입니다.',
+    hasAtmosphere: true,
   },
 ];
 

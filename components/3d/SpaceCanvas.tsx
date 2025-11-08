@@ -2,18 +2,20 @@
 
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera, Stars } from '@react-three/drei';
+import { EffectComposer, Bloom } from '@react-three/postprocessing';
 import { Suspense } from 'react';
 
 /**
  * SpaceCanvas Component
- * Base 3D canvas for the cosmic solar system
- * 사주우주 3D 우주 캔버스
+ * Base 3D canvas for the cosmic solar system with post-processing effects
+ * 사주우주 3D 우주 캔버스 (Bloom 효과 포함)
  */
 
 interface SpaceCanvasProps {
   children?: React.ReactNode;
   enableControls?: boolean;
   showStars?: boolean;
+  enableBloom?: boolean;
   className?: string;
 }
 
@@ -21,6 +23,7 @@ export function SpaceCanvas({
   children,
   enableControls = true,
   showStars = true,
+  enableBloom = true,
   className = '',
 }: SpaceCanvasProps) {
   return (
@@ -69,6 +72,18 @@ export function SpaceCanvas({
 
         {/* Scene Content */}
         <Suspense fallback={null}>{children}</Suspense>
+
+        {/* Post-Processing Effects */}
+        {enableBloom && (
+          <EffectComposer>
+            <Bloom
+              intensity={1.5} // Glow intensity
+              luminanceThreshold={0.9} // Only bright objects glow (sun, emissive materials)
+              luminanceSmoothing={0.9} // Smooth transition
+              mipmapBlur={true} // Better performance and quality
+            />
+          </EffectComposer>
+        )}
 
         {/* Controls */}
         {enableControls && (

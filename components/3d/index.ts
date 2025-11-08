@@ -5,7 +5,9 @@
 
 export { SpaceCanvas, SpaceCanvasLoader } from './SpaceCanvas';
 export { Sun } from './Sun';
+export { EnhancedSun } from './EnhancedSun';
 export { Planet } from './Planet';
-export type { PlanetData } from './Planet';
+export { EnhancedPlanet } from './EnhancedPlanet';
+export type { PlanetData } from './EnhancedPlanet';
 export { SolarSystem, PlanetInfoPanel } from './SolarSystem';
 export { LoadingScene } from './LoadingScene';

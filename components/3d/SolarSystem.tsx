@@ -1,14 +1,14 @@
 'use client';
 
 import { useState } from 'react';
-import { Sun } from './Sun';
-import { Planet, PlanetData } from './Planet';
+import { EnhancedSun } from './EnhancedSun';
+import { EnhancedPlanet, PlanetData } from './EnhancedPlanet';
 import { PLANETS_DATA } from '@/lib/planets-data';
 
 /**
  * SolarSystem Component
- * Complete solar system with Sun + 9 planets
- * 완전한 태양계 시스템 (태양 + 9개 행성)
+ * Complete solar system with Enhanced Sun + 9 planets
+ * 완전한 태양계 시스템 (고급 태양 + 9개 행성)
  */
 
 interface SolarSystemProps {
@@ -31,12 +31,12 @@ export function SolarSystem({
 
   return (
     <group>
-      {/* Central Sun */}
-      <Sun radius={20} position={[0, 0, 0]} />
+      {/* Central Enhanced Sun with Corona and Flares */}
+      <EnhancedSun radius={20} position={[0, 0, 0]} />
 
-      {/* 9 Planets */}
+      {/* 9 Enhanced Planets with Procedural Textures */}
       {PLANETS_DATA.map((planetData) => (
-        <Planet
+        <EnhancedPlanet
           key={planetData.name}
           data={planetData}
           onClick={() => handlePlanetClick(planetData)}
