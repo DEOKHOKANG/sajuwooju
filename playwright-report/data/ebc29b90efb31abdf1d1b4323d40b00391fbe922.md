@@ -1,0 +1,224 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - img
+  - generic [ref=e2]:
+    - generic [ref=e5]:
+      - generic [ref=e10]:
+        - link "2026신년" [ref=e12] [cursor=pointer]:
+          - /url: https://sajutight.me/saehae
+          - img "2026신년" [ref=e13]
+        - link "재물운" [ref=e15] [cursor=pointer]:
+          - /url: https://sajutight.me/money
+          - img "재물운" [ref=e16]
+        - link "썸사주궁합" [ref=e18] [cursor=pointer]:
+          - /url: https://sajutight.me/tight?p=match
+          - img "썸사주궁합" [ref=e19]
+        - link "솔탈" [ref=e21] [cursor=pointer]:
+          - /url: https://sajutight.me/solo
+          - img "솔탈" [ref=e22]
+        - link "2026신년" [ref=e24] [cursor=pointer]:
+          - /url: https://sajutight.me/saehae
+          - img "2026신년" [ref=e25]
+        - link "재물운" [ref=e27] [cursor=pointer]:
+          - /url: https://sajutight.me/money
+          - img "재물운" [ref=e28]
+        - link "썸사주궁합" [ref=e30] [cursor=pointer]:
+          - /url: https://sajutight.me/tight?p=match
+          - img "썸사주궁합" [ref=e31]
+        - link "솔탈" [ref=e33] [cursor=pointer]:
+          - /url: https://sajutight.me/solo
+          - img "솔탈" [ref=e34]
+        - link "2026신년" [ref=e36] [cursor=pointer]:
+          - /url: https://sajutight.me/saehae
+          - img "2026신년" [ref=e37]
+        - link "재물운" [ref=e39] [cursor=pointer]:
+          - /url: https://sajutight.me/money
+          - img "재물운" [ref=e40]
+        - link "썸사주궁합" [ref=e42] [cursor=pointer]:
+          - /url: https://sajutight.me/tight?p=match
+          - img "썸사주궁합" [ref=e43]
+        - link "솔탈" [ref=e45] [cursor=pointer]:
+          - /url: https://sajutight.me/solo
+          - img "솔탈" [ref=e46]
+      - generic [ref=e52]:
+        - generic [ref=e54]:
+          - heading "🍪 카테고리" [level=2] [ref=e55]:
+            - generic [ref=e56]: 🍪 카테고리
+          - generic [ref=e57]:
+            - generic [ref=e58] [cursor=pointer]:
+              - img [ref=e61]
+              - generic [ref=e63]: 이벤트!
+            - generic [ref=e64] [cursor=pointer]:
+              - img [ref=e67]
+              - generic [ref=e69]: 궁합
+            - generic [ref=e70] [cursor=pointer]:
+              - img [ref=e73]
+              - generic [ref=e75]: 솔로/연애운
+            - generic [ref=e76] [cursor=pointer]:
+              - img [ref=e79]
+              - generic [ref=e81]: 이별/재회
+            - generic [ref=e82] [cursor=pointer]:
+              - img [ref=e85]
+              - generic [ref=e87]: 결혼운
+          - generic [ref=e89]:
+            - generic [ref=e90] [cursor=pointer]:
+              - img [ref=e93]
+              - generic [ref=e95]: 임신/자녀운
+            - generic [ref=e96] [cursor=pointer]:
+              - img [ref=e99]
+              - generic [ref=e101]: 신년운세
+            - generic [ref=e102] [cursor=pointer]:
+              - img [ref=e105]
+              - generic [ref=e107]: 월별운세
+            - generic [ref=e108] [cursor=pointer]:
+              - img [ref=e111]
+              - generic [ref=e113]: 취업/직업운
+            - generic [ref=e114] [cursor=pointer]:
+              - img [ref=e117]
+              - generic [ref=e119]: 관상/타로
+        - generic [ref=e121]:
+          - heading "🍷 월간 랭킹 BEST" [level=2] [ref=e122]:
+            - generic [ref=e123]: 🍷 월간 랭킹 BEST
+          - generic [ref=e124]:
+            - generic [ref=e125] [cursor=pointer]:
+              - img [ref=e127]
+              - generic [ref=e128]:
+                - generic [ref=e130]: 내 숨겨진 연애운은? 솔로탈출 사주 🌸
+                - generic [ref=e131]:
+                  - generic [ref=e133]: ⭐️ 4.9
+                  - generic [ref=e135]: 👀 조회수 5만+
+                - generic [ref=e137]: 54% 할인중
+            - generic [ref=e138] [cursor=pointer]:
+              - img [ref=e140]
+              - generic [ref=e141]:
+                - generic [ref=e143]: 재회 vs 환승? 이제 지쳤다면 [재회 환승사주]
+                - generic [ref=e145]: 60% 할인중
+            - generic [ref=e146] [cursor=pointer]:
+              - img [ref=e148]
+              - generic [ref=e149]:
+                - generic [ref=e151]: 화 기운 3년을 읽어주는 [프리미엄 하반기 종합사주✨]
+                - generic [ref=e152]:
+                  - generic [ref=e154]: ⭐️ 4.9
+                  - generic [ref=e156]: 👀 조회수 1만+
+                - generic [ref=e158]: 46% 할인중
+            - generic [ref=e159] [cursor=pointer]:
+              - img [ref=e161]
+              - generic [ref=e162]:
+                - generic [ref=e164]: 그 사람과 나는 얼마나 잘 맞을까? [커플 궁합사주 🥵]
+                - generic [ref=e165]:
+                  - generic [ref=e167]: ⭐️ 4.7
+                  - generic [ref=e169]: 👀 조회수 2만+
+                - generic [ref=e171]: 46% 할인중
+            - generic [ref=e172] [cursor=pointer]:
+              - img [ref=e174]
+              - generic [ref=e175]:
+                - generic [ref=e177]: 그 사람과 재회할 수 있을까..? [이별 재회 사주]
+                - generic [ref=e178]:
+                  - generic [ref=e180]: ⭐️ 4.9
+                  - generic [ref=e182]: 👀 조회수 6만+
+                - generic [ref=e184]: 41% 할인중
+            - generic [ref=e185] [cursor=pointer]:
+              - img [ref=e187]
+              - generic [ref=e188]:
+                - generic [ref=e190]: 이직해서 연봉 2배 올리고 싶다면 봐야할 [커리어사주]
+                - generic [ref=e191]:
+                  - generic [ref=e193]: ⭐️ 4.6
+                  - generic [ref=e195]: 👀 조회수 1만+
+                - generic [ref=e197]: 46% 할인중
+            - generic [ref=e198] [cursor=pointer]:
+              - img [ref=e200]
+              - generic [ref=e201]:
+                - generic [ref=e203]: 명쾌한 10년 풀이까지 해주는 [2025년 타이트 종합사주]
+                - generic [ref=e204]:
+                  - generic [ref=e206]: ⭐️ 4.7
+                  - generic [ref=e208]: 👀 조회수 1만+
+                - generic [ref=e210]: 29% 할인중
+            - generic [ref=e211] [cursor=pointer]:
+              - img [ref=e213]
+              - generic [ref=e214]:
+                - generic [ref=e216]: 뻔한 조언 대신 진짜 매운맛 사주! [팩폭 사주]
+                - generic [ref=e217]:
+                  - generic [ref=e219]: ⭐️ 4.6
+                  - generic [ref=e221]: 👀 조회수 1만+
+                - generic [ref=e223]: 29% 할인중
+        - generic [ref=e225]:
+          - heading "🐣 NEW! 쌔삥 신규사주" [level=2] [ref=e226]:
+            - generic [ref=e227]: 🐣 NEW! 쌔삥 신규사주
+          - generic [ref=e228]:
+            - generic [ref=e229] [cursor=pointer]:
+              - img [ref=e231]
+              - generic [ref=e232]:
+                - generic [ref=e234]: 소름돋게 잘 맞는 2026 신년운세 [신년운세 총운]
+                - generic [ref=e236]: 54% 할인중
+            - generic [ref=e237] [cursor=pointer]:
+              - img [ref=e239]
+              - generic [ref=e240]:
+                - generic [ref=e242]: 소름돋는 2026년 재물운세 💵 [10년 재물운 사주]
+                - generic [ref=e244]: 60% 할인중
+            - generic [ref=e245] [cursor=pointer]:
+              - img [ref=e247]
+              - generic [ref=e248]:
+                - generic [ref=e250]: 2025년 8월 월간운세
+                - generic [ref=e252]: 50% 할인중
+            - generic [ref=e253] [cursor=pointer]:
+              - img [ref=e255]
+              - generic [ref=e256]:
+                - generic [ref=e258]: 그 사람도 나를 좋아할까? [썸 궁합사주]
+                - generic [ref=e260]: 46% 할인중
+        - img [ref=e263] [cursor=pointer]
+        - generic [ref=e266]:
+          - generic [ref=e267]:
+            - heading "🥹 타이트 사주 실시간 리뷰" [level=2] [ref=e268]:
+              - generic [ref=e269]: 🥹 타이트 사주 실시간 리뷰
+            - generic [ref=e271] [cursor=pointer]: 전체 보기
+          - generic [ref=e272]:
+            - generic [ref=e274]:
+              - generic [ref=e275] [cursor=pointer]:
+                - generic [ref=e276]:
+                  - img [ref=e278]
+                  - generic [ref=e280]: 타이트 사주
+                - button [ref=e281]:
+                  - img [ref=e283]
+              - generic [ref=e286]:
+                - text: 생각보다 너무 잘 맞춰요...
+                - text: 평소에도 사주보는거 좋아해서 엄청 비싼 가격이 아니라면 한벅씩 보곤 하는디, 돈이 아깝지 않게 알차고 재밌었어요! 특히, 다른 사주에서는 자세하게 알려주지 않았던 여러 포인트를 알려줘서 좋았습니당
+            - generic [ref=e288]:
+              - generic [ref=e289] [cursor=pointer]:
+                - generic [ref=e290]:
+                  - img [ref=e292]
+                  - generic [ref=e294]: 타이트 사주
+                - button [ref=e295]:
+                  - img [ref=e297]
+              - generic [ref=e300]: 나에대해 알게되고 궁금했지만 어떻게 질문해야될지 고민하는부분도 다 알려줘서 좋네요. 재미도있고 유익한 내용이 많아요. 최근 제 상황이랑 딱 맞아떨어지는 부분도 많았고, 앞으로 어떤 마음가짐으로 사람을 만나야 할지도 알게 됐어요. 재미로 봤는데 은근히 도움도 되는 느낌이에요.
+        - generic [ref=e302]:
+          - generic [ref=e303]:
+            - heading "Tight" [level=3] [ref=e304]:
+              - generic [ref=e305]: Tight
+            - generic [ref=e306]: 쫀득하게 들어맞는 사주 궁합
+          - generic [ref=e307] [cursor=pointer]:
+            - text: "대표이사: 송홍기 | 사업자등록번호 414-05-23847 통신판매업 신고번호 2025-서울광진-0894"
+            - text: "주소: 서울시 광진구 능동로 건국대학교 기술혁신관"
+            - text: "상호명 : 사이버네틱스"
+            - text: "고객센터 : 채널톡"
+            - text: "TEL : 010-2293-0574"
+          - generic [ref=e308]:
+            - generic [ref=e309] [cursor=pointer]: 이용약관
+            - generic [ref=e310]: "|"
+            - generic [ref=e311] [cursor=pointer]: 개인정보처리방침
+          - generic [ref=e312]: Copyright @ 2024 CYBERNETICS - All rights reserved
+    - generic [ref=e314]:
+      - text: "// HTML에 직접 추가 document.body.insertAdjacentHTML('beforeend', `"
+      - text: "`); // 바로 개수 확인 console.log('message 개수:', (document.body.innerHTML.match(/\\bmessage\\b/g) || []).length);"
+  - generic [ref=e325]:
+    - generic [ref=e326]:
+      - img [ref=e328]
+      - generic [ref=e330]: 타이트 사주
+    - button [ref=e331] [cursor=pointer]:
+      - img [ref=e332]
+  - button "타이트사주 Chat Button" [ref=e335]:
+    - generic [ref=e336] [cursor=pointer]:
+      - generic [ref=e337]: 타이트사주 Chat Button
+      - img [ref=e339]
+```
