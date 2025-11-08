@@ -1,350 +1,409 @@
+/**
+ * 사주우주 (SajuWooju) Design System
+ * Cosmic-themed color system and design tokens
+ * 우주의 법칙으로 읽는 나의 운명
+ */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* OnGlyph Saehayan Font */
-@font-face {
-  font-family: 'OnGlyph Saehayan Font';
-  font-style: normal;
-  font-weight: 400;
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/OwnglyphSaehayan.woff2') format('woff2');
-  font-display: swap;
-}
-
 @layer base {
+  /* ============================================
+     Color System - Cosmic Theme
+     ============================================ */
+
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 142 76% 36%;
-    --radius: 0.5rem;
-  }
+    /* === 우주 배경 색상 (Deep Space) === */
+    --space-black: #0A0E27;        /* 깊은 우주 검정 */
+    --space-dark: #1A1F3A;         /* 어두운 우주 */
+    --space-navy: #2D3561;         /* 우주 네이비 */
+    --space-midnight: #151937;     /* 미드나잇 우주 */
+    --space-deep: #0D1226;         /* 심해 우주 */
 
-  .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 142 76% 36%;
-  }
-}
+    /* === 별빛 & 강조색 (Stars & Accents) === */
+    --star-gold: #FFD700;          /* 별빛 골드 */
+    --star-silver: #E8E8E8;        /* 은빛 별 */
+    --star-white: #FFFFFF;         /* 밝은 별 */
+    --cosmic-purple: #7B68EE;      /* 우주 보라 */
+    --nebula-pink: #FF6EC7;        /* 성운 핑크 */
+    --nebula-blue: #4ECBFF;        /* 성운 블루 */
+    --aurora-green: #00FFB3;       /* 오로라 그린 */
+    --comet-cyan: #00D9FF;         /* 혜성 시안 */
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1;
-    font-size: 16px;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  h2 {
-    color: rgb(65, 66, 84);
-  }
-}
+    /* === 행성 색상 (음양오행 매핑) === */
+    /* 水 (Water) */
+    --planet-mercury: #B8C5D6;     /* 수성 - 은회색 */
+    --planet-uranus: #4FD0E7;      /* 천왕성 - 청록색 */
+    --planet-neptune: #4169E1;     /* 해왕성 - 진한 파랑 */
 
-/* 타이핑 애니메이션 */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
+    /* 金 (Metal) */
+    --planet-venus: #FFD700;       /* 금성 - 황금색 */
 
-.typing-effect {
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 4s steps(60, end) 0.5s forwards;
-}
+    /* 土 (Earth) */
+    --planet-earth: #4169E1;       /* 지구 - 파랑 */
+    --planet-saturn: #DAA520;      /* 토성 - 황갈색 */
+    --planet-pluto: #8B7355;       /* 명왕성 - 갈색 */
 
-/* 커스텀 스크롤바 */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
+    /* 火 (Fire) */
+    --planet-mars: #DC143C;        /* 화성 - 붉은색 */
 
-::-webkit-scrollbar-track {
-  background: transparent;
-}
+    /* 木 (Wood) */
+    --planet-jupiter: #FF8C00;     /* 목성 - 주황색 */
 
-::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
+    /* 태양 */
+    --sun-yellow: #FDB813;         /* 태양 노란색 */
+    --sun-orange: #FF6B35;         /* 태양 주황색 */
+    --sun-core: #FFE66D;           /* 태양 중심 */
 
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.3);
-}
+    /* === 그라디언트 프리셋 === */
+    --gradient-space: linear-gradient(180deg,
+      var(--space-black) 0%,
+      var(--space-midnight) 50%,
+      var(--space-navy) 100%);
 
-/* 다크 모드 스크롤바 */
-.dark ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
-}
+    --gradient-nebula: linear-gradient(135deg,
+      var(--nebula-pink) 0%,
+      var(--cosmic-purple) 50%,
+      var(--nebula-blue) 100%);
 
-.dark ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.3);
-}
+    --gradient-aurora: linear-gradient(90deg,
+      var(--aurora-green) 0%,
+      var(--comet-cyan) 50%,
+      var(--nebula-blue) 100%);
 
-/* 스크롤바 숨기기 (슬라이더용) */
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
+    --gradient-sun: radial-gradient(circle,
+      var(--sun-core) 0%,
+      var(--sun-yellow) 40%,
+      var(--sun-orange) 100%);
 
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
+    --gradient-planet-glow: radial-gradient(circle,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0) 70%);
 
-/* Hover Effects - Based on interaction analysis */
-/* Category items */
-.grid > div {
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
+    /* === 텍스트 색상 === */
+    --text-primary: #FFFFFF;       /* 기본 텍스트 */
+    --text-secondary: #B8C5D6;     /* 보조 텍스트 */
+    --text-tertiary: #7A8499;      /* 3차 텍스트 */
+    --text-disabled: #4A5568;      /* 비활성 텍스트 */
+    --text-gold: var(--star-gold); /* 강조 골드 */
+    --text-purple: var(--cosmic-purple); /* 강조 보라 */
 
-.grid > div:hover {
-  transform: scale(1.02);
-  opacity: 0.9;
-}
+    /* === UI 색상 === */
+    --ui-border: rgba(255, 255, 255, 0.1);      /* 테두리 */
+    --ui-border-hover: rgba(255, 255, 255, 0.2); /* 테두리 호버 */
+    --ui-divider: rgba(255, 255, 255, 0.06);    /* 구분선 */
+    --ui-overlay: rgba(10, 14, 39, 0.95);       /* 오버레이 */
+    --ui-glass: rgba(255, 255, 255, 0.05);      /* 글래스모피즘 */
+    --ui-glass-hover: rgba(255, 255, 255, 0.08); /* 글래스 호버 */
 
-/* Links */
-a {
-  transition: opacity 0.2s ease;
-}
+    /* === 상태 색상 === */
+    --status-success: #00FFB3;     /* 성공 */
+    --status-warning: #FFD700;     /* 경고 */
+    --status-error: #FF4757;       /* 에러 */
+    --status-info: #4ECBFF;        /* 정보 */
 
-a:hover {
-  opacity: 0.8;
-}
+    /* === 음영 & 광택 === */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+    --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.6);
+    --shadow-glow: 0 0 24px rgba(123, 104, 238, 0.5);
+    --shadow-star: 0 0 12px rgba(255, 215, 0, 0.6);
 
-/* Buttons */
-button {
-  transition: transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
-}
-
-button:hover {
-  transform: scale(1.05);
-  opacity: 0.95;
-}
-
-/* Scroll Animations */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Stagger animations for category items */
-.grid > div {
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
-}
-
-.grid.visible > div {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.grid.visible > div:nth-child(1) { transition-delay: 0.05s; }
-.grid.visible > div:nth-child(2) { transition-delay: 0.1s; }
-.grid.visible > div:nth-child(3) { transition-delay: 0.15s; }
-.grid.visible > div:nth-child(4) { transition-delay: 0.2s; }
-.grid.visible > div:nth-child(5) { transition-delay: 0.25s; }
-.grid.visible > div:nth-child(6) { transition-delay: 0.3s; }
-.grid.visible > div:nth-child(7) { transition-delay: 0.35s; }
-.grid.visible > div:nth-child(8) { transition-delay: 0.4s; }
-.grid.visible > div:nth-child(9) { transition-delay: 0.45s; }
-.grid.visible > div:nth-child(10) { transition-delay: 0.5s; }
-
-/* Fade-in Animation for Scroll */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Smooth Scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Touch Feedback */
-@media (hover: none) and (pointer: coarse) {
-  * {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.05);
+    /* === Z-index 레이어 === */
+    --z-background: -1;
+    --z-content: 1;
+    --z-overlay: 10;
+    --z-modal: 100;
+    --z-toast: 1000;
+    --z-tooltip: 10000;
   }
 }
 
-/* Focus Visible Enhancement */
-@supports selector(:focus-visible) {
-  *:focus {
-    outline: none;
+@layer components {
+  /* ============================================
+     Animation Keyframes
+     ============================================ */
+
+  /* 별 반짝임 */
+  @keyframes twinkle {
+    0%, 100% {
+      opacity: 0.3;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
   }
-  
-  *:focus-visible {
-    outline: 2px solid hsl(var(--ring));
-    outline-offset: 2px;
+
+  /* 행성 공전 */
+  @keyframes orbit {
+    from {
+      transform: rotate(0deg) translateX(var(--orbit-radius, 200px)) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translateX(var(--orbit-radius, 200px)) rotate(-360deg);
+    }
+  }
+
+  /* 성운 펄스 */
+  @keyframes nebula-pulse {
+    0%, 100% {
+      filter: brightness(1) blur(0px);
+      opacity: 0.6;
+    }
+    50% {
+      filter: brightness(1.3) blur(4px);
+      opacity: 0.9;
+    }
+  }
+
+  /* 별똥별 */
+  @keyframes shooting-star {
+    0% {
+      transform: translateX(0) translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(300px) translateY(300px);
+      opacity: 0;
+    }
+  }
+
+  /* 우주 먼지 떠다님 */
+  @keyframes float-dust {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(10px, -10px);
+    }
+    50% {
+      transform: translate(-5px, -20px);
+    }
+    75% {
+      transform: translate(-10px, -10px);
+    }
+  }
+
+  /* 태양 회전 */
+  @keyframes sun-rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* 행성 자전 */
+  @keyframes planet-spin {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+
+  /* 글로우 펄스 */
+  @keyframes glow-pulse {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(123, 104, 238, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 40px rgba(123, 104, 238, 0.8);
+    }
+  }
+
+  /* 오로라 흐름 */
+  @keyframes aurora-flow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* 페이드 인 */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* 슬라이드 업 */
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* 스케일 인 */
+  @keyframes scale-in {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* 쉬머 효과 (프로그레스 바) */
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  /* ============================================
+     Utility Classes
+     ============================================ */
+
+  /* 우주 배경 */
+  .bg-space {
+    background: var(--gradient-space);
+  }
+
+  .bg-space-static {
+    background-color: var(--space-black);
+  }
+
+  /* 글래스모피즘 */
+  .glass {
+    background: var(--ui-glass);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--ui-border);
+  }
+
+  .glass-hover:hover {
+    background: var(--ui-glass-hover);
+    border-color: var(--ui-border-hover);
+  }
+
+  /* 글로우 효과 */
+  .glow-gold {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+  }
+
+  .glow-purple {
+    box-shadow: 0 0 20px rgba(123, 104, 238, 0.4);
+  }
+
+  .glow-blue {
+    box-shadow: 0 0 20px rgba(78, 203, 255, 0.4);
+  }
+
+  /* 텍스트 그라디언트 */
+  .text-gradient-gold {
+    background: linear-gradient(135deg, var(--star-gold) 0%, var(--sun-orange) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-nebula {
+    background: var(--gradient-nebula);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* 애니메이션 클래스 */
+  .animate-twinkle {
+    animation: twinkle 2s ease-in-out infinite;
+  }
+
+  .animate-orbit {
+    animation: orbit var(--orbit-duration, 20s) linear infinite;
+  }
+
+  .animate-nebula-pulse {
+    animation: nebula-pulse 4s ease-in-out infinite;
+  }
+
+  .animate-shooting-star {
+    animation: shooting-star 2s ease-out forwards;
+  }
+
+  .animate-float-dust {
+    animation: float-dust 8s ease-in-out infinite;
+  }
+
+  .animate-glow-pulse {
+    animation: glow-pulse 2s ease-in-out infinite;
+  }
+
+  .animate-aurora-flow {
+    animation: aurora-flow 6s ease infinite;
+    background-size: 200% 200%;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.6s ease-out;
+  }
+
+  .animate-scale-in {
+    animation: scale-in 0.4s ease-out;
+  }
+
+  .animate-shimmer {
+    animation: shimmer 2s infinite;
+  }
+
+  /* GPU 가속 최적화 */
+  .gpu-accelerated {
+    will-change: transform, opacity;
+    transform: translateZ(0);
+    backface-visibility: hidden;
   }
 }
 
-/* Stagger Animation */
-.stagger-item {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: stagger-fade-in 0.6s ease-out forwards;
-}
+@layer utilities {
+  /* 스페이싱 시스템 (8px 기반) */
+  .space-1 { margin: 8px; }
+  .space-2 { margin: 16px; }
+  .space-3 { margin: 24px; }
+  .space-4 { margin: 32px; }
+  .space-5 { margin: 40px; }
+  .space-6 { margin: 48px; }
+  .space-8 { margin: 64px; }
+  .space-10 { margin: 80px; }
 
-@keyframes stagger-fade-in {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  /* 반응형 숨김 */
+  .mobile-only {
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
-}
 
-/* Stagger delays - up to 12 items */
-.stagger-item:nth-child(1) { animation-delay: 0ms; }
-.stagger-item:nth-child(2) { animation-delay: 50ms; }
-.stagger-item:nth-child(3) { animation-delay: 100ms; }
-.stagger-item:nth-child(4) { animation-delay: 150ms; }
-.stagger-item:nth-child(5) { animation-delay: 200ms; }
-.stagger-item:nth-child(6) { animation-delay: 250ms; }
-.stagger-item:nth-child(7) { animation-delay: 300ms; }
-.stagger-item:nth-child(8) { animation-delay: 350ms; }
-.stagger-item:nth-child(9) { animation-delay: 400ms; }
-.stagger-item:nth-child(10) { animation-delay: 450ms; }
-.stagger-item:nth-child(11) { animation-delay: 500ms; }
-.stagger-item:nth-child(12) { animation-delay: 550ms; }
-
-/* Category stagger - faster */
-.stagger-fast {
-  opacity: 0;
-  transform: scale(0.9);
-  animation: stagger-scale-in 0.4s ease-out forwards;
-}
-
-@keyframes stagger-scale-in {
-  to {
-    opacity: 1;
-    transform: scale(1);
+  .desktop-only {
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
-}
-
-.stagger-fast:nth-child(1) { animation-delay: 0ms; }
-.stagger-fast:nth-child(2) { animation-delay: 30ms; }
-.stagger-fast:nth-child(3) { animation-delay: 60ms; }
-.stagger-fast:nth-child(4) { animation-delay: 90ms; }
-.stagger-fast:nth-child(5) { animation-delay: 120ms; }
-.stagger-fast:nth-child(6) { animation-delay: 150ms; }
-.stagger-fast:nth-child(7) { animation-delay: 180ms; }
-.stagger-fast:nth-child(8) { animation-delay: 210ms; }
-.stagger-fast:nth-child(9) { animation-delay: 240ms; }
-.stagger-fast:nth-child(10) { animation-delay: 270ms; }
-.stagger-fast:nth-child(11) { animation-delay: 300ms; }
-.stagger-fast:nth-child(12) { animation-delay: 330ms; }
-
-/* Modal Animations */
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slide-up {
-  from {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in {
-  animation: fade-in 0.3s ease-out forwards;
-}
-
-.animate-slide-up {
-  animation: slide-up 0.3s ease-out forwards;
-}
-
-/* Toast Slide-in Animation */
-@keyframes slide-in-right {
-  from {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.animate-slide-in-right {
-  animation: slide-in-right 0.3s ease-out forwards;
-}
-
-/* Shimmer Animation for Skeleton */
-@keyframes shimmer {
-  0% {
-    background-position: -200% 0;
-  }
-  100% {
-    background-position: 200% 0;
-  }
-}
-
-.animate-shimmer {
-  animation: shimmer 2s infinite linear;
-}
-
-/* Progress Bar Animation */
-@keyframes progress-bar {
-  0% {
-    width: 0%;
-  }
-  50% {
-    width: 70%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-.animate-progress-bar {
-  animation: progress-bar 2s ease-in-out infinite;
 }
