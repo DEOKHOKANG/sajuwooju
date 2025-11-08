@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef } from 'react';
+import { useRef, Suspense } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import { PLANETS_DATA } from '@/lib/planets-data';
@@ -93,15 +93,17 @@ export function RotatingSystemComponent({ isRotating, onAnimationComplete }: Rot
                     side={2}
                   />
                 </mesh>
-                {/* Earth component */}
-                <group position={[planetData.orbitRadius, 0, 0]}>
-                  <Earth
-                    position={[0, 0, 0]}
-                    radius={planetData.radius}
-                    rotationSpeed={planetData.rotationSpeed || 0.02}
-                    showAtmosphere={planetData.hasAtmosphere}
-                  />
-                </group>
+                {/* Earth component with Suspense for texture loading */}
+                <Suspense fallback={null}>
+                  <group position={[planetData.orbitRadius, 0, 0]}>
+                    <Earth
+                      position={[0, 0, 0]}
+                      radius={planetData.radius}
+                      rotationSpeed={planetData.rotationSpeed || 0.02}
+                      showAtmosphere={planetData.hasAtmosphere}
+                    />
+                  </group>
+                </Suspense>
               </group>
             );
           }
@@ -119,14 +121,16 @@ export function RotatingSystemComponent({ isRotating, onAnimationComplete }: Rot
                     side={2}
                   />
                 </mesh>
-                {/* Saturn component */}
-                <group position={[planetData.orbitRadius, 0, 0]}>
-                  <Saturn
-                    position={[0, 0, 0]}
-                    radius={planetData.radius}
-                    rotationSpeed={planetData.rotationSpeed || 0.015}
-                  />
-                </group>
+                {/* Saturn component with Suspense for texture loading */}
+                <Suspense fallback={null}>
+                  <group position={[planetData.orbitRadius, 0, 0]}>
+                    <Saturn
+                      position={[0, 0, 0]}
+                      radius={planetData.radius}
+                      rotationSpeed={planetData.rotationSpeed || 0.015}
+                    />
+                  </group>
+                </Suspense>
               </group>
             );
           }

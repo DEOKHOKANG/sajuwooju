@@ -36,24 +36,10 @@ export function Saturn({
   const ringRef = useRef<THREE.Mesh>(null);
 
   // Load Saturn textures (planet and ring)
-  // Use try-catch for graceful fallback in production
-  let saturnTexture: THREE.Texture | null = null;
-  let ringTexture: THREE.Texture | null = null;
-
-  try {
-    const { map } = usePlanetTextures('saturn');
-    saturnTexture = map;
-  } catch (error) {
-    // Fallback: use default material color
-    console.warn('Saturn texture failed to load');
-  }
-
-  try {
-    ringTexture = useSaturnRingTexture();
-  } catch (error) {
-    // Fallback: render without rings
-    console.warn('Saturn ring texture failed to load');
-  }
+  // React Three Fiber's useLoader throws Promises for Suspense to handle
+  // The parent component must wrap this in <Suspense> for proper async loading
+  const { map: saturnTexture } = usePlanetTextures('saturn');
+  const ringTexture = useSaturnRingTexture();
 
   // Animate Saturn and ring rotation
   useFrame(() => {
@@ -84,53 +70,49 @@ export function Saturn({
         />
       </Sphere>
 
-      {/* Saturn Rings - only render if texture loaded */}
-      {ringTexture && (
-        <>
-          <mesh
-            ref={ringRef}
-            rotation={[-Math.PI / 2.7, 0, 0]} // Tilt angle (26.7 degrees)
-          >
-            <ringGeometry
-              args={[
-                radius * 1.3,  // Inner radius
-                radius * 2.3,  // Outer radius
-                128,           // Theta segments
-              ]}
-            />
-            <meshStandardMaterial
-              map={ringTexture}
-              alphaMap={ringTexture}
-              transparent
-              opacity={0.9}
-              side={THREE.DoubleSide}
-              roughness={0.8}
-              metalness={0.1}
-              depthWrite={false}
-            />
-          </mesh>
+      {/* Saturn Rings - always rendered since Suspense handles loading */}
+      <mesh
+        ref={ringRef}
+        rotation={[-Math.PI / 2.7, 0, 0]} // Tilt angle (26.7 degrees)
+      >
+        <ringGeometry
+          args={[
+            radius * 1.3,  // Inner radius
+            radius * 2.3,  // Outer radius
+            128,           // Theta segments
+          ]}
+        />
+        <meshStandardMaterial
+          map={ringTexture}
+          alphaMap={ringTexture}
+          transparent
+          opacity={0.9}
+          side={THREE.DoubleSide}
+          roughness={0.8}
+          metalness={0.1}
+          depthWrite={false}
+        />
+      </mesh>
 
-          {/* Ring Shadow on Planet (optional, adds realism) */}
-          <mesh
-            rotation={[-Math.PI / 2.7, 0, 0]}
-          >
-            <ringGeometry
-              args={[
-                radius * 1.3,
-                radius * 2.3,
-                128,
-              ]}
-            />
-            <meshBasicMaterial
-              color="#000000"
-              transparent
-              opacity={0.3}
-              side={THREE.BackSide}
-              depthWrite={false}
-            />
-          </mesh>
-        </>
-      )}
+      {/* Ring Shadow on Planet (optional, adds realism) */}
+      <mesh
+        rotation={[-Math.PI / 2.7, 0, 0]}
+      >
+        <ringGeometry
+          args={[
+            radius * 1.3,
+            radius * 2.3,
+            128,
+          ]}
+        />
+        <meshBasicMaterial
+          color="#000000"
+          transparent
+          opacity={0.3}
+          side={THREE.BackSide}
+          depthWrite={false}
+        />
+      </mesh>
     </group>
   );
 }
