@@ -86,7 +86,7 @@ export function Saturn({
           map={ringTexture}
           alphaMap={ringTexture}
           transparent
-          opacity={0.95}           // More opaque for better visibility
+          opacity={0.98}           // Nearly opaque (Iteration 8: 0.95 → 0.98)
           side={THREE.DoubleSide}
           roughness={0.7}          // Natural matte surface
           metalness={0.15}         // Minimal metallic reflection
