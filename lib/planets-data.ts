@@ -105,7 +105,7 @@ export const PLANETS_DATA: PlanetData[] = [
     englishName: 'saturn',
     element: '土',
     color: '#DAA520',
-    radius: 18, // Increased from 12 to 18 for much better ring visibility (iteration 2)
+    radius: 25, // Iteration 3: 18 → 25 for MUCH better ring visibility
     orbitRadius: 180,
     orbitSpeed: 0.97,
     rotationSpeed: 0.025,
