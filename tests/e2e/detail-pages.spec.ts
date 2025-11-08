@@ -1,6 +1,6 @@
 import { test, expect, Page } from '@playwright/test';
 
-const BASE_URL = 'http://localhost:3001';
+const BASE_URL = 'http://localhost:3000';
 const ORIGINAL_URL = 'https://sajuwooju.me';
 
 /**

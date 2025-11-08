@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import { EnhancedSun } from './EnhancedSun';
 import { EnhancedPlanet, PlanetData } from './EnhancedPlanet';
+import { Earth } from './Earth';
+import { Saturn } from './Saturn';
 import { PLANETS_DATA } from '@/lib/planets-data';
 
 /**
@@ -34,16 +36,81 @@ export function SolarSystem({
       {/* Central Enhanced Sun with Corona and Flares */}
       <EnhancedSun radius={20} position={[0, 0, 0]} />
 
-      {/* 9 Enhanced Planets with Procedural Textures */}
-      {PLANETS_DATA.map((planetData) => (
-        <EnhancedPlanet
-          key={planetData.name}
-          data={planetData}
-          onClick={() => handlePlanetClick(planetData)}
-          showOrbit={showOrbits}
-          showLabel={showLabels}
-        />
-      ))}
+      {/* 9 Enhanced Planets - Special handling for Earth and Saturn */}
+      {PLANETS_DATA.map((planetData) => {
+        // Special handling for Earth (custom Day/Night shader + clouds)
+        if (planetData.englishName === 'Earth') {
+          // Earth is in orbit, so we need to wrap it in a group that rotates around the sun
+          return (
+            <group key={planetData.name} rotation={[0, 0, 0]}>
+              {/* Orbit Path */}
+              {showOrbits && (
+                <mesh rotation={[-Math.PI / 2, 0, 0]}>
+                  <ringGeometry args={[planetData.orbitRadius, planetData.orbitRadius + 0.5, 128]} />
+                  <meshBasicMaterial
+                    color={planetData.color}
+                    transparent
+                    opacity={0.15}
+                    side={2}
+                  />
+                </mesh>
+              )}
+
+              {/* Earth component positioned at orbit distance */}
+              <group position={[planetData.orbitRadius, 0, 0]}>
+                <Earth
+                  position={[0, 0, 0]}
+                  radius={planetData.radius}
+                  rotationSpeed={planetData.rotationSpeed || 0.02}
+                  onClick={() => handlePlanetClick(planetData)}
+                  showAtmosphere={planetData.hasAtmosphere}
+                />
+              </group>
+            </group>
+          );
+        }
+
+        // Special handling for Saturn (with rings texture)
+        if (planetData.englishName === 'Saturn') {
+          return (
+            <group key={planetData.name} rotation={[0, 0, 0]}>
+              {/* Orbit Path */}
+              {showOrbits && (
+                <mesh rotation={[-Math.PI / 2, 0, 0]}>
+                  <ringGeometry args={[planetData.orbitRadius, planetData.orbitRadius + 0.5, 128]} />
+                  <meshBasicMaterial
+                    color={planetData.color}
+                    transparent
+                    opacity={0.15}
+                    side={2}
+                  />
+                </mesh>
+              )}
+
+              {/* Saturn component positioned at orbit distance */}
+              <group position={[planetData.orbitRadius, 0, 0]}>
+                <Saturn
+                  position={[0, 0, 0]}
+                  radius={planetData.radius}
+                  rotationSpeed={planetData.rotationSpeed || 0.015}
+                  onClick={() => handlePlanetClick(planetData)}
+                />
+              </group>
+            </group>
+          );
+        }
+
+        // All other planets use EnhancedPlanet component
+        return (
+          <EnhancedPlanet
+            key={planetData.name}
+            data={planetData}
+            onClick={() => handlePlanetClick(planetData)}
+            showOrbit={showOrbits}
+            showLabel={showLabels}
+          />
+        );
+      })}
     </group>
   );
 }

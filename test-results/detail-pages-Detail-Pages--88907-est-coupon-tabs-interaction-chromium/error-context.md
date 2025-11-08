@@ -20,7 +20,5 @@
           - generic [ref=e20]: 생일 축하 쿠폰
           - generic [ref=e21]: 전체 상품 5,000원 할인
         - generic [ref=e22]: "유효기간: 2024.10.31까지"
-  - button "Open Next.js Dev Tools" [ref=e28] [cursor=pointer]:
-    - img [ref=e29]
-  - alert [ref=e32]
+  - alert [ref=e23]
 ```

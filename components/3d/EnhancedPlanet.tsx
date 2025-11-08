@@ -5,6 +5,7 @@ import { useFrame, useLoader } from '@react-three/fiber';
 import { Sphere, Text } from '@react-three/drei';
 import * as THREE from 'three';
 import { PROCEDURAL_TEXTURES } from '@/lib/planet-textures';
+import { usePlanetTextures } from '@/hooks/use-planet-textures';
 
 /**
  * Enhanced Planet Component
@@ -43,8 +44,23 @@ export function EnhancedPlanet({
   const atmosphereRef = useRef<THREE.Mesh>(null);
   const [hovered, setHovered] = useState(false);
 
-  // Create procedural gradient texture
-  const planetTexture = useMemo(() => {
+  // Try to load real NASA texture, fallback to procedural
+  let realTexture: THREE.Texture | null = null;
+  let textureLoadError = false;
+
+  try {
+    if (data.englishName && data.englishName !== 'Earth') {
+      // Load real texture for planets (Earth uses custom component)
+      const { map } = usePlanetTextures(data.englishName.toLowerCase());
+      realTexture = map;
+    }
+  } catch (error) {
+    // Texture loading failed, will use fallback
+    textureLoadError = true;
+  }
+
+  // Fallback: Create procedural gradient texture
+  const proceduralTexture = useMemo(() => {
     const canvas = document.createElement('canvas');
     canvas.width = 1024;
     canvas.height = 512;
@@ -77,6 +93,9 @@ export function EnhancedPlanet({
     texture.wrapT = THREE.RepeatWrapping;
     return texture;
   }, [data.englishName]);
+
+  // Use real texture if loaded, otherwise use procedural
+  const planetTexture = realTexture || proceduralTexture;
 
   // Animate orbit and rotation
   useFrame((state) => {

@@ -1,0 +1,207 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "뒤로 가기" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - button "뒤로 가기" [ref=e6]:
+            - img [ref=e7]
+        - heading "이벤트!" [level=1] [ref=e9]
+    - main [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - img "이벤트!" [ref=e14]
+          - generic [ref=e15]:
+            - heading "이벤트!" [level=2] [ref=e16]
+            - paragraph [ref=e17]: 12개의 상품
+        - paragraph [ref=e19]: 이벤트! 관련 전문 사주 상담을 받아보세요. 정확한 사주 분석을 통해 당신의 운세를 알려드립니다.
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - heading "추천 상품" [level=3] [ref=e22]
+          - generic [ref=e23]: 12개
+        - generic [ref=e24]:
+          - link "그 사람도 날 좋아할까? 그 사람도 날 좋아할까? 썸 궁합사주❣️ 4.7 5만+ 46% 할인중" [ref=e25] [cursor=pointer]:
+            - /url: /products/1
+            - generic [ref=e27]:
+              - img "그 사람도 날 좋아할까?" [ref=e29]
+              - generic [ref=e30]:
+                - generic [ref=e31]: 그 사람도 날 좋아할까?
+                - generic [ref=e32]: 썸 궁합사주❣️
+                - generic [ref=e33]:
+                  - generic [ref=e34]:
+                    - img [ref=e35]
+                    - text: "4.7"
+                  - generic [ref=e37]:
+                    - img [ref=e38]
+                    - text: 5만+
+                - generic [ref=e41]: 46% 할인중
+          - link "솔로탈출 연애운 사주 솔로탈출 연애운 사주 내 다음 연애는 언제 시작될까? 🔥 4.8 3만+ 54% 할인중" [ref=e42] [cursor=pointer]:
+            - /url: /products/2
+            - generic [ref=e44]:
+              - img "솔로탈출 연애운 사주" [ref=e46]
+              - generic [ref=e47]:
+                - generic [ref=e48]: 솔로탈출 연애운 사주
+                - generic [ref=e49]: 내 다음 연애는 언제 시작될까? 🔥
+                - generic [ref=e50]:
+                  - generic [ref=e51]:
+                    - img [ref=e52]
+                    - text: "4.8"
+                  - generic [ref=e54]:
+                    - img [ref=e55]
+                    - text: 3만+
+                - generic [ref=e58]: 54% 할인중
+          - link "내 사주 속 재회 확률 미리보기 내 사주 속 재회 확률 미리보기 헤어진 연인과 다시 만날 수 있을까? 4.9 28만+ 60% 할인중" [ref=e59] [cursor=pointer]:
+            - /url: /products/3
+            - generic [ref=e61]:
+              - img "내 사주 속 재회 확률 미리보기" [ref=e63]
+              - generic [ref=e64]:
+                - generic [ref=e65]: 내 사주 속 재회 확률 미리보기
+                - generic [ref=e66]: 헤어진 연인과 다시 만날 수 있을까?
+                - generic [ref=e67]:
+                  - generic [ref=e68]:
+                    - img [ref=e69]
+                    - text: "4.9"
+                  - generic [ref=e71]:
+                    - img [ref=e72]
+                    - text: 28만+
+                - generic [ref=e75]: 60% 할인중
+          - link "하반기, 기다리던 변화의 불씨 하반기, 기다리던 변화의 불씨 [프리미엄 하반기 종합사주✨] 4.9 1만+ 46% 할인중" [ref=e76] [cursor=pointer]:
+            - /url: /products/4
+            - generic [ref=e78]:
+              - img "하반기, 기다리던 변화의 불씨" [ref=e80]
+              - generic [ref=e81]:
+                - generic [ref=e82]: 하반기, 기다리던 변화의 불씨
+                - generic [ref=e83]: "[프리미엄 하반기 종합사주✨]"
+                - generic [ref=e84]:
+                  - generic [ref=e85]:
+                    - img [ref=e86]
+                    - text: "4.9"
+                  - generic [ref=e88]:
+                    - img [ref=e89]
+                    - text: 1만+
+                - generic [ref=e92]: 46% 할인중
+          - link "결혼 궁합 사주 결혼 궁합 사주 평생 함께할 사람과의 궁합은? 4.7 2만+ 46% 할인중" [ref=e93] [cursor=pointer]:
+            - /url: /products/5
+            - generic [ref=e95]:
+              - img "결혼 궁합 사주" [ref=e97]
+              - generic [ref=e98]:
+                - generic [ref=e99]: 결혼 궁합 사주
+                - generic [ref=e100]: 평생 함께할 사람과의 궁합은?
+                - generic [ref=e101]:
+                  - generic [ref=e102]:
+                    - img [ref=e103]
+                    - text: "4.7"
+                  - generic [ref=e105]:
+                    - img [ref=e106]
+                    - text: 2만+
+                - generic [ref=e109]: 46% 할인중
+          - link "소름돋게 잘 맞는 2026 신년운세 소름돋게 잘 맞는 2026 신년운세 [신년운세 총운] 4.7 1.4만+ 54% 할인중" [ref=e110] [cursor=pointer]:
+            - /url: /products/6
+            - generic [ref=e112]:
+              - img "소름돋게 잘 맞는 2026 신년운세" [ref=e114]
+              - generic [ref=e115]:
+                - generic [ref=e116]: 소름돋게 잘 맞는 2026 신년운세
+                - generic [ref=e117]: "[신년운세 총운]"
+                - generic [ref=e118]:
+                  - generic [ref=e119]:
+                    - img [ref=e120]
+                    - text: "4.7"
+                  - generic [ref=e122]:
+                    - img [ref=e123]
+                    - text: 1.4만+
+                - generic [ref=e126]: 54% 할인중
+          - link "소름돋는 2026년 재물운세 소름돋는 2026년 재물운세 [10년 재물운 사주] 💵 4.8 2.8만+ 60% 할인중" [ref=e127] [cursor=pointer]:
+            - /url: /products/7
+            - generic [ref=e129]:
+              - img "소름돋는 2026년 재물운세" [ref=e131]
+              - generic [ref=e132]:
+                - generic [ref=e133]: 소름돋는 2026년 재물운세
+                - generic [ref=e134]: "[10년 재물운 사주] 💵"
+                - generic [ref=e135]:
+                  - generic [ref=e136]:
+                    - img [ref=e137]
+                    - text: "4.8"
+                  - generic [ref=e139]:
+                    - img [ref=e140]
+                    - text: 2.8만+
+                - generic [ref=e143]: 60% 할인중
+          - link "이직해서 연봉 2배 올리고 싶다면 이직해서 연봉 2배 올리고 싶다면 봐야할 [커리어사주] 4.6 1만+ 46% 할인중" [ref=e144] [cursor=pointer]:
+            - /url: /products/8
+            - generic [ref=e146]:
+              - img "이직해서 연봉 2배 올리고 싶다면" [ref=e148]
+              - generic [ref=e149]:
+                - generic [ref=e150]: 이직해서 연봉 2배 올리고 싶다면
+                - generic [ref=e151]: 봐야할 [커리어사주]
+                - generic [ref=e152]:
+                  - generic [ref=e153]:
+                    - img [ref=e154]
+                    - text: "4.6"
+                  - generic [ref=e156]:
+                    - img [ref=e157]
+                    - text: 1만+
+                - generic [ref=e160]: 46% 할인중
+          - link "뻔한 조언 대신 진짜 매운맛 사주! 뻔한 조언 대신 진짜 매운맛 사주! [팩폭 사주] 4.6 1만+ 29% 할인중" [ref=e161] [cursor=pointer]:
+            - /url: /products/9
+            - generic [ref=e163]:
+              - img "뻔한 조언 대신 진짜 매운맛 사주!" [ref=e165]
+              - generic [ref=e166]:
+                - generic [ref=e167]: 뻔한 조언 대신 진짜 매운맛 사주!
+                - generic [ref=e168]: "[팩폭 사주]"
+                - generic [ref=e169]:
+                  - generic [ref=e170]:
+                    - img [ref=e171]
+                    - text: "4.6"
+                  - generic [ref=e173]:
+                    - img [ref=e174]
+                    - text: 1만+
+                - generic [ref=e177]: 29% 할인중
+          - link "2025년 8월 월간운세 2025년 8월 월간운세 월간 사주 📅 4.7 1만+ 50% 할인중" [ref=e178] [cursor=pointer]:
+            - /url: /products/10
+            - generic [ref=e180]:
+              - img "2025년 8월 월간운세" [ref=e182]
+              - generic [ref=e183]:
+                - generic [ref=e184]: 2025년 8월 월간운세
+                - generic [ref=e185]: 월간 사주 📅
+                - generic [ref=e186]:
+                  - generic [ref=e187]:
+                    - img [ref=e188]
+                    - text: "4.7"
+                  - generic [ref=e190]:
+                    - img [ref=e191]
+                    - text: 1만+
+                - generic [ref=e194]: 50% 할인중
+          - link "재회 vs 환승? 이제 지쳤다면 재회 vs 환승? 이제 지쳤다면 [재회 환승사주] 4.9 6만+ 41% 할인중" [ref=e195] [cursor=pointer]:
+            - /url: /products/11
+            - generic [ref=e197]:
+              - img "재회 vs 환승? 이제 지쳤다면" [ref=e199]
+              - generic [ref=e200]:
+                - generic [ref=e201]: 재회 vs 환승? 이제 지쳤다면
+                - generic [ref=e202]: "[재회 환승사주]"
+                - generic [ref=e203]:
+                  - generic [ref=e204]:
+                    - img [ref=e205]
+                    - text: "4.9"
+                  - generic [ref=e207]:
+                    - img [ref=e208]
+                    - text: 6만+
+                - generic [ref=e211]: 41% 할인중
+          - link "명쾌한 10년 풀이까지 해주는 명쾌한 10년 풀이까지 해주는 [2025년 타이트 종합사주] 4.7 1만+ 29% 할인중" [ref=e212] [cursor=pointer]:
+            - /url: /products/12
+            - generic [ref=e214]:
+              - img "명쾌한 10년 풀이까지 해주는" [ref=e216]
+              - generic [ref=e217]:
+                - generic [ref=e218]: 명쾌한 10년 풀이까지 해주는
+                - generic [ref=e219]: "[2025년 타이트 종합사주]"
+                - generic [ref=e220]:
+                  - generic [ref=e221]:
+                    - img [ref=e222]
+                    - text: "4.7"
+                  - generic [ref=e224]:
+                    - img [ref=e225]
+                    - text: 1만+
+                - generic [ref=e228]: 29% 할인중
+  - alert [ref=e229]
+```

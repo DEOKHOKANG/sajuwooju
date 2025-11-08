@@ -4,6 +4,7 @@ import { useRef, useMemo } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { Sphere } from '@react-three/drei';
 import * as THREE from 'three';
+import { useSunTexture } from '@/hooks/use-planet-textures';
 
 /**
  * Enhanced Sun Component
@@ -22,8 +23,18 @@ export function EnhancedSun({ radius = 20, position = [0, 0, 0] }: EnhancedSunPr
   const glowRef2 = useRef<THREE.Mesh>(null);
   const coronaRef = useRef<THREE.Mesh>(null);
 
-  // Create procedural sun surface texture with solar flares
-  const sunTexture = useMemo(() => {
+  // Try to load real NASA sun texture, fallback to procedural
+  let realSunTexture: THREE.Texture | null = null;
+
+  try {
+    realSunTexture = useSunTexture();
+  } catch (error) {
+    // Will use procedural texture as fallback
+    console.log('Using procedural sun texture as fallback');
+  }
+
+  // Fallback: Create procedural sun surface texture with solar flares
+  const proceduralSunTexture = useMemo(() => {
     const canvas = document.createElement('canvas');
     canvas.width = 2048;
     canvas.height = 1024;
@@ -80,6 +91,9 @@ export function EnhancedSun({ radius = 20, position = [0, 0, 0] }: EnhancedSunPr
     texture.wrapT = THREE.RepeatWrapping;
     return texture;
   }, []);
+
+  // Use real texture if loaded, otherwise use procedural
+  const sunTexture = realSunTexture || proceduralSunTexture;
 
   // Animate sun rotation and pulsing effects
   useFrame((state) => {
