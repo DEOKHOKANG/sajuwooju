@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef } from 'react';
+import { useRouter } from 'next/navigation';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import { PLANETS_DATA } from '@/lib/planets-data';
@@ -15,6 +16,7 @@ interface RotatingSystemProps {
 }
 
 export function RotatingSystemComponent({ isRotating, onAnimationComplete }: RotatingSystemProps) {
+  const router = useRouter();
   const systemGroupRef = useRef<THREE.Group>(null);
   const sunGroupRef = useRef<THREE.Group>(null);
   const planetsGroupRef = useRef<THREE.Group>(null);
@@ -23,6 +25,11 @@ export function RotatingSystemComponent({ isRotating, onAnimationComplete }: Rot
   const planetsOrbitSpeed = useRef(0);
   const animationTime = useRef(0);
   const ANIMATION_DURATION = 3; // 3 seconds fast rotation
+
+  // Handle planet click navigation
+  const handlePlanetClick = (planetName: string) => {
+    router.push(`/planet/${planetName}`);
+  };
 
   useFrame((state, delta) => {
     if (isRotating) {
@@ -100,6 +107,7 @@ export function RotatingSystemComponent({ isRotating, onAnimationComplete }: Rot
                     radius={planetData.radius}
                     rotationSpeed={planetData.rotationSpeed || 0.02}
                     showAtmosphere={planetData.hasAtmosphere}
+                    onClick={() => handlePlanetClick(planetData.englishName || planetData.name)}
                   />
                 </group>
               </group>
@@ -125,6 +133,7 @@ export function RotatingSystemComponent({ isRotating, onAnimationComplete }: Rot
                     position={[0, 0, 0]}
                     radius={planetData.radius}
                     rotationSpeed={planetData.rotationSpeed || 0.015}
+                    onClick={() => handlePlanetClick(planetData.englishName || planetData.name)}
                   />
                 </group>
               </group>
@@ -138,6 +147,7 @@ export function RotatingSystemComponent({ isRotating, onAnimationComplete }: Rot
               data={planetData}
               showOrbit={true}
               showLabel={false}
+              onClick={() => handlePlanetClick(planetData.englishName || planetData.name)}
             />
           );
         })}
