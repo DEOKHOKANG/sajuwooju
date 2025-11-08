@@ -4,8 +4,6 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import { StatsSection } from './stats-section';
-import { LandingHeader } from '@/components/layout/landing-header';
-import { LandingBottomNav } from '@/components/layout/landing-bottom-nav';
 
 // 3D Components (SSR disabled) - Import everything dynamically
 const SpaceCanvas = dynamic(
