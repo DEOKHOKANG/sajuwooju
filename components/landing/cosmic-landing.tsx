@@ -84,9 +84,6 @@ export function CosmicLanding() {
 
   return (
     <div className="relative w-full bg-black">
-      {/* Landing Header */}
-      <LandingHeader />
-
       {/* Hero Section - Full screen with solar system */}
       <div className="relative w-full h-screen overflow-hidden">
       {/* Cosmic Black Background with subtle gradient */}
@@ -121,32 +118,32 @@ export function CosmicLanding() {
         </SpaceCanvas>
       </div>
 
-      {/* Welcome Text Overlay - Positioned at top, not overlapping solar system */}
-      <div className="absolute top-0 left-0 right-0 z-20 flex flex-col items-center pt-24 pointer-events-none">
+      {/* Welcome Text Overlay - Centered naturally */}
+      <div className="absolute inset-0 z-20 flex flex-col items-center justify-center pointer-events-none">
         {/* Initial welcome text - hidden when rotating */}
         <div
-          className={`text-center space-y-6 transition-opacity duration-1000 ${
+          className={`text-center space-y-8 transition-opacity duration-1000 ${
             isRotating ? 'opacity-0' : 'opacity-100'
           }`}
         >
-          <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold text-white leading-tight">
+          <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold text-white leading-tight mb-6">
             <span className="bg-gradient-to-r from-star-gold via-cosmic-purple to-nebula-pink bg-clip-text text-transparent animate-glow-pulse">
               사주우주
             </span>
           </h1>
 
-          <p className="text-lg sm:text-xl text-white max-w-2xl mx-auto px-4">
+          <p className="text-xl sm:text-2xl text-white/90 max-w-2xl mx-auto px-4 mb-12">
             우주의 법칙으로 읽는 나의 운명
           </p>
 
-          <div className="pt-8 pointer-events-auto">
+          <div className="pointer-events-auto">
             <button
               onClick={handleClick}
-              className={`glass-button px-8 py-4 rounded-full border border-star-gold/30 ${
-                isHovering && !isRotating ? 'scale-110' : 'scale-100'
-              } transition-all duration-300 cursor-pointer hover:shadow-lg hover:shadow-star-gold/20`}
+              className={`glass-button px-10 py-5 rounded-full border-2 border-star-gold/40 ${
+                isHovering && !isRotating ? 'scale-110 border-star-gold/60' : 'scale-100'
+              } transition-all duration-300 cursor-pointer hover:shadow-2xl hover:shadow-star-gold/30 hover:bg-star-gold/10`}
             >
-              <span className="text-white text-sm sm:text-base font-medium">
+              <span className="text-white text-base sm:text-lg font-semibold">
                 사주우주 시작하기
               </span>
             </button>
@@ -156,8 +153,8 @@ export function CosmicLanding() {
         {/* Rotating text - visible when rotating */}
         {isRotating && !showBigBang && (
           <div className="text-center space-y-6 animate-fade-in">
-            <div className="inline-block px-8 py-4 bg-gradient-to-r from-star-gold/20 to-cosmic-purple/20 rounded-full border border-star-gold/30 backdrop-blur-sm">
-              <p className="text-white text-sm sm:text-base font-medium">
+            <div className="inline-block px-10 py-5 bg-gradient-to-r from-star-gold/20 to-cosmic-purple/20 rounded-full border-2 border-star-gold/40 backdrop-blur-sm">
+              <p className="text-white text-base sm:text-lg font-semibold">
                 우주로 떠나는 중...
               </p>
             </div>
@@ -268,9 +265,6 @@ export function CosmicLanding() {
 
       {/* Stats Section - Scrollable below hero */}
       <StatsSection />
-
-      {/* Landing Bottom Navigation */}
-      <LandingBottomNav />
     </div>
   );
 }

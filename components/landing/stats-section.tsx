@@ -47,17 +47,28 @@ const STATS: StatItem[] = [
 
 export function StatsSection() {
   return (
-    <section className="relative w-full min-h-screen bg-black overflow-hidden">
-      {/* Stars Background */}
-      <div className="stars-background" />
+    <section className="relative w-full min-h-screen overflow-hidden" style={{
+      background: 'radial-gradient(ellipse at center, rgba(15, 15, 35, 1) 0%, rgba(0, 0, 0, 1) 100%)'
+    }}>
+      {/* Cosmic Stars Background */}
+      <div className="absolute inset-0 z-0">
+        {/* Large stars */}
+        <div className="absolute top-[10%] left-[15%] w-2 h-2 bg-star-gold rounded-full animate-twinkle" style={{ animationDelay: '0s' }} />
+        <div className="absolute top-[20%] right-[20%] w-1.5 h-1.5 bg-white rounded-full animate-twinkle" style={{ animationDelay: '0.5s' }} />
+        <div className="absolute top-[40%] left-[10%] w-1 h-1 bg-cosmic-purple rounded-full animate-twinkle" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-[60%] right-[15%] w-2 h-2 bg-nebula-pink rounded-full animate-twinkle" style={{ animationDelay: '1.5s' }} />
+        <div className="absolute top-[80%] left-[25%] w-1.5 h-1.5 bg-star-gold rounded-full animate-twinkle" style={{ animationDelay: '2s' }} />
 
-      {/* Gradient Overlay */}
-      <div className="stats-gradient-overlay" />
-
-      {/* Floating Orbs */}
-      <div className="orb orb-1" />
-      <div className="orb orb-2" />
-      <div className="orb orb-3" />
+        {/* Small stars */}
+        <div className="absolute top-[15%] left-[40%] w-1 h-1 bg-white rounded-full animate-twinkle" style={{ animationDelay: '0.3s' }} />
+        <div className="absolute top-[35%] right-[30%] w-1 h-1 bg-white rounded-full animate-twinkle" style={{ animationDelay: '0.8s' }} />
+        <div className="absolute top-[55%] left-[60%] w-1 h-1 bg-white rounded-full animate-twinkle" style={{ animationDelay: '1.3s' }} />
+        <div className="absolute top-[75%] right-[40%] w-1 h-1 bg-white rounded-full animate-twinkle" style={{ animationDelay: '1.8s' }} />
+        <div className="absolute top-[25%] left-[80%] w-1 h-1 bg-cosmic-purple rounded-full animate-twinkle" style={{ animationDelay: '2.3s' }} />
+        <div className="absolute top-[45%] right-[70%] w-1 h-1 bg-white rounded-full animate-twinkle" style={{ animationDelay: '2.8s' }} />
+        <div className="absolute top-[65%] left-[50%] w-1 h-1 bg-white rounded-full animate-twinkle" style={{ animationDelay: '3.3s' }} />
+        <div className="absolute top-[85%] right-[60%] w-1 h-1 bg-star-gold rounded-full animate-twinkle" style={{ animationDelay: '3.8s' }} />
+      </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -65,7 +76,7 @@ export function StatsSection() {
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
             많은 분들이 경험하셨습니다
           </h2>
-          <p className="text-lg text-slate-300">
+          <p className="text-lg text-white/80">
             AI가 분석한 정확한 사주 운세
           </p>
         </div>
