@@ -36,6 +36,32 @@ export function CosmicStarfield({ count = 8000 }: CosmicStarfieldProps) {
     []
   );
 
+  // Create circular star texture to avoid square artifacts
+  const starTexture = useMemo(() => {
+    const canvas = document.createElement('canvas');
+    canvas.width = 64;
+    canvas.height = 64;
+    const ctx = canvas.getContext('2d')!;
+
+    // Clear canvas with transparent background
+    ctx.clearRect(0, 0, 64, 64);
+
+    // Create circular gradient (bright center, fade to transparent)
+    const gradient = ctx.createRadialGradient(32, 32, 0, 32, 32, 32);
+    gradient.addColorStop(0, 'rgba(255, 255, 255, 1)');
+    gradient.addColorStop(0.1, 'rgba(255, 255, 255, 0.9)');
+    gradient.addColorStop(0.3, 'rgba(255, 255, 255, 0.5)');
+    gradient.addColorStop(0.6, 'rgba(255, 255, 255, 0.1)');
+    gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
+
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, 64, 64);
+
+    const texture = new THREE.CanvasTexture(canvas);
+    texture.needsUpdate = true;
+    return texture;
+  }, []);
+
   // Layer 1: 먼 별들 (작고 많음)
   const [positions1, colors1, sizes1] = useMemo(() => {
     const positions = new Float32Array(count * 3);
@@ -174,11 +200,13 @@ export function CosmicStarfield({ count = 8000 }: CosmicStarfieldProps) {
           />
         </bufferGeometry>
         <pointsMaterial
+          map={starTexture}
           size={1}
           sizeAttenuation={true}
           vertexColors={true}
           transparent={true}
           opacity={0.8}
+          alphaTest={0.01}
           blending={THREE.AdditiveBlending}
         />
       </points>
@@ -209,11 +237,13 @@ export function CosmicStarfield({ count = 8000 }: CosmicStarfieldProps) {
           />
         </bufferGeometry>
         <pointsMaterial
+          map={starTexture}
           size={1.5}
           sizeAttenuation={true}
           vertexColors={true}
           transparent={true}
           opacity={0.9}
+          alphaTest={0.01}
           blending={THREE.AdditiveBlending}
         />
       </points>
@@ -244,11 +274,13 @@ export function CosmicStarfield({ count = 8000 }: CosmicStarfieldProps) {
           />
         </bufferGeometry>
         <pointsMaterial
+          map={starTexture}
           size={2}
           sizeAttenuation={true}
           vertexColors={true}
           transparent={true}
           opacity={1.0}
+          alphaTest={0.01}
           blending={THREE.AdditiveBlending}
         />
       </points>
