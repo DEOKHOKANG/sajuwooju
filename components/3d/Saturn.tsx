@@ -70,15 +70,15 @@ export function Saturn({
         />
       </Sphere>
 
-      {/* Saturn Rings - always rendered since Suspense handles loading */}
+      {/* Saturn Rings - NASA-accurate proportions (2.2× diameter) */}
       <mesh
         ref={ringRef}
         rotation={[-Math.PI / 2.7, 0, 0]} // Tilt angle (26.7 degrees)
       >
         <ringGeometry
           args={[
-            radius * 1.2,  // Inner radius (closer to planet)
-            radius * 5.0,  // Outer radius (iteration 3: 4.5 -> 5.0 for maximum visibility)
+            radius * 1.2,  // Inner radius (gap between planet and rings)
+            radius * 2.2,  // Outer radius (NASA: main rings are 2.2× planet diameter)
             128,           // Theta segments
           ]}
         />
@@ -86,31 +86,31 @@ export function Saturn({
           map={ringTexture}
           alphaMap={ringTexture}
           transparent
-          opacity={1.0}           // Iteration 5: 0.9 → 1.0 (fully opaque where texture exists)
+          opacity={0.85}           // Slightly transparent for natural look
           side={THREE.DoubleSide}
-          roughness={0.6}          // Iteration 5: 0.8 → 0.6 (less rough = more reflective)
-          metalness={0.3}          // Iteration 5: 0.1 → 0.3 (more metallic = brighter)
-          emissive="#C9A961"       // Iteration 5: Add warm golden emissive glow
-          emissiveIntensity={0.3}  // Iteration 5: Subtle glow for visibility
+          roughness={0.7}          // Natural matte surface
+          metalness={0.15}         // Minimal metallic reflection
+          emissive="#B89968"       // Sandy brown-beige (NASA observed colors)
+          emissiveIntensity={0.12} // Subtle natural glow
           depthWrite={false}
         />
       </mesh>
 
-      {/* Ring Shadow on Planet (optional, adds realism) */}
+      {/* Ring Shadow on Planet (adds realism) */}
       <mesh
         rotation={[-Math.PI / 2.7, 0, 0]}
       >
         <ringGeometry
           args={[
             radius * 1.2,
-            radius * 4.5,  // Match main ring size (iteration 2)
+            radius * 2.2,  // Match main ring size (NASA-accurate)
             128,
           ]}
         />
         <meshBasicMaterial
           color="#000000"
           transparent
-          opacity={0.3}
+          opacity={0.25}  // Subtle shadow
           side={THREE.BackSide}
           depthWrite={false}
         />
