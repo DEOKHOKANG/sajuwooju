@@ -1,0 +1,355 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "😗 사주우주" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e6]: 😗
+          - generic [ref=e7]: 사주우주
+        - link "메뉴 열기" [ref=e8] [cursor=pointer]:
+          - /url: /menu
+          - button "메뉴 열기" [ref=e9]:
+            - img [ref=e10]
+    - main [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]:
+          - heading "우주의 법칙으로 읽는 나의 운명" [level=1] [ref=e14]:
+            - text: 우주의 법칙으로 읽는
+            - text: 나의 운명
+          - paragraph [ref=e15]:
+            - text: 태양계 9개 행성과 음양오행이 만나
+            - text: 당신의 사주를 해석합니다
+          - button "🪐 우주로 떠나기" [ref=e16] [cursor=pointer]:
+            - generic [ref=e17]:
+              - generic [ref=e18]: 🪐
+              - generic [ref=e19]: 우주로 떠나기
+        - img [ref=e21]
+      - generic [ref=e24]:
+        - img "여우솔탈-하반기" [ref=e26]
+        - img "하반기종합" [ref=e28]
+        - img "썸사주궁합" [ref=e30]
+        - img "재회" [ref=e32]
+        - img "신년 인터뷰" [ref=e34]
+        - img "궁합사주" [ref=e36]
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - generic [ref=e39]: 🌌
+          - heading "행성 카테고리" [level=2] [ref=e40]
+        - generic [ref=e41]:
+          - link "이벤트" [ref=e42] [cursor=pointer]:
+            - /url: /category/1
+            - button "이벤트" [ref=e43]:
+              - generic [ref=e46]: 🌟
+              - generic [ref=e47]: 이벤트
+          - link "궁합" [ref=e48] [cursor=pointer]:
+            - /url: /category/2
+            - button "궁합" [ref=e49]:
+              - generic [ref=e52]: 💫
+              - generic [ref=e53]: 궁합
+              - generic [ref=e54]: 金
+          - link "솔로/연애" [ref=e55] [cursor=pointer]:
+            - /url: /category/3
+            - button "솔로/연애" [ref=e56]:
+              - generic [ref=e59]: 🔥
+              - generic [ref=e60]: 솔로/연애
+              - generic [ref=e61]: 火
+          - link "이별/재회" [ref=e62] [cursor=pointer]:
+            - /url: /category/4
+            - button "이별/재회" [ref=e63]:
+              - generic [ref=e66]: 💔
+              - generic [ref=e67]: 이별/재회
+              - generic [ref=e68]: 土
+          - link "직장/취업" [ref=e69] [cursor=pointer]:
+            - /url: /category/5
+            - button "직장/취업" [ref=e70]:
+              - generic [ref=e73]: 💼
+              - generic [ref=e74]: 직장/취업
+              - generic [ref=e75]: 土
+          - link "재물/사업" [ref=e76] [cursor=pointer]:
+            - /url: /category/6
+            - button "재물/사업" [ref=e77]:
+              - generic [ref=e80]: 💰
+              - generic [ref=e81]: 재물/사업
+              - generic [ref=e82]: 木
+          - link "건강" [ref=e83] [cursor=pointer]:
+            - /url: /category/7
+            - button "건강" [ref=e84]:
+              - generic [ref=e87]: ⚕️
+              - generic [ref=e88]: 건강
+              - generic [ref=e89]: 水
+          - link "월별운세" [ref=e90] [cursor=pointer]:
+            - /url: /category/8
+            - button "월별운세" [ref=e91]:
+              - generic [ref=e94]: 🌊
+              - generic [ref=e95]: 월별운세
+              - generic [ref=e96]: 水
+          - link "종합운" [ref=e97] [cursor=pointer]:
+            - /url: /category/9
+            - button "종합운" [ref=e98]:
+              - generic [ref=e101]: 🌀
+              - generic [ref=e102]: 종합운
+              - generic [ref=e103]: 水
+          - link "타로" [ref=e104] [cursor=pointer]:
+            - /url: /category/10
+            - button "타로" [ref=e105]:
+              - generic [ref=e108]: 🔮
+              - generic [ref=e109]: 타로
+              - generic [ref=e110]: 土
+          - link "작명" [ref=e111] [cursor=pointer]:
+            - /url: /category/11
+            - button "작명" [ref=e112]:
+              - generic [ref=e115]: 🌙
+              - generic [ref=e116]: 작명
+        - generic [ref=e117]:
+          - generic [ref=e118]: 木 (나무)
+          - generic [ref=e120]: 火 (불)
+          - generic [ref=e122]: 土 (흙)
+          - generic [ref=e124]: 金 (쇠)
+          - generic [ref=e126]: 水 (물)
+      - generic [ref=e128]:
+        - heading "🌠 사주우주 이벤트" [level=2] [ref=e129]
+        - generic [ref=e132] [cursor=pointer]:
+          - generic [ref=e133]: ✨
+          - generic [ref=e134]:
+            - generic [ref=e135]: 친구 초대하고 3,000원 받기!
+            - generic [ref=e136]: 5만 명에게 기쁨 전달 이벤트
+          - img [ref=e137]
+      - generic [ref=e139]:
+        - generic [ref=e140]:
+          - generic [ref=e141]: ⭐
+          - heading "월간 랭킹 BEST" [level=2] [ref=e142]
+        - generic [ref=e143]:
+          - link "그 사람도 날 좋아할까? 그 사람도 날 좋아할까? 썸 궁합사주❣️ 金 • 金 4.7 5만+ 46% OFF" [ref=e145] [cursor=pointer]:
+            - /url: /products/1
+            - generic [ref=e147]:
+              - img "그 사람도 날 좋아할까?" [ref=e149]
+              - generic [ref=e151]:
+                - generic [ref=e152]:
+                  - generic [ref=e153]: 그 사람도 날 좋아할까?
+                  - generic [ref=e154]: 썸 궁합사주❣️
+                  - generic [ref=e155]: 金 • 金
+                - generic [ref=e157]:
+                  - generic [ref=e158]:
+                    - generic [ref=e159]:
+                      - img [ref=e160]
+                      - generic [ref=e162]: "4.7"
+                    - generic [ref=e163]:
+                      - img [ref=e164]
+                      - generic [ref=e167]: 5만+
+                  - generic [ref=e168]: 46% OFF
+          - link "솔로탈출 연애운 사주 솔로탈출 연애운 사주 내 다음 연애는 언제 시작될까? 🔥 火 • 火 4.8 3만+ 54% OFF" [ref=e172] [cursor=pointer]:
+            - /url: /products/2
+            - generic [ref=e174]:
+              - img "솔로탈출 연애운 사주" [ref=e176]
+              - generic [ref=e178]:
+                - generic [ref=e179]:
+                  - generic [ref=e180]: 솔로탈출 연애운 사주
+                  - generic [ref=e181]: 내 다음 연애는 언제 시작될까? 🔥
+                  - generic [ref=e182]: 火 • 火
+                - generic [ref=e184]:
+                  - generic [ref=e185]:
+                    - generic [ref=e186]:
+                      - img [ref=e187]
+                      - generic [ref=e189]: "4.8"
+                    - generic [ref=e190]:
+                      - img [ref=e191]
+                      - generic [ref=e194]: 3만+
+                  - generic [ref=e195]: 54% OFF
+          - link "내 사주 속 재회 확률 미리보기 내 사주 속 재회 확률 미리보기 헤어진 연인과 다시 만날 수 있을까? 土 • 土 4.9 28만+ 60% OFF" [ref=e199] [cursor=pointer]:
+            - /url: /products/3
+            - generic [ref=e201]:
+              - img "내 사주 속 재회 확률 미리보기" [ref=e203]
+              - generic [ref=e205]:
+                - generic [ref=e206]:
+                  - generic [ref=e207]: 내 사주 속 재회 확률 미리보기
+                  - generic [ref=e208]: 헤어진 연인과 다시 만날 수 있을까?
+                  - generic [ref=e209]: 土 • 土
+                - generic [ref=e211]:
+                  - generic [ref=e212]:
+                    - generic [ref=e213]:
+                      - img [ref=e214]
+                      - generic [ref=e216]: "4.9"
+                    - generic [ref=e217]:
+                      - img [ref=e218]
+                      - generic [ref=e221]: 28만+
+                  - generic [ref=e222]: 60% OFF
+          - link "하반기, 기다리던 변화의 불씨 하반기, 기다리던 변화의 불씨 [프리미엄 하반기 종합사주✨] 水 • 水 4.9 1만+ 46% OFF" [ref=e226] [cursor=pointer]:
+            - /url: /products/4
+            - generic [ref=e228]:
+              - img "하반기, 기다리던 변화의 불씨" [ref=e230]
+              - generic [ref=e232]:
+                - generic [ref=e233]:
+                  - generic [ref=e234]: 하반기, 기다리던 변화의 불씨
+                  - generic [ref=e235]: "[프리미엄 하반기 종합사주✨]"
+                  - generic [ref=e236]: 水 • 水
+                - generic [ref=e238]:
+                  - generic [ref=e239]:
+                    - generic [ref=e240]:
+                      - img [ref=e241]
+                      - generic [ref=e243]: "4.9"
+                    - generic [ref=e244]:
+                      - img [ref=e245]
+                      - generic [ref=e248]: 1만+
+                  - generic [ref=e249]: 46% OFF
+          - link "결혼 궁합 사주 결혼 궁합 사주 평생 함께할 사람과의 궁합은? 金 • 金 4.7 2만+ 46% OFF" [ref=e253] [cursor=pointer]:
+            - /url: /products/5
+            - generic [ref=e255]:
+              - img "결혼 궁합 사주" [ref=e257]
+              - generic [ref=e259]:
+                - generic [ref=e260]:
+                  - generic [ref=e261]: 결혼 궁합 사주
+                  - generic [ref=e262]: 평생 함께할 사람과의 궁합은?
+                  - generic [ref=e263]: 金 • 金
+                - generic [ref=e265]:
+                  - generic [ref=e266]:
+                    - generic [ref=e267]:
+                      - img [ref=e268]
+                      - generic [ref=e270]: "4.7"
+                    - generic [ref=e271]:
+                      - img [ref=e272]
+                      - generic [ref=e275]: 2만+
+                  - generic [ref=e276]: 46% OFF
+          - link "소름돋게 잘 맞는 2026 신년운세 소름돋게 잘 맞는 2026 신년운세 [신년운세 총운] 水 • 水 4.7 1.4만+ 54% OFF" [ref=e280] [cursor=pointer]:
+            - /url: /products/6
+            - generic [ref=e282]:
+              - img "소름돋게 잘 맞는 2026 신년운세" [ref=e284]
+              - generic [ref=e286]:
+                - generic [ref=e287]:
+                  - generic [ref=e288]: 소름돋게 잘 맞는 2026 신년운세
+                  - generic [ref=e289]: "[신년운세 총운]"
+                  - generic [ref=e290]: 水 • 水
+                - generic [ref=e292]:
+                  - generic [ref=e293]:
+                    - generic [ref=e294]:
+                      - img [ref=e295]
+                      - generic [ref=e297]: "4.7"
+                    - generic [ref=e298]:
+                      - img [ref=e299]
+                      - generic [ref=e302]: 1.4만+
+                  - generic [ref=e303]: 54% OFF
+          - link "소름돋는 2026년 재물운세 소름돋는 2026년 재물운세 [10년 재물운 사주] 💵 木 • 木 4.8 2.8만+ 60% OFF" [ref=e307] [cursor=pointer]:
+            - /url: /products/7
+            - generic [ref=e309]:
+              - img "소름돋는 2026년 재물운세" [ref=e311]
+              - generic [ref=e313]:
+                - generic [ref=e314]:
+                  - generic [ref=e315]: 소름돋는 2026년 재물운세
+                  - generic [ref=e316]: "[10년 재물운 사주] 💵"
+                  - generic [ref=e317]: 木 • 木
+                - generic [ref=e319]:
+                  - generic [ref=e320]:
+                    - generic [ref=e321]:
+                      - img [ref=e322]
+                      - generic [ref=e324]: "4.8"
+                    - generic [ref=e325]:
+                      - img [ref=e326]
+                      - generic [ref=e329]: 2.8만+
+                  - generic [ref=e330]: 60% OFF
+          - link "이직해서 연봉 2배 올리고 싶다면 이직해서 연봉 2배 올리고 싶다면 봐야할 [커리어사주] 土 • 土 4.6 1만+ 46% OFF" [ref=e334] [cursor=pointer]:
+            - /url: /products/8
+            - generic [ref=e336]:
+              - img "이직해서 연봉 2배 올리고 싶다면" [ref=e338]
+              - generic [ref=e340]:
+                - generic [ref=e341]:
+                  - generic [ref=e342]: 이직해서 연봉 2배 올리고 싶다면
+                  - generic [ref=e343]: 봐야할 [커리어사주]
+                  - generic [ref=e344]: 土 • 土
+                - generic [ref=e346]:
+                  - generic [ref=e347]:
+                    - generic [ref=e348]:
+                      - img [ref=e349]
+                      - generic [ref=e351]: "4.6"
+                    - generic [ref=e352]:
+                      - img [ref=e353]
+                      - generic [ref=e356]: 1만+
+                  - generic [ref=e357]: 46% OFF
+          - link "뻔한 조언 대신 진짜 매운맛 사주! 뻔한 조언 대신 진짜 매운맛 사주! [팩폭 사주] 火 • 火 4.6 1만+ 29% OFF" [ref=e361] [cursor=pointer]:
+            - /url: /products/9
+            - generic [ref=e363]:
+              - img "뻔한 조언 대신 진짜 매운맛 사주!" [ref=e365]
+              - generic [ref=e367]:
+                - generic [ref=e368]:
+                  - generic [ref=e369]: 뻔한 조언 대신 진짜 매운맛 사주!
+                  - generic [ref=e370]: "[팩폭 사주]"
+                  - generic [ref=e371]: 火 • 火
+                - generic [ref=e373]:
+                  - generic [ref=e374]:
+                    - generic [ref=e375]:
+                      - img [ref=e376]
+                      - generic [ref=e378]: "4.6"
+                    - generic [ref=e379]:
+                      - img [ref=e380]
+                      - generic [ref=e383]: 1만+
+                  - generic [ref=e384]: 29% OFF
+          - link "내 사주에 숨겨진 매력 포인트 내 사주에 숨겨진 매력 포인트 [매력사주] 金 • 金 4.5 8천+ 46% OFF" [ref=e388] [cursor=pointer]:
+            - /url: /products/10
+            - generic [ref=e390]:
+              - img "내 사주에 숨겨진 매력 포인트" [ref=e392]
+              - generic [ref=e394]:
+                - generic [ref=e395]:
+                  - generic [ref=e396]: 내 사주에 숨겨진 매력 포인트
+                  - generic [ref=e397]: "[매력사주]"
+                  - generic [ref=e398]: 金 • 金
+                - generic [ref=e400]:
+                  - generic [ref=e401]:
+                    - generic [ref=e402]:
+                      - img [ref=e403]
+                      - generic [ref=e405]: "4.5"
+                    - generic [ref=e406]:
+                      - img [ref=e407]
+                      - generic [ref=e410]: 8천+
+                  - generic [ref=e411]: 46% OFF
+      - generic [ref=e419] [cursor=pointer]:
+        - generic [ref=e420]: 🌌
+        - heading "우주의 신비를 경험하세요" [level=3] [ref=e421]
+        - paragraph [ref=e422]: AI 기반 정밀 사주 분석으로 당신의 운명을 탐험하세요
+        - button "지금 시작하기" [ref=e423]
+    - contentinfo [ref=e424]:
+      - generic [ref=e425]:
+        - generic [ref=e426]:
+          - heading "사주우주 (SajuWooju)" [level=3] [ref=e427]
+          - paragraph [ref=e428]: 우주의 법칙으로 읽는 나의 운명
+        - generic [ref=e429]:
+          - generic [ref=e430]:
+            - generic [ref=e431]: "상호명:"
+            - generic [ref=e432]: 사주우주 (SajuWooju)
+          - generic [ref=e433]:
+            - generic [ref=e434]: "대표:"
+            - generic [ref=e435]: 강덕호
+          - generic [ref=e436]:
+            - generic [ref=e437]: "주소:"
+            - generic [ref=e438]: 서울특별시 광진구 능동로 120
+          - generic [ref=e439]:
+            - generic [ref=e440]: "이메일:"
+            - generic [ref=e441]: contact@sajuwooju.com
+          - generic [ref=e442]:
+            - generic [ref=e443]: "고객지원:"
+            - generic [ref=e444]: 카카오톡 채널 (사주우주)
+        - generic [ref=e445]:
+          - link "이용약관" [ref=e446] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e447]: "|"
+          - link "개인정보처리방침" [ref=e448] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e449]: "|"
+          - link "환불정책" [ref=e450] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e451]:
+          - link "Instagram" [ref=e452] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e453]
+          - link "KakaoTalk" [ref=e455] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e456]: 💬
+        - generic [ref=e457]:
+          - paragraph [ref=e458]: © 2025 사주우주. All rights reserved.
+          - paragraph [ref=e459]: "사업자등록번호: 123-45-67890"
+    - button "채팅 상담" [ref=e460] [cursor=pointer]:
+      - img [ref=e461]
+  - button "Open Next.js Dev Tools" [ref=e468] [cursor=pointer]:
+    - img [ref=e469]
+  - alert [ref=e472]
+```
