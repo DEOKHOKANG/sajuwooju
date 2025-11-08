@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import { StatsSection } from './stats-section';
+import { LandingHeader } from '@/components/layout/landing-header';
+import { LandingBottomNav } from '@/components/layout/landing-bottom-nav';
 
 // 3D Components (SSR disabled) - Import everything dynamically
 const SpaceCanvas = dynamic(
@@ -82,6 +84,9 @@ export function CosmicLanding() {
 
   return (
     <div className="relative w-full bg-black">
+      {/* Landing Header */}
+      <LandingHeader />
+
       {/* Hero Section - Full screen with solar system */}
       <div className="relative w-full h-screen overflow-hidden">
       {/* Cosmic Black Background with subtle gradient */}
@@ -135,15 +140,15 @@ export function CosmicLanding() {
           </p>
 
           <div className="pt-8">
-            <div
-              className={`inline-block px-8 py-4 bg-gradient-to-r from-star-gold/20 to-cosmic-purple/20 rounded-full border border-star-gold/30 backdrop-blur-sm ${
+            <button
+              className={`glass-button px-8 py-4 rounded-full border border-star-gold/30 ${
                 isHovering && !isRotating ? 'scale-110' : 'scale-100'
               } transition-all duration-300`}
             >
               <p className="text-white text-sm sm:text-base font-medium">
-                태양계를 클릭하세요
+                사주우주 시작하기
               </p>
-            </div>
+            </button>
           </div>
 
           {/* Animated scroll indicator */}
@@ -279,6 +284,9 @@ export function CosmicLanding() {
 
       {/* Stats Section - Scrollable below hero */}
       <StatsSection />
+
+      {/* Landing Bottom Navigation */}
+      <LandingBottomNav />
     </div>
   );
 }
