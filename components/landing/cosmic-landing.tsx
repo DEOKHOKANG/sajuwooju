@@ -125,28 +125,28 @@ export function CosmicLanding() {
       </div>
 
       {/* Welcome Text Overlay - Centered naturally */}
-      <div className="absolute inset-0 z-20 flex flex-col items-center justify-center pointer-events-none">
+      <div className="absolute inset-0 z-20 flex flex-col items-center justify-center pointer-events-none px-4">
         {/* Initial welcome text - hidden when rotating */}
         <div
-          className={`text-center space-y-8 transition-opacity duration-1000 ${
+          className={`text-center flex flex-col items-center gap-6 transition-opacity duration-1000 ${
             isRotating ? 'opacity-0' : 'opacity-100'
           }`}
         >
-          <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold text-white leading-tight mb-6">
+          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
             <span className="bg-gradient-to-r from-star-gold via-cosmic-purple to-nebula-pink bg-clip-text text-transparent animate-glow-pulse">
               사주우주
             </span>
           </h1>
 
-          <p className="text-xl sm:text-2xl text-white/90 max-w-2xl mx-auto px-4 mb-12">
+          <p className="text-base sm:text-lg text-white/90 max-w-2xl">
             우주의 법칙으로 읽는 나의 운명
           </p>
 
-          <div className="pointer-events-auto">
+          <div className="pointer-events-auto w-full max-w-xs">
             <button
               onClick={handleClick}
-              className={`glass-button px-10 py-5 rounded-full border-2 border-star-gold/40 ${
-                isHovering && !isRotating ? 'scale-110 border-star-gold/60' : 'scale-100'
+              className={`w-full glass-button px-8 py-4 rounded-full border-2 border-star-gold/40 ${
+                isHovering && !isRotating ? 'scale-105 border-star-gold/60' : 'scale-100'
               } transition-all duration-300 cursor-pointer hover:shadow-2xl hover:shadow-star-gold/30 hover:bg-star-gold/10`}
             >
               <span className="text-white text-base sm:text-lg font-semibold">
