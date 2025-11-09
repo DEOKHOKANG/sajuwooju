@@ -1,0 +1,148 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  // For Vercel Postgres, use directUrl for migrations
+  directUrl = env("POSTGRES_URL_NON_POOLING")
+}
+
+// User Model (for Phase 11 - Login)
+model User {
+  id            String         @id @default(uuid())
+  kakaoId       String?        @unique
+  name          String
+  email         String?
+  profileImage  String?
+
+  // Relations
+  consultations Consultation[]
+  favorites     Favorite[]
+
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+
+  @@index([kakaoId])
+  @@map("users")
+}
+
+// Consultation Model (Core - Phase 8)
+model Consultation {
+  id          String   @id @default(uuid())
+  userId      String?  // Optional - anonymous consultations allowed
+  user        User?    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  sessionId   String   @unique // UUID for sharing/accessing results
+  productId   String?  // Which product/service was used
+
+  // Input data
+  name        String
+  birthDate   DateTime
+  birthTime   Int      // 0-23
+  gender      String   // 'male' | 'female'
+  isLunar     Boolean  @default(false)
+
+  // Calculated saju data (stored as JSON)
+  sajuData    String?  @db.Text // JSON stringified SajuResult
+
+  // Metadata
+  status      String   @default("pending") // 'pending' | 'completed' | 'failed'
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([userId])
+  @@index([sessionId])
+  @@index([createdAt])
+  @@index([status])
+  @@map("consultations")
+}
+
+// Product Model (for Phase 8.3)
+model Product {
+  id          String     @id @default(uuid())
+  name        String
+  description String     @db.Text
+  price       Int
+  category    String
+  imageUrl    String
+  isActive    Boolean    @default(true)
+
+  // Relations
+  favorites   Favorite[]
+
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+
+  @@index([category])
+  @@index([isActive])
+  @@map("products")
+}
+
+// Favorite Model (for Phase 11)
+model Favorite {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  productId String
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+
+  @@unique([userId, productId])
+  @@index([userId])
+  @@index([productId])
+  @@map("favorites")
+}
+
+// Payment Model (Phase 8.10 - Toss Payments)
+model Payment {
+  id                 String    @id @default(uuid())
+  orderId            String    @unique // Unique order identifier
+  paymentKey         String?   @unique // Toss payment key (after approval)
+
+  // Relations
+  userId             String?
+  sessionId          String?   // Link to consultation session
+  consultationId     String?   // Link to consultation
+  productId          String    // Which product was purchased
+
+  // Payment info
+  amount             Int       // Payment amount (in KRW)
+  status             String    @default("pending") // 'pending' | 'ready' | 'in_progress' | 'done' | 'canceled' | 'failed'
+  orderName          String    // Order description
+
+  // Customer info
+  customerName       String
+  customerEmail      String?
+  customerMobilePhone String?
+
+  // Payment details (after approval)
+  method             String?   // Payment method used
+  approvedAt         DateTime?
+  canceledAt         DateTime?
+
+  // Failure info
+  failureCode        String?
+  failureMessage     String?
+
+  // Metadata (JSON)
+  metadata           String?   @db.Text
+
+  createdAt          DateTime  @default(now())
+  updatedAt          DateTime  @updatedAt
+
+  @@index([orderId])
+  @@index([paymentKey])
+  @@index([userId])
+  @@index([sessionId])
+  @@index([consultationId])
+  @@index([status])
+  @@index([createdAt])
+  @@map("payments")
+}

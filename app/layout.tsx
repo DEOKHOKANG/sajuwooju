@@ -1,10 +1,72 @@
 import type { Metadata } from "next";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import { ToastProvider } from "@/contexts/toast-context";
+import Script from "next/script";
 
+// Phase 9.2: Font Optimization with next/font
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-space-grotesk',
+  display: 'swap',
+  preload: true,
+});
+
+// Phase 9.4: SEO Optimization - Complete Metadata
 export const metadata: Metadata = {
-  title: "사주우주 | 우주의 법칙으로 읽는 나의 운명",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://sajuwooju.vercel.app'),
+  title: {
+    default: "사주우주 | 우주의 법칙으로 읽는 나의 운명",
+    template: "%s | 사주우주",
+  },
   description: "사주우주는 우주의 9개 행성과 음양오행을 기반으로 당신의 사주를 분석합니다. AI 기반의 정확한 운세와 궁합 서비스를 제공합니다.",
-  keywords: ["사주", "사주우주", "운세", "궁합", "만세력", "음양오행", "행성", "우주", "천문학", "사주 분석"],
+  keywords: ["사주", "사주우주", "운세", "궁합", "만세력", "음양오행", "행성", "우주", "천문학", "사주 분석", "AI 사주", "무료 사주"],
+  authors: [{ name: "사주우주" }],
+  creator: "사주우주",
+  publisher: "사주우주",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'ko_KR',
+    url: '/',
+    siteName: '사주우주',
+    title: "사주우주 | 우주의 법칙으로 읽는 나의 운명",
+    description: "사주우주는 우주의 9개 행성과 음양오행을 기반으로 당신의 사주를 분석합니다. AI 기반의 정확한 운세와 궁합 서비스를 제공합니다.",
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: '사주우주 - 우주의 법칙으로 읽는 나의 운명',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "사주우주 | 우주의 법칙으로 읽는 나의 운명",
+    description: "사주우주는 우주의 9개 행성과 음양오행을 기반으로 당신의 사주를 분석합니다.",
+    images: ['/og-image.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'google-site-verification-code',
+    // Add your verification codes when available
+  },
 };
 
 export default function RootLayout({
@@ -13,16 +75,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
+    <html lang="ko" className={spaceGrotesk.variable}>
       <head>
-        {/* Space Grotesk Font (Cosmic Theme) */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-        {/* Pretendard Font */}
+        {/* Pretendard Font - Korean */}
         <link
           rel="preload"
           as="style"
@@ -36,7 +91,15 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
-        {children}
+        <ToastProvider>
+          {children}
+        </ToastProvider>
+
+        {/* Kakao SDK (for Phase 11 - Login) */}
+        <Script
+          src="https://developers.kakao.com/sdk/js/kakao.js"
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   );

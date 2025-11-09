@@ -275,6 +275,18 @@
     }
   }
 
+  /* Slide in from right (Toast) */
+  @keyframes slide-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
   /* ============================================
      Utility Classes
      ============================================ */
@@ -373,6 +385,10 @@
 
   .animate-shimmer {
     animation: shimmer 2s infinite;
+  }
+
+  .animate-slide-in-right {
+    animation: slide-in-right 0.3s ease-out;
   }
 
   /* GPU 가속 최적화 */

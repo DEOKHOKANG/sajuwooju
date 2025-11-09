@@ -8,8 +8,11 @@ import { MessageCircle, Sparkles, Star, Moon, Zap } from "lucide-react";
 import { IMAGE_MAP } from "@/lib/image-map";
 import { FEATURED_PRODUCTS_WOOJU } from "@/lib/products-data-wooju";
 import { PLANETS_DATA } from "@/lib/planets-data";
+import { SAJU_SERVICES } from "@/lib/services-data";
+import { FEATURES, TESTIMONIALS } from "@/lib/features-testimonials-data";
 import Link from "next/link";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import { useMemo } from "react";
 
 // Rebranded Category to Planet mapping with enhanced data
 const CATEGORY_PLANETS = [
@@ -119,10 +122,26 @@ const CATEGORY_PLANETS = [
  */
 export default function MainPage() {
   const heroSection = useScrollAnimation({ threshold: 0.1 });
+  const servicesSection = useScrollAnimation({ threshold: 0.2 });
+  const featuresSection = useScrollAnimation({ threshold: 0.2 });
+  const testimonialsSection = useScrollAnimation({ threshold: 0.2 });
   const categorySection = useScrollAnimation({ threshold: 0.2 });
   const eventSection = useScrollAnimation({ threshold: 0.2 });
   const productsSection = useScrollAnimation({ threshold: 0.2 });
   const ctaSection = useScrollAnimation({ threshold: 0.2 });
+
+  // Generate 50 stars with consistent random positions (memoized to prevent re-renders)
+  const stars = useMemo(() => {
+    const colors = ['text-star-gold', 'text-cosmic-purple', 'text-nebula-pink', 'text-white'];
+    return Array.from({ length: 50 }).map((_, i) => ({
+      id: i,
+      size: Math.random() * 4 + 2, // 2-6px
+      top: Math.random() * 100, // 0-100%
+      left: Math.random() * 100, // 0-100%
+      delay: Math.random() * 3, // 0-3s
+      color: colors[Math.floor(Math.random() * colors.length)],
+    }));
+  }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-purple-50/30 to-white">
@@ -142,11 +161,24 @@ export default function MainPage() {
             <div className="absolute top-40 right-10 w-40 h-40 bg-gradient-to-br from-cosmic-purple/20 to-transparent rounded-full blur-2xl animate-float-delayed" />
             <div className="absolute bottom-20 left-20 w-36 h-36 bg-gradient-to-br from-nebula-pink/20 to-transparent rounded-full blur-2xl animate-float-slow" />
 
-            {/* Twinkling stars */}
-            <Star className="absolute top-16 right-24 w-4 h-4 text-star-gold animate-twinkle" style={{ animationDelay: '0s' }} />
-            <Star className="absolute top-32 left-16 w-3 h-3 text-cosmic-purple animate-twinkle" style={{ animationDelay: '0.5s' }} />
-            <Sparkles className="absolute bottom-24 right-16 w-5 h-5 text-nebula-pink animate-twinkle" style={{ animationDelay: '1s' }} />
-            <Moon className="absolute top-1/2 left-8 w-4 h-4 text-slate-400 animate-twinkle" style={{ animationDelay: '1.5s' }} />
+            {/* 50 Animated Stars - Random positions and sizes */}
+            {stars.map((star) => (
+              <div
+                key={star.id}
+                className={`absolute ${star.color} animate-twinkle`}
+                style={{
+                  top: `${star.top}%`,
+                  left: `${star.left}%`,
+                  width: `${star.size}px`,
+                  height: `${star.size}px`,
+                  animationDelay: `${star.delay}s`,
+                }}
+              >
+                <div className="w-full h-full rounded-full bg-current blur-[0.5px]" style={{
+                  boxShadow: `0 0 ${star.size * 2}px currentColor`
+                }} />
+              </div>
+            ))}
           </div>
 
           <div className="relative z-10 text-center space-y-6 sm:space-y-8">
@@ -214,6 +246,87 @@ export default function MainPage() {
         {/* Premium Slider Section */}
         <section className="py-6 sm:py-8">
           <HeroSlider slides={IMAGE_MAP.hero} autoPlayInterval={4000} pauseOnHover={true} />
+        </section>
+
+        {/* Services Section - 6 Saju Categories */}
+        <section
+          ref={servicesSection.ref as any}
+          className={`py-8 sm:py-12 fade-in ${servicesSection.isVisible ? 'visible' : ''}`}
+        >
+          <div className="text-center mb-8 sm:mb-10">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-star-gold/10 to-amber-100/50 rounded-full border border-star-gold/30 mb-4">
+              <Sparkles className="w-4 h-4 text-star-gold" />
+              <span className="text-sm font-medium text-gray-700">AI 기반 사주 서비스</span>
+            </div>
+            <h2 className="font-display text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
+              나만의 운세 분석
+            </h2>
+            <p className="text-sm sm:text-base text-gray-600">
+              6가지 분야의 전문적인 사주 해석
+            </p>
+          </div>
+
+          {/* Services Grid - 6 cards in 2x3 grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6">
+            {SAJU_SERVICES.map((service, index) => (
+              <Link key={service.id} href={service.href}>
+                <div
+                  className={`group relative rounded-2xl sm:rounded-3xl p-6 sm:p-8 cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden ${servicesSection.isVisible ? 'stagger-item' : ''}`}
+                  style={servicesSection.isVisible ? { animationDelay: `${index * 50}ms` } : {}}
+                >
+                  {/* Gradient background */}
+                  <div className="absolute inset-0 bg-gradient-to-br opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+                    style={{
+                      backgroundImage: `linear-gradient(135deg, ${service.bgColor}dd, ${service.bgColor}88)`
+                    }}
+                  />
+
+                  {/* Shine effect on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                  {/* Glow effect */}
+                  <div
+                    className="absolute -inset-1 rounded-2xl sm:rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl -z-10"
+                    style={{ background: service.bgColor }}
+                  />
+
+                  {/* Content */}
+                  <div className="relative z-10 text-center space-y-3">
+                    {/* Icon */}
+                    <div className="text-4xl sm:text-5xl transform group-hover:scale-110 transition-transform duration-500">
+                      {service.icon}
+                    </div>
+
+                    {/* Element badge */}
+                    <div className="inline-flex items-center justify-center w-8 h-8 bg-white/90 rounded-full text-xs font-bold shadow-md"
+                      style={{ color: service.bgColor }}
+                    >
+                      {service.element}
+                    </div>
+
+                    {/* Service name */}
+                    <div className="font-bold text-lg sm:text-xl text-white drop-shadow-lg">
+                      {service.name}
+                    </div>
+
+                    {/* Description */}
+                    <p className="text-xs sm:text-sm text-white/90 leading-relaxed">
+                      {service.description}
+                    </p>
+
+                    {/* Arrow icon */}
+                    <div className="flex items-center justify-center pt-2">
+                      <div className="w-6 h-6 flex items-center justify-center rounded-full bg-white/20 group-hover:bg-white/30 transition-colors duration-300">
+                        <svg className="w-3 h-3 text-white transform group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
         </section>
 
         {/* Redesigned Categories Section */}
@@ -423,6 +536,120 @@ export default function MainPage() {
                 style={productsSection.isVisible ? { animationDelay: `${index * 60}ms` } : {}}
               >
                 <ProductCardWooju product={product} />
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Features Section - 3 Key Features */}
+        <section
+          ref={featuresSection.ref as any}
+          className={`py-8 sm:py-12 fade-in ${featuresSection.isVisible ? 'visible' : ''}`}
+        >
+          <div className="text-center mb-8 sm:mb-10">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-violet-100 to-purple-100 rounded-full border border-violet-200 mb-4">
+              <Zap className="w-4 h-4 text-violet-600" />
+              <span className="text-sm font-medium text-gray-700">왜 사주우주인가?</span>
+            </div>
+            <h2 className="font-display text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
+              프리미엄 서비스 특징
+            </h2>
+            <p className="text-sm sm:text-base text-gray-600">
+              AI 기술과 전통 명리학의 완벽한 조화
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {FEATURES.map((feature, index) => (
+              <div
+                key={feature.id}
+                className={`group p-6 sm:p-8 rounded-2xl bg-white border-2 border-gray-100 hover:border-transparent hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 ${featuresSection.isVisible ? 'stagger-item' : ''}`}
+                style={featuresSection.isVisible ? { animationDelay: `${index * 100}ms` } : {}}
+              >
+                {/* Gradient background on hover */}
+                <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`} />
+
+                <div className="relative z-10 text-center space-y-4">
+                  {/* Icon */}
+                  <div className="text-5xl sm:text-6xl transform group-hover:scale-110 transition-transform duration-500">
+                    {feature.icon}
+                  </div>
+
+                  {/* Title */}
+                  <h3 className="font-bold text-lg sm:text-xl text-gray-900">
+                    {feature.title}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                    {feature.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Testimonials Section - User Reviews */}
+        <section
+          ref={testimonialsSection.ref as any}
+          className={`py-8 sm:py-12 fade-in ${testimonialsSection.isVisible ? 'visible' : ''}`}
+        >
+          <div className="text-center mb-8 sm:mb-10">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-amber-100 to-yellow-100 rounded-full border border-amber-200 mb-4">
+              <Star className="w-4 h-4 text-amber-500 fill-amber-500" />
+              <span className="text-sm font-medium text-gray-700">실제 이용자 후기</span>
+            </div>
+            <h2 className="font-display text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
+              만족도 98% 이상
+            </h2>
+            <p className="text-sm sm:text-base text-gray-600">
+              이미 50,000명이 경험한 정확한 사주 분석
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {TESTIMONIALS.map((testimonial, index) => (
+              <div
+                key={testimonial.id}
+                className={`p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-white via-gray-50 to-white border border-gray-200 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 ${testimonialsSection.isVisible ? 'stagger-item' : ''}`}
+                style={testimonialsSection.isVisible ? { animationDelay: `${index * 100}ms` } : {}}
+              >
+                {/* Header */}
+                <div className="flex items-center gap-4 mb-4">
+                  {/* Avatar */}
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-violet-400 to-purple-500 flex items-center justify-center text-2xl">
+                    {testimonial.avatar}
+                  </div>
+
+                  <div className="flex-1">
+                    {/* Name */}
+                    <div className="font-bold text-gray-900">{testimonial.name}</div>
+
+                    {/* Stars */}
+                    <div className="flex gap-0.5">
+                      {Array.from({ length: 5 }).map((_, i) => (
+                        <Star
+                          key={i}
+                          className={`w-3 h-3 ${i < testimonial.rating ? 'text-amber-400 fill-amber-400' : 'text-gray-300'}`}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Comment */}
+                <p className="text-sm text-gray-700 leading-relaxed mb-4">
+                  "{testimonial.comment}"
+                </p>
+
+                {/* Meta */}
+                <div className="flex items-center justify-between text-xs text-gray-500">
+                  <span className="px-2 py-1 rounded-full bg-violet-100 text-violet-700 font-medium">
+                    {testimonial.service}
+                  </span>
+                  <span>{testimonial.date}</span>
+                </div>
               </div>
             ))}
           </div>

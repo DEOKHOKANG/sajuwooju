@@ -38,3 +38,5 @@ nul
 Thumbs.db
 
 .vercel
+
+/lib/generated/prisma
