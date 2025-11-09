@@ -91,7 +91,7 @@ export function CosmicLanding() {
 
     // Redirect after flash animation (0.8s)
     setTimeout(() => {
-      router.push('/main');
+      window.location.href = '/main';
     }, 800);
   };
 
