@@ -24,10 +24,45 @@ export default async function CategoryPage({
     notFound();
   }
 
-  // Filter products by category ID
-  const categoryProducts = FEATURED_PRODUCTS.filter(product =>
-    product.categoryIds.includes(parseInt(id))
-  );
+  // Fetch products from API with fallback to hardcoded data
+  let categoryProducts = [];
+  try {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/api/products`, {
+      cache: 'no-store' // Or 'force-cache' for static generation
+    });
+
+    if (response.ok) {
+      const allProducts = await response.json();
+      // Filter products by category ID and transform to match FEATURED_PRODUCTS structure
+      categoryProducts = allProducts
+        .filter((product: any) => {
+          const categoryIds = Array.isArray(product.categoryIds) ? product.categoryIds : [1];
+          return categoryIds.includes(parseInt(id));
+        })
+        .map((product: any) => ({
+          id: parseInt(product.id),
+          title: product.name,
+          subtitle: product.description,
+          image: product.imageUrl,
+          rating: product.rating || 4.8,
+          reviews: product.views || 1234,
+          views: product.views || 1234,
+          discount: product.discount || 10,
+          categoryIds: Array.isArray(product.categoryIds) ? product.categoryIds : [1],
+        }));
+    } else {
+      // Fallback to hardcoded data
+      categoryProducts = FEATURED_PRODUCTS.filter(product =>
+        product.categoryIds.includes(parseInt(id))
+      );
+    }
+  } catch (error) {
+    console.error('Failed to fetch products from API, using fallback data:', error);
+    // Fallback to hardcoded data on error
+    categoryProducts = FEATURED_PRODUCTS.filter(product =>
+      product.categoryIds.includes(parseInt(id))
+    );
+  }
 
   return (
     <div className="min-h-screen bg-white">
