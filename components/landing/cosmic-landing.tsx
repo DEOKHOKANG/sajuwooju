@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import { StatsSection } from './stats-section';
@@ -24,7 +24,7 @@ const SpaceCanvas = dynamic(
 
 // Dynamically import the RotatingSystem to avoid SSR issues with error handling
 const RotatingSystemComponent = dynamic(
-  () => import('@/components/landing/RotatingSystemComponent').then((mod) => mod.RotatingSystemComponent).catch((err) => {
+  () => import('./RotatingSystemComponent').then((mod) => mod.RotatingSystemComponent).catch((err) => {
     console.error('Failed to load RotatingSystemComponent:', err);
     // Return a fallback component
     return { default: () => null };
@@ -51,18 +51,41 @@ export function CosmicLanding() {
   const [isHovering, setIsHovering] = useState(false);
   const [showBigBang, setShowBigBang] = useState(false);
   const [isLoaded, setIsLoaded] = useState(true); // Enable clicking immediately
+  const fallbackTimerRef = useRef<NodeJS.Timeout | null>(null);
 
   // Ensure client-side only rendering for 3D components
   useEffect(() => {
     setIsMounted(true);
   }, []);
 
+  // Cleanup timer on unmount
+  useEffect(() => {
+    return () => {
+      if (fallbackTimerRef.current) {
+        clearTimeout(fallbackTimerRef.current);
+      }
+    };
+  }, []);
+
   const handleClick = () => {
     if (isRotating || !isLoaded) return; // Prevent multiple clicks
     setIsRotating(true);
+
+    // CRITICAL FIX: Fallback navigation timer
+    // If 3D components fail to load or callback doesn't fire, navigate anyway
+    fallbackTimerRef.current = setTimeout(() => {
+      console.log('Fallback navigation triggered');
+      handleAnimationComplete();
+    }, 4000); // 3s animation + 1s buffer
   };
 
   const handleAnimationComplete = () => {
+    // Clear fallback timer if animation completed naturally
+    if (fallbackTimerRef.current) {
+      clearTimeout(fallbackTimerRef.current);
+      fallbackTimerRef.current = null;
+    }
+
     // Trigger Big Bang flash effect
     setShowBigBang(true);
 
@@ -198,7 +221,7 @@ export function CosmicLanding() {
           <div
             className="h-full bg-gradient-to-r from-star-gold via-cosmic-purple to-nebula-pink animate-progress"
             style={{
-              animation: 'progress 3s linear forwards',
+              animation: 'progress 4s linear forwards',
             }}
           />
         </div>
