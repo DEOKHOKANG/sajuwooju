@@ -68,15 +68,17 @@ export function CosmicLanding() {
   }, []);
 
   const handleClick = () => {
-    if (isRotating || !isLoaded) return; // Prevent multiple clicks
+    if (isRotating) return; // Prevent multiple clicks
+
+    console.log('🚀 Navigation initiated');
     setIsRotating(true);
 
-    // CRITICAL FIX: Fallback navigation timer
-    // If 3D components fail to load or callback doesn't fire, navigate anyway
+    // CRITICAL FIX: Immediate fallback navigation (3D is optional)
+    // Navigate immediately without waiting for 3D animation
     fallbackTimerRef.current = setTimeout(() => {
-      console.log('Fallback navigation triggered');
-      handleAnimationComplete();
-    }, 4000); // 3s animation + 1s buffer
+      console.log('✅ Direct navigation to /main');
+      window.location.href = '/main';
+    }, 1500); // 1.5s for visual feedback only
   };
 
   const handleAnimationComplete = () => {
