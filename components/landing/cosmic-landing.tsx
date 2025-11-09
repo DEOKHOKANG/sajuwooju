@@ -5,9 +5,13 @@ import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
 import { StatsSection } from './stats-section';
 
-// 3D Components (SSR disabled) - Import everything dynamically
+// 3D Components (SSR disabled) - Import everything dynamically with error handling
 const SpaceCanvas = dynamic(
-  () => import('@/components/3d/SpaceCanvas').then((mod) => mod.SpaceCanvas),
+  () => import('@/components/3d/SpaceCanvas').then((mod) => mod.SpaceCanvas).catch((err) => {
+    console.error('Failed to load SpaceCanvas:', err);
+    // Return a fallback component
+    return { default: () => null };
+  }),
   {
     ssr: false,
     loading: () => (
@@ -18,9 +22,13 @@ const SpaceCanvas = dynamic(
   }
 );
 
-// Dynamically import the RotatingSystem to avoid SSR issues
+// Dynamically import the RotatingSystem to avoid SSR issues with error handling
 const RotatingSystemComponent = dynamic(
-  () => import('@/components/landing/RotatingSystemComponent').then((mod) => mod.RotatingSystemComponent),
+  () => import('@/components/landing/RotatingSystemComponent').then((mod) => mod.RotatingSystemComponent).catch((err) => {
+    console.error('Failed to load RotatingSystemComponent:', err);
+    // Return a fallback component
+    return { default: () => null };
+  }),
   { ssr: false }
 );
 
