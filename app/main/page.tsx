@@ -12,7 +12,7 @@ import { SAJU_SERVICES } from "@/lib/services-data";
 import { FEATURES, TESTIMONIALS } from "@/lib/features-testimonials-data";
 import Link from "next/link";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
-import { useMemo } from "react";
+import { useMemo, useState, useEffect } from "react";
 
 // Rebranded Category to Planet mapping with enhanced data
 const CATEGORY_PLANETS = [
@@ -141,6 +141,42 @@ export default function MainPage() {
       delay: Math.random() * 3, // 0-3s
       color: colors[Math.floor(Math.random() * colors.length)],
     }));
+  }, []);
+
+  // Fetch products from API with fallback to hardcoded data
+  const [products, setProducts] = useState(FEATURED_PRODUCTS_WOOJU);
+  const [isLoadingProducts, setIsLoadingProducts] = useState(false);
+
+  useEffect(() => {
+    async function fetchProducts() {
+      try {
+        setIsLoadingProducts(true);
+        const response = await fetch('/api/products');
+        if (response.ok) {
+          const data = await response.json();
+          // Transform API data to match FEATURED_PRODUCTS_WOOJU structure
+          const transformedProducts = data.map((product: any) => ({
+            id: parseInt(product.id),
+            title: product.name,
+            subtitle: product.description,
+            image: product.imageUrl,
+            rating: product.rating || 4.8,
+            reviews: product.views || 1234,
+            views: product.views || 1234,
+            discount: product.discount || 10,
+            categoryIds: Array.isArray(product.categoryIds) ? product.categoryIds : [1],
+          }));
+          setProducts(transformedProducts);
+        }
+      } catch (error) {
+        console.error('Failed to fetch products, using fallback data:', error);
+        // Keep using FEATURED_PRODUCTS_WOOJU as fallback
+      } finally {
+        setIsLoadingProducts(false);
+      }
+    }
+
+    fetchProducts();
   }, []);
 
   return (
@@ -529,7 +565,7 @@ export default function MainPage() {
           </div>
 
           <div className="space-y-4 sm:space-y-5">
-            {FEATURED_PRODUCTS_WOOJU.map((product, index) => (
+            {products.map((product, index) => (
               <div
                 key={product.id}
                 className={productsSection.isVisible ? 'stagger-item' : ''}
