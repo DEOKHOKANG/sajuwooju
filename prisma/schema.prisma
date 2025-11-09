@@ -146,3 +146,149 @@ model Payment {
   @@index([createdAt])
   @@map("payments")
 }
+
+// ============================================
+// CMS MODELS (상용화급 전환)
+// ============================================
+
+// Planet Model - 행성 데이터 (하드코딩 제거)
+model Planet {
+  id              String   @id @default(uuid())
+  slug            String   @unique // 'mercury', 'venus', 'earth', etc.
+
+  // 기본 정보
+  koreanName      String   // '수성', '금성', etc.
+  englishName     String
+  emoji           String   // '☿', '♀', '⊕', etc.
+
+  // 사주 요소
+  element         String   // '水', '金', '木', '火', '土' (오행)
+  yinYang         String   // '음', '양'
+
+  // 시각적 속성 (3D & UI)
+  color           String   // HEX color
+  gradient        String   // Tailwind gradient class
+  orbitRadius     Float    // Three.js orbit radius
+  radius          Float    // Planet radius
+  rotationSpeed   Float    @default(0.01)
+  hasAtmosphere   Boolean  @default(false)
+  hasRings        Boolean  @default(false)
+
+  // 텍스처 URL
+  textureUrl      String?
+  normalMapUrl    String?
+  cloudMapUrl     String?
+
+  // 콘텐츠
+  description     String   @db.Text  // 행성 설명
+  mythology       String   @db.Text  // 신화 및 유래
+  sajuMeaning     String   @db.Text  // 사주에서의 의미
+  fortuneKeywords String[] // 운세 키워드 배열
+
+  // 메타데이터
+  publishedAt     DateTime?
+  isPublished     Boolean  @default(false)
+  order           Int      @default(0)
+
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([slug])
+  @@index([isPublished])
+  @@index([order])
+  @@map("planets")
+}
+
+// Fortune Category Model - 운세 카테고리
+model FortuneCategory {
+  id          String   @id @default(uuid())
+  slug        String   @unique // 'love', 'career', 'health', 'money', etc.
+
+  name        String   // '연애운', '직업운', etc.
+  icon        String   // Emoji or icon name
+  color       String   // Primary color
+  gradient    String   // Tailwind gradient
+
+  description String   @db.Text
+  keywords    String[] // 키워드 배열
+
+  // 메타데이터
+  publishedAt DateTime?
+  isPublished Boolean  @default(false)
+  order       Int      @default(0)
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([slug])
+  @@index([isPublished])
+  @@map("fortune_categories")
+}
+
+// Admin Model - 관리자
+model Admin {
+  id            String   @id @default(uuid())
+
+  email         String   @unique
+  passwordHash  String
+
+  name          String
+  role          String   @default("editor") // 'super_admin', 'editor', 'viewer'
+
+  isActive      Boolean  @default(true)
+
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  lastLoginAt   DateTime?
+
+  @@index([email])
+  @@map("admins")
+}
+
+// Event Banner Model - 이벤트 배너
+model EventBanner {
+  id          String   @id @default(uuid())
+
+  title       String
+  description String   @db.Text
+
+  imageUrl    String
+  linkUrl     String?
+
+  // 기간
+  startDate   DateTime
+  endDate     DateTime
+
+  // 메타데이터
+  isPublished Boolean  @default(false)
+  order       Int      @default(0)
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([isPublished])
+  @@index([startDate, endDate])
+  @@map("event_banners")
+}
+
+// Testimonial Model - 사용자 후기
+model Testimonial {
+  id          String   @id @default(uuid())
+
+  avatar      String   // Emoji
+  name        String
+  age         String   // '20대 초반', etc.
+
+  rating      Int      // 1-5
+  content     String   @db.Text
+
+  // 메타데이터
+  isPublished Boolean  @default(false)
+  order       Int      @default(0)
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([isPublished])
+  @@map("testimonials")
+}
