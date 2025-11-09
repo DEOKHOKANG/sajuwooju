@@ -1,22 +1,57 @@
 import { NextResponse } from 'next/server';
+import { prisma } from '@/lib/prisma';
 import { FEATURED_PRODUCTS } from '@/lib/products-data';
 
 /**
  * GET /api/products
  *
- * Returns all active products
- * Production: Will fetch from PostgreSQL via Prisma
- * Development: Uses hardcoded data
+ * Returns all active products from PostgreSQL via Prisma
+ * Fallback: Uses hardcoded data if database is unavailable
  */
 export async function GET() {
   try {
-    // TODO: Replace with Prisma query when PostgreSQL is deployed
-    // const products = await prisma.product.findMany({
-    //   where: { isActive: true },
-    //   orderBy: { createdAt: 'desc' }
-    // });
+    // Fetch from PostgreSQL database
+    const products = await prisma.product.findMany({
+      where: { isActive: true },
+      orderBy: { createdAt: 'desc' }
+    });
 
-    const products = FEATURED_PRODUCTS.map((product) => ({
+    // If database has no data, use hardcoded fallback
+    if (products.length === 0) {
+      console.warn('No products in database, using hardcoded fallback');
+      const fallbackProducts = FEATURED_PRODUCTS.map((product) => ({
+        id: String(product.id),
+        name: product.title,
+        description: product.subtitle,
+        price: calculatePrice(product.discount),
+        category: getCategoryName(product.categoryIds[0]),
+        imageUrl: product.image,
+        isActive: true,
+        rating: product.rating,
+        views: product.views,
+        discount: product.discount,
+        categoryIds: product.categoryIds,
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
+      }));
+
+      return NextResponse.json(fallbackProducts, {
+        headers: {
+          'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
+        },
+      });
+    }
+
+    return NextResponse.json(products, {
+      headers: {
+        'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
+      },
+    });
+  } catch (error) {
+    console.error('Error fetching products from database:', error);
+
+    // Fallback to hardcoded data on database error
+    const fallbackProducts = FEATURED_PRODUCTS.map((product) => ({
       id: String(product.id),
       name: product.title,
       description: product.subtitle,
@@ -32,17 +67,11 @@ export async function GET() {
       updatedAt: new Date().toISOString(),
     }));
 
-    return NextResponse.json(products, {
+    return NextResponse.json(fallbackProducts, {
       headers: {
-        'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
+        'Cache-Control': 'public, s-maxage=60, stale-while-revalidate=300',
       },
     });
-  } catch (error) {
-    console.error('Error fetching products:', error);
-    return NextResponse.json(
-      { error: 'Failed to fetch products' },
-      { status: 500 }
-    );
   }
 }
 

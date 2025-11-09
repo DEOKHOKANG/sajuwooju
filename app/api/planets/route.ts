@@ -1,23 +1,68 @@
 import { NextResponse } from 'next/server';
+import { prisma } from '@/lib/prisma';
 import { PLANETS_DATA } from '@/lib/planets-data';
 
 /**
  * GET /api/planets
  *
- * Returns all published planets
- * Production: Will fetch from PostgreSQL via Prisma
- * Development: Uses hardcoded data
+ * Returns all published planets from PostgreSQL via Prisma
+ * Fallback: Uses hardcoded data if database is unavailable
  */
 export async function GET() {
   try {
-    // TODO: Replace with Prisma query when PostgreSQL is deployed
-    // const planets = await prisma.planet.findMany({
-    //   where: { isPublished: true },
-    //   orderBy: { order: 'asc' }
-    // });
+    // Fetch from PostgreSQL database
+    const planets = await prisma.planet.findMany({
+      where: { isPublished: true },
+      orderBy: { order: 'asc' }
+    });
 
-    // Temporarily use hardcoded data
-    const planets = PLANETS_DATA.map((planet) => ({
+    // If database has no data, use hardcoded fallback
+    if (planets.length === 0) {
+      console.warn('No planets in database, using hardcoded fallback');
+      const fallbackPlanets = PLANETS_DATA.map((planet) => ({
+        id: planet.englishName || planet.name,
+        slug: planet.englishName || planet.name.toLowerCase(),
+        koreanName: planet.name,
+        englishName: planet.englishName || planet.name,
+        emoji: getEmojiForPlanet(planet.englishName || planet.name),
+        element: planet.element,
+        yinYang: getYinYangForElement(planet.element),
+        color: planet.color,
+        gradient: getGradientForPlanet(planet.englishName || planet.name),
+        orbitRadius: planet.orbitRadius,
+        radius: planet.radius,
+        rotationSpeed: planet.rotationSpeed,
+        hasAtmosphere: planet.hasAtmosphere || false,
+        hasRings: planet.englishName === 'saturn',
+        textureUrl: null,
+        normalMapUrl: null,
+        cloudMapUrl: null,
+        description: planet.description,
+        mythology: `${planet.name}의 신화와 유래`,
+        sajuMeaning: planet.description,
+        fortuneKeywords: [planet.element, planet.zodiacPalace || 'unknown'],
+        publishedAt: new Date().toISOString(),
+        isPublished: true,
+        order: PLANETS_DATA.indexOf(planet),
+      }));
+
+      return NextResponse.json(fallbackPlanets, {
+        headers: {
+          'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
+        },
+      });
+    }
+
+    return NextResponse.json(planets, {
+      headers: {
+        'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
+      },
+    });
+  } catch (error) {
+    console.error('Error fetching planets from database:', error);
+
+    // Fallback to hardcoded data on database error
+    const fallbackPlanets = PLANETS_DATA.map((planet) => ({
       id: planet.englishName || planet.name,
       slug: planet.englishName || planet.name.toLowerCase(),
       koreanName: planet.name,
@@ -36,7 +81,7 @@ export async function GET() {
       normalMapUrl: null,
       cloudMapUrl: null,
       description: planet.description,
-      mythology: `${planet.name}의 신화와 유래`, // Placeholder
+      mythology: `${planet.name}의 신화와 유래`,
       sajuMeaning: planet.description,
       fortuneKeywords: [planet.element, planet.zodiacPalace || 'unknown'],
       publishedAt: new Date().toISOString(),
@@ -44,17 +89,11 @@ export async function GET() {
       order: PLANETS_DATA.indexOf(planet),
     }));
 
-    return NextResponse.json(planets, {
+    return NextResponse.json(fallbackPlanets, {
       headers: {
-        'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
+        'Cache-Control': 'public, s-maxage=60, stale-while-revalidate=300',
       },
     });
-  } catch (error) {
-    console.error('Error fetching planets:', error);
-    return NextResponse.json(
-      { error: 'Failed to fetch planets' },
-      { status: 500 }
-    );
   }
 }
 
