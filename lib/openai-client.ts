@@ -1,22 +1,39 @@
 /**
  * OpenAI API Client
  * GPT-4 기반 사주 분석 서비스
+ *
+ * NOTE: Temporarily disabled - OPENAI_API_KEY not configured for deployment
  */
 
 import OpenAI from "openai";
 
-// API Key validation
+// API Key validation - disabled for deployment
 const apiKey = process.env.OPENAI_API_KEY;
 
-if (!apiKey && process.env.NODE_ENV === "production") {
-  throw new Error("OPENAI_API_KEY is not set in environment variables");
+// Lazy initialization - only throw error when actually used
+let _openai: OpenAI | null = null;
+
+function getOpenAIClient(): OpenAI {
+  if (!apiKey) {
+    throw new Error("OPENAI_API_KEY is not set in environment variables");
+  }
+
+  if (!_openai) {
+    _openai = new OpenAI({
+      apiKey: apiKey,
+      organization: process.env.OPENAI_ORG_ID,
+    });
+  }
+
+  return _openai;
 }
 
-// OpenAI client instance
-export const openai = new OpenAI({
-  apiKey: apiKey || "sk-proj-placeholder_for_build_only",
-  organization: process.env.OPENAI_ORG_ID,
-});
+// Deprecated - use getOpenAIClient() instead
+export const openai = {
+  get chat() {
+    return getOpenAIClient().chat;
+  }
+} as OpenAI;
 
 /**
  * GPT-4 모델로 사주 분석 요청
@@ -30,7 +47,8 @@ export async function generateSajuAnalysis(
   }
 ): Promise<string> {
   try {
-    const response = await openai.chat.completions.create({
+    const client = getOpenAIClient();
+    const response = await client.chat.completions.create({
       model: options?.model || "gpt-4",
       messages: [
         {
@@ -65,7 +83,8 @@ export async function generateSajuJSON<T>(
   }
 ): Promise<T> {
   try {
-    const response = await openai.chat.completions.create({
+    const client = getOpenAIClient();
+    const response = await client.chat.completions.create({
       model: options?.model || "gpt-4",
       messages: [
         {
@@ -97,7 +116,8 @@ export async function* streamSajuChat(
   messages: Array<{ role: "system" | "user" | "assistant"; content: string }>
 ): AsyncGenerator<string, void, unknown> {
   try {
-    const stream = await openai.chat.completions.create({
+    const client = getOpenAIClient();
+    const stream = await client.chat.completions.create({
       model: "gpt-4",
       messages: [
         {
