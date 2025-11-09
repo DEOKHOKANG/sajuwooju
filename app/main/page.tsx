@@ -417,8 +417,8 @@ export default function MainPage() {
             })}
           </div>
 
-          {/* Five Elements Legend - Enhanced */}
-          <div className="mt-10 p-6 bg-gradient-to-br from-gray-50 to-purple-50/30 rounded-2xl border border-gray-200/50">
+          {/* Five Elements Legend - Enhanced Glassmorphism */}
+          <div className="mt-10 p-6 backdrop-blur-2xl bg-white/70 rounded-2xl border border-white/40 shadow-lg hover:bg-white/80 hover:shadow-xl transition-all duration-300">
             <div className="text-center mb-4">
               <h3 className="text-sm font-semibold text-gray-700 mb-1">음양오행 (五行)</h3>
               <p className="text-xs text-gray-500">우주의 다섯 가지 근본 에너지</p>
@@ -466,15 +466,15 @@ export default function MainPage() {
           </div>
 
           <div
-            className="group relative rounded-3xl p-6 sm:p-8 cursor-pointer overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl"
-            style={{
-              background: 'linear-gradient(135deg, rgba(123, 104, 238, 0.15) 0%, rgba(255, 110, 199, 0.15) 50%, rgba(255, 215, 0, 0.15) 100%)',
-              border: '2px solid transparent',
-              backgroundClip: 'padding-box',
-            }}
+            className="group relative rounded-3xl p-6 sm:p-8 cursor-pointer overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl backdrop-blur-2xl bg-white/70 border border-white/40"
           >
-            {/* Animated gradient border */}
-            <div className="absolute inset-0 rounded-3xl opacity-50 group-hover:opacity-100 transition-opacity duration-500" style={{
+            {/* Animated gradient overlay on hover */}
+            <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-20 transition-opacity duration-500" style={{
+              background: 'linear-gradient(135deg, #7B68EE, #FF6EC7, #FFD700)',
+            }} />
+
+            {/* Animated gradient border glow */}
+            <div className="absolute inset-0 rounded-3xl opacity-30 group-hover:opacity-60 transition-opacity duration-500" style={{
               background: 'linear-gradient(135deg, #7B68EE, #FF6EC7, #FFD700)',
               filter: 'blur(20px)',
               zIndex: -1,
@@ -563,11 +563,11 @@ export default function MainPage() {
             {FEATURES.map((feature, index) => (
               <div
                 key={feature.id}
-                className={`group p-6 sm:p-8 rounded-2xl bg-white border-2 border-gray-100 hover:border-transparent hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 ${featuresSection.isVisible ? 'stagger-item' : ''}`}
+                className={`group relative p-6 sm:p-8 rounded-2xl backdrop-blur-2xl bg-white/70 border border-white/40 shadow-lg hover:bg-white/80 hover:shadow-2xl hover:border-white/60 transition-all duration-500 hover:-translate-y-2 ${featuresSection.isVisible ? 'stagger-item' : ''}`}
                 style={featuresSection.isVisible ? { animationDelay: `${index * 100}ms` } : {}}
               >
                 {/* Gradient background on hover */}
-                <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`} />
+                <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-15 transition-opacity duration-500`} />
 
                 <div className="relative z-10 text-center space-y-4">
                   {/* Icon */}
@@ -612,7 +612,7 @@ export default function MainPage() {
             {TESTIMONIALS.map((testimonial, index) => (
               <div
                 key={testimonial.id}
-                className={`p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-white via-gray-50 to-white border border-gray-200 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 ${testimonialsSection.isVisible ? 'stagger-item' : ''}`}
+                className={`p-6 sm:p-8 rounded-2xl backdrop-blur-2xl bg-white/70 border border-white/40 shadow-lg hover:bg-white/80 hover:shadow-2xl hover:border-white/60 transition-all duration-500 hover:-translate-y-2 ${testimonialsSection.isVisible ? 'stagger-item' : ''}`}
                 style={testimonialsSection.isVisible ? { animationDelay: `${index * 100}ms` } : {}}
               >
                 {/* Header */}
@@ -733,13 +733,13 @@ export default function MainPage() {
       {/* Footer */}
       <Footer />
 
-      {/* Floating Chat Button - Enhanced */}
+      {/* Floating Chat Button - Enhanced with Glassmorphism */}
       <button
-        className="fixed bottom-6 right-6 w-16 h-16 sm:w-18 sm:h-18 bg-gradient-to-br from-cosmic-purple via-purple-600 to-nebula-pink text-white rounded-full shadow-2xl hover:shadow-[0_0_40px_rgba(139,92,246,0.6)] flex items-center justify-center z-50 transition-all duration-300 hover:scale-110 group"
+        className="fixed bottom-6 right-6 w-16 h-16 sm:w-18 sm:h-18 backdrop-blur-xl bg-gradient-to-br from-cosmic-purple/90 via-purple-600/90 to-nebula-pink/90 border border-white/30 text-white rounded-full shadow-2xl hover:shadow-[0_0_40px_rgba(139,92,246,0.6)] flex items-center justify-center z-50 transition-all duration-300 hover:scale-110 active:scale-95 group"
         aria-label="채팅 상담"
       >
         <MessageCircle className="w-7 h-7 sm:w-8 sm:h-8 group-hover:rotate-12 transition-transform duration-300" />
-        <div className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 rounded-full flex items-center justify-center text-[10px] font-bold animate-pulse">
+        <div className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 border-2 border-white rounded-full flex items-center justify-center text-[10px] font-bold animate-pulse shadow-lg">
           N
         </div>
       </button>
