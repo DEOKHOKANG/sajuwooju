@@ -627,4 +627,87 @@
       display: none;
     }
   }
+
+  /* ============================================
+     Glassmorphism Design System
+     일관된 글래스모피즘 효과를 위한 유틸리티 클래스
+     ============================================ */
+
+  /* Light Glassmorphism (밝은 배경용 - Main Page) */
+  .glass-light {
+    @apply backdrop-blur-2xl bg-white/70 border border-white/40;
+  }
+
+  .glass-light-hover {
+    @apply hover:bg-white/80 hover:border-white/60 hover:shadow-2xl;
+  }
+
+  /* Medium Glassmorphism (중간 투명도) */
+  .glass-medium {
+    @apply backdrop-blur-xl bg-white/50 border border-white/30;
+  }
+
+  .glass-medium-hover {
+    @apply hover:bg-white/60 hover:border-white/50 hover:shadow-xl;
+  }
+
+  /* Strong Glassmorphism (강한 효과) */
+  .glass-strong {
+    @apply backdrop-blur-3xl bg-white/80 border border-white/60;
+  }
+
+  .glass-strong-hover {
+    @apply hover:bg-white/90 hover:border-white/80;
+  }
+
+  /* Dark Glassmorphism (어두운 배경용 - Landing Page) */
+  .glass-dark {
+    @apply backdrop-blur-xl bg-white/10 border border-white/20;
+  }
+
+  .glass-dark-hover {
+    @apply hover:bg-white/20 hover:border-white/30;
+  }
+
+  /* Glassmorphism Card (Full style with transitions) */
+  .glass-card {
+    @apply glass-light rounded-2xl shadow-lg transition-all duration-500;
+  }
+
+  .glass-card-hover {
+    @apply hover:-translate-y-2 glass-light-hover;
+  }
+
+  /* Glassmorphism Navigation (Header/Footer) */
+  .glass-nav {
+    @apply backdrop-blur-xl bg-white/80 border-white/30;
+  }
+
+  /* Glassmorphism Button */
+  .glass-button {
+    @apply backdrop-blur-md bg-white/20 border border-white/30 transition-all duration-300;
+  }
+
+  .glass-button-hover {
+    @apply hover:bg-white/30 hover:border-white/50 hover:scale-105;
+  }
+
+  /* Glassmorphism Badge/Tag */
+  .glass-badge {
+    @apply backdrop-blur-sm bg-white/70 rounded-full px-3 py-1;
+  }
+
+  /* Glassmorphism Overlay */
+  .glass-overlay {
+    @apply backdrop-blur-sm bg-white/40;
+  }
+
+  /* Combined Utility Classes */
+  .glass-card-full {
+    @apply glass-card glass-card-hover;
+  }
+
+  .glass-button-full {
+    @apply glass-button glass-button-hover;
+  }
 }
