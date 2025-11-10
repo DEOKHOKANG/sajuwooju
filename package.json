@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "type-check": "tsc --noEmit",
-    "download-textures": "node scripts/download-textures.js"
+    "download-textures": "node scripts/download-textures.js",
+    "postinstall": "prisma generate"
   },
   "keywords": [],
   "author": "",
