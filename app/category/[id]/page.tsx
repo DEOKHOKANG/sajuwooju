@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { IMAGE_MAP } from '@/lib/image-map';
-import { FEATURED_PRODUCTS } from '@/lib/products-data';
+import { FEATURED_PRODUCTS, type ProductWithCategory } from '@/lib/products-data';
 import { ProductCard } from '@/components/product-card';
 import Image from 'next/image';
 
@@ -25,7 +25,7 @@ export default async function CategoryPage({
   }
 
   // Fetch products from API with fallback to hardcoded data
-  let categoryProducts = [];
+  let categoryProducts: ProductWithCategory[] = [];
   try {
     const response = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/api/products`, {
       cache: 'no-store' // Or 'force-cache' for static generation
