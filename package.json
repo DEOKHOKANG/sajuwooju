@@ -16,6 +16,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@auth/prisma-adapter": "^2.11.1",
     "@hookform/resolvers": "^5.2.2",
     "@prisma/client": "^6.19.0",
     "@react-three/drei": "^10.7.6",
@@ -29,6 +30,7 @@
     "lucide-react": "^0.552.0",
     "lunar-javascript": "^1.7.7",
     "next": "^16.0.1",
+    "next-auth": "^5.0.0-beta.30",
     "openai": "^6.8.1",
     "prisma": "^6.19.0",
     "puppeteer": "^24.28.0",

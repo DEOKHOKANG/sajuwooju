@@ -4,6 +4,7 @@ import "./globals.css";
 import { ToastProvider } from "@/contexts/toast-context";
 import { MobileBottomNav } from "@/components/layout/mobile-bottom-nav";
 import { MobileHeader } from "@/components/layout/mobile-header";
+import { SessionProvider } from "next-auth/react";
 import Script from "next/script";
 
 // Phase 9.2: Font Optimization with next/font
@@ -93,11 +94,13 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
-        <ToastProvider>
-          <MobileHeader />
-          {children}
-          <MobileBottomNav />
-        </ToastProvider>
+        <SessionProvider>
+          <ToastProvider>
+            <MobileHeader />
+            {children}
+            <MobileBottomNav />
+          </ToastProvider>
+        </SessionProvider>
 
         {/* Kakao SDK (for Phase 11 - Login) */}
         <Script

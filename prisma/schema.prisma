@@ -12,23 +12,92 @@ datasource db {
   directUrl = env("POSTGRES_URL_NON_POOLING")
 }
 
-// User Model (for Phase 11 - Login)
+// ============================================
+// AUTHENTICATION MODELS (NextAuth.js v5)
+// ============================================
+
+// User Model - NextAuth.js Compatible
 model User {
-  id            String         @id @default(uuid())
-  kakaoId       String?        @unique
-  name          String
-  email         String?
+  id            String    @id @default(uuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+
+  // Legacy fields (keep for backward compatibility)
+  kakaoId       String?   @unique
   profileImage  String?
 
+  // User metadata
+  role          String    @default("user") // 'user' | 'premium' | 'admin'
+  isActive      Boolean   @default(true)
+
   // Relations
+  accounts      Account[]
+  sessions      Session[]
   consultations Consultation[]
   favorites     Favorite[]
 
-  createdAt     DateTime       @default(now())
-  updatedAt     DateTime       @updatedAt
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  lastLoginAt   DateTime?
 
+  @@index([email])
   @@index([kakaoId])
   @@map("users")
+}
+
+// Account Model - NextAuth.js OAuth Accounts
+model Account {
+  id                String  @id @default(uuid())
+  userId            String
+  type              String  // 'oauth' | 'email' | 'credentials'
+  provider          String  // 'kakao' | 'google' | 'credentials'
+  providerAccountId String  // OAuth provider's user id
+
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  @@unique([provider, providerAccountId])
+  @@index([userId])
+  @@map("accounts")
+}
+
+// Session Model - NextAuth.js Sessions
+model Session {
+  id           String   @id @default(uuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([userId])
+  @@index([sessionToken])
+  @@map("sessions")
+}
+
+// Verification Token Model - Email verification
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+  @@map("verification_tokens")
 }
 
 // Consultation Model (Core - Phase 8)
