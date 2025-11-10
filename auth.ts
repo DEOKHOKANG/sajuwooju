@@ -8,9 +8,10 @@ import { PrismaAdapter } from "@auth/prisma-adapter";
 import { prisma } from "@/lib/prisma";
 import Google from "next-auth/providers/google";
 import Kakao from "next-auth/providers/kakao";
-import type { NextAuthConfig } from "next-auth";
+import { authConfig } from "@/auth.config";
 
-export const authConfig: NextAuthConfig = {
+export const { handlers, auth, signIn, signOut } = NextAuth({
+  ...authConfig,
   adapter: PrismaAdapter(prisma),
 
   providers: [
@@ -36,14 +37,6 @@ export const authConfig: NextAuthConfig = {
     strategy: "database",
     maxAge: 30 * 24 * 60 * 60, // 30 days
     updateAge: 24 * 60 * 60, // 24 hours
-  },
-
-  pages: {
-    signIn: "/auth/signin",
-    signOut: "/auth/signout",
-    error: "/auth/error",
-    verifyRequest: "/auth/verify",
-    newUser: "/dashboard", // Redirect after first sign in
   },
 
   callbacks: {
@@ -95,6 +88,4 @@ export const authConfig: NextAuthConfig = {
   },
 
   debug: process.env.NODE_ENV === "development",
-};
-
-export const { handlers, auth, signIn, signOut } = NextAuth(authConfig);
+});
