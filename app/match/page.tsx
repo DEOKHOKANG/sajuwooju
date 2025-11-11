@@ -259,33 +259,33 @@ export default function MatchPage() {
   // 상세보기 페이지
   if (showDetailPage && matchedUser && compatibilityDetail && selectedCategory) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-pink-50 pb-24">
-        {/* Header with Back Button - 모바일 최적화 */}
-        <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-4 sm:py-6 px-3 sm:px-4 sticky top-0 z-30 shadow-lg">
+      <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-pink-50 pb-40 sm:pb-48">
+        {/* Header with Back Button - 완전한 모바일 최적화 */}
+        <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-5 sm:py-6 px-4 sm:px-6 sticky top-0 z-30 shadow-2xl">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-between mb-3 sm:mb-4">
               <button
                 onClick={() => setShowDetailPage(false)}
-                className="flex items-center gap-1.5 sm:gap-2 text-white/90 hover:text-white transition-colors active:scale-95 min-h-[44px] min-w-[44px] -ml-2"
+                className="flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white transition-all active:scale-95 min-h-[48px] px-4 rounded-xl shadow-lg font-bold text-sm sm:text-base"
               >
                 <ArrowLeft className="w-5 h-5 sm:w-6 sm:h-6" />
-                <span className="text-sm sm:text-base font-medium">돌아가기</span>
+                <span>돌아가기</span>
               </button>
 
               <button
                 onClick={handleBackToCategory}
-                className="flex items-center gap-1.5 text-white/90 hover:text-white transition-colors active:scale-95 min-h-[44px] px-3"
+                className="flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white transition-all active:scale-95 min-h-[48px] px-4 rounded-xl shadow-lg font-bold text-sm sm:text-base"
               >
-                <Home className="w-5 h-5" />
-                <span className="text-sm font-medium hidden xs:inline">홈</span>
+                <Home className="w-5 h-5 sm:w-6 sm:h-6" />
+                <span>홈</span>
               </button>
             </div>
             <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-center">상세 궁합 분석</h1>
-            <p className="text-purple-100 text-xs sm:text-sm text-center mt-1 sm:mt-2">{selectedCategory}</p>
+            <p className="text-purple-100 text-xs sm:text-sm text-center mt-2">{selectedCategory}</p>
           </div>
         </div>
 
-        <div className="max-w-4xl mx-auto p-3 sm:p-4 space-y-4 sm:space-y-6 mt-4 sm:mt-6">
+        <div className="max-w-4xl mx-auto p-4 sm:p-5 space-y-5 sm:space-y-6 mt-4 sm:mt-6">
           {/* Overall Score - 모바일 최적화 */}
           <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl sm:rounded-3xl p-5 sm:p-8 text-center shadow-lg">
             <div className={`text-4xl sm:text-5xl md:text-6xl font-bold ${getCompatibilityColor(compatibilityDetail.overall)} mb-2 sm:mb-3`}>
@@ -436,17 +436,25 @@ export default function MatchPage() {
             </div>
           )}
 
-          {/* Action Buttons - 모바일 최적화 & 고정 */}
-          <div className="fixed bottom-0 left-0 right-0 p-3 sm:p-4 bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-lg z-20">
-            <div className="max-w-4xl mx-auto space-y-2 sm:space-y-3">
-              <button className="w-full py-3 sm:py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold text-sm sm:text-base md:text-lg rounded-xl sm:rounded-2xl hover:from-purple-600 hover:to-pink-600 transition-all shadow-lg hover:shadow-xl active:scale-95 min-h-[48px]">
+          {/* Action Buttons - 완전한 모바일 최적화 & 고정 */}
+          <div className="fixed bottom-0 left-0 right-0 p-4 sm:p-5 bg-white/98 backdrop-blur-xl border-t-2 border-purple-200 shadow-2xl z-30">
+            <div className="max-w-4xl mx-auto space-y-3">
+              <button
+                onClick={() => {
+                  // TODO: 팔로우 기능 구현
+                  alert('팔로우 기능은 곧 추가됩니다! 🎉');
+                }}
+                className="w-full py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold text-base sm:text-lg rounded-xl hover:from-purple-600 hover:to-pink-600 transition-all shadow-xl hover:shadow-2xl active:scale-95 min-h-[56px] flex items-center justify-center gap-2"
+              >
+                <Heart className="w-5 h-5" />
                 팔로우하기
               </button>
-              <div className="grid grid-cols-2 gap-2 sm:gap-3">
+              <div className="grid grid-cols-2 gap-3">
                 <button
                   onClick={() => setShowDetailPage(false)}
-                  className="py-2.5 sm:py-3 bg-white text-gray-700 font-semibold text-sm sm:text-base rounded-xl sm:rounded-2xl hover:bg-gray-50 transition-all shadow-md active:scale-95 border border-gray-200 min-h-[44px]"
+                  className="py-3.5 bg-white text-gray-700 font-bold text-sm sm:text-base rounded-xl hover:bg-gray-50 transition-all shadow-lg active:scale-95 border-2 border-gray-300 min-h-[52px] flex items-center justify-center gap-2"
                 >
+                  <ArrowLeft className="w-5 h-5" />
                   돌아가기
                 </button>
                 <button
@@ -455,13 +463,13 @@ export default function MatchPage() {
                     handleRematch();
                   }}
                   disabled={!canRematch}
-                  className={`py-2.5 sm:py-3 font-semibold text-sm sm:text-base rounded-xl sm:rounded-2xl transition-all shadow-md active:scale-95 border min-h-[44px] flex items-center justify-center gap-1.5 ${
+                  className={`py-3.5 font-bold text-sm sm:text-base rounded-xl transition-all shadow-lg active:scale-95 border-2 min-h-[52px] flex items-center justify-center gap-2 ${
                     canRematch
-                      ? "bg-gradient-to-r from-purple-100 to-pink-100 text-purple-700 border-purple-200 hover:from-purple-200 hover:to-pink-200"
-                      : "bg-gray-100 text-gray-400 border-gray-200 cursor-not-allowed"
+                      ? "bg-gradient-to-r from-purple-100 to-pink-100 text-purple-700 border-purple-300 hover:from-purple-200 hover:to-pink-200"
+                      : "bg-gray-100 text-gray-400 border-gray-300 cursor-not-allowed"
                   }`}
                 >
-                  <RotateCcw className="w-4 h-4" />
+                  <RotateCcw className="w-5 h-5" />
                   재매칭
                 </button>
               </div>
@@ -603,19 +611,19 @@ export default function MatchPage() {
             </div>
           </div>
 
-          {/* Bottom Half - Matched User or Question Mark - 모바일 최적화 */}
-          <div className="flex-1 flex flex-col items-center justify-center bg-gradient-to-br from-pink-100 to-purple-100 pb-6 sm:pb-12 px-4">
+          {/* Bottom Half - Matched User or Question Mark - 완전한 모바일 최적화 */}
+          <div className="flex-1 flex flex-col items-center justify-start bg-gradient-to-br from-pink-100 to-purple-100 pt-6 sm:pt-12 pb-8 sm:pb-16 px-4 overflow-y-auto">
             {matchedUser && compatibilityDetail ? (
               <div className="text-center animate-scale-in w-full max-w-sm sm:max-w-md px-3 sm:px-4">
-                <div className="text-4xl sm:text-5xl md:text-6xl mb-3 sm:mb-4">✨</div>
+                <div className="text-4xl sm:text-5xl md:text-6xl mb-2 sm:mb-3">✨</div>
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-1 sm:mb-2">{matchedUser.name}</h3>
-                <p className="text-sm sm:text-base text-gray-700 mb-3 sm:mb-4">{matchedUser.birthYear}년생 · {matchedUser.zodiac}</p>
-                <div className="px-3 sm:px-4 py-1.5 sm:py-2 bg-white/80 rounded-full inline-block mb-4 sm:mb-6">
+                <p className="text-sm sm:text-base text-gray-700 mb-2 sm:mb-3">{matchedUser.birthYear}년생 · {matchedUser.zodiac}</p>
+                <div className="px-3 sm:px-4 py-1.5 sm:py-2 bg-white/80 rounded-full inline-block mb-3 sm:mb-4">
                   <span className="text-xs sm:text-sm font-bold text-pink-600">{matchedUser.dominantElement} 기운</span>
                 </div>
 
                 {/* 궁합 점수 표시 - 모바일 최적화 */}
-                <div className="bg-white/90 rounded-2xl sm:rounded-3xl p-4 sm:p-6 shadow-xl mb-4 sm:mb-6 backdrop-blur">
+                <div className="bg-white/90 rounded-2xl sm:rounded-3xl p-4 sm:p-5 shadow-xl mb-4 sm:mb-6 backdrop-blur">
                   <div className={`text-4xl sm:text-5xl font-bold ${getCompatibilityColor(compatibilityDetail.overall)} mb-1 sm:mb-2`}>
                     {compatibilityDetail.overall}%
                   </div>
@@ -624,38 +632,46 @@ export default function MatchPage() {
                   </p>
                 </div>
 
-                {/* 버튼들 - 모바일 최적화 */}
-                <div className="space-y-2 sm:space-y-3 w-full">
+                {/* 버튼들 - 완전한 모바일 최적화 (더 큰 간격과 높이) */}
+                <div className="space-y-3 sm:space-y-4 w-full">
                   <button
                     onClick={handleViewDetail}
-                    className="w-full py-3 sm:py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold text-sm sm:text-base md:text-lg rounded-xl sm:rounded-2xl hover:from-purple-600 hover:to-pink-600 transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2 active:scale-95 min-h-[48px]"
+                    className="w-full py-4 sm:py-5 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold text-sm sm:text-base md:text-lg rounded-xl sm:rounded-2xl hover:from-purple-600 hover:to-pink-600 transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2 active:scale-95 min-h-[56px]"
                   >
-                    <Info className="w-4 h-4 sm:w-5 sm:h-5" />
+                    <Info className="w-5 h-5 sm:w-6 sm:h-6" />
                     상세보기
                   </button>
-                  <div className="grid grid-cols-3 gap-2 sm:gap-3">
+
+                  {/* 3개 버튼 - 더 큰 높이와 명확한 간격 */}
+                  <div className="grid grid-cols-3 gap-3 sm:gap-4">
                     <button
                       onClick={handleRematch}
                       disabled={!canRematch}
-                      className={`py-2.5 sm:py-3 rounded-xl font-semibold transition-all flex flex-col items-center justify-center gap-1 text-xs sm:text-sm active:scale-95 min-h-[60px] sm:min-h-[68px] ${
+                      className={`py-3 sm:py-4 rounded-xl font-bold transition-all flex flex-col items-center justify-center gap-1.5 text-xs sm:text-sm active:scale-95 min-h-[72px] sm:min-h-[80px] ${
                         canRematch
-                          ? "bg-white text-gray-700 hover:bg-gray-50 shadow-md"
-                          : "bg-gray-200 text-gray-400 cursor-not-allowed"
+                          ? "bg-white text-gray-700 hover:bg-gray-50 shadow-lg hover:shadow-xl border-2 border-gray-200"
+                          : "bg-gray-200 text-gray-400 cursor-not-allowed border-2 border-gray-300"
                       }`}
                     >
-                      <RotateCcw className="w-4 h-4 sm:w-5 sm:h-5" />
-                      <span>재매칭</span>
+                      <RotateCcw className="w-5 h-5 sm:w-6 sm:h-6" />
+                      <span className="font-semibold">재매칭</span>
                     </button>
-                    <button className="py-2.5 sm:py-3 bg-white text-purple-600 font-semibold rounded-xl hover:bg-purple-50 transition-all shadow-md active:scale-95 flex flex-col items-center justify-center gap-1 text-xs sm:text-sm min-h-[60px] sm:min-h-[68px]">
-                      <Heart className="w-4 h-4 sm:w-5 sm:h-5" />
-                      <span>팔로우</span>
+                    <button
+                      onClick={() => {
+                        // TODO: 팔로우 기능 구현
+                        alert('팔로우 기능은 곧 추가됩니다! 🎉');
+                      }}
+                      className="py-3 sm:py-4 bg-white text-purple-600 font-bold rounded-xl hover:bg-purple-50 transition-all shadow-lg hover:shadow-xl active:scale-95 flex flex-col items-center justify-center gap-1.5 text-xs sm:text-sm min-h-[72px] sm:min-h-[80px] border-2 border-purple-200 hover:border-purple-300"
+                    >
+                      <Heart className="w-5 h-5 sm:w-6 sm:h-6" />
+                      <span className="font-semibold">팔로우</span>
                     </button>
                     <button
                       onClick={handleBackToCategory}
-                      className="py-2.5 sm:py-3 bg-white text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition-all shadow-md active:scale-95 flex flex-col items-center justify-center gap-1 text-xs sm:text-sm min-h-[60px] sm:min-h-[68px]"
+                      className="py-3 sm:py-4 bg-white text-gray-700 font-bold rounded-xl hover:bg-gray-50 transition-all shadow-lg hover:shadow-xl active:scale-95 flex flex-col items-center justify-center gap-1.5 text-xs sm:text-sm min-h-[72px] sm:min-h-[80px] border-2 border-gray-200"
                     >
-                      <Home className="w-4 h-4 sm:w-5 sm:h-5" />
-                      <span>홈</span>
+                      <Home className="w-5 h-5 sm:w-6 sm:h-6" />
+                      <span className="font-semibold">홈</span>
                     </button>
                   </div>
                 </div>
