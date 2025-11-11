@@ -85,11 +85,11 @@ export function RecentAnalysis() {
 
                 <div className="relative z-10 space-y-3">
                   {/* Category Badge */}
-                  <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-white/70 rounded-full">
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-white/90 rounded-full shadow-sm">
                     <div
                       className={`w-2 h-2 rounded-full bg-gradient-to-br ${item.gradient}`}
                     />
-                    <span className="text-xs font-semibold text-gray-700">
+                    <span className="text-xs font-bold text-gray-900">
                       {item.category}
                     </span>
                   </div>
@@ -100,17 +100,17 @@ export function RecentAnalysis() {
                   </h3>
 
                   {/* Summary */}
-                  <p className="text-xs sm:text-sm text-gray-600 line-clamp-2 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-gray-800 font-medium line-clamp-2 leading-relaxed">
                     {item.summary}
                   </p>
 
                   {/* Date and Arrow */}
                   <div className="flex items-center justify-between pt-2">
-                    <div className="flex items-center gap-1.5 text-xs text-gray-500">
+                    <div className="flex items-center gap-1.5 text-xs text-gray-700 font-medium">
                       <Clock className="w-3.5 h-3.5" />
                       <span>{item.date}</span>
                     </div>
-                    <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-gray-600 group-hover:translate-x-1 transition-all duration-300" />
+                    <ArrowRight className="w-4 h-4 text-gray-600 group-hover:text-gray-900 group-hover:translate-x-1 transition-all duration-300" />
                   </div>
                 </div>
               </div>

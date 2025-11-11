@@ -44,25 +44,25 @@ export function TodayFortune() {
               오늘의 운세
             </h3>
             {todayDate && (
-              <p className="text-xs sm:text-sm text-gray-600">{todayDate}</p>
+              <p className="text-xs sm:text-sm text-gray-700 font-medium">{todayDate}</p>
             )}
           </div>
         </div>
 
         {/* Fortune content */}
-        <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
+        <p className="text-sm sm:text-base text-gray-800 font-medium leading-relaxed mb-4">
           {fortune.summary}
         </p>
 
         {/* Lucky items */}
         <div className="flex items-center gap-4 mb-4 text-xs sm:text-sm">
-          <div className="px-3 py-1.5 bg-white/70 rounded-full">
-            <span className="text-gray-600">행운의 색:</span>{" "}
-            <span className="font-semibold text-purple-600">{fortune.luckyColor}</span>
+          <div className="px-3 py-1.5 bg-white/90 rounded-full shadow-sm">
+            <span className="text-gray-900 font-medium">행운의 색:</span>{" "}
+            <span className="font-bold text-purple-600">{fortune.luckyColor}</span>
           </div>
-          <div className="px-3 py-1.5 bg-white/70 rounded-full">
-            <span className="text-gray-600">행운의 숫자:</span>{" "}
-            <span className="font-semibold text-amber-600">{fortune.luckyNumber}</span>
+          <div className="px-3 py-1.5 bg-white/90 rounded-full shadow-sm">
+            <span className="text-gray-900 font-medium">행운의 숫자:</span>{" "}
+            <span className="font-bold text-amber-600">{fortune.luckyNumber}</span>
           </div>
         </div>
 

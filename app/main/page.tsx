@@ -599,7 +599,7 @@ export default function MainPage() {
             {FEATURES.map((feature, index) => (
               <div
                 key={feature.id}
-                className={`group relative p-6 sm:p-8 rounded-2xl backdrop-blur-2xl bg-white/70 border border-white/40 shadow-lg hover:bg-white/80 hover:shadow-2xl hover:border-white/60 transition-all duration-500 hover:-translate-y-2 ${featuresSection.isVisible ? 'stagger-item' : ''}`}
+                className={`group relative p-6 sm:p-8 rounded-2xl backdrop-blur-2xl bg-white/90 border border-white/60 shadow-lg hover:bg-white hover:shadow-2xl hover:border-white/80 transition-all duration-500 hover:-translate-y-2 ${featuresSection.isVisible ? 'stagger-item' : ''}`}
                 style={featuresSection.isVisible ? { animationDelay: `${index * 100}ms` } : {}}
               >
                 {/* Gradient background on hover */}
@@ -617,7 +617,7 @@ export default function MainPage() {
                   </h3>
 
                   {/* Description */}
-                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                  <p className="text-sm sm:text-base text-gray-800 font-medium leading-relaxed">
                     {feature.description}
                   </p>
                 </div>
@@ -648,7 +648,7 @@ export default function MainPage() {
             {TESTIMONIALS.map((testimonial, index) => (
               <div
                 key={testimonial.id}
-                className={`p-6 sm:p-8 rounded-2xl backdrop-blur-2xl bg-white/70 border border-white/40 shadow-lg hover:bg-white/80 hover:shadow-2xl hover:border-white/60 transition-all duration-500 hover:-translate-y-2 ${testimonialsSection.isVisible ? 'stagger-item' : ''}`}
+                className={`p-6 sm:p-8 rounded-2xl backdrop-blur-2xl bg-white/90 border border-white/60 shadow-lg hover:bg-white hover:shadow-2xl hover:border-white/80 transition-all duration-500 hover:-translate-y-2 ${testimonialsSection.isVisible ? 'stagger-item' : ''}`}
                 style={testimonialsSection.isVisible ? { animationDelay: `${index * 100}ms` } : {}}
               >
                 {/* Header */}
@@ -675,7 +675,7 @@ export default function MainPage() {
                 </div>
 
                 {/* Comment */}
-                <p className="text-sm text-gray-700 leading-relaxed mb-4">
+                <p className="text-sm text-gray-800 font-medium leading-relaxed mb-4">
                   "{testimonial.comment}"
                 </p>
 
