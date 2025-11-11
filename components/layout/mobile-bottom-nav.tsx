@@ -2,11 +2,11 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, User, Settings, Menu, Trophy } from 'lucide-react';
+import { Home, Heart, Zap, Users, User } from 'lucide-react';
 
 /**
  * Mobile Bottom Navigation (상용화급)
- * 모바일 하단 네비게이션 - 사주랭킹 추가
+ * 모바일 하단 네비게이션 - HOME, MATCH, HYPE, FEED, MY
  */
 
 export function MobileBottomNav() {
@@ -15,28 +15,28 @@ export function MobileBottomNav() {
   const navItems = [
     {
       href: '/main',
-      label: '홈',
+      label: 'HOME',
       icon: Home,
     },
     {
-      href: '/ranking',
-      label: '랭킹',
-      icon: Trophy,
+      href: '/match',
+      label: 'MATCH',
+      icon: Heart,
     },
     {
-      href: '/menu',
-      label: '메뉴',
-      icon: Menu,
+      href: '/hype',
+      label: 'HYPE',
+      icon: Zap,
     },
     {
-      href: '/my',
-      label: '마이',
+      href: '/feed',
+      label: 'FEED',
+      icon: Users,
+    },
+    {
+      href: '/dashboard',
+      label: 'MY',
       icon: User,
-    },
-    {
-      href: '/settings',
-      label: '설정',
-      icon: Settings,
     },
   ];
 
