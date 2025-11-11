@@ -1,14 +1,20 @@
 "use client";
 
+import { useState } from "react";
 import { ProfileCard } from "@/components/dashboard/ProfileCard";
 import { QuickActions } from "@/components/dashboard/QuickActions";
 import { TodayFortune } from "@/components/dashboard/TodayFortune";
 import { RecentAnalysis } from "@/components/dashboard/RecentAnalysis";
+import { Friends } from "@/components/dashboard/Friends";
+import { MySaju } from "@/components/dashboard/MySaju";
+import { FriendsSaju } from "@/components/dashboard/FriendsSaju";
 import { SAJU_SERVICES } from "@/lib/services-data";
 import Link from "next/link";
 import { Sparkles } from "lucide-react";
 
 export default function DashboardPage() {
+  const [activeTab, setActiveTab] = useState<'overview' | 'friends' | 'mysaju' | 'social'>('overview');
+
   // Hardcoded test user - no auth required during development
   const user = {
     name: "테스트 사용자",
@@ -41,27 +47,99 @@ export default function DashboardPage() {
         </div>
       </section>
 
+      {/* Tab Navigation */}
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+        <div className="glass-card p-2 flex gap-2 overflow-x-auto">
+          <button
+            onClick={() => setActiveTab('overview')}
+            className={`px-4 py-2 rounded-lg font-medium transition-all whitespace-nowrap ${
+              activeTab === 'overview'
+                ? 'bg-gradient-to-r from-violet-500 to-purple-500 text-white'
+                : 'text-slate-600 hover:bg-slate-100'
+            }`}
+          >
+            📊 개요
+          </button>
+          <button
+            onClick={() => setActiveTab('mysaju')}
+            className={`px-4 py-2 rounded-lg font-medium transition-all whitespace-nowrap ${
+              activeTab === 'mysaju'
+                ? 'bg-gradient-to-r from-violet-500 to-purple-500 text-white'
+                : 'text-slate-600 hover:bg-slate-100'
+            }`}
+          >
+            ✨ 내 사주
+          </button>
+          <button
+            onClick={() => setActiveTab('social')}
+            className={`px-4 py-2 rounded-lg font-medium transition-all whitespace-nowrap ${
+              activeTab === 'social'
+                ? 'bg-gradient-to-r from-violet-500 to-purple-500 text-white'
+                : 'text-slate-600 hover:bg-slate-100'
+            }`}
+          >
+            👥 친구 사주
+          </button>
+          <button
+            onClick={() => setActiveTab('friends')}
+            className={`px-4 py-2 rounded-lg font-medium transition-all whitespace-nowrap ${
+              activeTab === 'friends'
+                ? 'bg-gradient-to-r from-violet-500 to-purple-500 text-white'
+                : 'text-slate-600 hover:bg-slate-100'
+            }`}
+          >
+            🤝 친구 관리
+          </button>
+        </div>
+      </div>
+
       {/* Main Content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-24 space-y-8 sm:space-y-12">
-        {/* Profile Card */}
-        <section className="">
-          <ProfileCard user={user} />
-        </section>
+        {/* Overview Tab */}
+        {activeTab === 'overview' && (
+          <>
+            {/* Profile Card */}
+            <section className="">
+              <ProfileCard user={user} />
+            </section>
 
-        {/* Quick Actions */}
-        <section className="">
-          <QuickActions />
-        </section>
+            {/* Quick Actions */}
+            <section className="">
+              <QuickActions />
+            </section>
 
-        {/* Today's Fortune */}
-        <section className="">
-          <TodayFortune />
-        </section>
+            {/* Today's Fortune */}
+            <section className="">
+              <TodayFortune />
+            </section>
 
-        {/* Recent Analysis */}
-        <section className="">
-          <RecentAnalysis />
-        </section>
+            {/* Recent Analysis */}
+            <section className="">
+              <RecentAnalysis />
+            </section>
+          </>
+        )}
+
+        {/* My Saju Tab */}
+        {activeTab === 'mysaju' && (
+          <section className="">
+            <MySaju />
+          </section>
+        )}
+
+        {/* Friends' Saju Tab */}
+        {activeTab === 'social' && (
+          <section className="">
+            <FriendsSaju />
+          </section>
+        )}
+
+        {/* Friends Management Tab */}
+        {activeTab === 'friends' && (
+          <section className="">
+            <Friends />
+          </section>
+        )}
 
         {/* Recommended Services */}
         <section className="">
