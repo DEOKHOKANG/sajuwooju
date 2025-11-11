@@ -124,7 +124,7 @@ export default function DashboardPage() {
 
                 {/* Title & Description */}
                 <h3 className="text-lg font-bold text-slate-800 mb-2 group-hover:text-violet-600 transition-colors">
-                  {service.title}
+                  {service.name}
                 </h3>
                 <p className="text-sm text-slate-600 line-clamp-2">
                   {service.description}
