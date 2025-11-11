@@ -128,7 +128,7 @@ export default async function DashboardPage() {
             {/* Services Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {recommendedServices.map((service, index) => (
-                <Link key={service.id} h>
+                <Link key={service.id} href={service.href}>
                   <div
                     className="group relative rounded-2xl sm:rounded-3xl p-6 sm:p-8 overflow-hidden cursor-pointer transition-all duration-300 hover:scale-[1.02]"
                     style={{
