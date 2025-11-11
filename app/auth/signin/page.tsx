@@ -1,7 +1,7 @@
 'use client';
 
 import { signIn } from "next-auth/react";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -11,6 +11,7 @@ import { useState } from "react";
  */
 export default function SignInPage() {
   const searchParams = useSearchParams();
+  const router = useRouter();
   const callbackUrl = searchParams?.get("callbackUrl") || "/dashboard";
   const error = searchParams?.get("error");
   const [isLoading, setIsLoading] = useState<string | null>(null);
@@ -24,6 +25,24 @@ export default function SignInPage() {
     } finally {
       setIsLoading(null);
     }
+  };
+
+  // TEST MODE: Skip auth and go directly to dashboard
+  const handleTestLogin = () => {
+    setIsLoading("test");
+    // Store test user in localStorage for demo
+    if (typeof window !== "undefined") {
+      localStorage.setItem("test_user", JSON.stringify({
+        name: "테스트 사용자",
+        email: "test@sajuwooju.com",
+        image: "",
+        isTestUser: true
+      }));
+    }
+    // Redirect to dashboard
+    setTimeout(() => {
+      router.push("/dashboard");
+    }, 500);
   };
 
   return (
@@ -138,6 +157,22 @@ export default function SignInPage() {
             </span>
           </div>
         </div>
+
+        {/* Test Login Button (Development/Demo) */}
+        <button
+          onClick={handleTestLogin}
+          disabled={isLoading !== null}
+          className="w-full glass-button px-4 py-3 rounded-xl text-center font-medium bg-gradient-to-r from-violet-500 to-purple-500 text-white hover:from-violet-600 hover:to-purple-600 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+        >
+          {isLoading === "test" ? (
+            <div className="flex items-center justify-center gap-2">
+              <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
+              <span>로그인 중...</span>
+            </div>
+          ) : (
+            <>🚀 테스트 로그인 (대시보드 미리보기)</>
+          )}
+        </button>
 
         {/* Guest Mode */}
         <Link

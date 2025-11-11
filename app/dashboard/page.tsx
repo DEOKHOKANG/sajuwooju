@@ -1,5 +1,7 @@
-import { auth } from "@/auth";
-import { redirect } from "next/navigation";
+"use client";
+
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import { ProfileCard } from "@/components/dashboard/ProfileCard";
 import { QuickActions } from "@/components/dashboard/QuickActions";
 import { TodayFortune } from "@/components/dashboard/TodayFortune";
@@ -8,28 +10,61 @@ import { SAJU_SERVICES } from "@/lib/services-data";
 import Link from "next/link";
 import { Sparkles } from "lucide-react";
 
-export default async function DashboardPage() {
-  // Get authenticated session
-  const session = await auth();
+export default function DashboardPage() {
+  const router = useRouter();
+  const [user, setUser] = useState<any>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
-  if (!session || !session.user) {
-    redirect("/auth/signin?callbackUrl=/dashboard");
+  useEffect(() => {
+    // Check for test user in localStorage
+    if (typeof window !== "undefined") {
+      const testUser = localStorage.getItem("test_user");
+      if (testUser) {
+        const parsedUser = JSON.parse(testUser);
+        setUser({
+          name: parsedUser.name,
+          email: parsedUser.email,
+          profileImage: parsedUser.image,
+          joinDate: new Date().toISOString().split('T')[0],
+          level: 1,
+          isTestUser: true,
+        });
+        setIsLoading(false);
+        return;
+      }
+    }
+
+    // If no test user, redirect to signin
+    router.push("/auth/signin?callbackUrl=/dashboard");
+  }, [router]);
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-b from-violet-50 via-purple-50 to-pink-50 pt-20 flex items-center justify-center">
+        <div className="animate-pulse text-center">
+          <div className="text-4xl mb-4">🌌</div>
+          <p className="text-slate-600">로딩 중...</p>
+        </div>
+      </div>
+    );
   }
 
-  // User data from session
-  const user = {
-    name: session.user.name || "사용자",
-    email: session.user.email || "",
-    profileImage: session.user.image || "",
-    joinDate: new Date().toISOString().split('T')[0], // Placeholder
-    level: 1, // Placeholder - can be fetched from database
-  };
+  if (!user) {
+    return null;
+  }
 
   // Recommended services (first 3 from SAJU_SERVICES)
   const recommendedServices = SAJU_SERVICES.slice(0, 3);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-violet-50 via-purple-50 to-pink-50 pt-20 pb-24">
+      {/* Test Mode Badge */}
+      {user.isTestUser && (
+        <div className="fixed top-16 right-4 z-50 bg-gradient-to-r from-violet-500 to-purple-500 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-medium shadow-lg">
+          🚀 테스트 모드
+        </div>
+      )}
+
       {/* Welcome Section */}
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 pb-6 sm:pb-8">
         <div className="text-center space-y-2 sm:space-y-3">
@@ -45,132 +80,67 @@ export default async function DashboardPage() {
       {/* Main Content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-24 space-y-8 sm:space-y-12">
         {/* Profile Card */}
-        <section
-          
-          className=""
-          style={{ animationDelay: "100ms" }}
-          
-        >
+        <section className="">
           <ProfileCard user={user} />
         </section>
 
         {/* Quick Actions */}
-        <section
-          
-          className=""
-          style={{ animationDelay: "200ms" }}
-          
-        >
+        <section className="">
           <QuickActions />
         </section>
 
-        {/* Two Column Layout for Fortune and Recent */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
-          {/* Today's Fortune */}
-          <section
-            
-            className=""
-            style={{ animationDelay: "300ms" }}
-            
-          >
-            <TodayFortune />
-          </section>
-
-          {/* Placeholder for future widget */}
-          <section
-            className=""
-            style={{ animationDelay: "350ms" }}
-          >
-            <div className="relative rounded-2xl sm:rounded-3xl p-6 sm:p-8 overflow-hidden h-full">
-              {/* Gradient background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 via-cyan-400/20 to-teal-400/20" />
-              <div className="absolute inset-0 bg-white/50 backdrop-blur-sm" />
-
-              {/* Border */}
-              <div className="absolute inset-0 rounded-2xl sm:rounded-3xl border border-blue-200/50" />
-
-              <div className="relative z-10 flex flex-col items-center justify-center h-full min-h-[200px] text-center space-y-3">
-                <Sparkles className="w-12 h-12 text-blue-500 opacity-50" />
-                <p className="text-sm text-gray-500">추가 위젯 영역</p>
-              </div>
-            </div>
-          </section>
-        </div>
+        {/* Today's Fortune */}
+        <section className="">
+          <TodayFortune />
+        </section>
 
         {/* Recent Analysis */}
-        <section
-          
-          className=""
-          style={{ animationDelay: "400ms" }}
-          
-        >
+        <section className="">
           <RecentAnalysis />
         </section>
 
         {/* Recommended Services */}
-        <section
-          
-          className=""
-          style={{ animationDelay: "500ms" }}
-          
-        >
-          <div className="space-y-4 sm:space-y-6">
-            {/* Header */}
-            <div className="text-center space-y-2">
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
-                추천 서비스
-              </h2>
-              <p className="text-sm sm:text-base text-gray-600">
-                {user.name}님을 위한 맞춤 운세 서비스
-              </p>
-            </div>
+        <section className="">
+          <div className="flex items-center gap-2 mb-6">
+            <Sparkles className="w-6 h-6 text-violet-600" />
+            <h2 className="text-xl sm:text-2xl font-bold text-slate-800">
+              {user.name}님을 위한 추천 서비스
+            </h2>
+          </div>
 
-            {/* Services Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-              {recommendedServices.map((service, index) => (
-                <Link key={service.id} href={service.href}>
-                  <div
-                    className="group relative rounded-2xl sm:rounded-3xl p-6 sm:p-8 overflow-hidden cursor-pointer transition-all duration-300 hover:scale-[1.02]"
-                    style={{
-                      animationDelay: `${index * 100}ms`,
-                    }}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            {recommendedServices.map((service) => (
+              <Link
+                key={service.id}
+                href={service.href}
+                className="group glass-card p-6 hover:scale-105 transition-all duration-300"
+              >
+                {/* Icon */}
+                <div
+                  className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${service.gradient} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}
+                >
+                  <span className="text-2xl">{service.icon}</span>
+                </div>
+
+                {/* Title & Description */}
+                <h3 className="text-lg font-bold text-slate-800 mb-2 group-hover:text-violet-600 transition-colors">
+                  {service.title}
+                </h3>
+                <p className="text-sm text-slate-600 line-clamp-2">
+                  {service.description}
+                </p>
+
+                {/* Badge */}
+                <div className="mt-4 flex items-center justify-between">
+                  <span
+                    className={`text-xs font-semibold px-3 py-1 rounded-full bg-gradient-to-r ${service.gradient} text-white`}
                   >
-                    {/* Gradient background */}
-                    <div
-                      className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-80`}
-                    />
-
-                    {/* Glow effect on hover */}
-                    <div
-                      className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-100 blur-2xl transition-opacity duration-500`}
-                    />
-
-                    {/* Content */}
-                    <div className="relative z-10 text-center space-y-4">
-                      {/* Icon */}
-                      <div className="text-5xl sm:text-6xl">{service.icon}</div>
-
-                      {/* Title */}
-                      <h3 className="text-xl sm:text-2xl font-bold text-white">
-                        {service.name}
-                      </h3>
-
-                      {/* Description */}
-                      <p className="text-sm sm:text-base text-white/90">
-                        {service.description}
-                      </p>
-
-                      {/* Element Badge */}
-                      <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full">
-                        <span className="text-xs sm:text-sm font-semibold text-white">
-                          {service.element}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
+                    {service.element}
+                  </span>
+                  <span className="text-slate-400 text-sm">→</span>
+                </div>
+              </Link>
+            ))}
           </div>
         </section>
       </div>
