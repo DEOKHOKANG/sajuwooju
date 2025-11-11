@@ -1,16 +1,16 @@
 /**
- * Step 3: 생년월일 입력 컴포넌트
+ * Step 3: 생년월일 입력 컴포넌트 (상용화급)
  */
 
 "use client";
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { birthDateSchema } from "@/lib/validation/saju-schema";
+import { step3Schema } from "@/lib/validation/saju-input";
 import { z } from "zod";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-type BirthDateData = z.infer<typeof birthDateSchema>;
+type BirthDateData = z.infer<typeof step3Schema>;
 
 interface BirthDateFormProps {
   value: BirthDateData | null;
@@ -19,6 +19,8 @@ interface BirthDateFormProps {
 }
 
 export function BirthDateForm({ value, onChange, onNext }: BirthDateFormProps) {
+  const currentYear = new Date().getFullYear();
+
   const {
     register,
     handleSubmit,
@@ -26,10 +28,12 @@ export function BirthDateForm({ value, onChange, onNext }: BirthDateFormProps) {
     watch,
     setValue,
   } = useForm<BirthDateData>({
-    resolver: zodResolver(birthDateSchema),
+    resolver: zodResolver(step3Schema),
     defaultValues: value || {
-      birthDate: "",
-      isLunar: false,
+      calendarType: "solar",
+      year: 0,
+      month: 0,
+      day: 0,
     },
   });
 
@@ -38,24 +42,39 @@ export function BirthDateForm({ value, onChange, onNext }: BirthDateFormProps) {
     onNext();
   };
 
-  const isLunar = watch("isLunar");
+  const calendarType = watch("calendarType");
+  const selectedYear = watch("year");
+  const selectedMonth = watch("month");
+  const selectedDay = watch("day");
 
-  // Year, Month, Day 선택
-  const [year, setYear] = useState("");
-  const [month, setMonth] = useState("");
-  const [day, setDay] = useState("");
+  // 월별 일수 계산 (윤년 고려)
+  const getDaysInMonth = (year: number, month: number): number => {
+    if (!year || !month) return 31;
 
-  // 날짜 업데이트
-  const updateDate = (y: string, m: string, d: string) => {
-    if (y && m && d) {
-      const formattedDate = `${y}-${m.padStart(2, "0")}-${d.padStart(2, "0")}`;
-      setValue("birthDate", formattedDate);
+    if (month === 2) {
+      // 윤년 계산
+      const isLeapYear = (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+      return isLeapYear ? 29 : 28;
     }
+
+    if ([4, 6, 9, 11].includes(month)) {
+      return 30;
+    }
+
+    return 31;
   };
 
-  const years = Array.from({ length: 101 }, (_, i) => 2025 - i); // 2025 ~ 1925
+  const years = Array.from({ length: currentYear - 1900 + 1 }, (_, i) => currentYear - i);
   const months = Array.from({ length: 12 }, (_, i) => i + 1);
-  const days = Array.from({ length: 31 }, (_, i) => i + 1);
+  const daysInMonth = getDaysInMonth(selectedYear, selectedMonth);
+  const days = Array.from({ length: daysInMonth }, (_, i) => i + 1);
+
+  // 월이 변경되면 일자가 유효한지 확인하고 조정
+  useEffect(() => {
+    if (selectedDay > daysInMonth) {
+      setValue("day", daysInMonth);
+    }
+  }, [selectedMonth, selectedYear, selectedDay, daysInMonth, setValue]);
 
   return (
     <div className="w-full max-w-md mx-auto">
@@ -67,121 +86,165 @@ export function BirthDateForm({ value, onChange, onNext }: BirthDateFormProps) {
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
         {/* Calendar Type Toggle */}
         <div className="flex justify-center mb-6">
-          <div className="inline-flex rounded-lg border-2 border-gray-200 p-1">
+          <div className="inline-flex rounded-lg border-2 border-gray-200 p-1 bg-white">
             <button
               type="button"
-              onClick={() => setValue("isLunar", false)}
+              onClick={() => setValue("calendarType", "solar")}
               className={`
                 px-6 py-2 rounded-md transition-all font-medium
                 ${
-                  !isLunar
+                  calendarType === "solar"
                     ? "bg-purple-500 text-white shadow-md"
                     : "text-gray-600 hover:text-gray-900"
                 }
               `}
             >
-              양력
+              ☀️ 양력
             </button>
             <button
               type="button"
-              onClick={() => setValue("isLunar", true)}
+              onClick={() => setValue("calendarType", "lunar")}
               className={`
                 px-6 py-2 rounded-md transition-all font-medium
                 ${
-                  isLunar
+                  calendarType === "lunar"
                     ? "bg-purple-500 text-white shadow-md"
                     : "text-gray-600 hover:text-gray-900"
                 }
               `}
             >
-              음력
+              🌙 음력
             </button>
           </div>
+        </div>
+
+        {/* 양력/음력 설명 */}
+        <div className="p-3 bg-blue-50 rounded-lg border border-blue-200">
+          <p className="text-sm text-blue-800">
+            {calendarType === "solar" ? (
+              <>
+                <span className="font-semibold">양력:</span> 일반적으로 사용하는 생일 (주민등록상 생년월일)
+              </>
+            ) : (
+              <>
+                <span className="font-semibold">음력:</span> 전통적인 음력 생일 (설날, 추석 등을 기준으로 하는 달력)
+              </>
+            )}
+          </p>
         </div>
 
         {/* Date Selectors */}
         <div className="grid grid-cols-3 gap-3">
           {/* Year */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
-              년
+            <label htmlFor="year" className="block text-sm font-medium text-gray-700 mb-2">
+              년도
             </label>
             <select
-              value={year}
-              onChange={(e) => {
-                setYear(e.target.value);
-                updateDate(e.target.value, month, day);
-              }}
-              className="w-full px-3 py-3 rounded-lg border-2 border-gray-200 focus:border-purple-500 focus:outline-none focus:ring-4 focus:ring-purple-100"
+              id="year"
+              {...register("year", { valueAsNumber: true })}
+              className={`
+                w-full px-3 py-3 rounded-lg border-2 transition-colors
+                ${
+                  errors.year
+                    ? "border-red-500 focus:border-red-600"
+                    : "border-gray-200 focus:border-purple-500"
+                }
+                focus:outline-none focus:ring-4
+                ${errors.year ? "focus:ring-red-100" : "focus:ring-purple-100"}
+              `}
             >
-              <option value="">년도</option>
+              <option value={0}>선택</option>
               {years.map((y) => (
                 <option key={y} value={y}>
-                  {y}
+                  {y}년
                 </option>
               ))}
             </select>
+            {errors.year && (
+              <p className="mt-1 text-xs text-red-600">{errors.year.message}</p>
+            )}
           </div>
 
           {/* Month */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="month" className="block text-sm font-medium text-gray-700 mb-2">
               월
             </label>
             <select
-              value={month}
-              onChange={(e) => {
-                setMonth(e.target.value);
-                updateDate(year, e.target.value, day);
-              }}
-              className="w-full px-3 py-3 rounded-lg border-2 border-gray-200 focus:border-purple-500 focus:outline-none focus:ring-4 focus:ring-purple-100"
+              id="month"
+              {...register("month", { valueAsNumber: true })}
+              className={`
+                w-full px-3 py-3 rounded-lg border-2 transition-colors
+                ${
+                  errors.month
+                    ? "border-red-500 focus:border-red-600"
+                    : "border-gray-200 focus:border-purple-500"
+                }
+                focus:outline-none focus:ring-4
+                ${errors.month ? "focus:ring-red-100" : "focus:ring-purple-100"}
+              `}
             >
-              <option value="">월</option>
+              <option value={0}>선택</option>
               {months.map((m) => (
                 <option key={m} value={m}>
-                  {m}
+                  {m}월
                 </option>
               ))}
             </select>
+            {errors.month && (
+              <p className="mt-1 text-xs text-red-600">{errors.month.message}</p>
+            )}
           </div>
 
           {/* Day */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="day" className="block text-sm font-medium text-gray-700 mb-2">
               일
             </label>
             <select
-              value={day}
-              onChange={(e) => {
-                setDay(e.target.value);
-                updateDate(year, month, e.target.value);
-              }}
-              className="w-full px-3 py-3 rounded-lg border-2 border-gray-200 focus:border-purple-500 focus:outline-none focus:ring-4 focus:ring-purple-100"
+              id="day"
+              {...register("day", { valueAsNumber: true })}
+              disabled={!selectedYear || !selectedMonth}
+              className={`
+                w-full px-3 py-3 rounded-lg border-2 transition-colors
+                ${
+                  errors.day
+                    ? "border-red-500 focus:border-red-600"
+                    : "border-gray-200 focus:border-purple-500"
+                }
+                focus:outline-none focus:ring-4
+                ${errors.day ? "focus:ring-red-100" : "focus:ring-purple-100"}
+                disabled:opacity-50 disabled:cursor-not-allowed
+              `}
             >
-              <option value="">일</option>
+              <option value={0}>선택</option>
               {days.map((d) => (
                 <option key={d} value={d}>
-                  {d}
+                  {d}일
                 </option>
               ))}
             </select>
+            {errors.day && (
+              <p className="mt-1 text-xs text-red-600">{errors.day.message}</p>
+            )}
           </div>
         </div>
 
-        {/* Hidden Input for validation */}
-        <input type="hidden" {...register("birthDate")} />
-        <input type="hidden" {...register("isLunar")} />
-
-        {errors.birthDate && (
-          <p className="text-sm text-red-600">{errors.birthDate.message}</p>
-        )}
+        {/* Hidden input for calendarType validation */}
+        <input type="hidden" {...register("calendarType")} />
 
         {/* Selected Date Display */}
-        {year && month && day && (
+        {selectedYear > 0 && selectedMonth > 0 && selectedDay > 0 && (
           <div className="p-4 bg-purple-50 rounded-lg border border-purple-200">
-            <p className="text-center text-purple-700 font-medium">
-              {year}년 {month}월 {day}일 ({isLunar ? "음력" : "양력"})
-            </p>
+            <div className="text-center">
+              <p className="text-purple-700 font-semibold text-lg">
+                {selectedYear}년 {selectedMonth}월 {selectedDay}일
+              </p>
+              <p className="text-purple-600 text-sm mt-1">
+                {calendarType === "solar" ? "☀️ 양력" : "🌙 음력"}
+              </p>
+            </div>
           </div>
         )}
 

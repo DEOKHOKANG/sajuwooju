@@ -10,18 +10,22 @@ import { FortuneCategory } from "@/lib/prompts";
 interface ResultHeaderProps {
   name: string;
   category: FortuneCategory;
-  birthDate: string;
+  calendarType: "solar" | "lunar";
+  year: number;
+  month: number;
+  day: number;
   birthTime: string;
-  isLunar: boolean;
   gender: "male" | "female";
 }
 
 export function ResultHeader({
   name,
   category,
-  birthDate,
+  calendarType,
+  year,
+  month,
+  day,
   birthTime,
-  isLunar,
   gender,
 }: ResultHeaderProps) {
   const config = CATEGORY_CONFIG[category];
@@ -49,7 +53,7 @@ export function ResultHeader({
           <div className="flex items-center gap-2">
             <span className="text-sm font-medium">생년월일</span>
             <span className="text-sm">
-              {birthDate} ({isLunar ? "음력" : "양력"})
+              {year}년 {month}월 {day}일 ({calendarType === "solar" ? "☀️ 양력" : "🌙 음력"})
             </span>
           </div>
           <div className="w-1 h-1 bg-gray-300 rounded-full" />

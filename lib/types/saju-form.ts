@@ -13,11 +13,13 @@ export interface SajuFormData {
   gender: "male" | "female";
 
   // Step 3: Birth Date
-  birthDate: string; // YYYY-MM-DD
-  isLunar: boolean;
+  calendarType: "solar" | "lunar";
+  year: number;
+  month: number;
+  day: number;
 
   // Step 4: Birth Time
-  birthTime: string; // HH:MM
+  birthTime: string; // 12지지 time slot (e.g., "23-01" for 자시)
 }
 
 export interface CompatibilityFormData {
@@ -28,18 +30,22 @@ export interface CompatibilityFormData {
   person1: {
     name: string;
     gender: "male" | "female";
-    birthDate: string;
+    calendarType: "solar" | "lunar";
+    year: number;
+    month: number;
+    day: number;
     birthTime: string;
-    isLunar: boolean;
   };
 
   // Step 3: Person 2
   person2: {
     name: string;
     gender: "male" | "female";
-    birthDate: string;
+    calendarType: "solar" | "lunar";
+    year: number;
+    month: number;
+    day: number;
     birthTime: string;
-    isLunar: boolean;
   };
 }
 

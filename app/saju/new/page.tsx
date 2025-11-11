@@ -39,7 +39,7 @@ export default function SajuNewPage() {
     setFormData({ ...formData, ...data });
   };
 
-  const handleBirthDateChange = (data: { birthDate: string; isLunar: boolean }) => {
+  const handleBirthDateChange = (data: { calendarType: "solar" | "lunar"; year: number; month: number; day: number }) => {
     setFormData({ ...formData, ...data });
   };
 
@@ -53,7 +53,9 @@ export default function SajuNewPage() {
       !formData.category ||
       !formData.name ||
       !formData.gender ||
-      !formData.birthDate ||
+      !formData.year ||
+      !formData.month ||
+      !formData.day ||
       !formData.birthTime
     ) {
       alert("모든 정보를 입력해주세요.");
@@ -137,8 +139,13 @@ export default function SajuNewPage() {
             <div className="animate-fadeIn">
               <BirthDateForm
                 value={
-                  formData.birthDate && formData.isLunar !== undefined
-                    ? { birthDate: formData.birthDate, isLunar: formData.isLunar }
+                  formData.calendarType && formData.year && formData.month && formData.day
+                    ? {
+                        calendarType: formData.calendarType,
+                        year: formData.year,
+                        month: formData.month,
+                        day: formData.day
+                      }
                     : null
                 }
                 onChange={handleBirthDateChange}

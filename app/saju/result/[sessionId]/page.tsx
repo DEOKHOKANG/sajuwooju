@@ -89,9 +89,11 @@ export default function ResultPage() {
       <ResultHeader
         name={resultData.name}
         category={resultData.category}
-        birthDate={resultData.birthDate}
+        calendarType={resultData.calendarType}
+        year={resultData.year}
+        month={resultData.month}
+        day={resultData.day}
         birthTime={resultData.birthTime}
-        isLunar={resultData.isLunar}
         gender={resultData.gender}
       />
 

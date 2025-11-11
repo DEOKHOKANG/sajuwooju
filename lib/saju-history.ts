@@ -11,7 +11,10 @@ interface HistoryItem {
   sessionId: string;
   name: string;
   category: string;
-  birthDate: string;
+  year: number;
+  month: number;
+  day: number;
+  calendarType: "solar" | "lunar";
   analyzedAt: string;
 }
 
@@ -31,7 +34,10 @@ export function addToHistory(result: SajuResultData, sessionId: string): void {
     sessionId,
     name: result.name,
     category: result.category,
-    birthDate: result.birthDate,
+    year: result.year,
+    month: result.month,
+    day: result.day,
+    calendarType: result.calendarType,
     analyzedAt: result.analyzedAt,
   };
 
