@@ -6,10 +6,10 @@
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { basicInfoSchema } from "@/lib/validation/saju-schema";
+import { step2Schema } from "@/lib/validation/saju-input";
 import { z } from "zod";
 
-type BasicInfoData = z.infer<typeof basicInfoSchema>;
+type BasicInfoData = z.infer<typeof step2Schema>;
 
 interface BasicInfoFormProps {
   value: BasicInfoData | null;
@@ -24,10 +24,10 @@ export function BasicInfoForm({ value, onChange, onNext }: BasicInfoFormProps) {
     formState: { errors },
     watch,
   } = useForm<BasicInfoData>({
-    resolver: zodResolver(basicInfoSchema),
+    resolver: zodResolver(step2Schema),
     defaultValues: value || {
       name: "",
-      gender: undefined,
+      gender: "male",
     },
   });
 

@@ -63,18 +63,20 @@ export const sajuInputSchema = step1Schema
 
 export type SajuInputFormData = z.infer<typeof sajuInputSchema>;
 
-// 궁합 전용 스키마 (상대방 정보 포함)
-export const compatibilitySchema = sajuInputSchema.extend({
-  partnerName: z
-    .string()
-    .min(2, '상대방 이름은 최소 2자 이상이어야 합니다')
-    .max(20, '상대방 이름은 최대 20자까지 입력 가능합니다'),
-  partnerGender: z.enum(['male', 'female']),
-  partnerCalendarType: z.enum(['solar', 'lunar']),
-  partnerYear: z.number().min(1900).max(new Date().getFullYear()),
-  partnerMonth: z.number().min(1).max(12),
-  partnerDay: z.number().min(1).max(31),
-  partnerBirthHour: z.string().min(1),
-});
+// 궁합 전용 스키마 (상대방 정보 포함) - .merge 사용 (.refine 때문에 .extend 불가)
+export const compatibilitySchema = sajuInputSchema.merge(
+  z.object({
+    partnerName: z
+      .string()
+      .min(2, '상대방 이름은 최소 2자 이상이어야 합니다')
+      .max(20, '상대방 이름은 최대 20자까지 입력 가능합니다'),
+    partnerGender: z.enum(['male', 'female']),
+    partnerCalendarType: z.enum(['solar', 'lunar']),
+    partnerYear: z.number().min(1900).max(new Date().getFullYear()),
+    partnerMonth: z.number().min(1).max(12),
+    partnerDay: z.number().min(1).max(31),
+    partnerBirthHour: z.string().min(1),
+  })
+);
 
 export type CompatibilityFormData = z.infer<typeof compatibilitySchema>;
