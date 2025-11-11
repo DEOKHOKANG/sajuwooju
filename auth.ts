@@ -63,7 +63,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
 
     async jwt({ token, user, account }) {
       // Add user data to JWT token
-      if (user) {
+      if (user && user.id) {
         token.id = user.id;
         token.role = (user as any).role || "user";
         token.isActive = (user as any).isActive ?? true;
