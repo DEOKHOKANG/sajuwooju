@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import { ProfileCard } from "@/components/dashboard/ProfileCard";
 import { QuickActions } from "@/components/dashboard/QuickActions";
 import { TodayFortune } from "@/components/dashboard/TodayFortune";
@@ -15,7 +16,16 @@ import Link from "next/link";
 import { Sparkles } from "lucide-react";
 
 export default function DashboardPage() {
+  const searchParams = useSearchParams();
   const [activeTab, setActiveTab] = useState<'overview' | 'friends' | 'mysaju' | 'social' | 'ranking' | 'notifications'>('overview');
+
+  // URL 쿼리 파라미터로 탭 전환
+  useEffect(() => {
+    const tab = searchParams?.get('tab');
+    if (tab && ['overview', 'friends', 'mysaju', 'social', 'ranking', 'notifications'].includes(tab)) {
+      setActiveTab(tab as typeof activeTab);
+    }
+  }, [searchParams]);
 
   // Hardcoded test user - no auth required during development
   const user = {
