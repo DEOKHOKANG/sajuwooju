@@ -93,7 +93,7 @@ export default function ResultPage() {
         year={resultData.year}
         month={resultData.month}
         day={resultData.day}
-        birthTime={resultData.birthTime}
+        birthHour={resultData.birthHour}
         gender={resultData.gender}
       />
 

@@ -43,7 +43,7 @@ export default function SajuNewPage() {
     setFormData({ ...formData, ...data });
   };
 
-  const handleBirthTimeChange = (data: { birthTime: string }) => {
+  const handleBirthTimeChange = (data: { birthHour: string }) => {
     setFormData({ ...formData, ...data });
   };
 
@@ -56,7 +56,7 @@ export default function SajuNewPage() {
       !formData.year ||
       !formData.month ||
       !formData.day ||
-      !formData.birthTime
+      !formData.birthHour
     ) {
       alert("모든 정보를 입력해주세요.");
       return;
@@ -165,7 +165,7 @@ export default function SajuNewPage() {
           {currentStep === 4 && (
             <div className="animate-fadeIn">
               <BirthTimeForm
-                value={formData.birthTime ? { birthTime: formData.birthTime } : null}
+                value={formData.birthHour ? { birthHour: formData.birthHour } : null}
                 onChange={handleBirthTimeChange}
                 onSubmit={handleFinalSubmit}
               />

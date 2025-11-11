@@ -14,7 +14,7 @@ interface ResultHeaderProps {
   year: number;
   month: number;
   day: number;
-  birthTime: string;
+  birthHour: string;
   gender: "male" | "female";
 }
 
@@ -25,7 +25,7 @@ export function ResultHeader({
   year,
   month,
   day,
-  birthTime,
+  birthHour,
   gender,
 }: ResultHeaderProps) {
   const config = CATEGORY_CONFIG[category];
@@ -59,7 +59,7 @@ export function ResultHeader({
           <div className="w-1 h-1 bg-gray-300 rounded-full" />
           <div className="flex items-center gap-2">
             <span className="text-sm font-medium">출생시간</span>
-            <span className="text-sm">{birthTime}</span>
+            <span className="text-sm">{birthHour}</span>
           </div>
           <div className="w-1 h-1 bg-gray-300 rounded-full" />
           <div className="flex items-center gap-2">

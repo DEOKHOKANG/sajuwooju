@@ -19,7 +19,7 @@ export interface SajuFormData {
   day: number;
 
   // Step 4: Birth Time
-  birthTime: string; // 12지지 time slot (e.g., "23-01" for 자시)
+  birthHour: string; // 12지지 time slot (e.g., "23-01" for 자시)
 }
 
 export interface CompatibilityFormData {
@@ -34,7 +34,7 @@ export interface CompatibilityFormData {
     year: number;
     month: number;
     day: number;
-    birthTime: string;
+    birthHour: string;
   };
 
   // Step 3: Person 2
@@ -45,7 +45,7 @@ export interface CompatibilityFormData {
     year: number;
     month: number;
     day: number;
-    birthTime: string;
+    birthHour: string;
   };
 }
 
