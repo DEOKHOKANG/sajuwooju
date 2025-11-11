@@ -10,6 +10,7 @@ import { useRouter, useParams } from "next/navigation";
 import { ResultHeader } from "@/components/saju/ResultHeader";
 import { ResultContent } from "@/components/saju/ResultContent";
 import { ShareButtons } from "@/components/saju/ShareButtons";
+import { PublicToggle } from "@/components/saju/PublicToggle";
 import { SajuBoard } from "@/components/saju/SajuBoard";
 import { WuXingAnalysis } from "@/components/saju/WuXingAnalysis";
 import { SajuResultData } from "@/lib/types/saju-result";
@@ -163,6 +164,15 @@ export default function ResultPage() {
         className="max-w-4xl mx-auto px-4 pb-12 space-y-4 animate-fade-in-up"
         style={{ animationDelay: "0.8s", animationFillMode: "both" }}
       >
+        {/* Public Toggle */}
+        <PublicToggle
+          sessionId={sessionId}
+          onToggle={(isPublic) => {
+            console.log("Public setting changed:", isPublic);
+            // TODO: 백엔드 API 연동 시 여기서 서버에 저장
+          }}
+        />
+
         {/* Share Buttons */}
         <ShareButtons
           sessionId={sessionId}

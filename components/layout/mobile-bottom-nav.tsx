@@ -2,11 +2,11 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, User, Settings, Menu } from 'lucide-react';
+import { Home, User, Settings, Menu, Trophy } from 'lucide-react';
 
 /**
- * Mobile Bottom Navigation
- * 모바일 하단 네비게이션 (원본 사이트 복제)
+ * Mobile Bottom Navigation (상용화급)
+ * 모바일 하단 네비게이션 - 사주랭킹 추가
  */
 
 export function MobileBottomNav() {
@@ -17,6 +17,11 @@ export function MobileBottomNav() {
       href: '/main',
       label: '홈',
       icon: Home,
+    },
+    {
+      href: '/ranking',
+      label: '랭킹',
+      icon: Trophy,
     },
     {
       href: '/menu',
