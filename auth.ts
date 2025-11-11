@@ -82,8 +82,8 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       }
     },
 
-    async signOut({ session, token }) {
-      console.log(`User signed out: ${token.email}`);
+    async signOut({ token }) {
+      console.log(`User signed out: ${token?.email || 'unknown'}`);
     },
   },
 
