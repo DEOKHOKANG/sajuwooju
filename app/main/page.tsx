@@ -237,10 +237,10 @@ export default function MainPage() {
             </div>
 
             {/* Enhanced subtitle */}
-            <p className="text-base sm:text-lg text-gray-600 max-w-md mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-700 max-w-md mx-auto leading-relaxed font-medium">
               태양계 9개 행성과 음양오행이 만나
               <br />
-              <span className="text-gray-900 font-semibold">당신만의 우주적 운명을 해석</span>합니다
+              <span className="text-gray-900 font-bold">당신만의 우주적 운명을 해석</span>합니다
             </p>
 
             {/* Premium CTA Button */}
@@ -255,9 +255,9 @@ export default function MainPage() {
             </div>
 
             {/* Trust indicators */}
-            <div className="flex items-center justify-center gap-8 pt-6 text-xs sm:text-sm text-gray-500">
+            <div className="flex items-center justify-center gap-8 pt-6 text-xs sm:text-sm text-gray-700 font-medium">
               <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse shadow-lg shadow-green-500/50" />
                 <span>실시간 상담</span>
               </div>
               <div className="flex items-center gap-2">
@@ -265,7 +265,7 @@ export default function MainPage() {
                 <span>평점 4.9/5.0</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="font-semibold text-gray-700">50,000+</span>
+                <span className="font-bold text-gray-900">50,000+</span>
                 <span>이용자</span>
               </div>
             </div>
