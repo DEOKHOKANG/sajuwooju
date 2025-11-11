@@ -1,5 +1,6 @@
 /**
- * 사주 결과 페이지
+ * 사주 결과 페이지 (상용화급)
+ * 부드러운 애니메이션과 에러 바운더리 적용
  */
 
 "use client";
@@ -25,41 +26,49 @@ export default function ResultPage() {
   const [error, setError] = useState<string | null>(null);
   const [sajuGanZhi, setSajuGanZhi] = useState<SajuGanZhi | null>(null);
   const [wuXingAnalysis, setWuXingAnalysis] = useState<WuXingAnalysisType | null>(null);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    try {
-      // LocalStorage에서 결과 데이터 가져오기
-      const dataStr = localStorage.getItem(`${sessionId}-result`);
-      if (!dataStr) {
-        setError("결과를 찾을 수 없습니다.");
-        return;
+    const loadResultData = async () => {
+      try {
+        // LocalStorage에서 결과 데이터 가져오기
+        const dataStr = localStorage.getItem(`${sessionId}-result`);
+        if (!dataStr) {
+          setError("결과를 찾을 수 없습니다.");
+          return;
+        }
+
+        const data: SajuResultData = JSON.parse(dataStr);
+        setResultData(data);
+
+        // 사주 간지 계산
+        const ganZhi = getSajuGanZhi(
+          data.year,
+          data.month,
+          data.day,
+          data.calendarType,
+          data.birthHour
+        );
+
+        if (ganZhi) {
+          setSajuGanZhi(ganZhi);
+          // 오행 분석
+          const analysis = analyzeWuXing(ganZhi);
+          setWuXingAnalysis(analysis);
+        }
+
+        // 히스토리에 추가
+        addToHistory(data, sessionId);
+
+        // 부드러운 fade-in 애니메이션
+        setTimeout(() => setIsVisible(true), 100);
+      } catch (err) {
+        console.error("Failed to load result:", err);
+        setError(err instanceof Error ? err.message : "결과를 불러오는 중 오류가 발생했습니다.");
       }
+    };
 
-      const data: SajuResultData = JSON.parse(dataStr);
-      setResultData(data);
-
-      // 사주 간지 계산
-      const ganZhi = getSajuGanZhi(
-        data.year,
-        data.month,
-        data.day,
-        data.calendarType,
-        data.birthHour
-      );
-
-      if (ganZhi) {
-        setSajuGanZhi(ganZhi);
-        // 오행 분석
-        const analysis = analyzeWuXing(ganZhi);
-        setWuXingAnalysis(analysis);
-      }
-
-      // 히스토리에 추가
-      addToHistory(data, sessionId);
-    } catch (err) {
-      console.error("Failed to load result:", err);
-      setError("결과를 불러오는 중 오류가 발생했습니다.");
-    }
+    loadResultData();
   }, [sessionId]);
 
   if (error) {
@@ -98,40 +107,62 @@ export default function ResultPage() {
 
   if (!resultData) {
     return (
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-purple-500" />
+      <div className="flex items-center justify-center min-h-screen bg-gradient-to-b from-white via-purple-50 to-pink-50">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-purple-500 mx-auto mb-4" />
+          <p className="text-gray-600 font-medium">결과를 불러오는 중...</p>
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-purple-50 to-pink-50">
+    <div
+      className={`min-h-screen bg-gradient-to-b from-white via-purple-50 to-pink-50 transition-opacity duration-700 ${
+        isVisible ? "opacity-100" : "opacity-0"
+      }`}
+    >
       {/* Header */}
-      <ResultHeader
-        name={resultData.name}
-        category={resultData.category}
-        calendarType={resultData.calendarType}
-        year={resultData.year}
-        month={resultData.month}
-        day={resultData.day}
-        birthHour={resultData.birthHour}
-        gender={resultData.gender}
-      />
-
-      {/* Main Content Container */}
-      <div className="max-w-6xl mx-auto px-4 py-12">
-        {/* Saju Board (Four Pillars) */}
-        {sajuGanZhi && <SajuBoard ganZhi={sajuGanZhi} />}
-
-        {/* WuXing Analysis (Five Elements) */}
-        {wuXingAnalysis && <WuXingAnalysis analysis={wuXingAnalysis} />}
-
-        {/* AI Result Content */}
-        <ResultContent result={resultData.result} />
+      <div className="animate-fade-in-down">
+        <ResultHeader
+          name={resultData.name}
+          category={resultData.category}
+          calendarType={resultData.calendarType}
+          year={resultData.year}
+          month={resultData.month}
+          day={resultData.day}
+          birthHour={resultData.birthHour}
+          gender={resultData.gender}
+        />
       </div>
 
-      {/* Action Buttons */}
-      <div className="max-w-4xl mx-auto px-4 pb-12 space-y-4">
+      {/* Main Content Container */}
+      <div className="max-w-6xl mx-auto px-4 py-12 space-y-12">
+        {/* Saju Board (Four Pillars) - 순차적 애니메이션 */}
+        {sajuGanZhi && (
+          <div className="animate-fade-in-up" style={{ animationDelay: "0.2s", animationFillMode: "both" }}>
+            <SajuBoard ganZhi={sajuGanZhi} />
+          </div>
+        )}
+
+        {/* WuXing Analysis (Five Elements) - 순차적 애니메이션 */}
+        {wuXingAnalysis && (
+          <div className="animate-fade-in-up" style={{ animationDelay: "0.4s", animationFillMode: "both" }}>
+            <WuXingAnalysis analysis={wuXingAnalysis} />
+          </div>
+        )}
+
+        {/* AI Result Content - 순차적 애니메이션 */}
+        <div className="animate-fade-in-up" style={{ animationDelay: "0.6s", animationFillMode: "both" }}>
+          <ResultContent result={resultData.result} />
+        </div>
+      </div>
+
+      {/* Action Buttons - 순차적 애니메이션 */}
+      <div
+        className="max-w-4xl mx-auto px-4 pb-12 space-y-4 animate-fade-in-up"
+        style={{ animationDelay: "0.8s", animationFillMode: "both" }}
+      >
         {/* Share Buttons */}
         <ShareButtons
           sessionId={sessionId}
@@ -142,7 +173,7 @@ export default function ResultPage() {
         {/* New Analysis Button */}
         <button
           onClick={() => router.push("/saju/new")}
-          className="w-full py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-lg hover:shadow-xl"
+          className="w-full py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98]"
         >
           ✨ 새로운 분석 시작
         </button>
