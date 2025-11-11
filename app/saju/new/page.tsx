@@ -88,7 +88,7 @@ export default function SajuNewPage() {
         </div>
 
         {/* Progress Stepper */}
-        <ProgressStepper currentStep={currentStep} totalSteps={4} />
+        <ProgressStepper currentStep={currentStep} />
 
         {/* Form Steps */}
         <div className="mt-12">
