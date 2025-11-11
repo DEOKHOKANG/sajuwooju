@@ -8,12 +8,14 @@ import { RecentAnalysis } from "@/components/dashboard/RecentAnalysis";
 import { Friends } from "@/components/dashboard/Friends";
 import { MySaju } from "@/components/dashboard/MySaju";
 import { FriendsSaju } from "@/components/dashboard/FriendsSaju";
+import { SajuRanking } from "@/components/dashboard/SajuRanking";
+import { Notifications } from "@/components/dashboard/Notifications";
 import { SAJU_SERVICES } from "@/lib/services-data";
 import Link from "next/link";
 import { Sparkles } from "lucide-react";
 
 export default function DashboardPage() {
-  const [activeTab, setActiveTab] = useState<'overview' | 'friends' | 'mysaju' | 'social'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'friends' | 'mysaju' | 'social' | 'ranking' | 'notifications'>('overview');
 
   // Hardcoded test user - no auth required during development
   const user = {
@@ -90,6 +92,26 @@ export default function DashboardPage() {
           >
             🤝 친구 관리
           </button>
+          <button
+            onClick={() => setActiveTab('ranking')}
+            className={`px-4 py-2 rounded-lg font-medium transition-all whitespace-nowrap ${
+              activeTab === 'ranking'
+                ? 'bg-gradient-to-r from-violet-500 to-purple-500 text-white'
+                : 'text-slate-600 hover:bg-slate-100'
+            }`}
+          >
+            🏆 랭킹
+          </button>
+          <button
+            onClick={() => setActiveTab('notifications')}
+            className={`px-4 py-2 rounded-lg font-medium transition-all whitespace-nowrap ${
+              activeTab === 'notifications'
+                ? 'bg-gradient-to-r from-violet-500 to-purple-500 text-white'
+                : 'text-slate-600 hover:bg-slate-100'
+            }`}
+          >
+            🔔 알림
+          </button>
         </div>
       </div>
 
@@ -138,6 +160,20 @@ export default function DashboardPage() {
         {activeTab === 'friends' && (
           <section className="">
             <Friends />
+          </section>
+        )}
+
+        {/* Ranking Tab */}
+        {activeTab === 'ranking' && (
+          <section className="">
+            <SajuRanking />
+          </section>
+        )}
+
+        {/* Notifications Tab */}
+        {activeTab === 'notifications' && (
+          <section className="">
+            <Notifications />
           </section>
         )}
 
