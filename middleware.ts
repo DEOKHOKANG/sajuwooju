@@ -1,12 +1,17 @@
 /**
  * Next.js Middleware
  * Authentication and Route Protection (Edge-compatible)
+ * DISABLED FOR TESTING - Dashboard accessible without auth
  */
 
-import NextAuth from "next-auth";
-import { authConfig } from "@/auth.config";
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
 
-export default NextAuth(authConfig).auth;
+// Middleware disabled - allow all routes for testing
+export function middleware(request: NextRequest) {
+  // Allow all requests during testing phase
+  return NextResponse.next();
+}
 
 export const config = {
   matcher: [
