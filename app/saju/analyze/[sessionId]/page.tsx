@@ -1,20 +1,23 @@
 /**
- * 사주 분석 페이지 (로딩 → 결과)
+ * 사주 분석 페이지 (상용화급)
+ * 로딩 애니메이션 → AI 분석 → 결과 페이지
  */
 
 "use client";
 
 import { useEffect, useState } from "react";
 import { useRouter, useParams } from "next/navigation";
-import { LoadingAnimation } from "@/components/saju/LoadingAnimation";
+import { AnalysisLoading } from "@/components/saju/AnalysisLoading";
+import { getSajuGanZhi, formatSajuString } from "@/lib/lunar-calendar";
 
 export default function AnalyzePage() {
   const router = useRouter();
   const params = useParams();
   const sessionId = params.sessionId as string;
 
-  const [isAnalyzing, setIsAnalyzing] = useState(true);
+  const [progress, setProgress] = useState(0);
   const [error, setError] = useState<string | null>(null);
+  const [userName, setUserName] = useState<string>("");
 
   useEffect(() => {
     const analyzeSaju = async () => {
@@ -27,6 +30,29 @@ export default function AnalyzePage() {
         }
 
         const formData = JSON.parse(formDataStr);
+        setUserName(formData.name);
+
+        // 프로그레스 시뮬레이션 시작 (0% → 20%)
+        setProgress(10);
+
+        // 사주 간지 계산
+        const ganZhi = getSajuGanZhi(
+          formData.year,
+          formData.month,
+          formData.day,
+          formData.calendarType,
+          formData.birthHour
+        );
+
+        if (!ganZhi) {
+          setError("사주 계산 중 오류가 발생했습니다.");
+          return;
+        }
+
+        const sajuString = formatSajuString(ganZhi);
+
+        // 프로그레스 업데이트 (20% → 40%)
+        setProgress(30);
 
         // OpenAI API 호출
         const response = await fetch("/api/saju/analyze", {
@@ -36,15 +62,20 @@ export default function AnalyzePage() {
           },
           body: JSON.stringify({
             category: formData.category,
-            input: {
-              name: formData.name,
-              gender: formData.gender,
-              birthDate: formData.birthDate,
-              birthTime: formData.birthTime,
-              isLunar: formData.isLunar,
-            },
+            name: formData.name,
+            gender: formData.gender,
+            calendarType: formData.calendarType,
+            year: formData.year,
+            month: formData.month,
+            day: formData.day,
+            birthHour: formData.birthHour,
+            sajuGanZhi: ganZhi,
+            sajuString: sajuString,
           }),
         });
+
+        // 프로그레스 업데이트 (40% → 70%)
+        setProgress(60);
 
         if (!response.ok) {
           const errorData = await response.json();
@@ -52,6 +83,9 @@ export default function AnalyzePage() {
         }
 
         const result = await response.json();
+
+        // 프로그레스 업데이트 (70% → 90%)
+        setProgress(85);
 
         // 결과를 LocalStorage에 저장
         const resultData = {
@@ -63,15 +97,16 @@ export default function AnalyzePage() {
 
         localStorage.setItem(`${sessionId}-result`, JSON.stringify(resultData));
 
-        // 최소 2초 로딩 애니메이션 표시
+        // 프로그레스 완료 (90% → 100%)
+        setProgress(100);
+
+        // 잠시 대기 후 결과 페이지로 이동
         setTimeout(() => {
-          setIsAnalyzing(false);
           router.push(`/saju/result/${sessionId}`);
-        }, 2000);
+        }, 1000);
       } catch (err) {
         console.error("Analysis error:", err);
         setError(err instanceof Error ? err.message : "알 수 없는 오류가 발생했습니다.");
-        setIsAnalyzing(false);
       }
     };
 
@@ -112,8 +147,15 @@ export default function AnalyzePage() {
     );
   }
 
-  if (isAnalyzing) {
-    return <LoadingAnimation />;
+  // 분석 중일 때 로딩 애니메이션 표시
+  if (!error) {
+    return (
+      <AnalysisLoading
+        progress={progress}
+        estimatedTime={30}
+        userName={userName}
+      />
+    );
   }
 
   return null;

@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { AnalysisLoading } from '@/components/saju/AnalysisLoading';
 import { SajuLoader, SimpleSajuLoader } from '@/components/SajuLoader';
 
 /**
@@ -10,6 +11,30 @@ import { SajuLoader, SimpleSajuLoader } from '@/components/SajuLoader';
 export default function LoadingTestPage() {
   const [isLoading3D, setIsLoading3D] = useState(false);
   const [isLoadingSimple, setIsLoadingSimple] = useState(false);
+  const [isLoadingNew, setIsLoadingNew] = useState(false);
+  const [progress, setProgress] = useState(0);
+
+  // 새 로딩 애니메이션 프로그레스 시뮬레이션
+  useEffect(() => {
+    if (!isLoadingNew) return;
+
+    const interval = setInterval(() => {
+      setProgress((prev) => {
+        if (prev >= 100) {
+          clearInterval(interval);
+          setTimeout(() => {
+            setIsLoadingNew(false);
+            setProgress(0);
+            alert('새 로딩 애니메이션 완료!');
+          }, 500);
+          return 100;
+        }
+        return prev + 2;
+      });
+    }, 300);
+
+    return () => clearInterval(interval);
+  }, [isLoadingNew]);
 
   const handleStart3D = () => {
     setIsLoading3D(true);
@@ -29,8 +54,22 @@ export default function LoadingTestPage() {
     alert('간단한 로딩 완료!');
   };
 
+  const handleStartNew = () => {
+    setIsLoadingNew(true);
+    setProgress(0);
+  };
+
   return (
     <div className="min-h-screen bg-space-black">
+      {/* New Analysis Loading */}
+      {isLoadingNew && (
+        <AnalysisLoading
+          progress={progress}
+          estimatedTime={30}
+          userName="홍길동"
+        />
+      )}
+
       {/* 3D Loader */}
       {isLoading3D && (
         <SajuLoader
@@ -56,7 +95,36 @@ export default function LoadingTestPage() {
             로딩 애니메이션 테스트
           </h1>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* New Analysis Loading Test */}
+            <div className="glass rounded-2xl p-8">
+              <div className="mb-6">
+                <span className="text-6xl mb-4 block">🪐</span>
+                <h2 className="font-display text-2xl font-semibold text-text-primary mb-2">
+                  사주 분석 로딩 (NEW)
+                </h2>
+                <p className="text-text-secondary text-sm mb-4">
+                  프로덕션급 사주 분석 로딩 화면
+                </p>
+              </div>
+
+              <ul className="text-sm text-text-tertiary mb-6 space-y-2">
+                <li>✓ 행성 공전 애니메이션</li>
+                <li>✓ 8개 순환 메시지</li>
+                <li>✓ 우주 테마 프로그레스</li>
+                <li>✓ 별 배경 (50개)</li>
+                <li>✓ 약 15초 소요</li>
+              </ul>
+
+              <button
+                onClick={handleStartNew}
+                disabled={isLoadingNew}
+                className="w-full px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-display font-semibold text-lg rounded-xl hover:scale-105 hover:shadow-glow transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                NEW 로딩 시작
+              </button>
+            </div>
+
             {/* 3D Loader Test */}
             <div className="glass rounded-2xl p-8">
               <div className="mb-6">

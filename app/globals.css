@@ -148,6 +148,16 @@
     }
   }
 
+  /* 행성 공전 (간단 버전 - 로딩 페이지용) */
+  @keyframes orbit-simple {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
   /* 성운 펄스 */
   @keyframes nebula-pulse {
     0%, 100% {

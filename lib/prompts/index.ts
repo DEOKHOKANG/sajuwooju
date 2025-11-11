@@ -205,3 +205,70 @@ export const PROMPT_GENERATORS = {
   yearly: generateYearlyFortunePrompt,
   comprehensive: generateComprehensivePrompt,
 };
+
+/**
+ * 카테고리에 맞는 프롬프트 생성 (상용화급)
+ */
+export function getFortunePrompt(category: FortuneCategory, input: any): string {
+  const {
+    name,
+    gender,
+    calendarType,
+    year,
+    month,
+    day,
+    birthHour,
+    sajuString,
+  } = input;
+
+  const basePrompt = `
+당신은 30년 경력의 전문 사주명리학자입니다.
+다음 사용자의 사주를 분석하여 ${getCategoryName(category)} 결과를 제공해주세요.
+
+## 사용자 정보
+- 이름: ${name}
+- 성별: ${gender === "male" ? "남성" : "여성"}
+- 생년월일: ${year}년 ${month}월 ${day}일 (${calendarType === "solar" ? "양력" : "음력"})
+- 출생시간: ${birthHour}
+
+## 사주팔자
+${sajuString}
+
+## 분석 요청사항
+${getCategoryInstructions(category)}
+
+분석 결과는 마크다운 형식으로 작성하되, 다음 구조를 따라주세요:
+1. 전반적인 운세 요약
+2. 구체적인 분석 (3-4개 항목)
+3. 주의사항 및 조언
+4. 행운의 방법
+
+전문적이면서도 따뜻하고 희망적인 톤으로 작성해주세요.
+`;
+
+  return basePrompt;
+}
+
+function getCategoryName(category: FortuneCategory): string {
+  const names: { [key: string]: string } = {
+    love: "연애운",
+    wealth: "재물운",
+    career: "직업운",
+    compatibility: "궁합",
+    yearly: "연운",
+    comprehensive: "종합운세",
+  };
+  return names[category] || "사주 분석";
+}
+
+function getCategoryInstructions(category: FortuneCategory): string {
+  const instructions: { [key: string]: string } = {
+    love: "연애운과 관련하여 만남의 가능성, 연애 운의 흐름, 이상형, 주의사항을 분석해주세요.",
+    wealth: "재물운과 관련하여 수입의 흐름, 투자 운, 재테크 방법, 주의사항을 분석해주세요.",
+    career: "직업운과 관련하여 커리어 발전, 이직 시기, 적성, 성공 방법을 분석해주세요.",
+    compatibility: "궁합과 관련하여 상대방과의 조화, 장단점, 관계 발전 방향을 분석해주세요.",
+    yearly: "올해의 운세와 관련하여 월별 흐름, 중요한 시기, 기회와 위험 요소를 분석해주세요.",
+    comprehensive: "종합운세와 관련하여 전반적인 기질, 강점과 약점, 인생 방향, 성공 전략을 분석해주세요.",
+  };
+  return instructions[category] || "사주를 종합적으로 분석해주세요.";
+}

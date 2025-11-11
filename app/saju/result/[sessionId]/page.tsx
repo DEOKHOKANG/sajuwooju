@@ -9,9 +9,12 @@ import { useRouter, useParams } from "next/navigation";
 import { ResultHeader } from "@/components/saju/ResultHeader";
 import { ResultContent } from "@/components/saju/ResultContent";
 import { ShareButtons } from "@/components/saju/ShareButtons";
+import { SajuBoard } from "@/components/saju/SajuBoard";
+import { WuXingAnalysis } from "@/components/saju/WuXingAnalysis";
 import { SajuResultData } from "@/lib/types/saju-result";
 import { CATEGORY_CONFIG } from "@/lib/types/saju-result";
 import { addToHistory } from "@/lib/saju-history";
+import { getSajuGanZhi, analyzeWuXing, SajuGanZhi, WuXingAnalysis as WuXingAnalysisType } from "@/lib/lunar-calendar";
 
 export default function ResultPage() {
   const router = useRouter();
@@ -20,6 +23,8 @@ export default function ResultPage() {
 
   const [resultData, setResultData] = useState<SajuResultData | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [sajuGanZhi, setSajuGanZhi] = useState<SajuGanZhi | null>(null);
+  const [wuXingAnalysis, setWuXingAnalysis] = useState<WuXingAnalysisType | null>(null);
 
   useEffect(() => {
     try {
@@ -32,6 +37,22 @@ export default function ResultPage() {
 
       const data: SajuResultData = JSON.parse(dataStr);
       setResultData(data);
+
+      // 사주 간지 계산
+      const ganZhi = getSajuGanZhi(
+        data.year,
+        data.month,
+        data.day,
+        data.calendarType,
+        data.birthHour
+      );
+
+      if (ganZhi) {
+        setSajuGanZhi(ganZhi);
+        // 오행 분석
+        const analysis = analyzeWuXing(ganZhi);
+        setWuXingAnalysis(analysis);
+      }
 
       // 히스토리에 추가
       addToHistory(data, sessionId);
@@ -97,8 +118,17 @@ export default function ResultPage() {
         gender={resultData.gender}
       />
 
-      {/* Content */}
-      <ResultContent result={resultData.result} />
+      {/* Main Content Container */}
+      <div className="max-w-6xl mx-auto px-4 py-12">
+        {/* Saju Board (Four Pillars) */}
+        {sajuGanZhi && <SajuBoard ganZhi={sajuGanZhi} />}
+
+        {/* WuXing Analysis (Five Elements) */}
+        {wuXingAnalysis && <WuXingAnalysis analysis={wuXingAnalysis} />}
+
+        {/* AI Result Content */}
+        <ResultContent result={resultData.result} />
+      </div>
 
       {/* Action Buttons */}
       <div className="max-w-4xl mx-auto px-4 pb-12 space-y-4">
