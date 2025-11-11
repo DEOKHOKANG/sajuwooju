@@ -58,9 +58,15 @@ export function CosmicLanding() {
     setIsMounted(true);
   }, []);
 
-  // Cleanup timer on unmount
+  // Auto-redirect to /main after 3 seconds if user doesn't click
   useEffect(() => {
+    const autoRedirectTimer = setTimeout(() => {
+      console.log('⏱️ Auto-redirecting to /main after 3 seconds');
+      window.location.href = '/main';
+    }, 3000);
+
     return () => {
+      clearTimeout(autoRedirectTimer);
       if (fallbackTimerRef.current) {
         clearTimeout(fallbackTimerRef.current);
       }
