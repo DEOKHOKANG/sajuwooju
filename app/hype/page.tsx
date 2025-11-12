@@ -557,34 +557,34 @@ export default function HypePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-pink-50 pb-24">
       {/* Header */}
-      <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-6 sm:py-8 px-4 sticky top-0 z-30 shadow-xl">
+      <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-4 sm:py-6 md:py-8 px-3 sm:px-4 sticky top-0 z-30 shadow-xl">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center justify-between mb-3">
-            {/* Back Button */}
+          <div className="flex items-center justify-between mb-2 sm:mb-3">
+            {/* Back Button - 모바일 최적화 */}
             <button
               onClick={() => window.history.back()}
-              className="flex items-center justify-center min-h-[44px] min-w-[44px] hover:bg-white/20 rounded-lg transition-colors active:scale-95"
+              className="flex items-center justify-center min-h-[44px] min-w-[44px] hover:bg-white/20 rounded-lg transition-colors active:scale-95 -ml-2"
             >
-              <ArrowLeft className="w-6 h-6 sm:w-7 sm:h-7" />
+              <ArrowLeft className="w-5 h-5 sm:w-6 sm:h-6" />
             </button>
 
             {/* Title */}
-            <div className="flex items-center gap-3">
-              <TrendingUp className="w-8 h-8 sm:w-10 sm:h-10" />
-              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">HYPE</h1>
+            <div className="flex items-center gap-2 sm:gap-3">
+              <TrendingUp className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10" />
+              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">HYPE</h1>
             </div>
 
             {/* Spacer for alignment */}
             <div className="min-w-[44px]"></div>
           </div>
 
-          <p className="text-center text-purple-100 text-xs sm:text-sm md:text-base mb-3">
+          <p className="text-center text-purple-100 text-xs sm:text-sm md:text-base mb-2 sm:mb-3 px-2">
             사주우주 예측이 현실이 된 생생한 경험담
           </p>
 
           {/* Daily limit indicator */}
-          <div className="flex items-center justify-center gap-2 text-xs sm:text-sm">
-            <Zap className="w-4 h-4" />
+          <div className="flex items-center justify-center gap-1.5 sm:gap-2 text-xs sm:text-sm">
+            <Zap className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
             <span>오늘의 HYPE: {dailyLimit.hypeCount} / {dailyLimit.maxHype}</span>
           </div>
         </div>

@@ -486,24 +486,24 @@ export default function MatchPage() {
       <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-4 sm:py-6 md:py-8 px-3 sm:px-4 shadow-lg">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center justify-between mb-2 sm:mb-3">
-            <div className="flex items-center gap-1.5 sm:gap-2">
+            <div className="flex items-center gap-1 sm:gap-1.5">
               {selectedCategory ? (
                 <button
                   onClick={handleBackToCategory}
-                  className="mr-1 sm:mr-2 active:scale-95 min-h-[44px] min-w-[44px] flex items-center justify-center -ml-2"
+                  className="mr-0.5 sm:mr-1 active:scale-95 min-h-[44px] min-w-[44px] flex items-center justify-center -ml-2 hover:bg-white/20 rounded-lg transition-colors"
                 >
                   <ArrowLeft className="w-5 h-5 sm:w-6 sm:h-6" />
                 </button>
               ) : (
                 <button
                   onClick={() => window.history.back()}
-                  className="mr-1 sm:mr-2 active:scale-95 min-h-[44px] min-w-[44px] flex items-center justify-center -ml-2"
+                  className="mr-0.5 sm:mr-1 active:scale-95 min-h-[44px] min-w-[44px] flex items-center justify-center -ml-2 hover:bg-white/20 rounded-lg transition-colors"
                 >
                   <ArrowLeft className="w-5 h-5 sm:w-6 sm:h-6" />
                 </button>
               )}
-              <Heart className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />
-              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">MATCH</h1>
+              <Heart className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
+              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">MATCH</h1>
             </div>
             {!selectedCategory && matchHistory.length > 0 && (
               <button
