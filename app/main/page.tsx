@@ -14,6 +14,11 @@ import Link from "next/link";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { useMemo, useState, useEffect } from "react";
 
+// 커머스 스타일 컴포넌트들
+import { HotDealCountdown } from "@/components/home/HotDealCountdown";
+import { BestsellerUrgent } from "@/components/home/BestsellerUrgent";
+import { PurchaseToast } from "@/components/home/PurchaseToast";
+
 // Rebranded Category to Planet mapping with enhanced data
 const CATEGORY_PLANETS = [
   {
@@ -113,6 +118,15 @@ const CATEGORY_PLANETS = [
     description: "이름의 의미",
     gradient: "from-slate-400 to-gray-500"
   },
+  {
+    id: 12,
+    name: "꿈 해몽",
+    planet: "해왕성",
+    icon: "💭",
+    element: "水",
+    description: "꿈의 메시지",
+    gradient: "from-purple-400 to-indigo-500"
+  },
 ];
 
 /**
@@ -147,6 +161,15 @@ export default function MainPage() {
   const [products, setProducts] = useState(FEATURED_PRODUCTS_WOOJU);
   const [isLoadingProducts, setIsLoadingProducts] = useState(false);
 
+  // State for BirthDateQuickModal
+  const [showBirthDateModal, setShowBirthDateModal] = useState(false);
+
+  // Handler for birth date submission
+  const handleBirthDateComplete = (birthDate: string, calendarType: "solar" | "lunar") => {
+    console.log("Birth date submitted:", birthDate, calendarType);
+    // Could trigger personalized recommendations refresh here
+  };
+
   useEffect(() => {
     async function fetchProducts() {
       try {
@@ -180,192 +203,31 @@ export default function MainPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-purple-50/30 to-white">
+    <div className="min-h-screen bg-white">
       <MobileHeader />
 
-      <main className="mx-auto w-full max-w-[600px] px-4 sm:px-6 lg:px-8 pb-20 sm:pb-24">
+      <main className="mx-auto w-full max-w-[600px] px-3 sm:px-4 lg:px-8 pb-20 sm:pb-24">
 
-        {/* Premium Hero Section */}
-        <section
-          ref={heroSection.ref as any}
-          className={`relative py-12 sm:py-16 md:py-20 overflow-hidden fade-in ${heroSection.isVisible ? 'visible' : ''}`}
-        >
-          {/* Animated Background Elements */}
-          <div className="absolute inset-0 pointer-events-none overflow-hidden">
-            {/* Floating orbs */}
-            <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-star-gold/20 to-transparent rounded-full blur-2xl animate-float" />
-            <div className="absolute top-40 right-10 w-40 h-40 bg-gradient-to-br from-cosmic-purple/20 to-transparent rounded-full blur-2xl animate-float-delayed" />
-            <div className="absolute bottom-20 left-20 w-36 h-36 bg-gradient-to-br from-nebula-pink/20 to-transparent rounded-full blur-2xl animate-float-slow" />
-
-            {/* 50 Animated Stars - Random positions and sizes */}
-            {stars.map((star) => (
-              <div
-                key={star.id}
-                className={`absolute ${star.color} animate-twinkle`}
-                style={{
-                  top: `${star.top}%`,
-                  left: `${star.left}%`,
-                  width: `${star.size}px`,
-                  height: `${star.size}px`,
-                  animationDelay: `${star.delay}s`,
-                }}
-              >
-                <div className="w-full h-full rounded-full bg-current blur-[0.5px]" style={{
-                  boxShadow: `0 0 ${star.size * 2}px currentColor`
-                }} />
-              </div>
-            ))}
-          </div>
-
-          <div className="relative z-10 text-center space-y-6 sm:space-y-8">
-            {/* Main Heading with enhanced typography */}
-            <div className="space-y-2">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-star-gold/10 via-cosmic-purple/10 to-nebula-pink/10 rounded-full border border-star-gold/20 backdrop-blur-sm mb-4">
-                <Sparkles className="w-4 h-4 text-star-gold" />
-                <span className="text-xs sm:text-sm font-medium bg-gradient-to-r from-star-gold via-cosmic-purple to-nebula-pink bg-clip-text text-transparent">
-                  AI 기반 정밀 사주 분석
-                </span>
-              </div>
-
-              <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
-                우주의 법칙으로 읽는
-                <br />
-                <span className="bg-gradient-to-r from-star-gold via-cosmic-purple to-nebula-pink bg-clip-text text-transparent animate-glow-pulse inline-block transform hover:scale-105 transition-transform duration-300">
-                  나의 운명
-                </span>
-              </h1>
-            </div>
-
-            {/* Enhanced subtitle */}
-            <p className="text-base sm:text-lg text-gray-700 max-w-md mx-auto leading-relaxed font-medium">
-              태양계 9개 행성과 음양오행이 만나
-              <br />
-              <span className="text-gray-900 font-bold">당신만의 우주적 운명을 해석</span>합니다
-            </p>
-
-            {/* Premium CTA Button */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-              <button className="group relative bg-gradient-to-r from-star-gold via-amber-500 to-star-gold bg-size-200 bg-pos-0 hover:bg-pos-100 text-space-black px-8 sm:px-10 py-4 sm:py-5 rounded-full font-bold text-sm sm:text-base shadow-[0_0_30px_rgba(255,215,0,0.3)] hover:shadow-[0_0_40px_rgba(255,215,0,0.6)] hover:scale-105 transition-all duration-500 overflow-hidden">
-                <span className="relative z-10 flex items-center gap-3">
-                  <Zap className="w-5 h-5" />
-                  <span>내 운명 탐험하기</span>
-                </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
-              </button>
-            </div>
-
-            {/* Trust indicators */}
-            <div className="flex items-center justify-center gap-8 pt-6 text-xs sm:text-sm text-gray-700 font-medium">
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse shadow-lg shadow-green-500/50" />
-                <span>실시간 상담</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Star className="w-4 h-4 text-star-gold fill-star-gold" />
-                <span>평점 4.9/5.0</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="font-bold text-gray-900">50,000+</span>
-                <span>이용자</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Scroll Indicator */}
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 animate-bounce">
-            <div className="w-6 h-10 border-2 border-star-gold/30 rounded-full flex items-start justify-center p-2">
-              <div className="w-1 h-2 bg-star-gold rounded-full animate-scroll-down" />
-            </div>
-          </div>
-        </section>
-
-        {/* Premium Slider Section */}
-        <section className="py-6 sm:py-8">
+        {/* 📸 프리미엄 롤링 배너 - 최상단 */}
+        <section className="pt-12 pb-5 sm:pt-16 sm:pb-6">
           <HeroSlider slides={IMAGE_MAP.hero} autoPlayInterval={4000} pauseOnHover={true} />
         </section>
 
-        {/* Services Section - 6 Saju Categories */}
-        <section
-          ref={servicesSection.ref as any}
-          className={`py-8 sm:py-12 fade-in ${servicesSection.isVisible ? 'visible' : ''}`}
-        >
-          <div className="text-center mb-8 sm:mb-10">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-star-gold/10 to-amber-100/50 rounded-full border border-star-gold/30 mb-4">
-              <Sparkles className="w-4 h-4 text-star-gold" />
-              <span className="text-sm font-medium text-gray-700">AI 기반 사주 서비스</span>
-            </div>
-            <h2 className="font-display text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
-              나만의 운세 분석
-            </h2>
-            <p className="text-sm sm:text-base text-gray-600">
-              6가지 분야의 전문적인 사주 해석
-            </p>
-          </div>
-
-          {/* Services Grid - 6 cards in 2x3 grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6">
-            {SAJU_SERVICES.map((service, index) => (
-              <Link key={service.id} href={service.href}>
-                <div
-                  className={`group relative rounded-2xl sm:rounded-3xl p-6 sm:p-8 cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden ${servicesSection.isVisible ? 'stagger-item' : ''}`}
-                  style={servicesSection.isVisible ? { animationDelay: `${index * 50}ms` } : {}}
-                >
-                  {/* Gradient background */}
-                  <div className="absolute inset-0 bg-gradient-to-br opacity-90 group-hover:opacity-100 transition-opacity duration-500"
-                    style={{
-                      backgroundImage: `linear-gradient(135deg, ${service.bgColor}dd, ${service.bgColor}88)`
-                    }}
-                  />
-
-                  {/* Shine effect on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-
-                  {/* Glow effect */}
-                  <div
-                    className="absolute -inset-1 rounded-2xl sm:rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl -z-10"
-                    style={{ background: service.bgColor }}
-                  />
-
-                  {/* Content */}
-                  <div className="relative z-10 text-center space-y-3">
-                    {/* Icon */}
-                    <div className="text-4xl sm:text-5xl transform group-hover:scale-110 transition-transform duration-500">
-                      {service.icon}
-                    </div>
-
-                    {/* Element badge */}
-                    <div className="inline-flex items-center justify-center w-8 h-8 bg-white/90 rounded-full text-xs font-bold shadow-md"
-                      style={{ color: service.bgColor }}
-                    >
-                      {service.element}
-                    </div>
-
-                    {/* Service name */}
-                    <div className="font-bold text-lg sm:text-xl text-white drop-shadow-lg">
-                      {service.name}
-                    </div>
-
-                    {/* Description */}
-                    <p className="text-xs sm:text-sm text-white/90 leading-relaxed">
-                      {service.description}
-                    </p>
-
-                    {/* Arrow icon */}
-                    <div className="flex items-center justify-center pt-2">
-                      <div className="w-6 h-6 flex items-center justify-center rounded-full bg-white/20 group-hover:bg-white/30 transition-colors duration-300">
-                        <svg className="w-3 h-3 text-white transform group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
+        {/* 🔥 긴급 핫딜 카운트다운 */}
+        <section className="pb-4 sm:pb-6">
+          <HotDealCountdown
+            title="연애운 프리미엄 사주"
+            originalPrice={29000}
+            discountPrice={9900}
+            discountRate={66}
+            productId={1}
+          />
         </section>
 
-        {/* Redesigned Categories Section */}
+        {/* 🏆 베스트셀러 긴급 구매 유도 */}
+        <BestsellerUrgent />
+
+        {/* 전문 상담 카테고리 섹션 */}
         <section
           ref={categorySection.ref as any}
           className={`py-8 sm:py-12 fade-in ${categorySection.isVisible ? 'visible' : ''}`}
@@ -373,18 +235,18 @@ export default function MainPage() {
           <div className="text-center mb-8 sm:mb-10">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-cosmic-purple/10 to-nebula-pink/10 rounded-full border border-cosmic-purple/20 mb-4">
               <Star className="w-4 h-4 text-cosmic-purple" />
-              <span className="text-sm font-medium text-gray-700">행성별 전문 상담</span>
+              <span className="text-sm font-medium text-gray-700">분야별 전문 상담</span>
             </div>
             <h2 className="font-display text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
-              행성 카테고리
+              운세 카테고리
             </h2>
             <p className="text-sm sm:text-base text-gray-600">
-              각 행성의 에너지로 당신의 운명을 읽습니다
+              전문가의 깊이 있는 해석으로 당신의 운명을 읽습니다
             </p>
           </div>
 
-          {/* Premium Grid Layout */}
-          <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 sm:gap-6">
+          {/* Premium Grid Layout - 12개 카테고리 균일 배치 */}
+          <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-5">
             {CATEGORY_PLANETS.map((cat, index) => {
               const planetData = PLANETS_DATA.find(p => p.name === cat.planet);
               const bgColor = planetData?.color || '#7B68EE';
@@ -768,6 +630,9 @@ export default function MainPage() {
 
       {/* Footer */}
       <Footer />
+
+      {/* 💬 실시간 구매 알림 토스트 */}
+      <PurchaseToast />
 
       {/* Floating Chat Button - Enhanced with Glassmorphism */}
       <button
