@@ -54,12 +54,31 @@ interface FeedPost {
   likes: number;
   comments: number;
   shares: number;
+  hypeCount: number; // HYPE 투표 수 (좋아요와 별도)
   isLiked: boolean;
   isBookmarked: boolean;
+  isHyped: boolean; // HYPE 투표 여부
+  visibility: "public" | "friends" | "private"; // 공개 범위
+  isEligibleForHype: boolean; // HYPE 랭킹 진입 가능 여부
   commentList?: Comment[]; // 댓글 목록
 }
 
+interface HypeNotification {
+  id: string;
+  postId: string;
+  postTitle: string; // 게시물 제목 (코멘트 앞부분)
+  hypeCount: number;
+  threshold: number; // 진입 기준
+  timestamp: Date;
+  isRead: boolean;
+  isActioned: boolean; // 사용자가 선택했는지 여부
+  userChoice?: "accept" | "reject"; // 사용자 선택
+}
+
 export default function FeedPage() {
+  // HYPE Constants
+  const HYPE_THRESHOLD = 50; // 50개 이상 HYPE 받으면 랭킹 진입 가능
+
   // State Management
   const [feedPosts, setFeedPosts] = useState<FeedPost[]>([
     {
@@ -85,8 +104,12 @@ export default function FeedPage() {
       likes: 234,
       comments: 12,
       shares: 45,
+      hypeCount: 45,
       isLiked: false,
       isBookmarked: false,
+      isHyped: false,
+      visibility: "friends",
+      isEligibleForHype: false,
       commentList: [
         {
           id: "c1",
@@ -123,8 +146,12 @@ export default function FeedPage() {
       likes: 189,
       comments: 8,
       shares: 32,
+      hypeCount: 67,
       isLiked: true,
       isBookmarked: true,
+      isHyped: true,
+      visibility: "public",
+      isEligibleForHype: true,
       commentList: [],
     },
     {
@@ -150,11 +177,20 @@ export default function FeedPage() {
       likes: 156,
       comments: 15,
       shares: 28,
+      hypeCount: 52,
       isLiked: false,
       isBookmarked: false,
+      isHyped: false,
+      visibility: "friends",
+      isEligibleForHype: false,
       commentList: [],
     },
   ]);
+
+  // HYPE Notifications State
+  const [hypeNotifications, setHypeNotifications] = useState<HypeNotification[]>([]);
+  const [showHypeNotificationModal, setShowHypeNotificationModal] = useState(false);
+  const [currentNotification, setCurrentNotification] = useState<HypeNotification | null>(null);
 
   // Filter States
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
@@ -199,6 +235,43 @@ export default function FeedPage() {
 
     return () => observer.disconnect();
   }, [hasMore, isLoading]);
+
+  // HYPE Threshold Check Effect
+  useEffect(() => {
+    feedPosts.forEach((post) => {
+      // HYPE 임계값 도달 & 친구공개 상태인 경우
+      if (
+        post.hypeCount >= HYPE_THRESHOLD &&
+        post.visibility === "friends" &&
+        !post.isEligibleForHype
+      ) {
+        // 이미 알림이 있는지 확인
+        const existingNotification = hypeNotifications.find(
+          (notif) => notif.postId === post.id && !notif.isActioned
+        );
+
+        if (!existingNotification) {
+          // 새 알림 생성
+          const newNotification: HypeNotification = {
+            id: `notif_${post.id}_${Date.now()}`,
+            postId: post.id,
+            postTitle: post.userComment.slice(0, 30) + (post.userComment.length > 30 ? "..." : ""),
+            hypeCount: post.hypeCount,
+            threshold: HYPE_THRESHOLD,
+            timestamp: new Date(),
+            isRead: false,
+            isActioned: false,
+          };
+
+          setHypeNotifications((prev) => [...prev, newNotification]);
+
+          // 알림 모달 자동 표시
+          setCurrentNotification(newNotification);
+          setShowHypeNotificationModal(true);
+        }
+      }
+    });
+  }, [feedPosts, HYPE_THRESHOLD]);
 
   // Load More Posts (무한 스크롤)
   const loadMorePosts = () => {
@@ -355,6 +428,68 @@ export default function FeedPage() {
       alert(`${userName}님을 차단했습니다.\n차단 기능은 곧 추가됩니다.`);
       setShowActionMenu(null);
     }
+  };
+
+  // HYPE Vote Handler
+  const handleHype = (postId: string) => {
+    setFeedPosts((prev) =>
+      prev.map((post) =>
+        post.id === postId
+          ? {
+              ...post,
+              isHyped: !post.isHyped,
+              hypeCount: post.isHyped ? post.hypeCount - 1 : post.hypeCount + 1,
+            }
+          : post
+      )
+    );
+  };
+
+  // HYPE Notification Response Handlers
+  const handleAcceptHypePromotion = () => {
+    if (!currentNotification) return;
+
+    // 게시물 공개 범위를 전체공개로 변경
+    setFeedPosts((prev) =>
+      prev.map((post) =>
+        post.id === currentNotification.postId
+          ? { ...post, visibility: "public", isEligibleForHype: true }
+          : post
+      )
+    );
+
+    // 알림 상태 업데이트
+    setHypeNotifications((prev) =>
+      prev.map((notif) =>
+        notif.id === currentNotification.id
+          ? { ...notif, isActioned: true, isRead: true, userChoice: "accept" }
+          : notif
+      )
+    );
+
+    // 성공 메시지
+    alert("🎉 게시물이 HYPE 랭킹에 등록되었습니다!");
+
+    // 모달 닫기
+    setShowHypeNotificationModal(false);
+    setCurrentNotification(null);
+  };
+
+  const handleRejectHypePromotion = () => {
+    if (!currentNotification) return;
+
+    // 알림 상태만 업데이트 (거부)
+    setHypeNotifications((prev) =>
+      prev.map((notif) =>
+        notif.id === currentNotification.id
+          ? { ...notif, isActioned: true, isRead: true, userChoice: "reject" }
+          : notif
+      )
+    );
+
+    // 모달 닫기
+    setShowHypeNotificationModal(false);
+    setCurrentNotification(null);
   };
 
   const getElementColor = (element: string) => {
@@ -614,10 +749,17 @@ export default function FeedPage() {
                       {post.shares}
                     </span>
                   </div>
+                  {/* HYPE Count Display */}
+                  <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200">
+                    <TrendingUp className="w-4 h-4 text-orange-600" />
+                    <span className="text-xs font-bold text-orange-600">
+                      HYPE {post.hypeCount}
+                    </span>
+                  </div>
                 </div>
 
-                {/* Actions */}
-                <div className="grid grid-cols-4 gap-2 border-t border-gray-100 pt-3">
+                {/* Actions - 5 columns with HYPE button */}
+                <div className="grid grid-cols-5 gap-2 border-t border-gray-100 pt-3">
                   <button
                     onClick={() => handleLike(post.id)}
                     className={`flex flex-col items-center gap-1 py-2 rounded-lg font-semibold transition-all ${
@@ -641,6 +783,18 @@ export default function FeedPage() {
                     <span className="text-xs">댓글</span>
                   </button>
 
+                  <button
+                    onClick={() => handleHype(post.id)}
+                    className={`flex flex-col items-center gap-1 py-2 rounded-lg font-semibold transition-all ${
+                      post.isHyped
+                        ? "text-orange-600 bg-orange-50"
+                        : "text-gray-600 hover:bg-gray-50"
+                    }`}
+                  >
+                    <TrendingUp className={`w-5 h-5 ${post.isHyped ? "fill-orange-600" : ""}`} />
+                    <span className="text-xs">HYPE</span>
+                  </button>
+
                   <button className="flex flex-col items-center gap-1 py-2 rounded-lg font-semibold text-gray-600 hover:bg-gray-50 transition-colors">
                     <Share2 className="w-5 h-5" />
                     <span className="text-xs">공유</span>
@@ -657,6 +811,27 @@ export default function FeedPage() {
                     <Bookmark className={`w-5 h-5 ${post.isBookmarked ? "fill-purple-600" : ""}`} />
                     <span className="text-xs">저장</span>
                   </button>
+                </div>
+
+                {/* Visibility Badge */}
+                <div className="mt-3 flex items-center justify-end gap-2">
+                  <div className={`flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium ${
+                    post.visibility === "public"
+                      ? "bg-green-50 text-green-700 border border-green-200"
+                      : post.visibility === "friends"
+                      ? "bg-blue-50 text-blue-700 border border-blue-200"
+                      : "bg-gray-50 text-gray-700 border border-gray-200"
+                  }`}>
+                    {post.visibility === "public" && "🌍 전체공개"}
+                    {post.visibility === "friends" && "👥 친구공개"}
+                    {post.visibility === "private" && "🔒 비공개"}
+                  </div>
+                  {post.isEligibleForHype && (
+                    <div className="flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium bg-gradient-to-r from-amber-50 to-orange-50 text-orange-700 border border-orange-200">
+                      <ShieldCheck className="w-3 h-3" />
+                      HYPE 랭킹 진입
+                    </div>
+                  )}
                 </div>
               </div>
             </article>
@@ -684,6 +859,97 @@ export default function FeedPage() {
           </div>
         )}
       </div>
+
+      {/* HYPE Promotion Notification Modal */}
+      {showHypeNotificationModal && currentNotification && (
+        <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 animate-fade-in">
+          <div
+            className="bg-white w-full max-w-md rounded-3xl shadow-2xl overflow-hidden animate-slide-up"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Modal Header */}
+            <div className="bg-gradient-to-r from-amber-500 to-orange-500 p-6 text-white">
+              <div className="flex items-center justify-center mb-3">
+                <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm">
+                  <TrendingUp className="w-8 h-8" />
+                </div>
+              </div>
+              <h2 className="text-xl font-bold text-center mb-2">
+                🎉 HYPE 랭킹 진입 가능!
+              </h2>
+              <p className="text-center text-sm text-white/90">
+                회원님의 게시물이 인기 급상승 중입니다
+              </p>
+            </div>
+
+            {/* Modal Body */}
+            <div className="p-6">
+              {/* Post Preview */}
+              <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-4 mb-6 border border-purple-100">
+                <p className="text-sm font-bold text-gray-900 mb-2">게시물 내용</p>
+                <p className="text-sm text-gray-700 line-clamp-2">
+                  {currentNotification.postTitle}
+                </p>
+              </div>
+
+              {/* Stats */}
+              <div className="grid grid-cols-2 gap-4 mb-6">
+                <div className="bg-orange-50 rounded-xl p-4 border border-orange-200">
+                  <p className="text-xs text-orange-600 font-medium mb-1">현재 HYPE</p>
+                  <p className="text-2xl font-bold text-orange-700">
+                    {currentNotification.hypeCount}
+                  </p>
+                </div>
+                <div className="bg-green-50 rounded-xl p-4 border border-green-200">
+                  <p className="text-xs text-green-600 font-medium mb-1">진입 기준</p>
+                  <p className="text-2xl font-bold text-green-700">
+                    {currentNotification.threshold}
+                  </p>
+                </div>
+              </div>
+
+              {/* Info Message */}
+              <div className="bg-blue-50 rounded-xl p-4 mb-6 border border-blue-200">
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 mt-0.5">
+                    <ShieldCheck className="w-5 h-5 text-blue-600" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-blue-900 mb-1">
+                      HYPE 랭킹에 진입하려면
+                    </p>
+                    <p className="text-xs text-blue-700 leading-relaxed">
+                      현재 <strong>친구공개</strong>로 설정되어 있습니다.
+                      <strong className="text-blue-900"> 전체공개</strong>로 변경하면 HYPE 랭킹에 자동으로 등록됩니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Action Buttons */}
+              <div className="space-y-3">
+                <button
+                  onClick={handleAcceptHypePromotion}
+                  className="w-full py-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white font-bold rounded-xl hover:from-amber-600 hover:to-orange-600 transition-all shadow-lg hover:shadow-xl active:scale-98"
+                >
+                  ✅ 전체공개로 변경하고 HYPE 랭킹 진입
+                </button>
+                <button
+                  onClick={handleRejectHypePromotion}
+                  className="w-full py-4 bg-gray-100 text-gray-700 font-semibold rounded-xl hover:bg-gray-200 transition-all active:scale-98"
+                >
+                  나중에 결정하기
+                </button>
+              </div>
+
+              {/* Footer Note */}
+              <p className="text-xs text-gray-500 text-center mt-4">
+                💡 알림함에서 언제든지 다시 확인할 수 있습니다
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Comments Modal */}
       {showComments && selectedPost && (
