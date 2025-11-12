@@ -556,38 +556,38 @@ export default function HypePage() {
   // Main story list page
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-pink-50 pb-24">
-      {/* Header - 완전한 반응형 최적화 */}
-      <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-4 sm:py-6 md:py-8 px-3 sm:px-4 sticky top-0 z-30 shadow-xl">
+      {/* Header - 완전한 반응형 최적화 (여백 증가) */}
+      <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-6 sm:py-8 md:py-10 px-4 sm:px-6 sticky top-0 z-30 shadow-xl">
         <div className="max-w-4xl mx-auto">
           {/* 3-column 레이아웃: 뒤로가기 | 타이틀 | 빈공간 */}
-          <div className="grid grid-cols-[56px_1fr_56px] sm:grid-cols-[auto_1fr_auto] items-center gap-2 mb-2 sm:mb-3">
-            {/* Left: Back Button */}
+          <div className="grid grid-cols-[64px_1fr_64px] sm:grid-cols-[auto_1fr_auto] items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+            {/* Left: Back Button - 더 큰 크기 */}
             <div className="flex items-center justify-start">
               <button
                 onClick={() => window.history.back()}
-                className="active:scale-95 min-h-[48px] min-w-[48px] flex items-center justify-center hover:bg-white/20 rounded-lg transition-colors"
+                className="active:scale-95 min-h-[56px] min-w-[56px] flex items-center justify-center hover:bg-white/20 rounded-xl transition-colors"
               >
-                <ArrowLeft className="w-6 h-6 sm:w-7 sm:h-7" />
+                <ArrowLeft className="w-7 h-7 sm:w-8 sm:h-8" />
               </button>
             </div>
 
             {/* Center: Title */}
             <div className="flex items-center justify-center gap-2 sm:gap-3">
-              <TrendingUp className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10" />
-              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">HYPE</h1>
+              <TrendingUp className="w-7 h-7 sm:w-9 sm:h-9 md:w-11 md:h-11" />
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">HYPE</h1>
             </div>
 
             {/* Right: Spacer for alignment */}
-            <div className="min-w-[48px]"></div>
+            <div className="min-w-[56px]"></div>
           </div>
 
-          <p className="text-center text-purple-100 text-xs sm:text-sm md:text-base mb-2 sm:mb-3 px-2">
+          <p className="text-center text-purple-100 text-sm sm:text-base md:text-lg mb-3 sm:mb-4 px-2">
             사주우주 예측이 현실이 된 생생한 경험담
           </p>
 
           {/* Daily limit indicator */}
-          <div className="flex items-center justify-center gap-1.5 sm:gap-2 text-xs sm:text-sm">
-            <Zap className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+          <div className="flex items-center justify-center gap-2 sm:gap-2.5 text-sm sm:text-base">
+            <Zap className="w-4 h-4 sm:w-5 sm:h-5" />
             <span>오늘의 HYPE: {dailyLimit.hypeCount} / {dailyLimit.maxHype}</span>
           </div>
         </div>
