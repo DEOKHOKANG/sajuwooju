@@ -236,7 +236,7 @@ export default function FeedPage() {
     return () => observer.disconnect();
   }, [hasMore, isLoading]);
 
-  // HYPE Threshold Check Effect
+  // HYPE Threshold Check Effect - 자동 팝업 비활성화
   useEffect(() => {
     feedPosts.forEach((post) => {
       // HYPE 임계값 도달 & 친구공개 상태인 경우
@@ -251,7 +251,7 @@ export default function FeedPage() {
         );
 
         if (!existingNotification) {
-          // 새 알림 생성
+          // 새 알림 생성 (MY 페이지 DM으로만 전송)
           const newNotification: HypeNotification = {
             id: `notif_${post.id}_${Date.now()}`,
             postId: post.id,
@@ -265,9 +265,9 @@ export default function FeedPage() {
 
           setHypeNotifications((prev) => [...prev, newNotification]);
 
-          // 알림 모달 자동 표시
-          setCurrentNotification(newNotification);
-          setShowHypeNotificationModal(true);
+          // 알림 모달 자동 표시 비활성화 (MY 페이지 DM으로만 알림)
+          // setCurrentNotification(newNotification);
+          // setShowHypeNotificationModal(true);
         }
       }
     });
