@@ -1,10 +1,11 @@
 /**
  * FEED 페이지 (상용화급)
- * 팔로우한 계정들의 사주 피드
- * - 실시간 필터링 (카테고리, 오행, 띠별)
+ * 팔로우한 사람들의 사주/꿈해몽 결과 공유 피드
+ * - 사주/꿈해몽 결과 인용 카드 + 개인 코멘트
+ * - HYPE와 동일한 카드 형식
+ * - 실시간 필터링 (카테고리별)
  * - 무한 스크롤
  * - 댓글 시스템
- * - 이미지 갤러리
  * - 신고/차단 기능
  */
 
@@ -13,8 +14,8 @@
 import { useState, useEffect, useRef } from "react";
 import {
   Users, Heart, MessageCircle, Share2, Bookmark, MoreHorizontal,
-  ArrowLeft, Filter, TrendingUp, Clock, Image as ImageIcon,
-  Send, X, Flag, UserX, Trash2, ChevronLeft, ChevronRight
+  ArrowLeft, Filter, TrendingUp, Clock, Sparkles,
+  Send, X, Flag, UserX, Trash2, CheckCircle, ShieldCheck
 } from "lucide-react";
 
 interface Comment {
@@ -28,6 +29,15 @@ interface Comment {
   isLiked: boolean;
 }
 
+interface QuotedContent {
+  type: "사주" | "꿈해몽"; // 인용 타입
+  category: string; // 카테고리 (연애운, 재물운 등)
+  summary: string; // 결과 요약
+  analysisDate: Date; // 분석 날짜
+  analysisId?: string; // 분석 ID
+  isVerified: boolean; // 인증 여부
+}
+
 interface FeedPost {
   id: string;
   user: {
@@ -36,15 +46,16 @@ interface FeedPost {
     birthYear: number;
     zodiac: string;
     dominantElement: "木" | "火" | "土" | "金" | "水";
+    avatar?: string;
   };
-  category: string;
-  content: string;
-  timestamp: string;
+  quotedContent: QuotedContent; // 인용된 사주/꿈해몽 내용
+  userComment: string; // 사용자의 코멘트
+  timestamp: Date;
   likes: number;
   comments: number;
+  shares: number;
   isLiked: boolean;
   isBookmarked: boolean;
-  images?: string[]; // 이미지 URL 배열
   commentList?: Comment[]; // 댓글 목록
 }
 
@@ -59,15 +70,23 @@ export default function FeedPage() {
         birthYear: 1990,
         zodiac: "말띠",
         dominantElement: "火",
+        avatar: "🔮",
       },
-      category: "연애운",
-      content: "2025년 상반기 연애운이 대상승! 새로운 인연이 다가올 조짐이 보입니다. 목요일과 금요일에 특히 좋은 기운이 흐르니 적극적으로 행동해보세요! 🔥💕",
-      timestamp: "2시간 전",
+      quotedContent: {
+        type: "사주",
+        category: "연애운",
+        summary: "2025년 상반기 연애운 대상승. 새로운 인연을 만날 가능성이 높으며, 목요일과 금요일에 특히 좋은 기운이 흐릅니다.",
+        analysisDate: new Date("2025-01-15"),
+        analysisId: "saju_20250115_001",
+        isVerified: true,
+      },
+      userComment: "와 진짜 소개팅에서 좋은 분 만났어요! 사주우주 믿고 적극적으로 나갔더니 연락처도 받고 다음 주에 또 만나기로 했어요 🔥💕 감사합니다!",
+      timestamp: new Date("2025-01-20T14:30:00"),
       likes: 234,
       comments: 12,
+      shares: 45,
       isLiked: false,
       isBookmarked: false,
-      images: ["https://picsum.photos/seed/saju1/800/600"],
       commentList: [
         {
           id: "c1",
@@ -89,18 +108,23 @@ export default function FeedPage() {
         birthYear: 1988,
         zodiac: "용띠",
         dominantElement: "金",
+        avatar: "💫",
       },
-      category: "재물운",
-      content: "이번 달 재물운 최고조! 투자 타이밍을 잘 잡으면 큰 수익을 볼 수 있습니다. 특히 부동산 관련 기회를 주시하세요. 💰✨",
-      timestamp: "5시간 전",
+      quotedContent: {
+        type: "사주",
+        category: "재물운",
+        summary: "이번 달 재물운 최고조. 투자 타이밍이 좋으며 부동산 관련 기회를 주목하세요. 금전적 성과가 기대됩니다.",
+        analysisDate: new Date("2024-12-28"),
+        analysisId: "saju_20241228_045",
+        isVerified: true,
+      },
+      userComment: "분석 받고 망설이던 아파트 투자 결정했는데 2주만에 5천만원 올랐습니다 💰 타이밍이 정말 중요하네요. 감사합니다!",
+      timestamp: new Date("2025-01-19T09:15:00"),
       likes: 189,
       comments: 8,
+      shares: 32,
       isLiked: true,
       isBookmarked: true,
-      images: [
-        "https://picsum.photos/seed/saju2/800/600",
-        "https://picsum.photos/seed/saju3/800/600",
-      ],
       commentList: [],
     },
     {
@@ -111,12 +135,21 @@ export default function FeedPage() {
         birthYear: 1992,
         zodiac: "원숭이띠",
         dominantElement: "木",
+        avatar: "✨",
       },
-      category: "직업운",
-      content: "승진 운이 들어왔어요! 상사와의 대화가 중요한 시기입니다. 자신감 있게 의견을 개진하면 좋은 결과가 있을 거예요. 🚀📈",
-      timestamp: "1일 전",
+      quotedContent: {
+        type: "꿈해몽",
+        category: "직업운",
+        summary: "용이 승천하는 꿈 - 직장에서의 승진이나 중요한 인정을 받을 길몽입니다. 상사와의 대화가 중요한 계기가 됩니다.",
+        analysisDate: new Date("2025-01-10"),
+        analysisId: "dream_20250110_023",
+        isVerified: true,
+      },
+      userComment: "꿈 꾸고 일주일 뒤에 팀장님이 저 불러서 프로젝트 리더 맡기셨어요 🚀 꿈해몽이 이렇게 정확할 줄이야... 대박입니다!",
+      timestamp: new Date("2025-01-18T16:45:00"),
       likes: 156,
       comments: 15,
+      shares: 28,
       isLiked: false,
       isBookmarked: false,
       commentList: [],
@@ -124,8 +157,8 @@ export default function FeedPage() {
   ]);
 
   // Filter States
-  const [selectedCategory, setSelectedCategory] = useState<string>("전체");
-  const [selectedElement, setSelectedElement] = useState<string>("전체");
+  const [selectedCategory, setSelectedCategory] = useState<string>("all");
+  const [selectedType, setSelectedType] = useState<string>("all"); // 사주/꿈해몽 필터
   const [sortBy, setSortBy] = useState<"recent" | "popular">("recent");
   const [showFilters, setShowFilters] = useState(false);
 
@@ -133,9 +166,6 @@ export default function FeedPage() {
   const [selectedPost, setSelectedPost] = useState<FeedPost | null>(null);
   const [showComments, setShowComments] = useState(false);
   const [newComment, setNewComment] = useState("");
-  const [showImageViewer, setShowImageViewer] = useState(false);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [selectedImages, setSelectedImages] = useState<string[]>([]);
   const [showActionMenu, setShowActionMenu] = useState<string | null>(null);
 
   // Infinite Scroll
@@ -144,9 +174,13 @@ export default function FeedPage() {
   const [isLoading, setIsLoading] = useState(false);
   const observerRef = useRef<HTMLDivElement>(null);
 
-  // Categories & Elements
-  const categories = ["전체", "연애운", "재물운", "직업운", "건강운", "학업운", "종합운"];
-  const elements = ["전체", "木", "火", "土", "金", "水"];
+  // Categories (HYPE와 동일)
+  const categories = [
+    { id: "all", name: "전체", emoji: "🌟" },
+    { id: "사주", name: "사주", emoji: "🔮" },
+    { id: "꿈해몽", name: "꿈해몽", emoji: "💭" },
+    { id: "궁합", name: "궁합", emoji: "💕" },
+  ];
 
   // Infinite Scroll Effect
   useEffect(() => {
@@ -183,16 +217,41 @@ export default function FeedPage() {
   // Filter Posts
   const filteredPosts = feedPosts
     .filter((post) => {
-      if (selectedCategory !== "전체" && post.category !== selectedCategory) return false;
-      if (selectedElement !== "전체" && post.user.dominantElement !== selectedElement) return false;
+      if (selectedCategory !== "all" && post.quotedContent.type !== selectedCategory) return false;
       return true;
     })
     .sort((a, b) => {
       if (sortBy === "popular") {
         return b.likes - a.likes;
       }
-      return 0; // recent는 이미 정렬되어 있다고 가정
+      // recent는 timestamp 기준
+      return b.timestamp.getTime() - a.timestamp.getTime();
     });
+
+  // Format timestamp
+  const formatTimestamp = (date: Date) => {
+    const now = new Date();
+    const diff = now.getTime() - date.getTime();
+    const minutes = Math.floor(diff / 60000);
+    const hours = Math.floor(diff / 3600000);
+    const days = Math.floor(diff / 86400000);
+
+    if (minutes < 1) return "방금 전";
+    if (minutes < 60) return `${minutes}분 전`;
+    if (hours < 24) return `${hours}시간 전`;
+    if (days < 7) return `${days}일 전`;
+    return date.toLocaleDateString("ko-KR", { month: "long", day: "numeric" });
+  };
+
+  // Get category badge color
+  const getCategoryColor = (type: string) => {
+    const colors = {
+      사주: "from-purple-500 to-pink-500",
+      꿈해몽: "from-blue-500 to-cyan-500",
+      궁합: "from-rose-500 to-pink-500",
+    };
+    return colors[type as keyof typeof colors] || "from-gray-500 to-gray-600";
+  };
 
   // Handlers
   const handleLike = (postId: string) => {
@@ -286,12 +345,6 @@ export default function FeedPage() {
     );
   };
 
-  const handleOpenImageViewer = (images: string[], startIndex: number = 0) => {
-    setSelectedImages(images);
-    setCurrentImageIndex(startIndex);
-    setShowImageViewer(true);
-  };
-
   const handleReportPost = (postId: string) => {
     alert(`게시물 신고: ${postId}\n신고 기능은 곧 추가됩니다.`);
     setShowActionMenu(null);
@@ -352,79 +405,55 @@ export default function FeedPage() {
         </div>
       </div>
 
-      {/* Filters Panel - Collapsible */}
+      {/* Category Filter - Horizontal Scroll (HYPE 스타일) */}
+      <div className="bg-white border-b border-gray-200 sticky top-[72px] sm:top-[88px] md:top-[104px] z-20">
+        <div className="max-w-4xl mx-auto px-4 py-3">
+          <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-hide">
+            {categories.map((cat) => (
+              <button
+                key={cat.id}
+                onClick={() => setSelectedCategory(cat.id)}
+                className={`flex items-center gap-2 px-4 py-2 rounded-full font-medium text-sm whitespace-nowrap transition-all ${
+                  selectedCategory === cat.id
+                    ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg"
+                    : "bg-purple-50 text-purple-700 hover:bg-purple-100"
+                }`}
+              >
+                <span>{cat.emoji}</span>
+                <span>{cat.name}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Sort Toggle */}
       {showFilters && (
         <div className="bg-white border-b-2 border-purple-100 shadow-lg animate-fade-in-up">
-          <div className="max-w-4xl mx-auto p-4 space-y-4">
-            {/* Sort */}
-            <div>
-              <h3 className="text-sm font-bold text-gray-700 mb-2">정렬</h3>
-              <div className="flex gap-2">
-                <button
-                  onClick={() => setSortBy("recent")}
-                  className={`px-4 py-2 rounded-lg font-medium text-sm transition-all ${
-                    sortBy === "recent"
-                      ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white"
-                      : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                  }`}
-                >
-                  <Clock className="w-4 h-4 inline mr-1" />
-                  최신순
-                </button>
-                <button
-                  onClick={() => setSortBy("popular")}
-                  className={`px-4 py-2 rounded-lg font-medium text-sm transition-all ${
-                    sortBy === "popular"
-                      ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white"
-                      : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                  }`}
-                >
-                  <TrendingUp className="w-4 h-4 inline mr-1" />
-                  인기순
-                </button>
-              </div>
-            </div>
-
-            {/* Category Filter */}
-            <div>
-              <h3 className="text-sm font-bold text-gray-700 mb-2">카테고리</h3>
-              <div className="flex gap-2 overflow-x-auto pb-2">
-                {categories.map((cat) => (
-                  <button
-                    key={cat}
-                    onClick={() => setSelectedCategory(cat)}
-                    className={`px-4 py-2 rounded-full font-medium text-sm whitespace-nowrap transition-all ${
-                      selectedCategory === cat
-                        ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white"
-                        : "bg-purple-50 text-purple-700 hover:bg-purple-100"
-                    }`}
-                  >
-                    {cat}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Element Filter */}
-            <div>
-              <h3 className="text-sm font-bold text-gray-700 mb-2">오행 필터</h3>
-              <div className="flex gap-2">
-                {elements.map((el) => (
-                  <button
-                    key={el}
-                    onClick={() => setSelectedElement(el)}
-                    className={`px-4 py-2 rounded-full font-bold text-sm transition-all ${
-                      selectedElement === el
-                        ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white"
-                        : el === "전체"
-                        ? "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                        : `${getElementColor(el)} hover:opacity-80`
-                    }`}
-                  >
-                    {el}
-                  </button>
-                ))}
-              </div>
+          <div className="max-w-4xl mx-auto p-4">
+            <div className="flex gap-2">
+              <button
+                onClick={() => setSortBy("recent")}
+                className={`flex-1 px-4 py-2 rounded-lg font-medium text-sm transition-all ${
+                  sortBy === "recent"
+                    ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white"
+                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                }`}
+              >
+                <Clock className="w-4 h-4 inline mr-1" />
+                최신순
+              </button>
+              <button
+                onClick={() => setSortBy("popular")}
+                className={`flex-1 px-4 py-2 rounded-lg font-medium text-sm transition-all ${
+                  sortBy === "popular"
+                    ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white"
+                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                }`}
+              >
+                <TrendingUp className="w-4 h-4 inline mr-1" />
+                인기순
+              </button>
             </div>
           </div>
         </div>
@@ -460,24 +489,24 @@ export default function FeedPage() {
               style={{ animationDelay: `${index * 100}ms`, animationFillMode: "both" }}
             >
               {/* Post Header */}
-              <div className="p-5 border-b border-gray-100">
+              <div className="p-4 sm:p-5 border-b border-gray-100">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     {/* Avatar */}
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center text-xl">
-                      🔮
+                    <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center text-xl">
+                      {post.user.avatar || "🔮"}
                     </div>
 
                     {/* User Info */}
                     <div>
                       <div className="flex items-center gap-2">
-                        <h3 className="font-bold text-gray-900">{post.user.name}</h3>
+                        <h3 className="font-bold text-sm sm:text-base text-gray-900">{post.user.name}</h3>
                         <span className={`px-2 py-0.5 text-xs font-semibold rounded-full ${getElementColor(post.user.dominantElement)}`}>
                           {post.user.dominantElement}
                         </span>
                       </div>
-                      <p className="text-sm text-gray-600">
-                        {post.user.birthYear}년생 · {post.user.zodiac}
+                      <p className="text-xs sm:text-sm text-gray-600">
+                        {post.user.birthYear}년생 · {post.user.zodiac} · {formatTimestamp(post.timestamp)}
                       </p>
                     </div>
                   </div>
@@ -512,86 +541,93 @@ export default function FeedPage() {
                     )}
                   </div>
                 </div>
+              </div>
 
-                {/* Category Badge */}
-                <div className="mt-3">
-                  <span className="px-3 py-1 bg-purple-100 text-purple-700 text-sm font-semibold rounded-full">
-                    {post.category}
-                  </span>
+              {/* Quoted Content Card - 인용된 사주/꿈해몽 */}
+              <div className="px-4 sm:px-5 pt-3 pb-4">
+                <div className={`relative rounded-xl p-4 bg-gradient-to-br ${getCategoryColor(post.quotedContent.type)} overflow-hidden`}>
+                  {/* Background Pattern */}
+                  <div className="absolute inset-0 opacity-10">
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-white rounded-full -translate-y-1/2 translate-x-1/2" />
+                    <div className="absolute bottom-0 left-0 w-24 h-24 bg-white rounded-full translate-y-1/2 -translate-x-1/2" />
+                  </div>
+
+                  <div className="relative z-10">
+                    {/* Header */}
+                    <div className="flex items-center justify-between mb-3">
+                      <div className="flex items-center gap-2">
+                        <Sparkles className="w-4 h-4 text-white" />
+                        <span className="text-xs sm:text-sm font-bold text-white">
+                          {post.quotedContent.type} 분석 결과
+                        </span>
+                        {post.quotedContent.isVerified && (
+                          <div className="flex items-center gap-1 bg-white/20 px-2 py-0.5 rounded-full">
+                            <CheckCircle className="w-3 h-3 text-white" />
+                            <span className="text-xs text-white font-medium">인증됨</span>
+                          </div>
+                        )}
+                      </div>
+                      <span className="text-xs text-white/80">
+                        {post.quotedContent.category}
+                      </span>
+                    </div>
+
+                    {/* Summary */}
+                    <p className="text-sm sm:text-base text-white font-medium leading-relaxed mb-3">
+                      {post.quotedContent.summary}
+                    </p>
+
+                    {/* Footer */}
+                    <div className="flex items-center justify-between text-xs text-white/80">
+                      <span>
+                        분석일: {post.quotedContent.analysisDate.toLocaleDateString("ko-KR")}
+                      </span>
+                      {post.quotedContent.analysisId && (
+                        <span className="font-mono">ID: {post.quotedContent.analysisId.slice(-8)}</span>
+                      )}
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              {/* Post Content */}
-              <div className="p-5">
-                <p className="text-gray-800 font-medium leading-relaxed whitespace-pre-line">
-                  {post.content}
+              {/* User Comment */}
+              <div className="px-4 sm:px-5 pb-4">
+                <p className="text-sm sm:text-base text-gray-800 font-medium leading-relaxed whitespace-pre-line">
+                  {post.userComment}
                 </p>
               </div>
 
-              {/* Image Gallery */}
-              {post.images && post.images.length > 0 && (
-                <div className="px-5 pb-5">
-                  {post.images.length === 1 ? (
-                    <div
-                      onClick={() => handleOpenImageViewer(post.images!, 0)}
-                      className="relative rounded-xl overflow-hidden cursor-pointer group"
-                    >
-                      <img
-                        src={post.images[0]}
-                        alt="Post image"
-                        className="w-full h-auto max-h-[400px] object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300" />
-                    </div>
-                  ) : (
-                    <div className="grid grid-cols-2 gap-2">
-                      {post.images.slice(0, 4).map((img, idx) => (
-                        <div
-                          key={idx}
-                          onClick={() => handleOpenImageViewer(post.images!, idx)}
-                          className="relative rounded-lg overflow-hidden cursor-pointer group aspect-square"
-                        >
-                          <img
-                            src={img}
-                            alt={`Post image ${idx + 1}`}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                          />
-                          {idx === 3 && post.images!.length > 4 && (
-                            <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
-                              <span className="text-white font-bold text-2xl">
-                                +{post.images!.length - 4}
-                              </span>
-                            </div>
-                          )}
-                          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300" />
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              )}
-
               {/* Post Footer */}
-              <div className="px-5 py-4 border-t border-gray-100">
-                <div className="flex items-center justify-between mb-3 text-sm text-gray-600">
-                  <span>{post.timestamp}</span>
-                  <span>
-                    좋아요 {post.likes}개 · 댓글 {post.comments}개
-                  </span>
+              <div className="px-4 sm:px-5 py-3 sm:py-4 border-t border-gray-100">
+                <div className="flex items-center justify-between mb-3 text-xs sm:text-sm text-gray-600">
+                  <div className="flex items-center gap-3">
+                    <span className="flex items-center gap-1">
+                      <Heart className="w-4 h-4" />
+                      {post.likes}
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <MessageCircle className="w-4 h-4" />
+                      {post.comments}
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <Share2 className="w-4 h-4" />
+                      {post.shares}
+                    </span>
+                  </div>
                 </div>
 
                 {/* Actions */}
-                <div className="flex items-center justify-around border-t border-gray-100 pt-3">
+                <div className="grid grid-cols-4 gap-2 border-t border-gray-100 pt-3">
                   <button
                     onClick={() => handleLike(post.id)}
-                    className={`flex items-center gap-2 px-4 py-2 rounded-lg font-semibold transition-all ${
+                    className={`flex flex-col items-center gap-1 py-2 rounded-lg font-semibold transition-all ${
                       post.isLiked
                         ? "text-red-600 bg-red-50"
                         : "text-gray-600 hover:bg-gray-50"
                     }`}
                   >
                     <Heart className={`w-5 h-5 ${post.isLiked ? "fill-red-600" : ""}`} />
-                    <span>좋아요</span>
+                    <span className="text-xs">좋아요</span>
                   </button>
 
                   <button
@@ -599,27 +635,27 @@ export default function FeedPage() {
                       setSelectedPost(post);
                       setShowComments(true);
                     }}
-                    className="flex items-center gap-2 px-4 py-2 rounded-lg font-semibold text-gray-600 hover:bg-gray-50 transition-colors"
+                    className="flex flex-col items-center gap-1 py-2 rounded-lg font-semibold text-gray-600 hover:bg-gray-50 transition-colors"
                   >
                     <MessageCircle className="w-5 h-5" />
-                    <span>댓글</span>
+                    <span className="text-xs">댓글</span>
                   </button>
 
-                  <button className="flex items-center gap-2 px-4 py-2 rounded-lg font-semibold text-gray-600 hover:bg-gray-50 transition-colors">
+                  <button className="flex flex-col items-center gap-1 py-2 rounded-lg font-semibold text-gray-600 hover:bg-gray-50 transition-colors">
                     <Share2 className="w-5 h-5" />
-                    <span>공유</span>
+                    <span className="text-xs">공유</span>
                   </button>
 
                   <button
                     onClick={() => handleBookmark(post.id)}
-                    className={`flex items-center gap-2 px-4 py-2 rounded-lg font-semibold transition-all ${
+                    className={`flex flex-col items-center gap-1 py-2 rounded-lg font-semibold transition-all ${
                       post.isBookmarked
                         ? "text-purple-600 bg-purple-50"
                         : "text-gray-600 hover:bg-gray-50"
                     }`}
                   >
                     <Bookmark className={`w-5 h-5 ${post.isBookmarked ? "fill-purple-600" : ""}`} />
-                    <span>저장</span>
+                    <span className="text-xs">저장</span>
                   </button>
                 </div>
               </div>
@@ -759,64 +795,6 @@ export default function FeedPage() {
         </div>
       )}
 
-      {/* Image Viewer Modal */}
-      {showImageViewer && selectedImages.length > 0 && (
-        <div
-          className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center animate-fade-in"
-          onClick={() => setShowImageViewer(false)}
-        >
-          <button
-            onClick={() => setShowImageViewer(false)}
-            className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors"
-          >
-            <X className="w-6 h-6 text-white" />
-          </button>
-
-          {/* Navigation Arrows */}
-          {selectedImages.length > 1 && (
-            <>
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setCurrentImageIndex((prev) =>
-                    prev > 0 ? prev - 1 : selectedImages.length - 1
-                  );
-                }}
-                className="absolute left-4 w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors"
-              >
-                <ChevronLeft className="w-8 h-8 text-white" />
-              </button>
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setCurrentImageIndex((prev) =>
-                    prev < selectedImages.length - 1 ? prev + 1 : 0
-                  );
-                }}
-                className="absolute right-4 w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors"
-              >
-                <ChevronRight className="w-8 h-8 text-white" />
-              </button>
-            </>
-          )}
-
-          {/* Image */}
-          <div className="max-w-5xl max-h-[90vh] px-4" onClick={(e) => e.stopPropagation()}>
-            <img
-              src={selectedImages[currentImageIndex]}
-              alt={`Image ${currentImageIndex + 1}`}
-              className="max-w-full max-h-[90vh] object-contain rounded-lg"
-            />
-            {selectedImages.length > 1 && (
-              <div className="text-center mt-4">
-                <span className="text-white font-medium">
-                  {currentImageIndex + 1} / {selectedImages.length}
-                </span>
-              </div>
-            )}
-          </div>
-        </div>
-      )}
     </div>
   );
 }
