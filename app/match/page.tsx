@@ -487,9 +487,16 @@ export default function MatchPage() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center justify-between mb-2 sm:mb-3">
             <div className="flex items-center gap-1.5 sm:gap-2">
-              {selectedCategory && (
+              {selectedCategory ? (
                 <button
                   onClick={handleBackToCategory}
+                  className="mr-1 sm:mr-2 active:scale-95 min-h-[44px] min-w-[44px] flex items-center justify-center -ml-2"
+                >
+                  <ArrowLeft className="w-5 h-5 sm:w-6 sm:h-6" />
+                </button>
+              ) : (
+                <button
+                  onClick={() => window.history.back()}
                   className="mr-1 sm:mr-2 active:scale-95 min-h-[44px] min-w-[44px] flex items-center justify-center -ml-2"
                 >
                   <ArrowLeft className="w-5 h-5 sm:w-6 sm:h-6" />

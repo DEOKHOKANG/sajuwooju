@@ -11,7 +11,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Zap, TrendingUp, Clock, Heart, MessageCircle, Share2, Eye, Award, X, Calendar, CheckCircle, ShieldCheck, AlertCircle } from "lucide-react";
+import { Zap, TrendingUp, Clock, Heart, MessageCircle, Share2, Eye, Award, X, Calendar, CheckCircle, ShieldCheck, AlertCircle, ArrowLeft } from "lucide-react";
 
 interface VerificationInfo {
   isVerified: boolean; // 인증 여부
@@ -559,10 +559,25 @@ export default function HypePage() {
       {/* Header */}
       <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-6 sm:py-8 px-4 sticky top-0 z-30 shadow-xl">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center justify-center gap-3 mb-3">
-            <TrendingUp className="w-8 h-8 sm:w-10 sm:h-10" />
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">HYPE</h1>
+          <div className="flex items-center justify-between mb-3">
+            {/* Back Button */}
+            <button
+              onClick={() => window.history.back()}
+              className="flex items-center justify-center min-h-[44px] min-w-[44px] hover:bg-white/20 rounded-lg transition-colors active:scale-95"
+            >
+              <ArrowLeft className="w-6 h-6 sm:w-7 sm:h-7" />
+            </button>
+
+            {/* Title */}
+            <div className="flex items-center gap-3">
+              <TrendingUp className="w-8 h-8 sm:w-10 sm:h-10" />
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">HYPE</h1>
+            </div>
+
+            {/* Spacer for alignment */}
+            <div className="min-w-[44px]"></div>
           </div>
+
           <p className="text-center text-purple-100 text-xs sm:text-sm md:text-base mb-3">
             사주우주 예측이 현실이 된 생생한 경험담
           </p>
