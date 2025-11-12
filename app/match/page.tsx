@@ -481,9 +481,9 @@ export default function MatchPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-pink-50 pb-24">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-pink-50 pb-24 pt-14">
       {/* Header - 완전한 반응형 최적화 (여백 증가) */}
-      <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-6 sm:py-8 md:py-10 px-4 sm:px-6 shadow-lg">
+      <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-6 sm:py-8 md:py-10 px-4 sm:px-6 shadow-lg sticky top-14 z-40">
         <div className="max-w-4xl mx-auto">
           {/* 3-column 레이아웃: 뒤로가기 | 타이틀 | 히스토리 */}
           <div className="grid grid-cols-[64px_1fr_64px] sm:grid-cols-[auto_1fr_auto] items-center gap-3 sm:gap-4 mb-3 sm:mb-4">

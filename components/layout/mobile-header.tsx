@@ -31,7 +31,7 @@ export function MobileHeader({
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 glass-header backdrop-blur-2xl bg-white/80 border-b border-white/20 shadow-sm safe-area-pt">
+    <header className="fixed top-0 left-0 right-0 z-10 glass-header backdrop-blur-2xl bg-white/80 border-b border-white/20 shadow-sm safe-area-pt">
       <div className="flex items-center justify-between h-14 px-4 max-w-lg mx-auto">
         {/* Left: Back button or logo */}
         <div className="flex items-center w-12">
