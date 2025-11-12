@@ -505,33 +505,38 @@ export default function FeedPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-pink-50 pb-24">
-      {/* Header - 모바일 최적화 */}
+      {/* Header - 완전한 반응형 최적화 */}
       <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-4 sm:py-6 md:py-8 px-3 sm:px-4 sticky top-0 z-30 shadow-xl">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center justify-between mb-2 sm:mb-3">
-            {/* Back Button */}
-            <button
-              onClick={() => window.history.back()}
-              className="flex items-center justify-center min-h-[44px] min-w-[44px] hover:bg-white/20 rounded-lg transition-colors active:scale-95 -ml-2"
-            >
-              <ArrowLeft className="w-5 h-5 sm:w-6 sm:h-6" />
-            </button>
+          {/* 3-column 레이아웃: 뒤로가기 | 타이틀 | 필터 */}
+          <div className="grid grid-cols-[56px_1fr_56px] sm:grid-cols-[auto_1fr_auto] items-center gap-2 mb-2 sm:mb-3">
+            {/* Left: Back Button */}
+            <div className="flex items-center justify-start">
+              <button
+                onClick={() => window.history.back()}
+                className="active:scale-95 min-h-[48px] min-w-[48px] flex items-center justify-center hover:bg-white/20 rounded-lg transition-colors"
+              >
+                <ArrowLeft className="w-6 h-6 sm:w-7 sm:h-7" />
+              </button>
+            </div>
 
-            {/* Title */}
-            <div className="flex items-center gap-2 sm:gap-3">
+            {/* Center: Title */}
+            <div className="flex items-center justify-center gap-2 sm:gap-3">
               <Users className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10" />
               <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">FEED</h1>
             </div>
 
-            {/* Filter Button */}
-            <button
-              onClick={() => setShowFilters(!showFilters)}
-              className={`flex items-center justify-center min-h-[44px] min-w-[44px] rounded-lg transition-all active:scale-95 ${
-                showFilters ? "bg-white/30" : "hover:bg-white/20"
-              }`}
-            >
-              <Filter className="w-5 h-5 sm:w-6 sm:h-6" />
-            </button>
+            {/* Right: Filter Button */}
+            <div className="flex items-center justify-end">
+              <button
+                onClick={() => setShowFilters(!showFilters)}
+                className={`active:scale-95 min-h-[48px] min-w-[48px] flex items-center justify-center rounded-lg transition-all ${
+                  showFilters ? "bg-white/30" : "hover:bg-white/20"
+                }`}
+              >
+                <Filter className="w-6 h-6 sm:w-7 sm:h-7" />
+              </button>
+            </div>
           </div>
 
           <p className="text-center text-purple-100 text-xs sm:text-sm md:text-base px-2">

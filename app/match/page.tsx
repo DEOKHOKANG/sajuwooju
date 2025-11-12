@@ -482,40 +482,53 @@ export default function MatchPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-pink-50 pb-24">
-      {/* Header - 모바일 최적화 */}
+      {/* Header - 완전한 반응형 최적화 */}
       <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-4 sm:py-6 md:py-8 px-3 sm:px-4 shadow-lg">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center justify-between mb-2 sm:mb-3">
-            <div className="flex items-center gap-1 sm:gap-1.5">
+          {/* 3-column 레이아웃: 뒤로가기 | 타이틀 | 히스토리 */}
+          <div className="grid grid-cols-[56px_1fr_56px] sm:grid-cols-[auto_1fr_auto] items-center gap-2 mb-2 sm:mb-3">
+            {/* Left: Back Button */}
+            <div className="flex items-center justify-start">
               {selectedCategory ? (
                 <button
                   onClick={handleBackToCategory}
-                  className="mr-0.5 sm:mr-1 active:scale-95 min-h-[44px] min-w-[44px] flex items-center justify-center -ml-2 hover:bg-white/20 rounded-lg transition-colors"
+                  className="active:scale-95 min-h-[48px] min-w-[48px] flex items-center justify-center hover:bg-white/20 rounded-lg transition-colors"
                 >
-                  <ArrowLeft className="w-5 h-5 sm:w-6 sm:h-6" />
+                  <ArrowLeft className="w-6 h-6 sm:w-7 sm:h-7" />
                 </button>
               ) : (
                 <button
                   onClick={() => window.history.back()}
-                  className="mr-0.5 sm:mr-1 active:scale-95 min-h-[44px] min-w-[44px] flex items-center justify-center -ml-2 hover:bg-white/20 rounded-lg transition-colors"
+                  className="active:scale-95 min-h-[48px] min-w-[48px] flex items-center justify-center hover:bg-white/20 rounded-lg transition-colors"
                 >
-                  <ArrowLeft className="w-5 h-5 sm:w-6 sm:h-6" />
+                  <ArrowLeft className="w-6 h-6 sm:w-7 sm:h-7" />
                 </button>
               )}
-              <Heart className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" />
+            </div>
+
+            {/* Center: Title */}
+            <div className="flex items-center justify-center gap-2 sm:gap-3">
+              <Heart className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10" />
               <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">MATCH</h1>
             </div>
-            {!selectedCategory && matchHistory.length > 0 && (
-              <button
-                onClick={() => setShowHistory(!showHistory)}
-                className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 bg-white/20 hover:bg-white/30 rounded-lg sm:rounded-xl transition-colors text-xs sm:text-sm font-medium active:scale-95 min-h-[44px]"
-              >
-                <Clock className="w-4 h-4 sm:w-5 sm:h-5" />
-                <span className="hidden xs:inline">히스토리</span>
-                <span className="xs:hidden">{matchHistory.length}</span>
-              </button>
-            )}
+
+            {/* Right: History Button or Spacer */}
+            <div className="flex items-center justify-end">
+              {!selectedCategory && matchHistory.length > 0 ? (
+                <button
+                  onClick={() => setShowHistory(!showHistory)}
+                  className="flex items-center gap-1.5 px-3 sm:px-4 py-2 sm:py-2.5 bg-white/20 hover:bg-white/30 rounded-lg sm:rounded-xl transition-colors text-xs sm:text-sm font-medium active:scale-95 min-h-[48px]"
+                >
+                  <Clock className="w-4 h-4 sm:w-5 sm:h-5" />
+                  <span className="hidden sm:inline">히스토리</span>
+                  <span className="sm:hidden">{matchHistory.length}</span>
+                </button>
+              ) : (
+                <div className="min-w-[48px]"></div>
+              )}
+            </div>
           </div>
+
           <p className="text-purple-100 text-xs sm:text-sm md:text-base text-center px-2">
             {selectedCategory ? selectedCategory : "나와 궁합이 맞는 사람을 찾아보세요"}
           </p>
