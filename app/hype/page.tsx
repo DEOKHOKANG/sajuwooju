@@ -4,13 +4,22 @@
  * - 사주/꿈해몽/궁합/이별/재회 카테고리
  * - 예측 vs 실제 결과 스토리
  * - HYPE 투표 및 실시간 랭킹
+ * - 인증 시스템 (내 사주/꿈해몽 분석 연동)
  * - 완벽한 모바일 최적화
  */
 
 "use client";
 
 import { useState, useEffect } from "react";
-import { Zap, TrendingUp, Clock, Heart, MessageCircle, Share2, Eye, Award, X, Calendar, CheckCircle } from "lucide-react";
+import { Zap, TrendingUp, Clock, Heart, MessageCircle, Share2, Eye, Award, X, Calendar, CheckCircle, ShieldCheck, AlertCircle } from "lucide-react";
+
+interface VerificationInfo {
+  isVerified: boolean; // 인증 여부
+  verifiedAt?: Date; // 인증 날짜
+  analysisId?: string; // 연동된 사주/꿈해몽 분석 ID
+  analysisType?: "사주" | "꿈해몽"; // 분석 타입
+  verificationScore?: number; // 인증 점수 (0-100, AI가 원본 분석과 비교)
+}
 
 interface HypeStory {
   id: string;
@@ -33,6 +42,7 @@ interface HypeStory {
   timestamp: Date;
   thumbnail?: string;
   accuracyRate?: number; // 적중률 (0-100)
+  verification: VerificationInfo; // 인증 정보
 }
 
 interface HypeHistory {
@@ -48,16 +58,8 @@ interface DailyLimit {
   maxHype: number;
 }
 
-const CATEGORIES = [
-  { id: "all", label: "전체", icon: "🌟", gradient: "from-purple-500 to-pink-500" },
-  { id: "사주", label: "사주", icon: "✨", gradient: "from-violet-500 to-purple-500" },
-  { id: "꿈해몽", label: "꿈해몽", icon: "💭", gradient: "from-blue-500 to-cyan-500" },
-  { id: "궁합", label: "궁합", icon: "💕", gradient: "from-pink-500 to-rose-500" },
-  { id: "이별", label: "이별", icon: "💔", gradient: "from-gray-500 to-slate-500" },
-  { id: "재회", label: "재회", icon: "💝", gradient: "from-green-500 to-emerald-500" },
-];
-
-const MAX_DAILY_HYPE = 10;
+const MAX_DAILY_HYPE = 10; // 하루 최대 HYPE 개수
+const MAX_HISTORY = 50; // 최대 히스토리 개수
 
 export default function HypePage() {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -88,6 +90,13 @@ export default function HypePage() {
       isHyped: false,
       timestamp: new Date('2025-03-16'),
       accuracyRate: 98,
+      verification: {
+        isVerified: true,
+        verifiedAt: new Date('2024-12-01'),
+        analysisId: "saju_20241201_001",
+        analysisType: "사주",
+        verificationScore: 98,
+      },
     },
     {
       id: "2",
@@ -105,6 +114,13 @@ export default function HypePage() {
       isHyped: true,
       timestamp: new Date('2025-02-18'),
       accuracyRate: 85,
+      verification: {
+        isVerified: true,
+        verifiedAt: new Date('2025-02-10'),
+        analysisId: "dream_20250210_002",
+        analysisType: "꿈해몽",
+        verificationScore: 92,
+      },
     },
     {
       id: "3",
@@ -122,6 +138,13 @@ export default function HypePage() {
       isHyped: false,
       timestamp: new Date('2024-12-25'),
       accuracyRate: 100,
+      verification: {
+        isVerified: true,
+        verifiedAt: new Date('2024-01-05'),
+        analysisId: "saju_20240105_003",
+        analysisType: "사주",
+        verificationScore: 100,
+      },
     },
     {
       id: "4",
@@ -139,6 +162,13 @@ export default function HypePage() {
       isHyped: false,
       timestamp: new Date('2024-06-20'),
       accuracyRate: 92,
+      verification: {
+        isVerified: true,
+        verifiedAt: new Date('2024-03-20'),
+        analysisId: "saju_20240320_004",
+        analysisType: "사주",
+        verificationScore: 95,
+      },
     },
     {
       id: "5",
@@ -156,6 +186,13 @@ export default function HypePage() {
       isHyped: true,
       timestamp: new Date('2025-05-21'),
       accuracyRate: 95,
+      verification: {
+        isVerified: true,
+        verifiedAt: new Date('2023-05-10'),
+        analysisId: "saju_20230510_005",
+        analysisType: "사주",
+        verificationScore: 97,
+      },
     },
     {
       id: "6",
@@ -173,6 +210,13 @@ export default function HypePage() {
       isHyped: false,
       timestamp: new Date('2025-04-11'),
       accuracyRate: 88,
+      verification: {
+        isVerified: true,
+        verifiedAt: new Date('2025-02-01'),
+        analysisId: "saju_20250201_006",
+        analysisType: "사주",
+        verificationScore: 90,
+      },
     },
     {
       id: "7",
@@ -189,154 +233,244 @@ export default function HypePage() {
       commentCount: 54,
       isHyped: false,
       timestamp: new Date('2024-10-21'),
-      accuracyRate: 100,
+      accuracyRate: 94,
+      verification: {
+        isVerified: true,
+        verifiedAt: new Date('2024-08-15'),
+        analysisId: "dream_20240815_007",
+        analysisType: "꿈해몽",
+        verificationScore: 96,
+      },
     },
   ]);
 
-  // LocalStorage 로드
+  // Load HYPE history and daily limit from LocalStorage
   useEffect(() => {
-    const storedHistory = localStorage.getItem("hype-story-history");
-    if (storedHistory) {
-      const parsed = JSON.parse(storedHistory);
-      setHypeHistory(parsed.map((item: any) => ({
+    const savedHistory = localStorage.getItem('hypeHistory');
+    if (savedHistory) {
+      const parsedHistory = JSON.parse(savedHistory);
+      setHypeHistory(parsedHistory.map((item: any) => ({
         ...item,
         timestamp: new Date(item.timestamp),
       })));
     }
 
-    const storedLimit = localStorage.getItem("daily-hype-limit");
-    if (storedLimit) {
-      const parsed = JSON.parse(storedLimit);
+    const savedLimit = localStorage.getItem('dailyHypeLimit');
+    if (savedLimit) {
+      const parsedLimit = JSON.parse(savedLimit);
       const today = new Date().toISOString().split('T')[0];
-      if (parsed.date !== today) {
-        const newLimit = { date: today, hypeCount: 0, maxHype: MAX_DAILY_HYPE };
-        setDailyLimit(newLimit);
-        localStorage.setItem("daily-hype-limit", JSON.stringify(newLimit));
+
+      // Reset if it's a new day
+      if (parsedLimit.date === today) {
+        setDailyLimit(parsedLimit);
       } else {
-        setDailyLimit(parsed);
+        const newLimit = {
+          date: today,
+          hypeCount: 0,
+          maxHype: MAX_DAILY_HYPE,
+        };
+        setDailyLimit(newLimit);
+        localStorage.setItem('dailyHypeLimit', JSON.stringify(newLimit));
       }
     }
   }, []);
 
-  // 필터링된 스토리
-  const filteredStories = selectedCategory === "all"
-    ? stories
-    : stories.filter(story => story.category === selectedCategory);
-
   const handleHype = (storyId: string) => {
-    if (dailyLimit.hypeCount >= dailyLimit.maxHype) {
-      alert(`오늘의 HYPE 한도(${MAX_DAILY_HYPE}개)를 모두 사용했습니다! 내일 다시 시도해주세요. 🔥`);
-      return;
-    }
-
     const story = stories.find(s => s.id === storyId);
     if (!story) return;
 
-    const isAdding = !story.isHyped;
-
-    setStories(prev =>
-      prev.map(s =>
-        s.id === storyId
-          ? { ...s, isHyped: !s.isHyped, hypeCount: s.isHyped ? s.hypeCount - 1 : s.hypeCount + 1 }
-          : s
-      )
-    );
-
-    if (isAdding) {
-      const newLimit = { ...dailyLimit, hypeCount: dailyLimit.hypeCount + 1 };
-      setDailyLimit(newLimit);
-      localStorage.setItem("daily-hype-limit", JSON.stringify(newLimit));
-
-      const newHistory: HypeHistory = {
-        id: Date.now().toString(),
-        storyId: story.id,
-        storyTitle: story.title,
-        timestamp: new Date(),
-      };
-      const updated = [newHistory, ...hypeHistory].slice(0, 50);
-      setHypeHistory(updated);
-      localStorage.setItem("hype-story-history", JSON.stringify(updated));
+    // Check daily limit
+    if (dailyLimit.hypeCount >= dailyLimit.maxHype && !story.isHyped) {
+      alert(`오늘의 HYPE 한도(${MAX_DAILY_HYPE}개)를 모두 사용했습니다! 내일 다시 시도해주세요.`);
+      return;
     }
+
+    // Toggle HYPE
+    setStories(prev => prev.map(s => {
+      if (s.id === storyId) {
+        const newIsHyped = !s.isHyped;
+
+        // Update daily limit
+        if (newIsHyped) {
+          const newLimit = { ...dailyLimit, hypeCount: dailyLimit.hypeCount + 1 };
+          setDailyLimit(newLimit);
+          localStorage.setItem('dailyHypeLimit', JSON.stringify(newLimit));
+
+          // Add to history
+          const newHistory = [
+            {
+              id: `h_${Date.now()}`,
+              storyId: s.id,
+              storyTitle: s.title,
+              timestamp: new Date(),
+            },
+            ...hypeHistory
+          ].slice(0, MAX_HISTORY);
+
+          setHypeHistory(newHistory);
+          localStorage.setItem('hypeHistory', JSON.stringify(newHistory));
+        } else {
+          const newLimit = { ...dailyLimit, hypeCount: Math.max(0, dailyLimit.hypeCount - 1) };
+          setDailyLimit(newLimit);
+          localStorage.setItem('dailyHypeLimit', JSON.stringify(newLimit));
+
+          // Remove from history
+          const newHistory = hypeHistory.filter(h => h.storyId !== storyId);
+          setHypeHistory(newHistory);
+          localStorage.setItem('hypeHistory', JSON.stringify(newHistory));
+        }
+
+        return {
+          ...s,
+          isHyped: newIsHyped,
+          hypeCount: newIsHyped ? s.hypeCount + 1 : s.hypeCount - 1,
+        };
+      }
+      return s;
+    }));
   };
 
   const handleStoryClick = (story: HypeStory) => {
+    // Increment view count
+    setStories(prev => prev.map(s =>
+      s.id === story.id ? { ...s, viewCount: s.viewCount + 1 } : s
+    ));
+
     setSelectedStory(story);
     setShowStoryDetail(true);
-    // 조회수 증가
-    setStories(prev =>
-      prev.map(s => s.id === story.id ? { ...s, viewCount: s.viewCount + 1 } : s)
-    );
   };
 
-  const getCategoryEmoji = (category: string) => {
-    const emoji = CATEGORIES.find(c => c.id === category || c.label === category);
-    return emoji?.icon || "🌟";
-  };
-
-  const getTimeDiff = (date: Date) => {
-    const now = new Date();
-    const diff = now.getTime() - date.getTime();
-    const hours = Math.floor(diff / (1000 * 60 * 60));
-    if (hours < 1) return "방금 전";
-    if (hours < 24) return `${hours}시간 전`;
-    const days = Math.floor(hours / 24);
-    if (days < 7) return `${days}일 전`;
-    if (days < 30) return `${Math.floor(days / 7)}주 전`;
-    return `${Math.floor(days / 30)}개월 전`;
-  };
+  const categories = ["all", "사주", "꿈해몽", "궁합", "이별", "재회"];
+  const filteredStories = selectedCategory === "all"
+    ? stories
+    : stories.filter(s => s.category === selectedCategory);
 
   const getMedalEmoji = (rank: number) => {
     if (rank === 1) return "🥇";
     if (rank === 2) return "🥈";
     if (rank === 3) return "🥉";
-    return `${rank}위`;
+    return rank;
   };
 
-  // 상세 스토리 페이지
+  const getCategoryEmoji = (category: string) => {
+    const emojis = {
+      "사주": "🔮",
+      "꿈해몽": "💭",
+      "궁합": "💑",
+      "이별": "💔",
+      "재회": "💕",
+    };
+    return emojis[category as keyof typeof emojis] || "✨";
+  };
+
+  const getTimeAgo = (date: Date) => {
+    const now = new Date();
+    const diff = now.getTime() - date.getTime();
+    const minutes = Math.floor(diff / 60000);
+    const hours = Math.floor(diff / 3600000);
+    const days = Math.floor(diff / 86400000);
+
+    if (minutes < 1) return "방금 전";
+    if (minutes < 60) return `${minutes}분 전`;
+    if (hours < 24) return `${hours}시간 전`;
+    if (days < 7) return `${days}일 전`;
+    return date.toLocaleDateString('ko-KR');
+  };
+
+  // 인증 배지 렌더링
+  const VerificationBadge = ({ verification }: { verification: VerificationInfo }) => {
+    if (!verification.isVerified) {
+      return (
+        <div className="inline-flex items-center gap-1 px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded-full">
+          <AlertCircle className="w-3 h-3" />
+          <span>미인증</span>
+        </div>
+      );
+    }
+
+    return (
+      <div className="inline-flex items-center gap-1 px-2.5 py-1 bg-gradient-to-r from-blue-500 to-cyan-500 text-white text-xs font-bold rounded-full shadow-md">
+        <ShieldCheck className="w-3 h-3" />
+        <span>{verification.analysisType} 인증</span>
+      </div>
+    );
+  };
+
+  // Story detail page
   if (showStoryDetail && selectedStory) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-pink-50 pb-24">
         {/* Header */}
         <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-5 sm:py-6 px-4 sm:px-6 sticky top-0 z-30 shadow-2xl">
           <div className="max-w-4xl mx-auto">
-            <div className="flex items-center justify-between mb-3">
-              <button
-                onClick={() => setShowStoryDetail(false)}
-                className="flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white transition-all active:scale-95 min-h-[48px] px-4 rounded-xl shadow-lg font-bold text-sm sm:text-base"
-              >
-                <X className="w-5 h-5" />
-                <span>닫기</span>
-              </button>
-              <span className="text-sm font-medium">{getCategoryEmoji(selectedStory.category)} {selectedStory.category}</span>
-            </div>
+            <button
+              onClick={() => setShowStoryDetail(false)}
+              className="flex items-center gap-2 mb-3 sm:mb-4 text-white hover:bg-white/20 px-3 py-2 rounded-lg transition-all"
+            >
+              <X className="w-5 h-5" />
+              <span className="font-medium">닫기</span>
+            </button>
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-center">스토리 상세</h1>
           </div>
         </div>
 
-        <div className="max-w-4xl mx-auto p-4 space-y-5 mt-4">
-          {/* Story Card */}
+        {/* Story Content */}
+        <div className="max-w-4xl mx-auto p-4 sm:p-5 mt-4 sm:mt-6">
           <div className="bg-white rounded-2xl shadow-xl p-5 sm:p-6">
             {/* Rank & Title */}
-            <div className="flex items-start gap-3 mb-4">
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 text-white flex items-center justify-center font-bold text-lg">
+            <div className="flex items-start gap-3 sm:gap-4 mb-4 sm:mb-5">
+              <div className={`flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center font-bold text-lg sm:text-xl ${
+                selectedStory.rank <= 3
+                  ? "bg-gradient-to-br from-amber-400 to-orange-500 text-white shadow-lg"
+                  : "bg-gray-100 text-gray-700"
+              }`}>
                 {getMedalEmoji(selectedStory.rank)}
               </div>
+
               <div className="flex-1">
-                <h1 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">{selectedStory.title}</h1>
-                <div className="flex items-center gap-3 text-xs sm:text-sm text-gray-600">
-                  <span className="flex items-center gap-1">
-                    {selectedStory.author.avatar} {selectedStory.author.name}
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
+                  {selectedStory.title}
+                </h2>
+                <div className="flex flex-wrap items-center gap-2 mb-2">
+                  <span className="px-2.5 py-0.5 bg-purple-100 text-purple-700 text-xs font-bold rounded-full">
+                    {getCategoryEmoji(selectedStory.category)} {selectedStory.category}
                   </span>
-                  <span>•</span>
-                  <span>{getTimeDiff(selectedStory.timestamp)}</span>
+                  <VerificationBadge verification={selectedStory.verification} />
+                  {selectedStory.accuracyRate && selectedStory.accuracyRate >= 90 && (
+                    <span className="px-2.5 py-0.5 bg-green-100 text-green-700 text-xs font-bold rounded-full flex items-center gap-1">
+                      <CheckCircle className="w-3 h-3" />
+                      {selectedStory.accuracyRate}%
+                    </span>
+                  )}
                 </div>
+                <p className="text-xs sm:text-sm text-gray-600">
+                  {selectedStory.author.name} · {getTimeAgo(selectedStory.timestamp)}
+                </p>
               </div>
             </div>
 
-            {/* Accuracy Rate */}
-            {selectedStory.accuracyRate && (
-              <div className="flex items-center gap-2 mb-4 p-3 bg-green-50 rounded-xl">
-                <CheckCircle className="w-5 h-5 text-green-600" />
-                <span className="text-sm font-bold text-green-900">예측 적중률: {selectedStory.accuracyRate}%</span>
+            {/* 인증 정보 상세 */}
+            {selectedStory.verification.isVerified && (
+              <div className="mb-5 p-4 bg-blue-50 border border-blue-200 rounded-xl">
+                <div className="flex items-center gap-2 mb-2">
+                  <ShieldCheck className="w-5 h-5 text-blue-600" />
+                  <h3 className="text-sm font-bold text-blue-900">인증 완료</h3>
+                </div>
+                <p className="text-xs sm:text-sm text-blue-800 leading-relaxed mb-2">
+                  이 스토리는 사주우주의 <strong>{selectedStory.verification.analysisType}</strong> 분석 결과와 연동되어 인증되었습니다.
+                </p>
+                <div className="flex flex-wrap items-center gap-3 text-xs text-blue-700">
+                  <span className="flex items-center gap-1">
+                    <Calendar className="w-3 h-3" />
+                    인증일: {selectedStory.verification.verifiedAt?.toLocaleDateString('ko-KR')}
+                  </span>
+                  {selectedStory.verification.verificationScore && (
+                    <span className="flex items-center gap-1">
+                      <TrendingUp className="w-3 h-3" />
+                      신뢰도: {selectedStory.verification.verificationScore}%
+                    </span>
+                  )}
+                </div>
               </div>
             )}
 
@@ -367,7 +501,7 @@ export default function HypePage() {
             </div>
 
             {/* Stats */}
-            <div className="flex items-center justify-between py-4 border-t border-gray-200">
+            <div className="flex items-center justify-between border-t border-gray-200 pt-4 mb-5">
               <div className="flex items-center gap-4 text-sm text-gray-600">
                 <span className="flex items-center gap-1">
                   <Eye className="w-4 h-4" />
@@ -378,133 +512,90 @@ export default function HypePage() {
                   {selectedStory.commentCount}
                 </span>
               </div>
-              <div className="flex items-center gap-2">
-                <Zap className="w-5 h-5 text-amber-500" />
-                <span className="text-lg font-bold text-gray-900">{selectedStory.hypeCount.toLocaleString()}</span>
-              </div>
             </div>
 
             {/* Actions */}
-            <div className="grid grid-cols-2 gap-3 pt-4 border-t border-gray-200">
+            <div className="flex items-center gap-2 sm:gap-3">
               <button
                 onClick={() => handleHype(selectedStory.id)}
                 disabled={dailyLimit.hypeCount >= dailyLimit.maxHype && !selectedStory.isHyped}
-                className={`py-3.5 rounded-xl font-bold text-sm sm:text-base transition-all shadow-lg min-h-[52px] flex items-center justify-center gap-2 ${
+                className={`flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-bold text-sm sm:text-base transition-all ${
                   selectedStory.isHyped
-                    ? "bg-gradient-to-r from-amber-500 to-orange-500 text-white hover:from-amber-600 hover:to-orange-600"
+                    ? "bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-lg"
                     : dailyLimit.hypeCount >= dailyLimit.maxHype
                     ? "bg-gray-200 text-gray-400 cursor-not-allowed"
-                    : "bg-gradient-to-r from-amber-100 to-orange-100 text-amber-700 hover:from-amber-200 hover:to-orange-200 border-2 border-amber-200"
+                    : "bg-gradient-to-r from-amber-100 to-orange-100 text-amber-700 hover:from-amber-200 hover:to-orange-200"
                 }`}
               >
                 <Zap className={`w-5 h-5 ${selectedStory.isHyped ? "fill-white" : ""}`} />
-                <span>{selectedStory.isHyped ? "HYPED" : "HYPE"}</span>
+                <span>HYPE {selectedStory.hypeCount.toLocaleString()}</span>
               </button>
-              <button className="py-3.5 rounded-xl font-bold text-sm sm:text-base bg-white text-purple-600 border-2 border-purple-200 hover:bg-purple-50 transition-all shadow-lg min-h-[52px] flex items-center justify-center gap-2">
+
+              <button className="flex items-center justify-center gap-2 px-4 py-3 bg-gray-100 text-gray-700 font-bold rounded-xl hover:bg-gray-200 transition-colors">
+                <MessageCircle className="w-5 h-5" />
+                <span className="hidden sm:inline">댓글</span>
+              </button>
+
+              <button className="flex items-center justify-center gap-2 px-4 py-3 bg-gray-100 text-gray-700 font-bold rounded-xl hover:bg-gray-200 transition-colors">
                 <Share2 className="w-5 h-5" />
-                <span>공유</span>
+                <span className="hidden sm:inline">공유</span>
               </button>
             </div>
           </div>
 
-          {/* Comments Section (TODO) */}
-          <div className="bg-white rounded-2xl shadow-lg p-5">
-            <h3 className="text-lg font-bold text-gray-900 mb-3">댓글 {selectedStory.commentCount}</h3>
-            <p className="text-sm text-gray-600 text-center py-8">댓글 기능은 곧 추가됩니다! 💬</p>
+          {/* TODO: Comments section */}
+          <div className="mt-6 bg-white rounded-2xl shadow-lg p-5 sm:p-6">
+            <h3 className="text-lg font-bold text-gray-900 mb-4">댓글 {selectedStory.commentCount}개</h3>
+            <p className="text-sm text-gray-600 text-center py-8">댓글 기능은 곧 추가됩니다!</p>
           </div>
         </div>
       </div>
     );
   }
 
+  // Main story list page
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-pink-50 pb-24">
       {/* Header */}
-      <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-5 sm:py-6 md:py-8 px-4 sm:px-6 shadow-2xl sticky top-0 z-30">
+      <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-6 sm:py-8 px-4 sticky top-0 z-30 shadow-xl">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center justify-center gap-2 sm:gap-3 mb-3 sm:mb-4">
-            <Zap className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12" />
+          <div className="flex items-center justify-center gap-3 mb-3">
+            <TrendingUp className="w-8 h-8 sm:w-10 sm:h-10" />
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">HYPE</h1>
           </div>
-          <p className="text-center text-purple-100 text-xs sm:text-sm md:text-base mb-4">
-            예측이 현실이 된 생생한 스토리
+          <p className="text-center text-purple-100 text-xs sm:text-sm md:text-base mb-3">
+            사주우주 예측이 현실이 된 생생한 경험담
           </p>
 
-          {/* Stats */}
-          <div className="flex items-center justify-center gap-4 sm:gap-6 text-xs sm:text-sm">
-            <div className="flex items-center gap-1.5 sm:gap-2">
-              <TrendingUp className="w-4 h-4" />
-              <span>{filteredStories.length}개 스토리</span>
-            </div>
-            <div className="flex items-center gap-1.5 sm:gap-2">
-              <Zap className="w-4 h-4" />
-              <span>{stories.reduce((sum, s) => sum + s.hypeCount, 0).toLocaleString()} HYPE</span>
-            </div>
-            <div className="flex items-center gap-1.5 sm:gap-2 px-3 py-1 bg-white/20 rounded-full">
-              <Award className="w-4 h-4" />
-              <span className="font-bold">{dailyLimit.hypeCount}/{dailyLimit.maxHype}</span>
-            </div>
-            {hypeHistory.length > 0 && (
-              <button
-                onClick={() => setShowHistory(!showHistory)}
-                className="flex items-center gap-1.5 px-3 py-1 bg-white/20 hover:bg-white/30 rounded-full transition-colors active:scale-95 min-h-[32px]"
-              >
-                <Clock className="w-4 h-4" />
-                <span className="hidden xs:inline">히스토리</span>
-              </button>
-            )}
+          {/* Daily limit indicator */}
+          <div className="flex items-center justify-center gap-2 text-xs sm:text-sm">
+            <Zap className="w-4 h-4" />
+            <span>오늘의 HYPE: {dailyLimit.hypeCount} / {dailyLimit.maxHype}</span>
           </div>
         </div>
       </div>
-
-      {/* HYPE History Modal */}
-      {showHistory && hypeHistory.length > 0 && (
-        <div className="fixed inset-0 z-40 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4 animate-fade-in">
-          <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full max-h-[70vh] overflow-hidden">
-            <div className="p-4 border-b border-gray-200 flex items-center justify-between">
-              <h3 className="text-lg font-bold text-gray-900">HYPE 히스토리</h3>
-              <button onClick={() => setShowHistory(false)} className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100">
-                <X className="w-5 h-5" />
-              </button>
-            </div>
-            <div className="overflow-y-auto max-h-[calc(70vh-64px)] p-4 space-y-2">
-              {hypeHistory.map(item => (
-                <div key={item.id} className="p-3 bg-gray-50 rounded-lg">
-                  <p className="font-semibold text-sm text-gray-900 line-clamp-1">{item.storyTitle}</p>
-                  <p className="text-xs text-gray-500 mt-1">
-                    {item.timestamp.toLocaleDateString('ko-KR', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* Category Filter */}
-      <div className="sticky top-[112px] sm:top-[128px] md:top-[144px] z-20 bg-white/98 backdrop-blur-xl border-b-2 border-gray-200 shadow-md">
-        <div className="max-w-4xl mx-auto p-3 sm:p-4">
-          <div className="flex gap-2 sm:gap-3 overflow-x-auto pb-2 scrollbar-hide">
-            {CATEGORIES.map(cat => (
-              <button
-                key={cat.id}
-                onClick={() => setSelectedCategory(cat.id)}
-                className={`px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold whitespace-nowrap transition-all shadow-md min-h-[40px] flex items-center gap-1.5 ${
-                  selectedCategory === cat.id
-                    ? `bg-gradient-to-r ${cat.gradient} text-white shadow-lg scale-105`
-                    : "bg-gray-100 text-gray-700 hover:bg-gray-200 active:scale-95"
-                }`}
-              >
-                <span>{cat.icon}</span>
-                <span>{cat.label}</span>
-              </button>
-            ))}
-          </div>
+      <div className="max-w-4xl mx-auto px-4 py-4 sm:py-5">
+        <div className="flex items-center gap-2 overflow-x-auto pb-2">
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setSelectedCategory(cat)}
+              className={`px-4 py-2 rounded-full font-bold text-sm whitespace-nowrap transition-all ${
+                selectedCategory === cat
+                  ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg"
+                  : "bg-white text-gray-700 hover:bg-gray-100 shadow"
+              }`}
+            >
+              {cat === "all" ? "전체" : `${getCategoryEmoji(cat)} ${cat}`}
+            </button>
+          ))}
         </div>
       </div>
 
-      {/* Stories */}
-      <div className="max-w-4xl mx-auto p-3 sm:p-4 space-y-3 sm:space-y-4 mt-4">
+      {/* Story List */}
+      <div className="max-w-4xl mx-auto px-4 space-y-4 pb-8">
         {filteredStories.map((story, index) => (
           <div
             key={story.id}
@@ -514,7 +605,7 @@ export default function HypePage() {
           >
             <div className="p-4 sm:p-5">
               <div className="flex items-start gap-3 sm:gap-4 mb-3">
-                {/* Rank */}
+                {/* Rank Badge */}
                 <div className={`flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center font-bold text-lg sm:text-xl ${
                   story.rank <= 3
                     ? "bg-gradient-to-br from-amber-400 to-orange-500 text-white shadow-lg"
@@ -525,10 +616,12 @@ export default function HypePage() {
 
                 {/* Content */}
                 <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2 mb-2">
+                  {/* Badges */}
+                  <div className="flex flex-wrap items-center gap-2 mb-2">
                     <span className="px-2.5 py-0.5 bg-purple-100 text-purple-700 text-xs font-bold rounded-full">
                       {getCategoryEmoji(story.category)} {story.category}
                     </span>
+                    <VerificationBadge verification={story.verification} />
                     {story.accuracyRate && story.accuracyRate >= 90 && (
                       <span className="px-2.5 py-0.5 bg-green-100 text-green-700 text-xs font-bold rounded-full flex items-center gap-1">
                         <CheckCircle className="w-3 h-3" />
@@ -537,21 +630,15 @@ export default function HypePage() {
                     )}
                   </div>
 
+                  {/* Title */}
                   <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2 line-clamp-2 leading-snug">
                     {story.title}
                   </h3>
 
+                  {/* Reality preview */}
                   <p className="text-xs sm:text-sm text-gray-600 mb-2 line-clamp-2 leading-relaxed">
                     {story.reality}
                   </p>
-
-                  <div className="flex items-center gap-2 sm:gap-3 text-xs text-gray-500 mb-3">
-                    <span className="flex items-center gap-1">
-                      {story.author.avatar} {story.author.name}
-                    </span>
-                    <span>•</span>
-                    <span>{getTimeDiff(story.timestamp)}</span>
-                  </div>
 
                   {/* Stats */}
                   <div className="flex items-center justify-between">
@@ -566,6 +653,7 @@ export default function HypePage() {
                       </span>
                     </div>
 
+                    {/* HYPE Button */}
                     <button
                       onClick={(e) => {
                         e.stopPropagation();
@@ -592,8 +680,11 @@ export default function HypePage() {
       </div>
 
       {/* Floating Write Button (TODO) */}
-      <button className="fixed bottom-20 sm:bottom-24 right-4 sm:right-6 w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform active:scale-95 z-20">
-        <span className="text-2xl sm:text-3xl">✍️</span>
+      <button
+        onClick={() => alert('게시글 작성 기능은 곧 추가됩니다! 🎉')}
+        className="fixed bottom-24 right-4 sm:right-6 w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center z-20"
+      >
+        <span className="text-2xl sm:text-3xl">✏️</span>
       </button>
     </div>
   );
