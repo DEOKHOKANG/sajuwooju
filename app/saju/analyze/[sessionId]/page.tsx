@@ -1,14 +1,25 @@
-/**
- * 사주 분석 페이지 (상용화급)
- * 로딩 애니메이션 → AI 분석 → 결과 페이지
- */
-
 "use client";
 
 import { useEffect, useState } from "react";
 import { useRouter, useParams } from "next/navigation";
-import { AnalysisLoading } from "@/components/saju/AnalysisLoading";
-import { getSajuGanZhi, formatSajuString } from "@/lib/lunar-calendar";
+import { Sparkles } from "lucide-react";
+
+/**
+ * 사주 분석 중 페이지
+ * API를 호출하고 결과를 localStorage에 저장한 후 결과 페이지로 이동
+ */
+
+interface SessionData {
+  name: string;
+  gender: string;
+  calendarType: string;
+  year: number;
+  month: number;
+  day: number;
+  birthHour: string;
+  productId?: number;
+  productTitle?: string;
+}
 
 export default function AnalyzePage() {
   const router = useRouter();
@@ -16,147 +27,193 @@ export default function AnalyzePage() {
   const sessionId = params.sessionId as string;
 
   const [progress, setProgress] = useState(0);
+  const [statusText, setStatusText] = useState("사주 정보를 준비하고 있습니다...");
   const [error, setError] = useState<string | null>(null);
-  const [userName, setUserName] = useState<string>("");
 
   useEffect(() => {
-    const analyzeSaju = async () => {
+    const analyzeAndRedirect = async () => {
       try {
-        // LocalStorage에서 사용자 입력 데이터 가져오기
-        const formDataStr = localStorage.getItem(sessionId);
-        if (!formDataStr) {
-          setError("입력 데이터를 찾을 수 없습니다.");
+        // 1. localStorage에서 세션 데이터 가져오기
+        const sessionDataStr = localStorage.getItem(sessionId);
+        if (!sessionDataStr) {
+          setError("세션 정보를 찾을 수 없습니다.");
           return;
         }
 
-        const formData = JSON.parse(formDataStr);
-        setUserName(formData.name);
+        const sessionData: SessionData = JSON.parse(sessionDataStr);
+        setProgress(20);
+        setStatusText("생년월일 정보를 분석하고 있습니다...");
 
-        // 프로그레스 시뮬레이션 시작 (0% → 20%)
-        setProgress(10);
+        // 2. 사주 API 호출
+        await new Promise((resolve) => setTimeout(resolve, 500));
+        setProgress(40);
+        setStatusText("사주팔자를 계산하고 있습니다...");
 
-        // 사주 간지 계산
-        const ganZhi = getSajuGanZhi(
-          formData.year,
-          formData.month,
-          formData.day,
-          formData.calendarType,
-          formData.birthHour
-        );
-
-        if (!ganZhi) {
-          setError("사주 계산 중 오류가 발생했습니다.");
-          return;
-        }
-
-        const sajuString = formatSajuString(ganZhi);
-
-        // 프로그레스 업데이트 (20% → 40%)
-        setProgress(30);
-
-        // OpenAI API 호출
         const response = await fetch("/api/saju/analyze", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            category: formData.category,
-            name: formData.name,
-            gender: formData.gender,
-            calendarType: formData.calendarType,
-            year: formData.year,
-            month: formData.month,
-            day: formData.day,
-            birthHour: formData.birthHour,
-            sajuGanZhi: ganZhi,
-            sajuString: sajuString,
+            category: "comprehensive",
+            name: sessionData.name,
+            gender: sessionData.gender,
+            calendarType: sessionData.calendarType,
+            year: sessionData.year,
+            month: sessionData.month,
+            day: sessionData.day,
+            birthHour: sessionData.birthHour,
           }),
         });
 
-        // 프로그레스 업데이트 (40% → 70%)
-        setProgress(60);
+        setProgress(70);
+        setStatusText("AI가 운세를 분석하고 있습니다...");
 
         if (!response.ok) {
-          const errorData = await response.json();
-          throw new Error(errorData.error || "분석 중 오류가 발생했습니다.");
+          throw new Error("분석 API 호출 실패");
         }
 
-        const result = await response.json();
+        const data = await response.json();
+        setProgress(90);
+        setStatusText("결과를 정리하고 있습니다...");
 
-        // 프로그레스 업데이트 (70% → 90%)
-        setProgress(85);
-
-        // 결과를 LocalStorage에 저장
+        // 3. 결과를 localStorage에 저장
         const resultData = {
-          ...formData,
-          result: result.result,
-          timestamp: result.timestamp,
-          analyzedAt: new Date().toISOString(),
+          name: sessionData.name,
+          gender: sessionData.gender,
+          calendarType: sessionData.calendarType,
+          year: sessionData.year,
+          month: sessionData.month,
+          day: sessionData.day,
+          birthHour: sessionData.birthHour,
+          category: "comprehensive",
+          result: data.result,
+          structured: data.structured,
+          timestamp: new Date().toISOString(),
         };
 
         localStorage.setItem(`${sessionId}-result`, JSON.stringify(resultData));
 
-        // 프로그레스 완료 (90% → 100%)
         setProgress(100);
+        setStatusText("분석 완료!");
 
-        // 잠시 대기 후 결과 페이지로 이동
-        setTimeout(() => {
-          router.push(`/saju/result/${sessionId}`);
-        }, 1000);
+        // 4. 결과 페이지로 이동
+        await new Promise((resolve) => setTimeout(resolve, 500));
+        router.push(`/saju/result/${sessionId}`);
       } catch (err) {
         console.error("Analysis error:", err);
-        setError(err instanceof Error ? err.message : "알 수 없는 오류가 발생했습니다.");
+        setError("분석 중 오류가 발생했습니다. 다시 시도해주세요.");
       }
     };
 
-    analyzeSaju();
+    analyzeAndRedirect();
   }, [sessionId, router]);
 
   if (error) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-purple-50 via-white to-pink-50 p-4">
-        <div className="max-w-md w-full bg-white rounded-2xl shadow-xl p-8 text-center">
-          <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <svg
-              className="w-8 h-8 text-red-600"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
+      <div className="min-h-screen bg-gradient-to-b from-purple-900 via-indigo-900 to-slate-900 flex items-center justify-center p-4">
+        <div className="max-w-md w-full bg-white/10 backdrop-blur-lg rounded-3xl p-8 text-center border border-white/20">
+          <div className="w-20 h-20 bg-red-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+            <span className="text-4xl">😢</span>
           </div>
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">
-            분석 오류
-          </h2>
-          <p className="text-gray-600 mb-6">{error}</p>
+          <h2 className="text-2xl font-bold text-white mb-3">오류 발생</h2>
+          <p className="text-white/70 mb-6">{error}</p>
           <button
-            onClick={() => router.push("/saju/new")}
-            className="w-full py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all"
+            type="button"
+            onClick={() => router.push("/")}
+            className="w-full py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold rounded-xl hover:from-purple-600 hover:to-pink-600 transition-all"
           >
-            처음부터 다시 시작
+            홈으로 돌아가기
           </button>
         </div>
       </div>
     );
   }
 
-  // 분석 중일 때 로딩 애니메이션 표시
-  if (!error) {
-    return (
-      <AnalysisLoading
-        progress={progress}
-        estimatedTime={30}
-        userName={userName}
-      />
-    );
-  }
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-purple-900 via-indigo-900 to-slate-900 flex items-center justify-center p-4">
+      {/* Animated Background Stars */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {[...Array(50)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-1 h-1 bg-white rounded-full animate-twinkle"
+            style={{
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 3}s`,
+              opacity: Math.random() * 0.7 + 0.3,
+            }}
+          />
+        ))}
+      </div>
 
-  return null;
+      <div className="relative max-w-md w-full">
+        {/* Main Card */}
+        <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 text-center border border-white/20 shadow-2xl">
+          {/* Animated Icon */}
+          <div className="relative w-32 h-32 mx-auto mb-8">
+            {/* Outer rotating ring */}
+            <div className="absolute inset-0 rounded-full border-4 border-purple-500/30 animate-spin" style={{ animationDuration: "8s" }} />
+            <div className="absolute inset-2 rounded-full border-4 border-pink-500/30 animate-spin" style={{ animationDuration: "6s", animationDirection: "reverse" }} />
+            <div className="absolute inset-4 rounded-full border-4 border-indigo-500/30 animate-spin" style={{ animationDuration: "4s" }} />
+
+            {/* Center icon */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center shadow-lg shadow-purple-500/50 animate-pulse">
+                <Sparkles className="w-8 h-8 text-white" />
+              </div>
+            </div>
+          </div>
+
+          {/* Status Text */}
+          <h2 className="text-2xl font-bold text-white mb-2">사주 분석 중</h2>
+          <p className="text-white/70 mb-8 min-h-[24px]">{statusText}</p>
+
+          {/* Progress Bar */}
+          <div className="relative h-3 bg-white/10 rounded-full overflow-hidden mb-4">
+            <div
+              className="absolute inset-y-0 left-0 bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 rounded-full transition-all duration-500 ease-out"
+              style={{ width: `${progress}%` }}
+            />
+            {/* Shimmer effect */}
+            <div
+              className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shimmer"
+              style={{ backgroundSize: "200% 100%" }}
+            />
+          </div>
+
+          {/* Progress Percentage */}
+          <p className="text-white/50 text-sm">{progress}% 완료</p>
+        </div>
+
+        {/* Tips */}
+        <div className="mt-6 text-center">
+          <p className="text-white/40 text-sm">
+            💫 잠시만 기다려주세요. AI가 당신의 사주를 분석하고 있습니다.
+          </p>
+        </div>
+      </div>
+
+      <style jsx>{`
+        @keyframes twinkle {
+          0%, 100% { opacity: 0.3; transform: scale(1); }
+          50% { opacity: 1; transform: scale(1.2); }
+        }
+
+        @keyframes shimmer {
+          0% { transform: translateX(-100%); }
+          100% { transform: translateX(100%); }
+        }
+
+        .animate-twinkle {
+          animation: twinkle 2s ease-in-out infinite;
+        }
+
+        .animate-shimmer {
+          animation: shimmer 2s ease-in-out infinite;
+        }
+      `}</style>
+    </div>
+  );
 }
