@@ -42,7 +42,32 @@ export default function ConsultationPage() {
   const years = Array.from({ length: currentYear - 1920 + 1 }, (_, i) => currentYear - i);
   const months = Array.from({ length: 12 }, (_, i) => i + 1);
   const days = Array.from({ length: 31 }, (_, i) => i + 1);
-  const hours = Array.from({ length: 24 }, (_, i) => i);
+
+  // 전통 12시진 (자시~해시)
+  const traditionalHours = [
+    { value: "23-01", label: "자시 (子時)", time: "23:00 ~ 01:00", emoji: "🐀" },
+    { value: "01-03", label: "축시 (丑時)", time: "01:00 ~ 03:00", emoji: "🐂" },
+    { value: "03-05", label: "인시 (寅時)", time: "03:00 ~ 05:00", emoji: "🐅" },
+    { value: "05-07", label: "묘시 (卯時)", time: "05:00 ~ 07:00", emoji: "🐇" },
+    { value: "07-09", label: "진시 (辰時)", time: "07:00 ~ 09:00", emoji: "🐉" },
+    { value: "09-11", label: "사시 (巳時)", time: "09:00 ~ 11:00", emoji: "🐍" },
+    { value: "11-13", label: "오시 (午時)", time: "11:00 ~ 13:00", emoji: "🐴" },
+    { value: "13-15", label: "미시 (未時)", time: "13:00 ~ 15:00", emoji: "🐑" },
+    { value: "15-17", label: "신시 (申時)", time: "15:00 ~ 17:00", emoji: "🐵" },
+    { value: "17-19", label: "유시 (酉時)", time: "17:00 ~ 19:00", emoji: "🐔" },
+    { value: "19-21", label: "술시 (戌時)", time: "19:00 ~ 21:00", emoji: "🐶" },
+    { value: "21-23", label: "해시 (亥時)", time: "21:00 ~ 23:00", emoji: "🐷" },
+  ];
+
+  // 분 선택지 (10분 단위)
+  const minutes = [
+    { value: "0", label: "00분 (정각)" },
+    { value: "10", label: "10분" },
+    { value: "20", label: "20분" },
+    { value: "30", label: "30분" },
+    { value: "40", label: "40분" },
+    { value: "50", label: "50분" },
+  ];
 
   useEffect(() => {
     const foundProduct = FEATURED_PRODUCTS.find(p => p.id === parseInt(productId));
@@ -322,34 +347,8 @@ export default function ConsultationPage() {
               태어난 시간
             </h3>
 
-            <div className="grid grid-cols-2 gap-2 mb-4">
-              <select
-                value={customerInfo.hour}
-                onChange={(e) => setCustomerInfo({ ...customerInfo, hour: e.target.value })}
-                disabled={customerInfo.unknownTime}
-                className={`px-3 py-3 border-2 rounded-xl transition-all outline-none ${
-                  errors.hour ? "border-red-400" : "border-gray-200"
-                } focus:border-purple-500 disabled:bg-gray-100 disabled:text-gray-400`}
-              >
-                <option value="">시</option>
-                {hours.map((h) => (
-                  <option key={h} value={h}>{h}시</option>
-                ))}
-              </select>
-              <select
-                value={customerInfo.minute}
-                onChange={(e) => setCustomerInfo({ ...customerInfo, minute: e.target.value })}
-                disabled={customerInfo.unknownTime}
-                className="px-3 py-3 border-2 border-gray-200 rounded-xl transition-all outline-none focus:border-purple-500 disabled:bg-gray-100 disabled:text-gray-400"
-              >
-                <option value="">분</option>
-                <option value="0">00분</option>
-                <option value="30">30분</option>
-              </select>
-            </div>
-
-            {/* Unknown Time Checkbox */}
-            <label className="flex items-center gap-3 p-3 bg-gray-50 rounded-xl cursor-pointer hover:bg-gray-100 transition-colors">
+            {/* Unknown Time Checkbox - 상단으로 이동 */}
+            <label className="flex items-center gap-3 p-3 bg-gray-50 rounded-xl cursor-pointer hover:bg-gray-100 transition-colors mb-4">
               <input
                 type="checkbox"
                 checked={customerInfo.unknownTime}
@@ -363,12 +362,73 @@ export default function ConsultationPage() {
               />
               <span className="text-sm text-gray-700">태어난 시간을 모르겠어요</span>
             </label>
-            {errors.hour && <p className="mt-2 text-xs text-red-500">{errors.hour}</p>}
+
+            {!customerInfo.unknownTime && (
+              <>
+                {/* 12시진 선택 */}
+                <div className="mb-4">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    시(時) - 12시진 <span className="text-red-500">*</span>
+                  </label>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                    {traditionalHours.map((hour) => (
+                      <button
+                        key={hour.value}
+                        type="button"
+                        onClick={() => setCustomerInfo({ ...customerInfo, hour: hour.value })}
+                        className={`p-3 rounded-xl text-left transition-all ${
+                          customerInfo.hour === hour.value
+                            ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg"
+                            : "bg-gray-50 text-gray-700 hover:bg-gray-100 border border-gray-200"
+                        }`}
+                      >
+                        <div className="flex items-center gap-2">
+                          <span className="text-lg">{hour.emoji}</span>
+                          <div>
+                            <p className={`text-sm font-medium ${customerInfo.hour === hour.value ? "text-white" : "text-gray-900"}`}>
+                              {hour.label}
+                            </p>
+                            <p className={`text-xs ${customerInfo.hour === hour.value ? "text-white/80" : "text-gray-500"}`}>
+                              {hour.time}
+                            </p>
+                          </div>
+                        </div>
+                      </button>
+                    ))}
+                  </div>
+                  {errors.hour && <p className="mt-2 text-xs text-red-500">{errors.hour}</p>}
+                </div>
+
+                {/* 분 선택 (정확한 시간을 아는 경우) */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    분(分) - 더 정확히 알고 계시면 선택해주세요 <span className="text-gray-400">(선택)</span>
+                  </label>
+                  <div className="grid grid-cols-3 sm:grid-cols-6 gap-2">
+                    {minutes.map((min) => (
+                      <button
+                        key={min.value}
+                        type="button"
+                        onClick={() => setCustomerInfo({ ...customerInfo, minute: min.value })}
+                        className={`py-2 px-3 rounded-lg text-sm font-medium transition-all ${
+                          customerInfo.minute === min.value
+                            ? "bg-purple-500 text-white shadow-md"
+                            : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                        }`}
+                      >
+                        {min.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </>
+            )}
 
             {/* Info Box */}
             <div className="mt-4 bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-4">
               <p className="text-xs text-gray-600 leading-relaxed">
                 💡 <span className="font-medium">태어난 시간</span>이 정확할수록 더 정밀한 사주 분석이 가능합니다.
+                전통적으로 사주팔자는 <span className="font-medium">12시진(두 시간 단위)</span>을 기준으로 계산합니다.
                 시간을 모르시면 대략적인 분석 결과를 제공해드립니다.
               </p>
             </div>
