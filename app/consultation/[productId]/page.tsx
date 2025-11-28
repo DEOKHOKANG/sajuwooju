@@ -1,0 +1,433 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import { useRouter, useParams } from "next/navigation";
+import Link from "next/link";
+import { ArrowLeft, User, Calendar, Clock, Sparkles, CheckCircle } from "lucide-react";
+import { FEATURED_PRODUCTS } from "@/lib/products-data";
+
+interface CustomerInfo {
+  name: string;
+  gender: "male" | "female" | "";
+  calendarType: "solar" | "lunar";
+  year: string;
+  month: string;
+  day: string;
+  hour: string;
+  minute: string;
+  unknownTime: boolean;
+}
+
+export default function ConsultationPage() {
+  const router = useRouter();
+  const params = useParams();
+  const productId = params.productId as string;
+
+  const [product, setProduct] = useState<typeof FEATURED_PRODUCTS[0] | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [customerInfo, setCustomerInfo] = useState<CustomerInfo>({
+    name: "",
+    gender: "",
+    calendarType: "solar",
+    year: "",
+    month: "",
+    day: "",
+    hour: "",
+    minute: "",
+    unknownTime: false,
+  });
+  const [errors, setErrors] = useState<Record<string, string>>({});
+
+  const currentYear = new Date().getFullYear();
+  const years = Array.from({ length: currentYear - 1920 + 1 }, (_, i) => currentYear - i);
+  const months = Array.from({ length: 12 }, (_, i) => i + 1);
+  const days = Array.from({ length: 31 }, (_, i) => i + 1);
+  const hours = Array.from({ length: 24 }, (_, i) => i);
+
+  useEffect(() => {
+    const foundProduct = FEATURED_PRODUCTS.find(p => p.id === parseInt(productId));
+    if (foundProduct) {
+      setProduct(foundProduct);
+    }
+  }, [productId]);
+
+  const validateForm = (): boolean => {
+    const newErrors: Record<string, string> = {};
+
+    if (!customerInfo.name.trim()) {
+      newErrors.name = "이름을 입력해주세요";
+    }
+    if (!customerInfo.gender) {
+      newErrors.gender = "성별을 선택해주세요";
+    }
+    if (!customerInfo.year) {
+      newErrors.year = "년도를 선택해주세요";
+    }
+    if (!customerInfo.month) {
+      newErrors.month = "월을 선택해주세요";
+    }
+    if (!customerInfo.day) {
+      newErrors.day = "일을 선택해주세요";
+    }
+    if (!customerInfo.unknownTime && !customerInfo.hour) {
+      newErrors.hour = "태어난 시간을 선택하거나 '시간 모름'을 체크해주세요";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = async () => {
+    if (!validateForm() || !product) return;
+
+    setIsLoading(true);
+
+    try {
+      // Generate session ID
+      const sessionId = `saju_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+
+      // Calculate birth hour for API
+      const birthHour = customerInfo.unknownTime ? "unknown" : `${customerInfo.hour}:${customerInfo.minute || "00"}`;
+
+      // Prepare form data for API
+      const formData = {
+        category: "comprehensive", // Default category for product consultations
+        name: customerInfo.name,
+        gender: customerInfo.gender,
+        calendarType: customerInfo.calendarType,
+        year: parseInt(customerInfo.year),
+        month: parseInt(customerInfo.month),
+        day: parseInt(customerInfo.day),
+        birthHour,
+        productId: product.id,
+        productTitle: product.title,
+      };
+
+      // Save to localStorage for later use
+      localStorage.setItem(sessionId, JSON.stringify({
+        ...formData,
+        createdAt: new Date().toISOString(),
+      }));
+
+      // Navigate to analysis page (this will trigger the API call)
+      router.push(`/saju/analyze/${sessionId}`);
+    } catch (error) {
+      console.error("Submit error:", error);
+      setIsLoading(false);
+    }
+  };
+
+  if (!product) {
+    return (
+      <div className="min-h-screen bg-white flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-secondary mx-auto mb-4" />
+          <p className="text-gray-600">로딩 중...</p>
+        </div>
+      </div>
+    );
+  }
+
+  const discountedPrice = Math.round(10000 * (100 - product.discount) / 100);
+
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-white via-purple-50/30 to-pink-50/30">
+      {/* Header */}
+      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div className="mx-auto w-full max-w-[600px] px-4 py-3 flex items-center gap-3">
+          <Link href={`/products/${productId}`}>
+            <button
+              className="w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition-colors rounded-full"
+              aria-label="뒤로 가기"
+            >
+              <ArrowLeft className="w-5 h-5 text-gray-700" />
+            </button>
+          </Link>
+          <h1 className="font-display text-lg font-semibold text-gray-900 truncate flex-1">
+            사주 분석 정보 입력
+          </h1>
+        </div>
+      </header>
+
+      <main className="mx-auto w-full max-w-[600px] px-4 py-6 pb-32">
+        {/* Product Info Card */}
+        <div className="bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl p-5 mb-8 text-white shadow-lg">
+          <div className="flex items-center gap-3 mb-3">
+            <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm">
+              <Sparkles className="w-6 h-6" />
+            </div>
+            <div>
+              <h2 className="text-lg font-bold">{product.title}</h2>
+              <p className="text-sm text-white/80">{product.subtitle}</p>
+            </div>
+          </div>
+          <div className="flex items-center justify-between mt-4 pt-4 border-t border-white/20">
+            <span className="text-sm text-white/70">결제 금액</span>
+            <span className="text-xl font-bold">{discountedPrice.toLocaleString()}원</span>
+          </div>
+        </div>
+
+        {/* Form */}
+        <div className="space-y-8">
+          {/* Section 1: 기본 정보 */}
+          <section className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+            <h3 className="flex items-center gap-2 text-lg font-bold text-gray-900 mb-5">
+              <User className="w-5 h-5 text-purple-500" />
+              기본 정보
+            </h3>
+
+            {/* Name */}
+            <div className="mb-5">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                이름 <span className="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                placeholder="이름을 입력해주세요"
+                value={customerInfo.name}
+                onChange={(e) => setCustomerInfo({ ...customerInfo, name: e.target.value })}
+                className={`w-full px-4 py-3 border-2 rounded-xl transition-all outline-none ${
+                  errors.name
+                    ? "border-red-400 focus:border-red-500"
+                    : "border-gray-200 focus:border-purple-500"
+                } focus:ring-2 focus:ring-purple-500/20`}
+              />
+              {errors.name && <p className="mt-1 text-xs text-red-500">{errors.name}</p>}
+            </div>
+
+            {/* Gender */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-3">
+                성별 <span className="text-red-500">*</span>
+              </label>
+              <div className="grid grid-cols-2 gap-3">
+                <button
+                  type="button"
+                  onClick={() => setCustomerInfo({ ...customerInfo, gender: "male" })}
+                  className={`py-4 rounded-xl font-medium text-base transition-all flex items-center justify-center gap-2 ${
+                    customerInfo.gender === "male"
+                      ? "bg-blue-500 text-white shadow-lg shadow-blue-500/30"
+                      : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  }`}
+                >
+                  <span className="text-xl">👨</span> 남성
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setCustomerInfo({ ...customerInfo, gender: "female" })}
+                  className={`py-4 rounded-xl font-medium text-base transition-all flex items-center justify-center gap-2 ${
+                    customerInfo.gender === "female"
+                      ? "bg-pink-500 text-white shadow-lg shadow-pink-500/30"
+                      : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  }`}
+                >
+                  <span className="text-xl">👩</span> 여성
+                </button>
+              </div>
+              {errors.gender && <p className="mt-2 text-xs text-red-500">{errors.gender}</p>}
+            </div>
+          </section>
+
+          {/* Section 2: 생년월일 */}
+          <section className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+            <h3 className="flex items-center gap-2 text-lg font-bold text-gray-900 mb-5">
+              <Calendar className="w-5 h-5 text-purple-500" />
+              생년월일
+            </h3>
+
+            {/* Calendar Type */}
+            <div className="mb-5">
+              <label className="block text-sm font-medium text-gray-700 mb-3">
+                양력 / 음력
+              </label>
+              <div className="grid grid-cols-2 gap-3">
+                <button
+                  type="button"
+                  onClick={() => setCustomerInfo({ ...customerInfo, calendarType: "solar" })}
+                  className={`py-3 rounded-xl font-medium transition-all flex items-center justify-center gap-2 ${
+                    customerInfo.calendarType === "solar"
+                      ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg"
+                      : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  }`}
+                >
+                  <span>☀️</span> 양력
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setCustomerInfo({ ...customerInfo, calendarType: "lunar" })}
+                  className={`py-3 rounded-xl font-medium transition-all flex items-center justify-center gap-2 ${
+                    customerInfo.calendarType === "lunar"
+                      ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg"
+                      : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  }`}
+                >
+                  <span>🌙</span> 음력
+                </button>
+              </div>
+            </div>
+
+            {/* Birth Date */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                생년월일 <span className="text-red-500">*</span>
+              </label>
+              <div className="grid grid-cols-3 gap-2">
+                <select
+                  value={customerInfo.year}
+                  onChange={(e) => setCustomerInfo({ ...customerInfo, year: e.target.value })}
+                  className={`px-3 py-3 border-2 rounded-xl transition-all outline-none ${
+                    errors.year ? "border-red-400" : "border-gray-200"
+                  } focus:border-purple-500`}
+                >
+                  <option value="">년</option>
+                  {years.map((y) => (
+                    <option key={y} value={y}>{y}년</option>
+                  ))}
+                </select>
+                <select
+                  value={customerInfo.month}
+                  onChange={(e) => setCustomerInfo({ ...customerInfo, month: e.target.value })}
+                  className={`px-3 py-3 border-2 rounded-xl transition-all outline-none ${
+                    errors.month ? "border-red-400" : "border-gray-200"
+                  } focus:border-purple-500`}
+                >
+                  <option value="">월</option>
+                  {months.map((m) => (
+                    <option key={m} value={m}>{m}월</option>
+                  ))}
+                </select>
+                <select
+                  value={customerInfo.day}
+                  onChange={(e) => setCustomerInfo({ ...customerInfo, day: e.target.value })}
+                  className={`px-3 py-3 border-2 rounded-xl transition-all outline-none ${
+                    errors.day ? "border-red-400" : "border-gray-200"
+                  } focus:border-purple-500`}
+                >
+                  <option value="">일</option>
+                  {days.map((d) => (
+                    <option key={d} value={d}>{d}일</option>
+                  ))}
+                </select>
+              </div>
+              {(errors.year || errors.month || errors.day) && (
+                <p className="mt-1 text-xs text-red-500">생년월일을 모두 선택해주세요</p>
+              )}
+            </div>
+          </section>
+
+          {/* Section 3: 태어난 시간 */}
+          <section className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+            <h3 className="flex items-center gap-2 text-lg font-bold text-gray-900 mb-5">
+              <Clock className="w-5 h-5 text-purple-500" />
+              태어난 시간
+            </h3>
+
+            <div className="grid grid-cols-2 gap-2 mb-4">
+              <select
+                value={customerInfo.hour}
+                onChange={(e) => setCustomerInfo({ ...customerInfo, hour: e.target.value })}
+                disabled={customerInfo.unknownTime}
+                className={`px-3 py-3 border-2 rounded-xl transition-all outline-none ${
+                  errors.hour ? "border-red-400" : "border-gray-200"
+                } focus:border-purple-500 disabled:bg-gray-100 disabled:text-gray-400`}
+              >
+                <option value="">시</option>
+                {hours.map((h) => (
+                  <option key={h} value={h}>{h}시</option>
+                ))}
+              </select>
+              <select
+                value={customerInfo.minute}
+                onChange={(e) => setCustomerInfo({ ...customerInfo, minute: e.target.value })}
+                disabled={customerInfo.unknownTime}
+                className="px-3 py-3 border-2 border-gray-200 rounded-xl transition-all outline-none focus:border-purple-500 disabled:bg-gray-100 disabled:text-gray-400"
+              >
+                <option value="">분</option>
+                <option value="0">00분</option>
+                <option value="30">30분</option>
+              </select>
+            </div>
+
+            {/* Unknown Time Checkbox */}
+            <label className="flex items-center gap-3 p-3 bg-gray-50 rounded-xl cursor-pointer hover:bg-gray-100 transition-colors">
+              <input
+                type="checkbox"
+                checked={customerInfo.unknownTime}
+                onChange={(e) => setCustomerInfo({
+                  ...customerInfo,
+                  unknownTime: e.target.checked,
+                  hour: e.target.checked ? "" : customerInfo.hour,
+                  minute: e.target.checked ? "" : customerInfo.minute,
+                })}
+                className="w-5 h-5 rounded border-gray-300 text-purple-500 focus:ring-purple-500"
+              />
+              <span className="text-sm text-gray-700">태어난 시간을 모르겠어요</span>
+            </label>
+            {errors.hour && <p className="mt-2 text-xs text-red-500">{errors.hour}</p>}
+
+            {/* Info Box */}
+            <div className="mt-4 bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-4">
+              <p className="text-xs text-gray-600 leading-relaxed">
+                💡 <span className="font-medium">태어난 시간</span>이 정확할수록 더 정밀한 사주 분석이 가능합니다.
+                시간을 모르시면 대략적인 분석 결과를 제공해드립니다.
+              </p>
+            </div>
+          </section>
+
+          {/* Completion Checklist */}
+          <section className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+            <h3 className="text-lg font-bold text-gray-900 mb-4">입력 확인</h3>
+            <div className="space-y-3">
+              <div className={`flex items-center gap-3 ${customerInfo.name ? "text-green-600" : "text-gray-400"}`}>
+                <CheckCircle className={`w-5 h-5 ${customerInfo.name ? "fill-green-100" : ""}`} />
+                <span className="text-sm">이름 입력</span>
+              </div>
+              <div className={`flex items-center gap-3 ${customerInfo.gender ? "text-green-600" : "text-gray-400"}`}>
+                <CheckCircle className={`w-5 h-5 ${customerInfo.gender ? "fill-green-100" : ""}`} />
+                <span className="text-sm">성별 선택</span>
+              </div>
+              <div className={`flex items-center gap-3 ${customerInfo.year && customerInfo.month && customerInfo.day ? "text-green-600" : "text-gray-400"}`}>
+                <CheckCircle className={`w-5 h-5 ${customerInfo.year && customerInfo.month && customerInfo.day ? "fill-green-100" : ""}`} />
+                <span className="text-sm">생년월일 입력</span>
+              </div>
+              <div className={`flex items-center gap-3 ${customerInfo.hour || customerInfo.unknownTime ? "text-green-600" : "text-gray-400"}`}>
+                <CheckCircle className={`w-5 h-5 ${customerInfo.hour || customerInfo.unknownTime ? "fill-green-100" : ""}`} />
+                <span className="text-sm">태어난 시간 {customerInfo.unknownTime ? "(모름)" : "입력"}</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      {/* Fixed Bottom Button */}
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 z-40">
+        <div className="mx-auto w-full max-w-[600px] p-4">
+          <button
+            onClick={handleSubmit}
+            disabled={isLoading}
+            className={`w-full py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold rounded-xl text-lg transition-all flex items-center justify-center gap-2 ${
+              isLoading
+                ? "opacity-70 cursor-not-allowed"
+                : "hover:from-purple-600 hover:to-pink-600 hover:shadow-xl active:scale-[0.98]"
+            }`}
+          >
+            {isLoading ? (
+              <>
+                <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                분석 시작 중...
+              </>
+            ) : (
+              <>
+                <Sparkles className="w-5 h-5" />
+                사주 분석 시작하기
+              </>
+            )}
+          </button>
+          <p className="text-center text-xs text-gray-500 mt-2">
+            정보 입력 완료 후 AI가 사주를 분석합니다
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}

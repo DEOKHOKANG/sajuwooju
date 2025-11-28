@@ -1,10 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { Star, Eye, ArrowLeft } from "lucide-react";
-import { ConsultationModal } from "@/components/consultation/ConsultationModal";
 
 interface Product {
   id: number;
@@ -21,9 +20,13 @@ interface ProductDetailClientProps {
 }
 
 export function ProductDetailClient({ product }: ProductDetailClientProps) {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
+  const router = useRouter();
   const discountedPrice = Math.round(10000 * (100 - product.discount) / 100);
+
+  const handleConsultation = () => {
+    // Navigate to consultation page instead of modal
+    router.push(`/consultation/${product.id}`);
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -222,7 +225,7 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-border z-40">
         <div className="mx-auto w-full max-w-[600px] p-4">
           <button
-            onClick={() => setIsModalOpen(true)}
+            onClick={handleConsultation}
             className="w-full bg-secondary text-white font-bold py-4 text-lg hover:bg-secondary/90 transition-colors"
             style={{ borderRadius: '12px' }}
           >
@@ -230,15 +233,6 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
           </button>
         </div>
       </div>
-
-      {/* Consultation Modal */}
-      <ConsultationModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        productId={product.id}
-        productTitle={product.title}
-        productPrice={discountedPrice}
-      />
     </div>
   );
 }
