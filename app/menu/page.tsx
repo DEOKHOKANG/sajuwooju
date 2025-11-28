@@ -15,7 +15,7 @@ export default function MenuPage() {
         </div>
       </header>
 
-      <main className="mx-auto w-full max-w-[600px] px-4 pb-20">
+      <main className="mx-auto w-full max-w-[600px] px-4 pb-8">
         {/* User Info Section */}
         <section className="py-6 border-b border-border">
           <div className="flex items-center gap-4">

@@ -204,9 +204,8 @@ export default function MainPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <MobileHeader />
 
-      <main className="mx-auto w-full max-w-[600px] px-3 sm:px-4 lg:px-8 pb-20 sm:pb-24">
+      <main className="mx-auto w-full max-w-[600px] px-3 sm:px-4 lg:px-8 ">
 
         {/* 📸 프리미엄 롤링 배너 - 최상단 */}
         <section className="pt-12 pb-5 sm:pt-16 sm:pb-6">

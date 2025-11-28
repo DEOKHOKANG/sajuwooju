@@ -31,7 +31,7 @@ export default function SettingsPage() {
         </div>
       </header>
 
-      <main className="mx-auto w-full max-w-[600px] px-4 pb-20">
+      <main className="mx-auto w-full max-w-[600px] px-4 pb-8">
         {/* Account Info Section */}
         <section className="py-6 border-b border-border">
           <h2 className="text-sm font-bold text-primary mb-4">계정 정보</h2>

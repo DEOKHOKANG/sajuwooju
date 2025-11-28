@@ -24,7 +24,7 @@ export default function TermsPage() {
         </div>
       </header>
 
-      <main className="mx-auto w-full max-w-[600px] px-4 py-6 pb-20">
+      <main className="mx-auto w-full max-w-[600px] px-4 py-6 pb-8">
         <div className="prose prose-sm max-w-none">
           <section className="mb-8">
             <h2 className="text-lg font-bold text-primary mb-4">제1조 (목적)</h2>

@@ -84,7 +84,7 @@ export default async function CategoryPage({
         </div>
       </header>
 
-      <main className="mx-auto w-full max-w-[600px] px-4 pb-20">
+      <main className="mx-auto w-full max-w-[600px] px-4 pb-8">
         {/* Category Header */}
         <section className="py-6">
           <div className="flex items-center gap-4 mb-6">

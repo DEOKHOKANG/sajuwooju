@@ -71,7 +71,7 @@ export default function SupportPage() {
         </div>
       </header>
 
-      <main className="mx-auto w-full max-w-[600px] px-4 pb-20">
+      <main className="mx-auto w-full max-w-[600px] px-4 pb-8">
         {/* Contact Methods */}
         <section className="py-6 border-b border-border">
           <h2 className="text-sm font-bold text-primary mb-4">문의하기</h2>
