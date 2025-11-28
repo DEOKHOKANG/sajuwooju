@@ -1,0 +1,63 @@
+
+# 사주우주 사이트 분석 보고서
+생성일시: 2025. 11. 5. 오후 3:12:40
+
+## 페이지 정보
+- 제목: 사주우주 | 우주의 법칙으로 읽는 나의 운명
+- URL: https://sajuwooju.me/
+
+## 색상 팔레트
+발견된 색상: 24개
+- rgb(0, 0, 0)
+- rgb(88, 89, 105)
+- rgb(255, 255, 255)
+- rgb(221, 221, 221)
+- rgb(51, 51, 51)
+- rgb(65, 66, 84)
+- rgb(248, 250, 252)
+- rgb(241, 245, 249)
+- rgb(15, 23, 42)
+- rgb(71, 85, 105)
+- rgb(244, 63, 94)
+- rgb(230, 230, 235)
+- rgb(175, 177, 189)
+- rgba(65, 66, 84, 0.15) rgb(88, 89, 105) rgb(88, 89, 105)
+- rgb(243, 244, 246)
+- rgb(242, 243, 247)
+- rgb(59, 60, 77)
+- rgba(255, 255, 255, 0)
+- rgb(29, 29, 29)
+- rgb(254, 229, 0)
+
+## 폰트
+- "Times New Roman"
+- Arial, sans-serif
+- "OnGlyph Saehayan Font"
+- "Pretendard Variable"
+- Arial
+- "Noto Sans KR", sans-serif
+- Karla, sans-serif
+- "Pretendard Variable", sans-serif
+
+## 제목 구조
+H2: 🍪 카테고리
+H2: 사주우주 이벤트
+H2: 🍷 월간 랭킹 BEST
+H2: 🐣 NEW! 쌔삥 신규사주
+H2: 🥹 사주우주 실시간 리뷰
+H3: Tight
+
+## 인터랙티브 요소
+- 버튼: 4개
+- 링크: 33개
+- 입력 필드: 3개
+- 폼: 0개
+
+## 이미지
+총 65개의 이미지
+
+## 스크린샷
+- Desktop (1920x1080): screenshot-desktop.png
+- Tablet (768x1024): screenshot-tablet.png
+- Mobile (375x812): screenshot-mobile.png
+  

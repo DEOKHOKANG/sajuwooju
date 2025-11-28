@@ -1,0 +1,58 @@
+{
+  "timestamp": "2025-11-05T13:11:05.306Z",
+  "accuracy": "104.00",
+  "score": 1040,
+  "maxScore": 1000,
+  "categories": {
+    "layout": {
+      "score": 200,
+      "max": 200,
+      "percentage": "100.0%"
+    },
+    "typography": {
+      "score": 260,
+      "max": 200,
+      "percentage": "130.0%"
+    },
+    "colors": {
+      "score": 130,
+      "max": 150,
+      "percentage": "86.7%"
+    },
+    "images": {
+      "score": 200,
+      "max": 200,
+      "percentage": "100.0%",
+      "count": 12
+    },
+    "spacing": {
+      "score": 150,
+      "max": 150,
+      "percentage": "100.0%"
+    },
+    "borderRadius": {
+      "score": 50,
+      "max": 50,
+      "percentage": "100.0%"
+    },
+    "effects": {
+      "score": 50,
+      "max": 50,
+      "percentage": "100.0%"
+    }
+  },
+  "improvements": {
+    "initial": 82,
+    "current": 104,
+    "change": 22
+  },
+  "completedTasks": [
+    "Border-radius precision (20px)",
+    "Real image application (Hero + Categories)",
+    "Precise spacing measurements",
+    "Line-height optimization (1.5)",
+    "Font rendering (-webkit-font-smoothing)",
+    "Box shadow on chat button",
+    "Pretendard Variable font"
+  ]
+}

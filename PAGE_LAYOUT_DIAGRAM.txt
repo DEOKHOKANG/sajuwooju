@@ -1,0 +1,154 @@
+SAJUTIGHT.ME HOMEPAGE VISUAL LAYOUT
+===================================
+
+VIEWPORT: 1280x720px | TOTAL PAGE HEIGHT: 720px
+
+SECTION 1: CATEGORY NAVIGATION
+- Label: 🍪 카테고리
+- 11 Categories Listed:
+  1. 이벤트! (Events)
+  2. 궁합 (Compatibility)
+  3. 솔로/연애운 (Solo/Romance)
+  4. 이별/재회 (Breakup/Reunion)
+  5. 결혼운 (Marriage)
+  6. 임신/자녀운 (Pregnancy)
+  7. 신년운세 (New Year)
+  8. 월별운세 (Monthly)
+  9. 취업/직업운 (Career)
+  10. 관상/타로 (Physiognomy/Tarot)
+
+- Event Promos:
+  * 친구 초대하고 3,000원 받기!
+  * 5만 달성 기념 고객 감사 이벤트
+
+SECTION 2: HERO SLIDER
+- Type: Carousel with 6-7 unique slides
+- Total Images: 62+ (23 unique files)
+- Images:
+  * 여우솔탈-하반기 (330x331)
+  * 썸사주궁합 (1160x1160)
+  * 하반기종합 (330x330)
+  * 재회 (330x330)
+  * 인터뷰 (1560x1560)
+  * 솔탈
+  * 결혼궁합
+
+SECTION 3: FEATURED PRODUCTS - 12 SERVICE CARDS
+Header: 🍷 월간 랭킹 BEST
+
+1. 솔로탈출 사주 🌸
+   Title: 내 숨겨진 연애운은?
+   Rating: 4.9 stars | Views: 50K+ | Discount: 54%
+
+2. 재회 환승사주
+   Title: 재회 vs 환승? 이제 지쳤다면
+   Discount: 60%
+
+3. 프리미엄 하반기 종합사주✨
+   Title: 화 기운 3년을 읽어주는
+   Rating: 4.9 stars | Views: 10K+ | Discount: 46%
+
+4. 커플 궁합사주 🥵
+   Title: 그 사람과 나는 얼마나 잘 맞을까?
+   Rating: 4.7 stars | Views: 20K+ | Discount: 46%
+
+5. 이별 재회 사주
+   Title: 그 사람과 재회할 수 있을까..?
+   Rating: 4.9 stars | Views: 60K+ | Discount: 41%
+
+6. 커리어사주
+   Title: 이직해서 연봉 2배 올리고 싶다면
+   Rating: 4.6 stars | Views: 10K+ | Discount: 46%
+
+7. 2025년 타이트 종합사주
+   Title: 명쾌한 10년 풀이까지 해주는
+   Rating: 4.7 stars | Views: 10K+ | Discount: 29%
+
+8. 팩폭 사주
+   Title: 뻔한 조언 대신 진짜 매운맛 사주!
+   Rating: 4.6 stars | Views: 10K+ | Discount: 29%
+
+9. 신년운세 총운 (NEW!)
+   Title: 소름돋게 잘 맞는 2026 신년운세
+   Badge: 🐣 NEW! 쌔삥 신규사주 | Discount: 54%
+
+10. 10년 재물운 사주
+    Title: 소름돋는 2026년 재물운세 💵
+    Discount: 60%
+
+11. 월간운세 (August 2025)
+    Title: 2025년 8월 월간운세
+    Discount: 50%
+
+12. 썸 궁합사주
+    Title: 그 사람도 나를 좋아할까?
+    Discount: 46%
+
+SECTION 4: ANIMATED TICKER (Hidden)
+- Content: Repeating marketing messages
+- Messages:
+  * "💎연애부터 결혼까지😏내 썸남의 속마음이 궁금해?😳짝사랑으로..."
+  * "👀이별 재회 고민😈바람기와 은밀한 욕구❤️궁합 사주 분석..."
+  * "😳3만명 이상의 고객들이 만족한 궁합🤫사주로 보는 속궁합..."
+
+SECTION 5: CUSTOMER REVIEWS
+Header: 🥹 타이트 사주 실시간 리뷰 [전체 보기]
+
+Review 1:
+- Service: 이별 재회 사주
+- Title: 그 사람과 재회할 수 있을까..?
+- Text: "이별한 지 얼마 안됐는데 너무 힘들고 꼭 사주 해보고 싶었어서..."
+- Reviewer: 타이트 사주
+
+Review 2:
+- Text: "성격은 정말 잘 풀이 해주시는것 같아요..."
+- Status: "아직 연락은 안왔디만 여기 말만 믿고 지금 두달째..."
+
+SECTION 6: FOOTER
+Brand: Tight (타이트 사주)
+Tagline: 쫀득하게 들어맞는 사주 궁합
+
+Company Details:
+- CEO: 송홍기
+- Business Registration: 414-05-23847
+- Telecom Sales Notification: 2025-서울광진-0894
+- Address: 서울시 광진구 능동로 건국대학교 기술혁신관
+- Company Name: 사이버네틱스 (Cybernetics)
+- Customer Service: 채널톡
+- Phone: 010-2293-0574
+
+Links:
+- 이용약관 (Terms of Service)
+- 개인정보처리방침 (Privacy Policy)
+- Copyright @ 2024 CYBERNETICS
+
+FLOATING ELEMENTS:
+- Countdown Timer (fixed position, orange #ff5900 background)
+- Floating Logo: "타이트 사주"
+
+PAGE STATISTICS:
+- Total DIV Elements: 563
+- Total Images: 65 (23 unique)
+- Total CTAs/Buttons: 84
+- Total Headings: 6
+- Visible Text Lines: 87
+- HTML Size: ~262 KB
+
+TECHNICAL SPECS:
+- Platform: Bubble.io (no-code)
+- Viewport: 1280x720px
+- Main Content Width: 600px
+- Page Height: 720px (single viewport)
+- Layout: Flex column
+- Font: Noto Sans KR
+- Primary Color: #ff5900 (orange)
+
+CONVERSION STRATEGY:
+✓ Floating urgency timer
+✓ High star ratings (4.6-4.9)
+✓ View count social proof
+✓ Multiple discount tiers
+✓ Real customer testimonials
+✓ Referral program
+✓ Multiple CTAs
+✓ Event promotions

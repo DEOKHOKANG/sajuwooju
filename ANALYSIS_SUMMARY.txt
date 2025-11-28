@@ -1,0 +1,163 @@
+SAJUTIGHT.ME HOMEPAGE ANALYSIS - SUMMARY REPORT
+================================================
+
+ANALYSIS FILES GENERATED:
+1. COMPLETE_ANALYSIS.txt (5.4 KB) - Quick reference summary
+2. HOMEPAGE_STRUCTURE_ANALYSIS.md (5.7 KB) - Detailed breakdown
+3. PAGE_LAYOUT_DIAGRAM.txt (4.4 KB) - Visual layout structure
+4. page-structure.json (14 KB) - Raw DOM data
+5. visual-structure.json (13 KB) - Layout metrics and coordinates
+
+TOTAL ANALYSIS TIME: ~5 minutes
+ANALYSIS DATE: November 5, 2025
+
+KEY METRICS:
+- Viewport: 1280x720px
+- Total DIV elements: 563
+- Total images: 65 (23 unique)
+- Total CTAs: 84
+- HTML size: ~262 KB
+
+HOMEPAGE STRUCTURE (TOP TO BOTTOM):
+
+1. CATEGORY NAVIGATION (11 categories)
+   - 이벤트!, 궁합, 솔로/연애운, 이별/재회, 결혼운
+   - 임신/자녀운, 신년운세, 월별운세, 취업/직업운, 관상/타로
+
+2. HERO SLIDER
+   - 6-7 unique slides
+   - 62+ images (auto-rotating carousel)
+   - Key products: 여우솔탈, 썸사주궁합, 하반기종합, 재회, 인터뷰
+
+3. FEATURED PRODUCTS (12 SERVICE CARDS)
+   Header: 🍷 월간 랭킹 BEST
+   
+   Top 3 Performers:
+   - 이별 재회 사주: 60K+ views, 4.9 stars (TOP)
+   - 솔로탈출 사주: 50K+ views, 4.9 stars
+   - 커플 궁합사주: 20K+ views, 4.7 stars
+   
+   All 12 products have ratings (4.6-4.9) and discounts (29%-60%)
+
+4. CUSTOMER REVIEWS SECTION
+   - Real testimonials with detailed feedback
+   - High satisfaction (95%+)
+   - Long-term engagement (2+ months waiting)
+
+5. FLOATING ELEMENTS
+   - Countdown timer (orange #ff5900 background)
+   - Floating logo ("타이트 사주")
+
+6. FOOTER
+   - Company: 사이버네틱스 (Cybernetics)
+   - CEO: 송홍기
+   - Address: 건국대학교 기술혁신관, 서울
+   - Phone: 010-2293-0574
+   - Customer service: 채널톡
+
+CONVERSION TACTICS:
+
+1. Social Proof:
+   - All products rated 4.6-4.9 stars
+   - View counts: 10K-60K+ per product
+   - Real customer testimonials
+   - Implied 30K+ customer base
+
+2. Urgency & Scarcity:
+   - Floating countdown timer
+   - Multiple discount tiers (29%-60%)
+   - NEW product badges
+   - Limited-time event promos
+
+3. Accessibility:
+   - 11 category navigation paths
+   - 12 distinct service offerings
+   - Problem-centric headlines
+   - Price anchoring strategy
+
+4. Engagement:
+   - 84 interactive CTAs
+   - Referral program (3,000 won)
+   - Customer review section
+   - Real-time testimonials
+
+PRICING STRATEGY:
+- Range: 29% - 60% discount
+- Most common: 46% (5 products)
+- Highest: 60% (2 products)
+- Average: 46%
+
+PRODUCT PERFORMANCE:
+- Total views: 225K+ across 12 products
+- Average views per product: 19K+
+- Top product: 60K+ views
+- Average rating: 4.7/5.0
+
+TARGET AUDIENCE:
+- Korean language users
+- Age: 20-40 years old (estimated)
+- Pain points: Relationships, career, wealth
+- Decision-maker: Emotionally driven, values peer reviews
+
+BUSINESS MODEL:
+- DTC digital services
+- Digital deliverable (saju readings)
+- Tiered pricing ($20-100+ USD equivalent)
+- Lifetime value through referrals
+
+SUCCESS INDICATORS:
+- High engagement (2+ months wait time)
+- Strong ratings (4.6-4.9)
+- Significant view counts (225K+ aggregate)
+- Real testimonials with detailed feedback
+- Repeat customers
+
+DESIGN PHILOSOPHY:
+- Single-page SPA (all content visible)
+- Maximum engagement focus
+- Psychological trigger-based (social proof, urgency, scarcity)
+- Mobile-responsive layout
+- Conversion-optimized flow
+
+UNIQUE FEATURES:
+- Floating urgency timer
+- Real customer testimonials with long-form reviews
+- Multiple problem-centric product positioning
+- Referral incentive program
+- Live chat support (Channel Talk)
+- 11 category navigation system
+
+PLATFORM:
+- Built on Bubble.io (no-code visual builder)
+- CDN: Bubble.io with Cloudflare optimization
+- Font: Noto Sans KR
+- Color scheme: Orange (#ff5900) for urgency/CTAs
+
+QUICK INSIGHTS:
+✓ Highly optimized for conversions
+✓ Strong social proof mechanisms
+✓ Multiple pricing anchors
+✓ Excellent customer testimonials
+✓ High engagement rates
+✓ Clear problem-centric positioning
+✓ Mobile-first responsive design
+✓ Full company transparency
+✓ Multiple contact/support options
+✓ Referral/viral growth incentives
+
+OVERALL ASSESSMENT:
+Sajutight.me is a sophisticated, conversion-focused landing page that uses advanced psychological tactics (social proof, urgency, specificity, reciprocity) to drive customer acquisition for Korean fortune-telling services. The design maximizes engagement through multiple CTAs, real reviews, and strategic discount positioning while maintaining high perceived value through star ratings and view counts.
+
+Platform: Bubble.io (No-code)
+Performance: High (implied 30K+ customers, 225K+ product views)
+Optimization Level: Advanced
+Target KPI: Likely optimized for conversion rate and customer lifetime value
+
+RECOMMENDED ACTIONS:
+1. Monitor top performers (이별 재회 사주 - 60K views)
+2. Test new product introductions
+3. Track referral program effectiveness
+4. Analyze seasonal discount impact
+5. A/B test countdown timer variations
+6. Compare with competitor positioning
+

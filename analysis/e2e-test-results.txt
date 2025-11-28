@@ -1,0 +1,306 @@
+
+Running 19 tests using 8 workers
+
+[1A[2K[1/19] [chromium] › tests\e2e\detail-pages.spec.ts:18:9 › Detail Pages E2E Tests › Product Detail Pages › should navigate to product detail page from card
+[1A[2K[2/19] [chromium] › tests\e2e\detail-pages.spec.ts:66:9 › Detail Pages E2E Tests › Category Detail Pages › should navigate to category page from homepage
+[1A[2K[3/19] [chromium] › tests\e2e\detail-pages.spec.ts:37:9 › Detail Pages E2E Tests › Product Detail Pages › should display product information correctly
+[1A[2K[4/19] [chromium] › tests\e2e\detail-pages.spec.ts:105:9 › Detail Pages E2E Tests › Menu & Settings Pages › should navigate to menu page
+[1A[2K[5/19] [chromium] › tests\e2e\detail-pages.spec.ts:91:9 › Detail Pages E2E Tests › Category Detail Pages › should test all 10 categories
+[1A[2K[6/19] [chromium] › tests\e2e\detail-pages.spec.ts:79:9 › Detail Pages E2E Tests › Category Detail Pages › should display category products
+[1A[2K[7/19] [chromium] › tests\e2e\detail-pages.spec.ts:118:9 › Detail Pages E2E Tests › Menu & Settings Pages › should navigate to reports page
+[1A[2K[8/19] [chromium] › tests\e2e\detail-pages.spec.ts:54:9 › Detail Pages E2E Tests › Product Detail Pages › should have working back button
+[1A[2K[chromium] › tests\e2e\detail-pages.spec.ts:91:9 › Detail Pages E2E Tests › Category Detail Pages › should test all 10 categories
+✓ Category 1 tested
+
+[1A[2K✓ Category 2 tested
+
+[1A[2K✓ Category 3 tested
+
+[1A[2K✓ Category 4 tested
+
+[1A[2K✓ Category 5 tested
+
+[1A[2K✓ Category 6 tested
+
+[1A[2K✓ Category 7 tested
+
+[1A[2K✓ Category 8 tested
+
+[1A[2K✓ Category 9 tested
+
+[1A[2K✓ Category 10 tested
+
+[1A[2K[9/19] [chromium] › tests\e2e\detail-pages.spec.ts:127:9 › Detail Pages E2E Tests › Menu & Settings Pages › should navigate to coupons page
+[1A[2K[10/19] [chromium] › tests\e2e\detail-pages.spec.ts:138:9 › Detail Pages E2E Tests › Menu & Settings Pages › should navigate to settings page
+[1A[2K  1) [chromium] › tests\e2e\detail-pages.spec.ts:66:9 › Detail Pages E2E Tests › Category Detail Pages › should navigate to category page from homepage 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoContain[2m([22m[32mexpected[39m[2m) // indexOf[22m
+
+    Expected substring: [32m"/category/"[39m
+    Received string:    [31m"http://localhost:3000/"[39m
+
+      73 |
+      74 |       // Verify we're on category page
+    > 75 |       expect(page.url()).toContain('/category/');
+         |                          ^
+      76 |       await expect(page.locator('h1')).toContainText(categoryLabel || '');
+      77 |     });
+      78 |
+        at D:\saju\sajutight-v2\tests\e2e\detail-pages.spec.ts:75:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\detail-pages-Detail-Pages--f3fce-category-page-from-homepage-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\detail-pages-Detail-Pages--f3fce-category-page-from-homepage-chromium\error-context.md
+
+
+[1A[2K  2) [chromium] › tests\e2e\detail-pages.spec.ts:105:9 › Detail Pages E2E Tests › Menu & Settings Pages › should navigate to menu page 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m"http://localhost:3000/[7mmenu[27m"[39m
+    Received: [31m"http://localhost:3000/"[39m
+
+      108 |       await page.waitForLoadState('networkidle');
+      109 |
+    > 110 |       expect(page.url()).toBe(`${BASE_URL}/menu`);
+          |                          ^
+      111 |       await expect(page.locator('text=메뉴')).toBeVisible();
+      112 |       await expect(page.locator('text=내 리포트')).toBeVisible();
+      113 |       await expect(page.locator('text=쿠폰함')).toBeVisible();
+        at D:\saju\sajutight-v2\tests\e2e\detail-pages.spec.ts:110:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\detail-pages-Detail-Pages--5eb2c-hould-navigate-to-menu-page-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\detail-pages-Detail-Pages--5eb2c-hould-navigate-to-menu-page-chromium\error-context.md
+
+
+[1A[2K  3) [chromium] › tests\e2e\detail-pages.spec.ts:18:9 › Detail Pages E2E Tests › Product Detail Pages › should navigate to product detail page from card 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoContain[2m([22m[32mexpected[39m[2m) // indexOf[22m
+
+    Expected substring: [32m"/products/"[39m
+    Received string:    [31m"http://localhost:3000/"[39m
+
+      25 |
+      26 |       // Verify we're on product detail page
+    > 27 |       expect(page.url()).toContain('/products/');
+         |                          ^
+      28 |
+      29 |       // Check page structure
+      30 |       await expect(page.locator('header')).toBeVisible();
+        at D:\saju\sajutight-v2\tests\e2e\detail-pages.spec.ts:27:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\detail-pages-Detail-Pages--0af09-oduct-detail-page-from-card-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\detail-pages-Detail-Pages--0af09-oduct-detail-page-from-card-chromium\error-context.md
+
+
+[1A[2K  4) [chromium] › tests\e2e\detail-pages.spec.ts:37:9 › Detail Pages E2E Tests › Product Detail Pages › should display product information correctly 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('text=원')
+    Expected: visible
+    Error: strict mode violation: locator('text=원') resolved to 2 elements:
+        1) <span class="text-3xl font-bold text-secondary">…</span> aka getByText('5,400원')
+        2) <span class="text-lg text-slate-400 line-through">10,000원</span> aka getByText('10,000원')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('text=원')[22m
+
+
+      41 |       await expect(page.locator('text=상품 설명')).toBeVisible();
+      42 |       await expect(page.locator('text=고객 후기')).toBeVisible();
+    > 43 |       await expect(page.locator('text=원')).toBeVisible(); // Price
+         |                                            ^
+      44 |
+      45 |       // Check star ratings
+      46 |       const stars = page.locator('svg.lucide-star');
+        at D:\saju\sajutight-v2\tests\e2e\detail-pages.spec.ts:43:44
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\detail-pages-Detail-Pages--8b7a0-oduct-information-correctly-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\detail-pages-Detail-Pages--8b7a0-oduct-information-correctly-chromium\error-context.md
+
+
+[1A[2K[11/19] [chromium] › tests\e2e\detail-pages.spec.ts:212:9 › Detail Pages E2E Tests › Interactive Elements › should test coupon tabs interaction
+[1A[2K[12/19] [chromium] › tests\e2e\detail-pages.spec.ts:224:9 › Detail Pages E2E Tests › Interactive Elements › should test settings toggles
+[1A[2K[13/19] [chromium] › tests\e2e\detail-pages.spec.ts:235:9 › Detail Pages E2E Tests › Interactive Elements › should test support FAQ accordion
+[1A[2K[14/19] [chromium] › tests\e2e\detail-pages.spec.ts:148:9 › Detail Pages E2E Tests › Menu & Settings Pages › should navigate to support page
+[1A[2K[15/19] [chromium] › tests\e2e\detail-pages.spec.ts:160:9 › Detail Pages E2E Tests › Visual Comparison & Improvements › compare product detail page layout
+[1A[2K[16/19] [chromium] › tests\e2e\detail-pages.spec.ts:249:9 › Detail Pages E2E Tests › Navigation Flow Tests › complete user flow: home → category → product → back
+[1A[2K[17/19] [chromium] › tests\e2e\detail-pages.spec.ts:194:9 › Detail Pages E2E Tests › Visual Comparison & Improvements › test responsive behavior on mobile
+[1A[2K[18/19] [chromium] › tests\e2e\detail-pages.spec.ts:180:9 › Detail Pages E2E Tests › Visual Comparison & Improvements › compare category page layout
+[1A[2K[chromium] › tests\e2e\detail-pages.spec.ts:224:9 › Detail Pages E2E Tests › Interactive Elements › should test settings toggles
+Settings toggles found: [33m3[39m
+
+[1A[2K[19/19] [chromium] › tests\e2e\detail-pages.spec.ts:270:9 › Detail Pages E2E Tests › Navigation Flow Tests › complete user flow: home → menu → settings → back
+[1A[2K  5) [chromium] › tests\e2e\detail-pages.spec.ts:249:9 › Detail Pages E2E Tests › Navigation Flow Tests › complete user flow: home → category → product → back 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('text=사주우주')
+    Expected: visible
+    Error: strict mode violation: locator('text=사주우주') resolved to 7 elements:
+        1) <span class="font-display text-base font-medium text-primary">사주우주</span> aka getByRole('link', { name: '😗 사주우주' })
+        2) <h2 class="font-display text-lg sm:text-xl font-semibold text-primary mb-3 sm:mb-4">사주우주 이벤트</h2> aka getByRole('heading', { name: '사주우주 이벤트' })
+        3) <p class="text-sm sm:text-base md:text-lg mb-6 sm:mb-8 opacity-90 max-w-lg mx-auto px-4">…</p> aka getByText('사주우주와 함께하는 특별한 인터뷰 이벤트지금 바로 신청하고 혜택을 받아보세요!')
+        4) <h3 class="font-display text-lg sm:text-xl font-bold text-primary mb-2">사주우주 (SajuWooju)</h3> aka getByRole('heading', { name: '사주우주 (SajuWooju)' })
+        5) <span>사주우주 (SajuWooju)</span> aka locator('span').filter({ hasText: '사주우주 (SajuWooju)' })
+        6) <span>카카오톡 채널 (사주우주)</span> aka getByText('카카오톡 채널 (사주우주)')
+        7) <p>© 2025 사주우주. All rights reserved.</p> aka getByText('© 2025 사주우주. All rights')
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('text=사주우주')[22m
+
+
+      250 |       // 1. Start at home
+      251 |       await page.goto(BASE_URL);
+    > 252 |       await expect(page.locator('text=사주우주')).toBeVisible();
+          |                                               ^
+      253 |
+      254 |       // 2. Click category
+      255 |       await page.click('a[href="/category/2"]');
+        at D:\saju\sajutight-v2\tests\e2e\detail-pages.spec.ts:252:47
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\detail-pages-Detail-Pages--65f0a-→-category-→-product-→-back-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\detail-pages-Detail-Pages--65f0a-→-category-→-product-→-back-chromium\error-context.md
+
+
+[1A[2K[chromium] › tests\e2e\detail-pages.spec.ts:194:9 › Detail Pages E2E Tests › Visual Comparison & Improvements › test responsive behavior on mobile
+Mobile viewport test passed
+
+[1A[2K[chromium] › tests\e2e\detail-pages.spec.ts:160:9 › Detail Pages E2E Tests › Visual Comparison & Improvements › compare product detail page layout
+Product Detail Page Measurements:
+
+[1A[2K- Header height: [33m65[39m
+
+[1A[2K- Image section height: [33m616[39m
+
+[1A[2K- CTA button position: [33m644[39m
+
+[1A[2K  6) [chromium] › tests\e2e\detail-pages.spec.ts:160:9 › Detail Pages E2E Tests › Visual Comparison & Improvements › compare product detail page layout 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeGreaterThan[2m([22m[32mexpected[39m[2m)[22m
+
+    Expected: > [32m800[39m
+    Received:   [31m644[39m
+
+      175 |       // Verify fixed elements
+      176 |       expect(headerHeight?.y).toBe(0); // Header should be at top
+    > 177 |       expect(ctaButton?.y).toBeGreaterThan(800); // CTA should be near bottom
+          |                            ^
+      178 |     });
+      179 |
+      180 |     test('compare category page layout', async ({ page }) => {
+        at D:\saju\sajutight-v2\tests\e2e\detail-pages.spec.ts:177:28
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\detail-pages-Detail-Pages--90910--product-detail-page-layout-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\detail-pages-Detail-Pages--90910--product-detail-page-layout-chromium\error-context.md
+
+
+[1A[2K  7) [chromium] › tests\e2e\detail-pages.spec.ts:270:9 › Detail Pages E2E Tests › Navigation Flow Tests › complete user flow: home → menu → settings → back 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m"http://localhost:3000/[7msettings[27m"[39m
+    Received: [31m"http://localhost:3000/[7mmenu[27m"[39m
+
+      280 |       await page.click('a[href="/settings"]');
+      281 |       await page.waitForLoadState('networkidle');
+    > 282 |       expect(page.url()).toBe(`${BASE_URL}/settings`);
+          |                          ^
+      283 |
+      284 |       // 4. Go back
+      285 |       await page.click('button[aria-label="뒤로 가기"]');
+        at D:\saju\sajutight-v2\tests\e2e\detail-pages.spec.ts:282:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\detail-pages-Detail-Pages--2422b-me-→-menu-→-settings-→-back-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\detail-pages-Detail-Pages--2422b-me-→-menu-→-settings-→-back-chromium\error-context.md
+
+
+[1A[2K  8) [chromium] › tests\e2e\detail-pages.spec.ts:212:9 › Detail Pages E2E Tests › Interactive Elements › should test coupon tabs interaction 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('text=만료된 쿠폰이 없습니다, text=유효기간').first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('text=만료된 쿠폰이 없습니다, text=유효기간').first()[22m
+
+
+      219 |       // Should show expired coupons or empty state
+      220 |       const expiredContent = page.locator('text=만료된 쿠폰이 없습니다, text=유효기간');
+    > 221 |       await expect(expiredContent.first()).toBeVisible();
+          |                                            ^
+      222 |     });
+      223 |
+      224 |     test('should test settings toggles', async ({ page }) => {
+        at D:\saju\sajutight-v2\tests\e2e\detail-pages.spec.ts:221:44
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\detail-pages-Detail-Pages--88907-est-coupon-tabs-interaction-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\detail-pages-Detail-Pages--88907-est-coupon-tabs-interaction-chromium\error-context.md
+
+
+[1A[2K  9) [chromium] › tests\e2e\detail-pages.spec.ts:180:9 › Detail Pages E2E Tests › Visual Comparison & Improvements › compare category page layout 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: locator.boundingBox: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('img[alt="이벤트"]').first()[22m
+
+
+      182 |
+      183 |       // Check responsive design
+    > 184 |       const categoryIcon = await page.locator('img[alt="이벤트"]').first().boundingBox();
+          |                                                                         ^
+      185 |       const productCards = await page.locator('a[href^="/products/"]').count();
+      186 |
+      187 |       console.log('Category Page Measurements:');
+        at D:\saju\sajutight-v2\tests\e2e\detail-pages.spec.ts:184:73
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\detail-pages-Detail-Pages--31330-ompare-category-page-layout-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\detail-pages-Detail-Pages--31330-ompare-category-page-layout-chromium\error-context.md
+
+
+[1A[2K  9 failed
+    [chromium] › tests\e2e\detail-pages.spec.ts:18:9 › Detail Pages E2E Tests › Product Detail Pages › should navigate to product detail page from card 
+    [chromium] › tests\e2e\detail-pages.spec.ts:37:9 › Detail Pages E2E Tests › Product Detail Pages › should display product information correctly 
+    [chromium] › tests\e2e\detail-pages.spec.ts:66:9 › Detail Pages E2E Tests › Category Detail Pages › should navigate to category page from homepage 
+    [chromium] › tests\e2e\detail-pages.spec.ts:105:9 › Detail Pages E2E Tests › Menu & Settings Pages › should navigate to menu page 
+    [chromium] › tests\e2e\detail-pages.spec.ts:160:9 › Detail Pages E2E Tests › Visual Comparison & Improvements › compare product detail page layout 
+    [chromium] › tests\e2e\detail-pages.spec.ts:180:9 › Detail Pages E2E Tests › Visual Comparison & Improvements › compare category page layout 
+    [chromium] › tests\e2e\detail-pages.spec.ts:212:9 › Detail Pages E2E Tests › Interactive Elements › should test coupon tabs interaction 
+    [chromium] › tests\e2e\detail-pages.spec.ts:249:9 › Detail Pages E2E Tests › Navigation Flow Tests › complete user flow: home → category → product → back 
+    [chromium] › tests\e2e\detail-pages.spec.ts:270:9 › Detail Pages E2E Tests › Navigation Flow Tests › complete user flow: home → menu → settings → back 
+  10 passed (42.9s)

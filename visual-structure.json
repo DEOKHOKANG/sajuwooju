@@ -1,0 +1,409 @@
+{
+  "viewport": "1280x720",
+  "totalBlocks": 18,
+  "blocks": [
+    {
+      "index": 0,
+      "contentType": "unknown",
+      "className": "bubble-element 1488796042609x768734193128308700-AAP",
+      "textLength": 0,
+      "textLines": [],
+      "imageCount": 0,
+      "imageDetails": [],
+      "position": {
+        "top": -135,
+        "left": 340,
+        "width": 1,
+        "height": 1
+      },
+      "display": "block",
+      "flexDirection": "row",
+      "children": 0
+    },
+    {
+      "index": 1,
+      "contentType": "service-cards",
+      "className": "bubble-element Group baaToaZ bubble-r-container flex column",
+      "textLength": 1347,
+      "textLines": [
+        "🍪 카테고리",
+        "이벤트!",
+        "궁합",
+        "솔로/연애운",
+        "이별/재회",
+        "결혼운",
+        "임신/자녀운",
+        "신년운세",
+        "월별운세",
+        "취업/직업운"
+      ],
+      "imageCount": 62,
+      "imageDetails": [
+        {
+          "alt": "여우솔탈-하반기",
+          "width": 330,
+          "height": 331
+        },
+        {
+          "alt": "썸사주궁합",
+          "width": 1160,
+          "height": 1160
+        },
+        {
+          "alt": "하반기종합",
+          "width": 330,
+          "height": 330
+        },
+        {
+          "alt": "재회",
+          "width": 330,
+          "height": 330
+        },
+        {
+          "alt": "인터뷰",
+          "width": 1560,
+          "height": 1560
+        }
+      ],
+      "position": {
+        "top": -134,
+        "left": 340,
+        "width": 600,
+        "height": 1000
+      },
+      "display": "flex",
+      "flexDirection": "column",
+      "children": 1
+    },
+    {
+      "index": 2,
+      "contentType": "service-cards",
+      "className": "bubble-element Group baTpaTaF1 bubble-r-container flex column",
+      "textLength": 4165,
+      "textLines": [
+        "    💎연애부터 결혼까지😏내 썸남의 속마음이 궁금해?😳짝사랑으로 앓고있다면?💎연애부터 결혼까지😏내 썸남의 속마음이 궁금해?😳짝사랑으로 앓고있다면?💎연애부터 결혼까지😏내 썸남의 속마음이 궁금해?😳짝사랑으로 앓고있다면?💎연애부터 결혼까지😏내 썸남의 속마음이 궁금해?😳짝사랑으로 앓고있다면?💎연애부터 결혼까지😏내 썸남의 속마음이 궁금해?😳짝사랑으로 앓고있다면?💎연애부터 결혼까지😏내 썸남의 속마음이 궁금해?😳짝사랑으로 앓고있다면?💎연애부터 결혼까지😏내 썸남의 속마음이 궁금해?😳짝사랑으로 앓고있다면?💎연애부터 결혼까지😏내 썸남의 속마음이 궁금해?😳짝사랑으로 앓고있다면?💎연애부터 결혼까지😏내 썸남의 속마음이 궁금해?😳짝사랑으로 앓고있다면?💎연애부터 결혼까지😏내 썸남의 속마음이 궁금해?😳짝사랑으로 앓고있다면?",
+        "    👀이별 재회 고민😈바람기와 은밀한 욕구❤️궁합 사주 분석 리포트👀이별 재회 고민😈바람기와 은밀한 욕구❤️궁합 사주 분석 리포트👀이별 재회 고민😈바람기와 은밀한 욕구❤️궁합 사주 분석 리포트👀이별 재회 고민😈바람기와 은밀한 욕구❤️궁합 사주 분석 리포트👀이별 재회 고민😈바람기와 은밀한 욕구❤️궁합 사주 분석 리포트👀이별 재회 고민😈바람기와 은밀한 욕구❤️궁합 사주 분석 리포트👀이별 재회 고민😈바람기와 은밀한 욕구❤️궁합 사주 분석 리포트👀이별 재회 고민😈바람기와 은밀한 욕구❤️궁합 사주 분석 리포트👀이별 재회 고민😈바람기와 은밀한 욕구❤️궁합 사주 분석 리포트👀이별 재회 고민😈바람기와 은밀한 욕구❤️궁합 사주 분석 리포트",
+        "    😳3만명 이상의 고객들이 만족한 궁합🤫사주로 보는 속궁합😳3만명 이상의 고객들이 만족한 궁합🤫사주로 보는 속궁합😳3만명 이상의 고객들이 만족한 궁합🤫사주로 보는 속궁합😳3만명 이상의 고객들이 만족한 궁합🤫사주로 보는 속궁합😳3만명 이상의 고객들이 만족한 궁합🤫사주로 보는 속궁합😳3만명 이상의 고객들이 만족한 궁합🤫사주로 보는 속궁합😳3만명 이상의 고객들이 만족한 궁합🤫사주로 보는 속궁합😳3만명 이상의 고객들이 만족한 궁합🤫사주로 보는 속궁합😳3만명 이상의 고객들이 만족한 궁합🤫사주로 보는 속궁합😳3만명 이상의 고객들이 만족한 궁합🤫사주로 보는 속궁합",
+        "@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap');",
+        ".ticker-container {",
+        "  width: 100%;",
+        "  overflow: hidden;",
+        "}",
+        ".ticker-row {",
+        "  display: flex;"
+      ],
+      "imageCount": 0,
+      "imageDetails": [],
+      "position": {
+        "top": 0,
+        "left": 0,
+        "width": 0,
+        "height": 0
+      },
+      "display": "none",
+      "flexDirection": "column",
+      "children": 3
+    },
+    {
+      "index": 3,
+      "contentType": "unknown",
+      "className": "bubble-element Group baTphz1 bubble-r-container-wrapper",
+      "textLength": 0,
+      "textLines": [],
+      "imageCount": 0,
+      "imageDetails": [],
+      "position": {
+        "top": 866,
+        "left": 340,
+        "width": 600,
+        "height": 0
+      },
+      "display": "flex",
+      "flexDirection": "row",
+      "children": 1
+    },
+    {
+      "index": 4,
+      "contentType": "unknown",
+      "className": "bubble-element Group baTpdaZ1 bubble-r-container flex column",
+      "textLength": 0,
+      "textLines": [],
+      "imageCount": 0,
+      "imageDetails": [],
+      "position": {
+        "top": 866,
+        "left": 340,
+        "width": 600,
+        "height": 0
+      },
+      "display": "flex",
+      "flexDirection": "column",
+      "children": 5
+    },
+    {
+      "index": 5,
+      "contentType": "unknown",
+      "className": "bubble-element Group baTpie1 bubble-r-container relative",
+      "textLength": 0,
+      "textLines": [],
+      "imageCount": 0,
+      "imageDetails": [],
+      "position": {
+        "top": 0,
+        "left": 0,
+        "width": 0,
+        "height": 0
+      },
+      "display": "none",
+      "flexDirection": "row",
+      "children": 1
+    },
+    {
+      "index": 6,
+      "contentType": "content-section",
+      "className": "bubble-element Group baUchh2 bubble-r-container relative",
+      "textLength": 6318,
+      "textLines": [
+        "    Video Auto Play",
+        "        body {",
+        "            margin: 0;",
+        "            padding: 0;",
+        "            overflow: hidden;",
+        "            display: flex;",
+        "            justify-content: center;",
+        "            align-items: center;",
+        "            height: 100vh;",
+        "            background-color: #000;"
+      ],
+      "imageCount": 0,
+      "imageDetails": [],
+      "position": {
+        "top": 0,
+        "left": 0,
+        "width": 0,
+        "height": 0
+      },
+      "display": "none",
+      "flexDirection": "row",
+      "children": 1
+    },
+    {
+      "index": 7,
+      "contentType": "custom-html",
+      "className": "bubble-element HTML baZaUhb4",
+      "textLength": 0,
+      "textLines": [],
+      "imageCount": 0,
+      "imageDetails": [],
+      "position": {
+        "top": 866,
+        "left": 340,
+        "width": 1,
+        "height": 1
+      },
+      "display": "block",
+      "flexDirection": "row",
+      "children": 1
+    },
+    {
+      "index": 8,
+      "contentType": "custom-html",
+      "className": "bubble-element HTML baaCaPv1",
+      "textLength": 168,
+      "textLines": [
+        "// HTML에 직접 추가 document.body.insertAdjacentHTML('beforeend', `",
+        "`); // 바로 개수 확인 console.log('message 개수:', (document.body.innerHTML.match(/\\bmessage\\b/g) || []).length);"
+      ],
+      "imageCount": 0,
+      "imageDetails": [],
+      "position": {
+        "top": 867,
+        "left": 340,
+        "width": 1,
+        "height": 1
+      },
+      "display": "block",
+      "flexDirection": "row",
+      "children": 1
+    },
+    {
+      "index": 9,
+      "contentType": "unknown",
+      "className": "bubble-element Group baoaGaP2 bubble-r-container flex column",
+      "textLength": 0,
+      "textLines": [],
+      "imageCount": 0,
+      "imageDetails": [],
+      "position": {
+        "top": 868,
+        "left": 340,
+        "width": 600,
+        "height": 0
+      },
+      "display": "flex",
+      "flexDirection": "column",
+      "children": 2
+    },
+    {
+      "index": 10,
+      "contentType": "unknown",
+      "className": "bubble-element 1488796042609x768734193128308700-AAP",
+      "textLength": 0,
+      "textLines": [],
+      "imageCount": 0,
+      "imageDetails": [],
+      "position": {
+        "top": 868,
+        "left": 340,
+        "width": 1,
+        "height": 1
+      },
+      "display": "block",
+      "flexDirection": "row",
+      "children": 0
+    },
+    {
+      "index": 11,
+      "contentType": "unknown",
+      "className": "bubble-element 1488796042609x768734193128308700-AAP",
+      "textLength": 0,
+      "textLines": [],
+      "imageCount": 0,
+      "imageDetails": [],
+      "position": {
+        "top": 869,
+        "left": 340,
+        "width": 1,
+        "height": 1
+      },
+      "display": "block",
+      "flexDirection": "row",
+      "children": 0
+    },
+    {
+      "index": 12,
+      "contentType": "unknown",
+      "className": "bubble-element 1488796042609x768734193128308700-AAP",
+      "textLength": 0,
+      "textLines": [],
+      "imageCount": 0,
+      "imageDetails": [],
+      "position": {
+        "top": 870,
+        "left": 340,
+        "width": 1,
+        "height": 1
+      },
+      "display": "block",
+      "flexDirection": "row",
+      "children": 0
+    },
+    {
+      "index": 13,
+      "contentType": "unknown",
+      "className": "bubble-element 1488796042609x768734193128308700-AAP",
+      "textLength": 0,
+      "textLines": [],
+      "imageCount": 0,
+      "imageDetails": [],
+      "position": {
+        "top": 871,
+        "left": 340,
+        "width": 1,
+        "height": 1
+      },
+      "display": "block",
+      "flexDirection": "row",
+      "children": 0
+    },
+    {
+      "index": 14,
+      "contentType": "unknown",
+      "className": "bubble-element 1488796042609x768734193128308700-AAP",
+      "textLength": 0,
+      "textLines": [],
+      "imageCount": 0,
+      "imageDetails": [],
+      "position": {
+        "top": 872,
+        "left": 340,
+        "width": 1,
+        "height": 1
+      },
+      "display": "block",
+      "flexDirection": "row",
+      "children": 0
+    },
+    {
+      "index": 15,
+      "contentType": "unknown",
+      "className": "bubble-element 1488796042609x768734193128308700-AAP",
+      "textLength": 0,
+      "textLines": [],
+      "imageCount": 0,
+      "imageDetails": [],
+      "position": {
+        "top": 853,
+        "left": 340,
+        "width": 1,
+        "height": 1
+      },
+      "display": "block",
+      "flexDirection": "row",
+      "children": 0
+    },
+    {
+      "index": 16,
+      "contentType": "unknown",
+      "className": "bubble-element 1488796042609x768734193128308700-AAP",
+      "textLength": 0,
+      "textLines": [],
+      "imageCount": 0,
+      "imageDetails": [],
+      "position": {
+        "top": 854,
+        "left": 340,
+        "width": 1,
+        "height": 1
+      },
+      "display": "block",
+      "flexDirection": "row",
+      "children": 0
+    },
+    {
+      "index": 17,
+      "contentType": "unknown",
+      "className": "bubble-element 1488796042609x768734193128308700-AAP",
+      "textLength": 0,
+      "textLines": [],
+      "imageCount": 0,
+      "imageDetails": [],
+      "position": {
+        "top": 855,
+        "left": 340,
+        "width": 1,
+        "height": 1
+      },
+      "display": "block",
+      "flexDirection": "row",
+      "children": 0
+    }
+  ],
+  "heroImageCount": 66,
+  "heroImages": [
+    "여우솔탈-하반기",
+    "썸사주궁합",
+    "하반기종합",
+    "재회",
+    "인터뷰",
+    "솔탈",
+    "결혼궁합",
+    "여우솔탈-하반기",
+    "썸사주궁합",
+    "하반기종합"
+  ],
+  "categories": [],
+  "serviceCardsFound": 0,
+  "pageScrollHeight": 720,
+  "pageHeight": 720
+}

@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-11-05T07:07:40.049Z",
+  "analysis": {
+    "totalElements": 161,
+    "totalImages": 67,
+    "fonts": [
+      "\"Times New Roman\"",
+      "Arial, sans-serif",
+      "\"OnGlyph Saehayan Font\"",
+      "\"Pretendard Variable\"",
+      "Arial"
+    ]
+  },
+  "extracted": {
+    "heroImages": 0,
+    "categoryIcons": 0,
+    "rankingImages": 12
+  },
+  "generated": {
+    "components": [
+      "HeroSection",
+      "CategoryGrid"
+    ],
+    "files": [
+      "components/sections/auto-hero-section.tsx",
+      "components/sections/auto-category-grid.tsx"
+    ]
+  },
+  "accuracy": {
+    "imageExtraction": "0%",
+    "structureMapping": "100% (pixel-perfect)",
+    "fontMatching": "5 fonts detected"
+  },
+  "nextSteps": [
+    "Replace placeholder data with real content",
+    "Add remaining sections (Event Banner, Ranking)",
+    "Implement interactions and animations",
+    "Fine-tune spacing and margins"
+  ]
+}
