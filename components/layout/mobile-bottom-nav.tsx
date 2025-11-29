@@ -2,11 +2,11 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, Heart, Zap, Users, User } from 'lucide-react';
+import { Home, Heart, Zap, User } from 'lucide-react';
 
 /**
  * Mobile Bottom Navigation (상용화급)
- * 모바일 하단 네비게이션 - HOME, MATCH, HYPE, FEED, MY
+ * 모바일 하단 네비게이션 - HOME, MATCH, HYPE, MY
  */
 
 export function MobileBottomNav() {
@@ -27,11 +27,6 @@ export function MobileBottomNav() {
       href: '/hype',
       label: 'HYPE',
       icon: Zap,
-    },
-    {
-      href: '/feed',
-      label: 'FEED',
-      icon: Users,
     },
     {
       href: '/dashboard',

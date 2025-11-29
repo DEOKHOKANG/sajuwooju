@@ -3,10 +3,12 @@
 import { useEffect, useState } from "react";
 import { useRouter, useParams } from "next/navigation";
 import { Sparkles } from "lucide-react";
+import { type ContentType } from "@/lib/content-configs";
 
 /**
  * 사주 분석 중 페이지
  * API를 호출하고 결과를 localStorage에 저장한 후 결과 페이지로 이동
+ * 컨텐츠 타입별 맞춤 상태 메시지 표시
  */
 
 interface SessionData {
@@ -19,7 +21,99 @@ interface SessionData {
   birthHour: string;
   productId?: number;
   productTitle?: string;
+  contentType?: ContentType;
+  // 파트너 정보 (궁합/재회 등)
+  partnerName?: string;
+  partnerGender?: string;
+  partnerYear?: number;
+  partnerMonth?: number;
+  partnerDay?: number;
+  partnerBirthHour?: string;
+  partnerCalendarType?: string;
+  // 추가 입력 필드
+  [key: string]: unknown;
 }
+
+// 컨텐츠 타입별 상태 메시지
+const STATUS_MESSAGES: Record<ContentType, string[]> = {
+  "som-compatibility": [
+    "두 분의 사주 정보를 준비하고 있습니다...",
+    "사주팔자를 계산하고 있습니다...",
+    "두 분의 궁합을 분석하고 있습니다...",
+    "결과를 정리하고 있습니다...",
+    "분석 완료!",
+  ],
+  "solo-escape": [
+    "사주 정보를 준비하고 있습니다...",
+    "연애 기운을 분석하고 있습니다...",
+    "솔로탈출 시기를 계산하고 있습니다...",
+    "결과를 정리하고 있습니다...",
+    "분석 완료!",
+  ],
+  "reunion-possibility": [
+    "두 분의 사주 정보를 준비하고 있습니다...",
+    "과거의 인연을 분석하고 있습니다...",
+    "재회 가능성을 계산하고 있습니다...",
+    "결과를 정리하고 있습니다...",
+    "분석 완료!",
+  ],
+  "marriage-compatibility": [
+    "두 분의 사주 정보를 준비하고 있습니다...",
+    "결혼 궁합을 분석하고 있습니다...",
+    "길일을 계산하고 있습니다...",
+    "결과를 정리하고 있습니다...",
+    "분석 완료!",
+  ],
+  "new-year-fortune": [
+    "사주 정보를 준비하고 있습니다...",
+    "2025년 운세를 분석하고 있습니다...",
+    "월별 운세를 계산하고 있습니다...",
+    "결과를 정리하고 있습니다...",
+    "분석 완료!",
+  ],
+  "wealth-fortune": [
+    "사주 정보를 준비하고 있습니다...",
+    "재물운을 분석하고 있습니다...",
+    "돈 벌 시기를 계산하고 있습니다...",
+    "결과를 정리하고 있습니다...",
+    "분석 완료!",
+  ],
+  "career-saju": [
+    "사주 정보를 준비하고 있습니다...",
+    "적성과 재능을 분석하고 있습니다...",
+    "직업운을 계산하고 있습니다...",
+    "결과를 정리하고 있습니다...",
+    "분석 완료!",
+  ],
+  "fact-bomb": [
+    "사주 정보를 준비하고 있습니다...",
+    "타고난 성향을 분석하고 있습니다...",
+    "팩트폭탄을 준비하고 있습니다...",
+    "결과를 정리하고 있습니다...",
+    "분석 완료!",
+  ],
+  "monthly-fortune": [
+    "사주 정보를 준비하고 있습니다...",
+    "이번 달 운세를 분석하고 있습니다...",
+    "행운의 정보를 계산하고 있습니다...",
+    "결과를 정리하고 있습니다...",
+    "분석 완료!",
+  ],
+  "comprehensive": [
+    "사주 정보를 준비하고 있습니다...",
+    "사주팔자를 계산하고 있습니다...",
+    "AI가 운세를 분석하고 있습니다...",
+    "결과를 정리하고 있습니다...",
+    "분석 완료!",
+  ],
+  "transfer-love": [
+    "사주 정보를 준비하고 있습니다...",
+    "환승연애 기운을 분석하고 있습니다...",
+    "새로운 인연 시기를 계산하고 있습니다...",
+    "결과를 정리하고 있습니다...",
+    "분석 완료!",
+  ],
+};
 
 export default function AnalyzePage() {
   const router = useRouter();
@@ -29,6 +123,7 @@ export default function AnalyzePage() {
   const [progress, setProgress] = useState(0);
   const [statusText, setStatusText] = useState("사주 정보를 준비하고 있습니다...");
   const [error, setError] = useState<string | null>(null);
+  const [, setContentType] = useState<ContentType>("comprehensive");
 
   useEffect(() => {
     const analyzeAndRedirect = async () => {
@@ -41,44 +136,24 @@ export default function AnalyzePage() {
         }
 
         const sessionData: SessionData = JSON.parse(sessionDataStr);
+        const currentContentType = sessionData.contentType || "comprehensive";
+        setContentType(currentContentType);
+
+        const messages = STATUS_MESSAGES[currentContentType] || STATUS_MESSAGES.comprehensive;
+
         setProgress(20);
-        setStatusText("생년월일 정보를 분석하고 있습니다...");
+        setStatusText(messages[0]);
 
         // 2. 사주 API 호출
         await new Promise((resolve) => setTimeout(resolve, 500));
         setProgress(40);
-        setStatusText("사주팔자를 계산하고 있습니다...");
+        setStatusText(messages[1]);
 
-        const response = await fetch("/api/saju/analyze", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            category: "comprehensive",
-            name: sessionData.name,
-            gender: sessionData.gender,
-            calendarType: sessionData.calendarType,
-            year: sessionData.year,
-            month: sessionData.month,
-            day: sessionData.day,
-            birthHour: sessionData.birthHour,
-          }),
-        });
-
-        setProgress(70);
-        setStatusText("AI가 운세를 분석하고 있습니다...");
-
-        if (!response.ok) {
-          throw new Error("분석 API 호출 실패");
-        }
-
-        const data = await response.json();
-        setProgress(90);
-        setStatusText("결과를 정리하고 있습니다...");
-
-        // 3. 결과를 localStorage에 저장
-        const resultData = {
+        // API 요청 데이터 구성 (전체 세션 데이터 전달)
+        const apiRequestData = {
+          contentType: currentContentType,
+          category: currentContentType,
+          // 기본 사용자 정보
           name: sessionData.name,
           gender: sessionData.gender,
           calendarType: sessionData.calendarType,
@@ -86,7 +161,77 @@ export default function AnalyzePage() {
           month: sessionData.month,
           day: sessionData.day,
           birthHour: sessionData.birthHour,
-          category: "comprehensive",
+          // 파트너 정보 (궁합/재회 등)
+          partnerName: sessionData.partnerName,
+          partnerGender: sessionData.partnerGender,
+          partnerYear: sessionData.partnerYear,
+          partnerMonth: sessionData.partnerMonth,
+          partnerDay: sessionData.partnerDay,
+          partnerBirthHour: sessionData.partnerBirthHour,
+          partnerCalendarType: sessionData.partnerCalendarType,
+          // 추가 필드들
+          currentSituation: sessionData.currentSituation,
+          separationReason: sessionData.separationReason,
+          separationPeriod: sessionData.separationPeriod,
+          weddingYear: sessionData.weddingYear,
+          targetYear: sessionData.targetYear,
+          currentJob: sessionData.currentJob,
+          desiredField: sessionData.desiredField,
+          targetMonth: sessionData.targetMonth,
+        };
+
+        const response = await fetch("/api/saju/analyze", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(apiRequestData),
+        });
+
+        setProgress(70);
+        setStatusText(messages[2]);
+
+        if (!response.ok) {
+          throw new Error("분석 API 호출 실패");
+        }
+
+        const data = await response.json();
+        setProgress(90);
+        setStatusText(messages[3]);
+
+        // 3. 결과를 localStorage에 저장 (전체 세션 데이터 포함)
+        const resultData = {
+          // 기본 정보
+          name: sessionData.name,
+          gender: sessionData.gender,
+          calendarType: sessionData.calendarType,
+          year: sessionData.year,
+          month: sessionData.month,
+          day: sessionData.day,
+          birthHour: sessionData.birthHour,
+          // 컨텐츠 타입
+          contentType: currentContentType,
+          category: currentContentType,
+          productId: sessionData.productId,
+          productTitle: sessionData.productTitle,
+          // 파트너 정보
+          partnerName: sessionData.partnerName,
+          partnerGender: sessionData.partnerGender,
+          partnerYear: sessionData.partnerYear,
+          partnerMonth: sessionData.partnerMonth,
+          partnerDay: sessionData.partnerDay,
+          partnerBirthHour: sessionData.partnerBirthHour,
+          partnerCalendarType: sessionData.partnerCalendarType,
+          // 추가 필드들
+          currentSituation: sessionData.currentSituation,
+          separationReason: sessionData.separationReason,
+          separationPeriod: sessionData.separationPeriod,
+          weddingYear: sessionData.weddingYear,
+          targetYear: sessionData.targetYear,
+          currentJob: sessionData.currentJob,
+          desiredField: sessionData.desiredField,
+          targetMonth: sessionData.targetMonth,
+          // API 결과
           result: data.result,
           structured: data.structured,
           timestamp: new Date().toISOString(),
@@ -95,7 +240,7 @@ export default function AnalyzePage() {
         localStorage.setItem(`${sessionId}-result`, JSON.stringify(resultData));
 
         setProgress(100);
-        setStatusText("분석 완료!");
+        setStatusText(messages[4]);
 
         // 4. 결과 페이지로 이동
         await new Promise((resolve) => setTimeout(resolve, 500));

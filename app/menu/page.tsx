@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ChevronRight, FileText, Gift, Settings, HelpCircle, FileCheck, Shield, LogOut } from 'lucide-react';
+import { ChevronRight, FileText, Settings, HelpCircle, FileCheck, Shield, LogOut } from 'lucide-react';
 
 export default function MenuPage() {
   return (
@@ -45,17 +45,6 @@ export default function MenuPage() {
                 <div className="flex items-center gap-3">
                   <FileText className="w-5 h-5 text-primary" />
                   <span className="text-primary font-medium">내 리포트</span>
-                </div>
-                <ChevronRight className="w-5 h-5 text-slate-400" />
-              </div>
-            </Link>
-
-            {/* 쿠폰함 */}
-            <Link href="/coupons">
-              <div className="flex items-center justify-between py-4 hover:bg-muted-100 px-3 transition-colors" style={{ borderRadius: '8px' }}>
-                <div className="flex items-center gap-3">
-                  <Gift className="w-5 h-5 text-primary" />
-                  <span className="text-primary font-medium">쿠폰함</span>
                 </div>
                 <ChevronRight className="w-5 h-5 text-slate-400" />
               </div>

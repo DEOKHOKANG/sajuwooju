@@ -6,7 +6,7 @@
 import type { NextAuthConfig } from "next-auth";
 
 // Routes that require authentication
-const protectedRoutes = ["/dashboard", "/profile", "/saved", "/chat"];
+const protectedRoutes = ["/dashboard", "/saved", "/chat"];
 
 // Routes that should redirect to dashboard if already logged in
 const authRoutes = ["/auth/signin", "/auth/signup"];

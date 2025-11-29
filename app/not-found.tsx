@@ -103,16 +103,6 @@ export default function NotFound() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
             <Link
-              href="/coupons"
-              className="group px-3 py-3 rounded-lg bg-space-dark/50 hover:bg-space-navy border border-ui-border hover:border-ui-border-hover text-center transition-all duration-200"
-            >
-              <span className="text-lg mb-1 block">🎁</span>
-              <p className="text-xs text-text-secondary group-hover:text-text-primary transition-colors">
-                쿠폰함
-              </p>
-            </Link>
-
-            <Link
               href="/reports"
               className="group px-3 py-3 rounded-lg bg-space-dark/50 hover:bg-space-navy border border-ui-border hover:border-ui-border-hover text-center transition-all duration-200"
             >

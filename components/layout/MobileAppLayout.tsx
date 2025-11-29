@@ -63,10 +63,10 @@ const BOTTOM_NAV_ITEMS = [
     gradient: 'from-pink-500 to-rose-600',
   },
   {
-    id: 'profile',
+    id: 'menu',
     label: '마이',
     icon: User,
-    href: '/profile',
+    href: '/menu',
     gradient: 'from-emerald-500 to-teal-600',
   },
 ];
@@ -215,7 +215,7 @@ export function MobileAppLayout({
                 <div className="border-t border-white/10 my-4" />
 
                 <Link
-                  href="/profile"
+                  href="/menu"
                   className="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-white/10 text-white transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >

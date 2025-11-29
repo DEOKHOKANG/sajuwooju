@@ -1,11 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { Home, Heart, Zap, Users, User, ArrowRight } from "lucide-react";
+import { Home, Heart, Zap, User, ArrowRight } from "lucide-react";
 
 /**
  * Bottom Nav Preview
- * 하단 네비게이션 5가지 기능 미리보기 (상용화급)
+ * 하단 네비게이션 4가지 기능 미리보기 (상용화급)
  */
 
 export function BottomNavPreview() {
@@ -38,15 +38,6 @@ export function BottomNavPreview() {
       gradient: "from-amber-500 to-orange-600",
     },
     {
-      href: "/feed",
-      label: "FEED",
-      icon: Users,
-      title: "친구들 운세 구경",
-      description: "팔로우한 사람들의 소식",
-      badge: "새 글 5개",
-      gradient: "from-blue-500 to-cyan-600",
-    },
-    {
       href: "/dashboard",
       label: "MY",
       icon: User,
@@ -63,7 +54,7 @@ export function BottomNavPreview() {
       <div className="text-center mb-8">
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-100 to-pink-100 rounded-full mb-4">
           <div className="w-2 h-2 bg-cosmic-purple rounded-full animate-pulse"></div>
-          <span className="text-sm font-bold text-gray-700">5가지 핵심 기능</span>
+          <span className="text-sm font-bold text-gray-700">4가지 핵심 기능</span>
         </div>
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
           사주우주에서 할 수 있는 일
@@ -74,7 +65,7 @@ export function BottomNavPreview() {
       </div>
 
       {/* Feature Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
         {navFeatures.map((feature) => {
           const Icon = feature.icon;
           return (
@@ -140,7 +131,7 @@ export function BottomNavPreview() {
         </p>
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-gray-50 to-gray-100 rounded-full border border-gray-200">
           <div className="flex items-center gap-1">
-            {[Home, Heart, Zap, Users, User].map((IconComponent, idx) => (
+            {[Home, Heart, Zap, User].map((IconComponent, idx) => (
               <div key={idx} className="w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center">
                 <IconComponent className="w-4 h-4 text-gray-600" />
               </div>

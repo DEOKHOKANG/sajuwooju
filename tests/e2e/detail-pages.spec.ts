@@ -124,17 +124,6 @@ test.describe('Detail Pages E2E Tests', () => {
       await expect(page.locator('text=내 리포트')).toBeVisible();
     });
 
-    test('should navigate to coupons page', async ({ page }) => {
-      await page.goto(`${BASE_URL}/menu`);
-      await page.click('a[href="/coupons"]');
-      await page.waitForLoadState('networkidle');
-
-      expect(page.url()).toBe(`${BASE_URL}/coupons`);
-      await expect(page.locator('text=내 쿠폰')).toBeVisible();
-      await expect(page.locator('text=사용가능')).toBeVisible();
-      await expect(page.locator('text=만료됨')).toBeVisible();
-    });
-
     test('should navigate to settings page', async ({ page }) => {
       await page.goto(`${BASE_URL}/menu`);
       await page.click('a[href="/settings"]');
@@ -209,18 +198,6 @@ test.describe('Detail Pages E2E Tests', () => {
   });
 
   test.describe('Interactive Elements', () => {
-    test('should test coupon tabs interaction', async ({ page }) => {
-      await page.goto(`${BASE_URL}/coupons`);
-
-      // Click "만료됨" tab
-      await page.click('text=만료됨');
-      await page.waitForTimeout(500);
-
-      // Should show expired coupons or empty state
-      const expiredContent = page.locator('text=만료된 쿠폰이 없습니다, text=유효기간');
-      await expect(expiredContent.first()).toBeVisible();
-    });
-
     test('should test settings toggles', async ({ page }) => {
       await page.goto(`${BASE_URL}/settings`);
 
