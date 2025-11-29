@@ -101,7 +101,17 @@ export async function POST(request: NextRequest) {
   }
 }`;
 
+    // 현재 연도를 동적으로 가져옴 (중요: 2025년 기준)
+    const currentYear = new Date().getFullYear();
+    const currentMonth = new Date().getMonth() + 1;
+    const currentDay = new Date().getDate();
+
     const userPrompt = `다음 사용자의 사주를 분석해주세요.
+
+## 중요: 현재 날짜 정보
+- 오늘 날짜: ${currentYear}년 ${currentMonth}월 ${currentDay}일
+- 현재 연도는 반드시 ${currentYear}년입니다. 2024년이 아닙니다!
+- 운세 분석 시 ${currentYear}년을 기준으로 해주세요.
 
 ## 사용자 정보
 - 이름: ${name}
@@ -116,8 +126,9 @@ ${sajuString || "계산 중"}
 ${getCategoryRequest(category || "comprehensive")}
 
 위 정보를 바탕으로 상세하고 전문적인 사주 분석을 JSON 형식으로 제공해주세요.
-sections에는 최소 4개의 분석 섹션을 포함해주세요.
-각 섹션의 content는 최소 3문장 이상으로 상세하게 작성해주세요.`;
+- 반드시 ${currentYear}년 운세를 기준으로 분석해주세요.
+- sections에는 최소 4개의 분석 섹션을 포함해주세요.
+- 각 섹션의 content는 최소 3문장 이상으로 상세하게 작성해주세요.`;
 
     // OpenAI API 호출
     const openaiResponse = await fetch("https://api.openai.com/v1/chat/completions", {
@@ -209,7 +220,7 @@ function generateMockStructuredResult(name: string, category: string, sajuString
     wealth: "재물운",
     career: "직업운",
     compatibility: "궁합",
-    yearly: "2024년 연운",
+    yearly: `${new Date().getFullYear()}년 연운`,
     comprehensive: "종합운세",
   };
 
