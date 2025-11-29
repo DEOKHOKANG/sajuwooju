@@ -61,6 +61,131 @@ export default function ConsultationPage() {
     partnerUnknownTime: false,
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [useDirectInput, setUseDirectInput] = useState(false);
+  const [directBirthDate, setDirectBirthDate] = useState("");
+  const [directBirthTime, setDirectBirthTime] = useState("");
+  const [usePartnerDirectInput, setUsePartnerDirectInput] = useState(false);
+  const [partnerDirectBirthDate, setPartnerDirectBirthDate] = useState("");
+  const [partnerDirectBirthTime, setPartnerDirectBirthTime] = useState("");
+
+  // 직접 입력 날짜 파싱 함수
+  const parseDirectBirthDate = (dateStr: string) => {
+    // 다양한 형식 지원: 1990-05-15, 1990.05.15, 19900515, 1990/05/15
+    const cleaned = dateStr.replace(/[\.\-\/\s]/g, "");
+    if (cleaned.length >= 8) {
+      const year = cleaned.substring(0, 4);
+      const month = cleaned.substring(4, 6);
+      const day = cleaned.substring(6, 8);
+      if (!isNaN(parseInt(year)) && !isNaN(parseInt(month)) && !isNaN(parseInt(day))) {
+        const yearNum = parseInt(year);
+        const monthNum = parseInt(month);
+        const dayNum = parseInt(day);
+        if (yearNum >= 1920 && yearNum <= currentYear && monthNum >= 1 && monthNum <= 12 && dayNum >= 1 && dayNum <= 31) {
+          return { year, month: String(monthNum), day: String(dayNum) };
+        }
+      }
+    }
+    return null;
+  };
+
+  // 직접 입력 시간 파싱 함수 (시:분 형식)
+  const parseDirectBirthTime = (timeStr: string) => {
+    // 형식: 10:30, 1030, 10시30분, 오전 10시
+    const cleaned = timeStr.replace(/[시분\s]/g, "").replace("오전", "").replace("오후", "");
+    let hour = "";
+    let minute = "0";
+
+    if (cleaned.includes(":")) {
+      const parts = cleaned.split(":");
+      hour = parts[0];
+      minute = parts[1] || "0";
+    } else if (cleaned.length >= 2) {
+      if (cleaned.length <= 2) {
+        hour = cleaned;
+        minute = "0";
+      } else {
+        hour = cleaned.substring(0, 2);
+        minute = cleaned.substring(2) || "0";
+      }
+    }
+
+    const hourNum = parseInt(hour);
+    const minuteNum = parseInt(minute);
+
+    if (!isNaN(hourNum) && hourNum >= 0 && hourNum <= 23) {
+      // 시간을 12시진으로 변환
+      let hourRange = "";
+      if (hourNum >= 23 || hourNum < 1) hourRange = "23-01";
+      else if (hourNum >= 1 && hourNum < 3) hourRange = "01-03";
+      else if (hourNum >= 3 && hourNum < 5) hourRange = "03-05";
+      else if (hourNum >= 5 && hourNum < 7) hourRange = "05-07";
+      else if (hourNum >= 7 && hourNum < 9) hourRange = "07-09";
+      else if (hourNum >= 9 && hourNum < 11) hourRange = "09-11";
+      else if (hourNum >= 11 && hourNum < 13) hourRange = "11-13";
+      else if (hourNum >= 13 && hourNum < 15) hourRange = "13-15";
+      else if (hourNum >= 15 && hourNum < 17) hourRange = "15-17";
+      else if (hourNum >= 17 && hourNum < 19) hourRange = "17-19";
+      else if (hourNum >= 19 && hourNum < 21) hourRange = "19-21";
+      else hourRange = "21-23";
+
+      // 분은 10분 단위로 반올림
+      const roundedMinute = Math.round(minuteNum / 10) * 10;
+
+      return { hourRange, minute: String(roundedMinute >= 60 ? 50 : roundedMinute) };
+    }
+    return null;
+  };
+
+  // 직접 입력 값 변경 시 customerInfo 업데이트
+  const handleDirectBirthDateChange = (value: string) => {
+    setDirectBirthDate(value);
+    const parsed = parseDirectBirthDate(value);
+    if (parsed) {
+      setCustomerInfo(prev => ({
+        ...prev,
+        year: parsed.year,
+        month: parsed.month,
+        day: parsed.day,
+      }));
+    }
+  };
+
+  const handleDirectBirthTimeChange = (value: string) => {
+    setDirectBirthTime(value);
+    const parsed = parseDirectBirthTime(value);
+    if (parsed) {
+      setCustomerInfo(prev => ({
+        ...prev,
+        hour: parsed.hourRange,
+        minute: parsed.minute,
+      }));
+    }
+  };
+
+  const handlePartnerDirectBirthDateChange = (value: string) => {
+    setPartnerDirectBirthDate(value);
+    const parsed = parseDirectBirthDate(value);
+    if (parsed) {
+      setCustomerInfo(prev => ({
+        ...prev,
+        partnerYear: parsed.year,
+        partnerMonth: parsed.month,
+        partnerDay: parsed.day,
+      }));
+    }
+  };
+
+  const handlePartnerDirectBirthTimeChange = (value: string) => {
+    setPartnerDirectBirthTime(value);
+    const parsed = parseDirectBirthTime(value);
+    if (parsed) {
+      setCustomerInfo(prev => ({
+        ...prev,
+        partnerHour: parsed.hourRange,
+        partnerMinute: parsed.minute,
+      }));
+    }
+  };
 
   // 컨텐츠 설정 가져오기
   const contentConfig = useMemo(() => getContentConfig(contentType), [contentType]);
@@ -451,49 +576,81 @@ export default function ConsultationPage() {
 
             {/* Birth Date */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                생년월일 <span className="text-red-500">*</span>
-              </label>
-              <div className="grid grid-cols-3 gap-2">
-                <select
-                  value={customerInfo.year}
-                  onChange={(e) => setCustomerInfo({ ...customerInfo, year: e.target.value })}
-                  className={`px-3 py-3 border-2 rounded-xl transition-all outline-none ${
-                    errors.year ? "border-red-400" : "border-gray-200"
-                  } focus:border-purple-500`}
+              <div className="flex items-center justify-between mb-2">
+                <label className="block text-sm font-medium text-gray-700">
+                  생년월일 <span className="text-red-500">*</span>
+                </label>
+                <button
+                  type="button"
+                  onClick={() => setUseDirectInput(!useDirectInput)}
+                  className="text-xs text-purple-600 hover:text-purple-800 font-medium underline"
                 >
-                  <option value="">년</option>
-                  {years.map((y) => (
-                    <option key={y} value={y}>{y}년</option>
-                  ))}
-                </select>
-                <select
-                  value={customerInfo.month}
-                  onChange={(e) => setCustomerInfo({ ...customerInfo, month: e.target.value })}
-                  className={`px-3 py-3 border-2 rounded-xl transition-all outline-none ${
-                    errors.month ? "border-red-400" : "border-gray-200"
-                  } focus:border-purple-500`}
-                >
-                  <option value="">월</option>
-                  {months.map((m) => (
-                    <option key={m} value={m}>{m}월</option>
-                  ))}
-                </select>
-                <select
-                  value={customerInfo.day}
-                  onChange={(e) => setCustomerInfo({ ...customerInfo, day: e.target.value })}
-                  className={`px-3 py-3 border-2 rounded-xl transition-all outline-none ${
-                    errors.day ? "border-red-400" : "border-gray-200"
-                  } focus:border-purple-500`}
-                >
-                  <option value="">일</option>
-                  {days.map((d) => (
-                    <option key={d} value={d}>{d}일</option>
-                  ))}
-                </select>
+                  {useDirectInput ? "선택 입력으로 전환" : "직접 입력하기"}
+                </button>
               </div>
+
+              {useDirectInput ? (
+                <>
+                  <input
+                    type="text"
+                    placeholder="예: 1990-05-15 또는 19900515"
+                    value={directBirthDate}
+                    onChange={(e) => handleDirectBirthDateChange(e.target.value)}
+                    className={`w-full px-4 py-3 border-2 rounded-xl transition-all outline-none ${
+                      errors.year || errors.month || errors.day ? "border-red-400" : "border-gray-200"
+                    } focus:border-purple-500`}
+                  />
+                  {customerInfo.year && customerInfo.month && customerInfo.day && (
+                    <p className="mt-2 text-sm text-green-600">
+                      입력됨: {customerInfo.year}년 {customerInfo.month}월 {customerInfo.day}일
+                    </p>
+                  )}
+                </>
+              ) : (
+                <div className="grid grid-cols-3 gap-2">
+                  <select
+                    value={customerInfo.year}
+                    onChange={(e) => setCustomerInfo({ ...customerInfo, year: e.target.value })}
+                    aria-label="출생년도"
+                    className={`px-3 py-3 border-2 rounded-xl transition-all outline-none ${
+                      errors.year ? "border-red-400" : "border-gray-200"
+                    } focus:border-purple-500`}
+                  >
+                    <option value="">년</option>
+                    {years.map((y) => (
+                      <option key={y} value={y}>{y}년</option>
+                    ))}
+                  </select>
+                  <select
+                    value={customerInfo.month}
+                    onChange={(e) => setCustomerInfo({ ...customerInfo, month: e.target.value })}
+                    aria-label="출생월"
+                    className={`px-3 py-3 border-2 rounded-xl transition-all outline-none ${
+                      errors.month ? "border-red-400" : "border-gray-200"
+                    } focus:border-purple-500`}
+                  >
+                    <option value="">월</option>
+                    {months.map((m) => (
+                      <option key={m} value={m}>{m}월</option>
+                    ))}
+                  </select>
+                  <select
+                    value={customerInfo.day}
+                    onChange={(e) => setCustomerInfo({ ...customerInfo, day: e.target.value })}
+                    aria-label="출생일"
+                    className={`px-3 py-3 border-2 rounded-xl transition-all outline-none ${
+                      errors.day ? "border-red-400" : "border-gray-200"
+                    } focus:border-purple-500`}
+                  >
+                    <option value="">일</option>
+                    {days.map((d) => (
+                      <option key={d} value={d}>{d}일</option>
+                    ))}
+                  </select>
+                </div>
+              )}
               {(errors.year || errors.month || errors.day) && (
-                <p className="mt-1 text-xs text-red-500">생년월일을 모두 선택해주세요</p>
+                <p className="mt-1 text-xs text-red-500">생년월일을 모두 입력해주세요</p>
               )}
             </div>
           </section>
@@ -523,10 +680,51 @@ export default function ConsultationPage() {
 
             {!customerInfo.unknownTime && (
               <>
+                {/* 직접 시간 입력 옵션 */}
+                <div className="mb-4">
+                  <div className="flex items-center justify-between mb-2">
+                    <label className="block text-sm font-medium text-gray-700">
+                      태어난 시간 <span className="text-red-500">*</span>
+                    </label>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        if (!useDirectInput) {
+                          setUseDirectInput(true);
+                        }
+                      }}
+                      className="text-xs text-purple-600 hover:text-purple-800 font-medium underline"
+                    >
+                      {useDirectInput ? "" : "직접 입력하기"}
+                    </button>
+                  </div>
+
+                  {useDirectInput && (
+                    <div className="mb-4">
+                      <input
+                        type="text"
+                        placeholder="예: 10:30 또는 22시30분"
+                        value={directBirthTime}
+                        onChange={(e) => handleDirectBirthTimeChange(e.target.value)}
+                        className={`w-full px-4 py-3 border-2 rounded-xl transition-all outline-none ${
+                          errors.hour ? "border-red-400" : "border-gray-200"
+                        } focus:border-purple-500`}
+                      />
+                      {customerInfo.hour && (
+                        <p className="mt-2 text-sm text-green-600">
+                          입력됨: {traditionalHours.find(h => h.value === customerInfo.hour)?.label || customerInfo.hour}
+                          {customerInfo.minute && customerInfo.minute !== "0" ? ` ${customerInfo.minute}분` : ""}
+                        </p>
+                      )}
+                      <p className="mt-1 text-xs text-gray-500">또는 아래에서 12시진을 선택하세요</p>
+                    </div>
+                  )}
+                </div>
+
                 {/* 12시진 선택 */}
                 <div className="mb-4">
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    시(時) - 12시진 <span className="text-red-500">*</span>
+                    시(時) - 12시진 {!useDirectInput && <span className="text-red-500">*</span>}
                   </label>
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                     {traditionalHours.map((hour) => (

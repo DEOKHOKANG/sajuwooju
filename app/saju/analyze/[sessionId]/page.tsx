@@ -123,7 +123,9 @@ export default function AnalyzePage() {
   const [progress, setProgress] = useState(0);
   const [statusText, setStatusText] = useState("사주 정보를 준비하고 있습니다...");
   const [error, setError] = useState<string | null>(null);
+  const [errorCode, setErrorCode] = useState<string | null>(null);
   const [, setContentType] = useState<ContentType>("comprehensive");
+  const [retryCount, setRetryCount] = useState(0);
 
   useEffect(() => {
     const analyzeAndRedirect = async () => {
@@ -192,10 +194,18 @@ export default function AnalyzePage() {
         setStatusText(messages[2]);
 
         if (!response.ok) {
-          throw new Error("분석 API 호출 실패");
+          const errorData = await response.json().catch(() => ({}));
+          console.error("API error response:", errorData);
+          throw new Error(errorData.error || "분석 API 호출 실패");
         }
 
         const data = await response.json();
+
+        // API 응답 검증
+        if (!data || !data.result) {
+          throw new Error("분석 결과가 비어있습니다.");
+        }
+
         setProgress(90);
         setStatusText(messages[3]);
 
@@ -247,29 +257,63 @@ export default function AnalyzePage() {
         router.push(`/saju/result/${sessionId}`);
       } catch (err) {
         console.error("Analysis error:", err);
-        setError("분석 중 오류가 발생했습니다. 다시 시도해주세요.");
+        const errorMessage = err instanceof Error ? err.message : "알 수 없는 오류";
+        setError(errorMessage);
+        setErrorCode(`ERROR_${Date.now().toString(36).toUpperCase()}`);
       }
     };
 
     analyzeAndRedirect();
-  }, [sessionId, router]);
+  }, [sessionId, router, retryCount]);
+
+  const handleRetry = () => {
+    setError(null);
+    setErrorCode(null);
+    setProgress(0);
+    setStatusText("사주 정보를 준비하고 있습니다...");
+    setRetryCount(prev => prev + 1);
+  };
 
   if (error) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-purple-900 via-indigo-900 to-slate-900 flex items-center justify-center p-4">
         <div className="max-w-md w-full bg-white/10 backdrop-blur-lg rounded-3xl p-8 text-center border border-white/20">
-          <div className="w-20 h-20 bg-red-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-            <span className="text-4xl">😢</span>
+          <div className="w-20 h-20 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+            <span className="text-4xl">⚠️</span>
           </div>
-          <h2 className="text-2xl font-bold text-white mb-3">오류 발생</h2>
-          <p className="text-white/70 mb-6">{error}</p>
-          <button
-            type="button"
-            onClick={() => router.push("/")}
-            className="w-full py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold rounded-xl hover:from-purple-600 hover:to-pink-600 transition-all"
-          >
-            홈으로 돌아가기
-          </button>
+          <h2 className="text-2xl font-bold text-white mb-3">오류가 발생했습니다</h2>
+          <p className="text-white/70 mb-4">일시적인 우주 장애가 발생했습니다. 잠시 후 다시 시도해주세요.</p>
+
+          <div className="flex gap-3 mb-6">
+            <button
+              type="button"
+              onClick={handleRetry}
+              className="flex-1 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold rounded-xl hover:from-purple-600 hover:to-pink-600 transition-all flex items-center justify-center gap-2"
+            >
+              <span>다시 시도</span>
+              <span>🔄</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => router.push("/")}
+              className="flex-1 py-4 bg-white/10 text-white font-bold rounded-xl hover:bg-white/20 transition-all flex items-center justify-center gap-2"
+            >
+              <span>홈으로 돌아가기</span>
+              <span>→</span>
+            </button>
+          </div>
+
+          <div className="text-xs text-white/30 space-y-1">
+            <p>문제가 계속되면 도움을 받으세요.</p>
+            <div className="flex justify-center gap-2">
+              <a href="/support" className="underline hover:text-white/50">고객센터</a>
+              <span>•</span>
+              <a href="/privacy" className="underline hover:text-white/50">개인정보</a>
+              <span>•</span>
+              <a href="/terms" className="underline hover:text-white/50">이용약관</a>
+            </div>
+            {errorCode && <p className="mt-2 font-mono">{errorCode}</p>}
+          </div>
         </div>
       </div>
     );
